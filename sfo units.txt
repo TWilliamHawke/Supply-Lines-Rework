@@ -1,0 +1,46 @@
+This mod reworks supply lines mechanic so that force upkeep penalty depends on unit quality in your forses instead count of armies. I think this is great alternative for units cap mods
+
+
+What does this mod do
+
+1 Upkeep penalty for each army sets to 1%
+
+2 All units in game now have new parameter: supply cost. It depends on unit quality and varies from 0 for early game units to 6 for dread saurians. Total supply cost of your forses converts to upkeep penalty depend on difficult level. So full stack of star dragons will be increasing your forces upkeep by 30% on very hard/legendary
+
+3 Legendary lords can maintain their favorite units (like Black Guard of Naggarond for Malekith) without supply cost.
+
+This mod does not effect Bretonnia, Tomb Kings, Horde factions or AI factions
+
+Does this mod effect AI factions?
+No, this mod does not effect AI faction
+
+What about units from mods?
+This mod already supports Mixu's Legendary Lords, Cataph's Southern Realms and Cataph's Kraka Drak. Supply cost for unit from other mods will be calculate automatically depend on unit type
+
+You can see supply demand for each unit when recruit them
+
+Example
+
+We have Karl Franz with 3x Halberdiers, 6x Greatswords, 2x Crossbowmen, 4x Reiksguard and 4x Mortars, difficult level is hard (it means multiplier is 0.2)
+Greatswords and Reiksguard don't need supply in Karl Franz army, Crossbowmen doesn't need anyway, 3x Halberdiers require 3 supply points, 4x Mortars - 12
+Total supply demand for this army is 16, that means extra upkeep is 15*0.2 = 4 %
+If we disband all Reiksguard and replace them with 4x Demigryph Knights, it will require 16 supply points extra. Final extra upkeep is 31*0.2 = 6%
+
+
+Этот мод перерабатывает механику, отвечающую за снабжение войск. С ним дополнительное содержание будет зависеть не от количества армий, а от числа нанятых элитных отрядов. На мой взгляд, это прекрасная альтернатива модам с жесткими лимитами на элиту
+
+
+Как работает этот мод
+
+1 Снижает штраф за каждую новую армию до 1%
+
+2 Все отряды в игре требуют от нуля (базовые войска) до шести (жуткие завры) единиц снабжения. Эти цифры складываются, а затем конвертируются в итоговый штраф к содержанию, зависящий от уровня сложности. Например, полная армия из звездных драконов будет повышать содержание всех войск на 30% на вх/легенде
+
+3 Легендарные лорды могут содержать свои любимые отряды (напр. Храмовая стража для Маздамунди) без затрат снабжения 
+
+Этот мод не влияет на Бретонцев, Царей Гробниц, орды и ИИ
+
+FAQ
+
+Q: Что с поддержкой отрядов из других модов?
+A: Этот мод уже поддерживает Mixu's Legendary Lords, Cataph's Southern Realms и Cataph's Kraka Drak. Снабжение для войск из других модов будет определяться автоматически на основании типа отряда
