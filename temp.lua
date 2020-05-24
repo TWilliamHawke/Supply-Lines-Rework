@@ -1,796 +1,1000 @@
-DF_CHAOS_PORTAL_BUILDING = {
-  "wh_main_dwf_grn_settlement_major_chaosruin",
-  "wh_main_dwf_grn_settlement_major_chaosruin_coast",
-  "wh_main_dwf_grn_settlement_minor_chaosruin",
-  "wh_main_dwf_grn_settlement_minor_chaosruin_coast",
-  "wh_main_HUMAN_settlement_major_chaosruin",
-  "wh_main_HUMAN_settlement_major_chaosruin_coast",
-  "wh_main_HUMAN_settlement_minor_chaosruin",
-  "wh_main_HUMAN_settlement_minor_chaosruin_coast",
-  "wh_main_HUMAN_outpostnorsca_major_chaosruin",
-  "wh_main_HUMAN_outpostnorsca_major_chaosruin_coast",
-  "wh_main_HUMAN_outpostnorsca_minor_chaosruin",
-  "wh_main_HUMAN_outpostnorsca_minor_chaosruin_coast",
-  "wh_main_special_settlement_altdorf_chaosruin",
-  "wh_main_special_settlement_black_crag_chaosruin",
-  "wh_main_special_settlement_castle_drakenhof_chaosruin",
-  "wh_main_special_settlement_eight_peaks_chaosruin",
-  "wh_main_special_settlement_karaz_a_karak_chaosruin",
-  "wh_main_special_settlement_kislev_chaosruin",
-  "wh_main_special_settlement_miragliano_chaosruin",
-  "wh2_main_special_fortress_gate_eagle_chaos_ruins",
-  "wh2_main_special_fortress_gate_griffon_chaos_ruins",
-  "wh2_main_special_fortress_gate_phoenix_chaos_ruins",
-  "wh2_main_special_fortress_gate_unicorn_chaos_ruins"
-  }--:vector<string>
-
-DF_HERDSTONE_BUILDINGS = {
-  "wh_dlc03_GRN-DWF_settlement_major_beastmenruin_coast",
-  "wh_dlc03_GRN-DWF_settlement_major_beastmenruin_coast",
-  "wh_dlc03_GRN-DWF_settlement_major_beastmenruin",
-  "wh_dlc03_GRN-DWF_settlement_major_beastmenruin",
-  "wh_dlc03_GRN-DWF_settlement_minor_beastmenruin_coast",
-  "wh_dlc03_GRN-DWF_settlement_minor_beastmenruin_coast",
-  "wh_dlc03_GRN-DWF_settlement_minor_beastmenruin",
-  "wh_dlc03_GRN-DWF_settlement_minor_beastmenruin",
-  "wh_dlc03_HUMAN_settlement_major_beastmenruin_coast",
-  "wh_dlc03_HUMAN_settlement_major_beastmenruin_coast",
-  "wh_dlc03_HUMAN_settlement_major_beastmenruin",
-  "wh_dlc03_HUMAN_settlement_major_beastmenruin",
-  "wh_dlc03_HUMAN_settlement_minor_beastmenruin_coast",
-  "wh_dlc03_HUMAN_settlement_minor_beastmenruin_coast",
-  "wh_dlc03_HUMAN_settlement_minor_beastmenruin",
-  "wh_dlc03_HUMAN_settlement_minor_beastmenruin",
-  "wh_dlc03_HUMAN_outpostnorsca_major_beastmenruin",
-  "wh_dlc03_HUMAN_outpostnorsca_major_beastmenruin",
-  "wh_dlc03_HUMAN_outpostnorsca_major_beastmenruin_coast",
-  "wh_dlc03_HUMAN_outpostnorsca_major_beastmenruin_coast",
-  "wh_dlc03_HUMAN_outpostnorsca_minor_beastmenruin",
-  "wh_dlc03_HUMAN_outpostnorsca_minor_beastmenruin",
-  "wh_dlc03_HUMAN_outpostnorsca_minor_beastmenruin_coast",
-  "wh_dlc03_HUMAN_outpostnorsca_minor_beastmenruin_coast"
-  }--:vector<string>
-
-
-local goc_settings = {} 
-goc_settings.DF_CHAOS_PORTAL_BUILDING = DF_CHAOS_PORTAL_BUILDING
-goc_settings.DF_CHAOS_SPAWN_CHANCE = 10 --:number
-goc_settings.DF_BASE_COOLDOWN = 4 --:number
-goc_settings.DF_CHAOS_ARMY_SIZES = {9, 11, 13} --:vector<number>
-goc_settings.BEASTMEN = false --:boolean
-
-DF_CHAOS_ARMY_LIST =  {"wh_dlc01_chs_inf_forsaken_0", "wh_main_chs_mon_chaos_warhounds_0", "wh_main_chs_mon_chaos_spawn", "wh_main_chs_mon_chaos_spawn",
-"wh_dlc06_chs_feral_manticore", "wh_dlc01_chs_inf_chaos_warriors_2", "wh_dlc01_chs_inf_chaos_warriors_2", "wh_main_chs_mon_chaos_spawn", "wh_main_chs_mon_chaos_spawn",
-"wh_dlc01_chs_inf_forsaken_0", "wh_main_chs_mon_chaos_warhounds_0", "wh_main_chs_mon_chaos_spawn", "wh_main_chs_mon_chaos_spawn"
-} --:vector<string>
-
-DF_HERD_ARMY_LIST = {"wh_dlc03_bst_inf_centigors_0", "wh_dlc03_bst_inf_minotaurs_0", "wh_dlc03_bst_mon_chaos_spawn_0", "wh_dlc03_bst_inf_gor_herd_0", "wh_dlc03_bst_inf_gor_herd_0",
-"wh_dlc03_bst_inf_bestigor_herd_0", "wh_dlc03_bst_inf_ungor_spearmen_0", "wh_dlc03_bst_inf_gor_herd_1", "wh_dlc03_bst_inf_gor_herd_1", "wh_dlc03_bst_inf_ungor_raiders_0", "wh_dlc03_bst_inf_ungor_raiders_0"} --:vector<string>
-
-DF_HERD_ARMY_FACTION = "" --:string
-DF_CHAOS_ARMY_FACTION = "wh2_main_chs_chaos_incursion_lzd" --:string
-
-DF_SPAWN_LOCATIONS = {
-   ["wh_main_goromandy_mountains_baersonlings_camp"] = {762,594}, 
-  ["wh_main_eastern_oblast_volksgrad"] = {724,584}, 
-  ["wh_main_eastern_oblast_praag"] = {699,585}, 
-  ["wh_main_goromandy_mountains_frozen_landing"] = {734,624}, 
-  ["wh_main_gianthome_mountains_sjoktraken"] = {691,637}, 
-  ["wh_main_gianthome_mountains_khazid_bordkarag"] = {657,640}, 
-  ["wh_main_gianthome_mountains_kraka_drak"] = {685,656}, 
-  ["wh2_main_hell_pit_hell_pit"] = {675,611}, 
-  ["wh_main_northern_oblast_fort_ostrosk"] = {658,595}, 
-  ["wh_main_northern_oblast_fort_straghov"] = {636,622}, 
-  ["wh_main_trollheim_mountains_the_tower_of_khrakk"] = {601,625}, 
-  ["wh_main_trollheim_mountains_bay_of_blades"] = {545,625}, 
-  ["wh_main_trollheim_mountains_sarl_encampment"] = {550,651}, 
-  ["wh_main_mountains_of_hel_aeslings_conclave"] = {597,662}, 
-  ["wh_main_mountains_of_hel_altar_of_spawns"] = {575,699}, 
-  ["wh_main_mountains_of_hel_winter_pyre"] = {637,674}, 
-  ["wh_main_mountains_of_naglfari_varg_camp"] = {488,686}, 
-  ["wh_main_mountains_of_naglfari_naglfari_plain"] = {495,647}, 
-  ["wh_main_helspire_mountains_graeling_moot"] = {477,641}, 
-  ["wh_main_helspire_mountains_the_monolith_of_katam"] = {428,673}, 
-  ["wh_main_helspire_mountains_serpent_jetty"] = {394,660}, 
-  ["wh_main_vanaheim_mountains_troll_fjord"] = {361,609}, 
-  ["wh_main_vanaheim_mountains_bjornlings_gathering"] = {427,616}, 
-  ["wh_main_vanaheim_mountains_pack_ice_bay"] = {426,575}, 
-  ["wh_main_ice_tooth_mountains_icedrake_fjord"] = {467,591}, 
-  ["wh_main_ice_tooth_mountains_longship_graveyard"] = {504,597}, 
-  ["wh_main_ice_tooth_mountains_doomkeep"] = {517,649}, 
-  ["wh_main_troll_country_zoishenk"] = {612,599}, 
-  ["wh_main_troll_country_erengrad"] = {609,584}, 
-  ["wh_main_southern_oblast_zavastra"] = {649,551}, 
-  ["wh_main_southern_oblast_kislev"] = {684,544}, 
-  ["wh_main_southern_oblast_fort_jakova"] = {704,508}, 
-  ["wh_main_ostermark_bechafen"] = {655,525}, 
-  ["wh_main_ostermark_essen"] = {658,476}, 
-  ["wh_main_ostland_castle_von_rauken"] = {620,548}, 
-  ["wh_main_ostland_wolfenburg"] = {602,538}, 
-  ["wh_main_ostland_norden"] = {571,576}, 
-  ["wh_main_nordland_salzenmund"] = {536,569}, 
-  ["wh_main_nordland_dietershafen"] = {495,562}, 
-  ["wh_main_middenland_middenheim"] = {521,531}, 
-  ["wh_main_middenland_weismund"] = {498,500}, 
-  ["wh_main_middenland_carroburg"] = {487,466}, 
-  ["wh_main_hochland_brass_keep"] = {565,538}, 
-  ["wh_main_hochland_hergig"] = {580,516}, 
-  ["wh_main_talabecland_kemperbad"] = {534,454}, 
-  ["wh_main_talabecland_talabheim"] = {569,497}, 
-  ["wh_main_stirland_wurtbad"] = {584,441}, 
-  ["wh_main_stirland_the_moot"] = {611,409}, 
-  ["wh_main_averland_grenzstadt"] = {612,387}, 
-  ["wh_main_eastern_sylvania_castle_drakenhof"] = {680,420}, 
-  ["wh_main_eastern_sylvania_eschen"] = {678,445}, 
-  ["wh_main_eastern_sylvania_waldenhof"] = {684,458}, 
-  ["wh_main_western_sylvania_castle_templehof"] = {652,443}, 
-  ["wh_main_western_sylvania_fort_oberstyre"] = {634,436}, 
-  ["wh_main_western_sylvania_schwartzhafen"] = {641,394},
-  ["wh_main_wissenland_wissenburg"] = {531,394}, 
-  ["wh_main_wissenland_nuln"] = {524,410}, 
-  ["wh_main_wissenland_pfeildorf"] = {563,379}, 
-  ["wh_main_reikland_grunburg"] = {514,427}, 
-  ["wh_main_reikland_altdorf"] = {496,450}, 
-  ["wh_main_reikland_helmgart"] = {466,428}, 
-  ["wh_main_reikland_eilhart"] = {445,450}, 
-  ["wh_main_the_wasteland_marienburg"] = {428,462}, 
-  ["wh_main_the_wasteland_gorssel"] = {432,485}, 
-  ["wh_main_forest_of_arden_gisoreux"] = {413,442}, 
-  ["wh_main_forest_of_arden_castle_artois"] = {389,451}, 
-  ["wh_main_couronne_et_languille_languille"] = {363,470}, 
-  ["wh_main_couronne_et_languille_couronne"] = {384,491}, 
-  ["wh_main_lyonesse_lyonesse"] = {340,440}, 
-  ["wh_main_lyonesse_mousillon"] = {356,420}, 
-  ["wh_main_bordeleaux_et_aquitaine_bordeleaux"] = {367,396}, 
-  ["wh_main_bordeleaux_et_aquitaine_aquitaine"] = {384,380}, 
-  ["wh_main_bastonne_et_montfort_castle_bastonne"] = {404,407}, 
-  ["wh_main_bastonne_et_montfort_montfort"] = {438,401}, 
-  ["wh_main_northern_grey_mountains_karak_ziflin"] = {441,413}, 
-  ["wh_main_northern_grey_mountains_grung_zint"] = {407,466}, 
-  ["wh_main_northern_grey_mountains_blackstone_post"] = {422,428}, 
-  ["wh_main_parravon_et_quenelles_parravon"] = {450,379}, 
-  ["wh_main_parravon_et_quenelles_quenelles"] = {444,349}, 
-  ["wh_main_carcassone_et_brionne_castle_carcassonne"] = {431,318}, 
-  ["wh_main_carcassone_et_brionne_brionne"] = {399,339}, 
-  ["wh2_main_yvresse_elessaeli"] = {270,292}, 
-  ["wh2_main_yvresse_tor_yvresse"] = {288,347}, 
-  ["wh2_main_cothique_tor_koruali"] = {284,394}, 
-  ["wh2_main_cothique_mistnar"] = {290,417}, 
-  ["wh2_main_chrace_elisia"] = {261,417}, 
-  ["wh2_main_chrace_tor_achare"] = {247,412}, 
-  ["wh2_main_nagarythe_shrine_of_khaine"] = {214,447}, 
-  ["wh2_main_nagarythe_tor_anlec"] = {197,423}, 
-  ["wh2_main_nagarythe_tor_dranil"] = {166,401}, 
-  ["wh2_main_unicorn_gate"] = {177,395}, 
-  ["wh2_main_phoenix_gate"] = {208,406}, 
-  ["wh2_main_griffon_gate"] = {154,371}, 
-  ["wh2_main_eagle_gate"] = {148,343}, 
-  ["wh2_main_tiranoc_tor_anroc"] = {145,341}, 
-  ["wh2_main_tiranoc_whitepeak"] = {147,319}, 
-  ["wh2_main_caledor_tor_sethai"] = {162,298}, 
-  ["wh2_main_caledor_vauls_anvil"] = {174,274}, 
-  ["wh2_main_eataine_tower_of_lysean"] = {198,291}, 
-  ["wh2_main_eataine_lothern"] = {211,279}, 
-  ["wh2_main_eataine_angerrial"] = {237,289}, 
-  ["wh2_main_eataine_shrine_of_asuryan"] = {226,306}, 
-  ["wh2_main_saphery_port_elistor"] = {253,305}, 
-  ["wh2_main_saphery_tower_of_hoeth"] = {258,327}, 
-  ["wh2_main_saphery_tor_finu"] = {261,352}, 
-  ["wh2_main_avelorn_tor_saroir"] = {238,370}, 
-  ["wh2_main_avelorn_evershale"] = {207,377}, 
-  ["wh2_main_avelorn_gaean_vale"] = {226,361},
-  ["wh2_main_ellyrion_whitefire_tor"] = {175,358}, 
-  ["wh2_main_ellyrion_tor_elyr"] = {171,334}, 
-  ["wh2_main_aghol_wastelands_palace_of_princes"] = {373,696}, 
-  ["wh2_main_aghol_wastelands_fortress_of_the_damned"] = {337,687},
-  ["wh2_main_aghol_wastelands_the_palace_of_ruin"] = {252,697},  
-  ["wh2_main_deadwood_shagrath"] = {291,670}, 
-  ["wh2_main_deadwood_the_frozen_city"] = {261,684}, 
-  ["wh2_main_deadwood_dargoth"] = {224,659}, 
-  ["wh2_main_deadwood_nagrar"] = {231,648}, 
-  ["wh2_main_the_road_of_skulls_the_black_pillar"] = {187,647}, 
-  ["wh2_main_the_road_of_skulls_kauark"] = {177,666}, 
-  ["wh2_main_the_road_of_skulls_spite_reach"] = {155,653}, 
-  ["wh2_main_the_road_of_skulls_har_ganeth"] = {143,632}, 
-  ["wh2_main_the_chill_road_ghrond"] = {130,647}, 
-  ["wh2_main_the_chill_road_ashrak"] = {104,668}, 
-  ["wh2_main_the_chill_road_the_great_arena"] = {96,640}, 
-  ["wh2_main_iron_mountains_naggarond"] = {84,630}, 
-  ["wh2_main_iron_mountains_har_kaldra"] = {57,652}, 
-  ["wh2_main_iron_mountains_altar_of_ultimate_darkness"] = {21,646}, 
-  ["wh2_main_iron_mountains_rackdo_gorge"] = {28,629}, 
-  ["wh2_main_the_black_flood_temple_of_khaine"] = {57,605}, 
-  ["wh2_main_the_black_flood_cragroth_deep"] = {81,577}, 
-  ["wh2_main_the_black_flood_hag_graef"] = {104,593}, 
-  ["wh2_main_the_black_flood_shroktak_mount"] = {29,585}, 
-  ["wh2_main_obsidian_peaks_circle_of_destruction"] = {122,560}, 
-  ["wh2_main_obsidian_peaks_clar_karond"] = {95,534}, 
-  ["wh2_main_obsidian_peaks_venom_glade"] = {119,522}, 
-  ["wh2_main_obsidian_peaks_storag_kor"] = {50,538}, 
-  ["wh2_main_the_clawed_coast_hoteks_column"] = {143,535}, 
-  ["wh2_main_the_clawed_coast_the_monoliths"] = {175,543}, 
-  ["wh2_main_the_clawed_coast_the_twisted_glade"] = {177,509}, 
-  ["wh2_main_the_broken_land_blacklight_tower"] = {177,592}, 
-  ["wh2_main_the_broken_land_slavers_point"] = {212,570}, 
-  ["wh2_main_the_broken_land_karond_kar"] = {242,605}, 
-  ["wh2_main_doom_glades_vauls_anvil"] = {90,483}, 
-  ["wh2_main_doom_glades_hag_hall"] = {73,460}, 
-  ["wh2_main_doom_glades_ice_rock_gorge"] = {50,453}, 
-  ["wh2_main_doom_glades_temple_of_addaioth"] = {54,497}, 
-  ["wh2_main_blackspine_mountains_red_desert"] = {11,560}, 
-  ["wh2_main_blackspine_mountains_plain_of_spiders"] = {16,508}, 
-  ["wh2_main_blackspine_mountains_plain_of_dogs"] = {11,437}, 
-  ["wh2_main_the_black_coast_bleak_hold_fortress"] = {87,415}, 
-  ["wh2_main_the_black_coast_arnheim"] = {98,379}, 
-  ["wh2_main_titan_peaks_ancient_city_of_quintex"] = {47,388}, 
-  ["wh2_main_titan_peaks_the_moon_shard"] = {71,357}, 
-  ["wh2_main_titan_peaks_ssildra_tor"] = {36,354}, 
-  ["wh2_main_titan_peaks_ironspike"] = {21,356}, 
-  ["wh2_main_isthmus_of_lustria_ziggurat_of_dawn"] = {70,325}, 
-  ["wh2_main_isthmus_of_lustria_skeggi"] = {90,327}, 
-  ["wh2_main_isthmus_of_lustria_hexoatl"] = {48,293}, 
-  ["wh2_main_isthmus_of_lustria_fallen_gates"] = {21,317},
-  ["wh_main_northern_worlds_edge_mountains_karak_ungor"] = {739,494}, 
-  ["wh_main_peak_pass_karak_kadrin"] = {717,445}, 
-  ["wh_main_zhufbar_oakenhammer"] = {687,391}, 
-  ["wh_main_zhufbar_zhufbar"] = {707,396}, 
-  ["wh_main_rib_peaks_grom_peak"] = {728,401}, 
-  ["wh_main_zhufbar_karag_dromar"] = {656,376}, 
-  ["wh_main_black_mountains_mighdal_vongalbarak"] = {617,371}, 
-  ["wh_main_black_mountains_karak_hirn"] = {565,353}, 
-  ["wh_main_southern_grey_mountains_grimhold"] = {525,351}, 
-  ["wh_main_southern_grey_mountains_karak_norn"] = {515,373}, 
-  ["wh_main_southern_grey_mountains_karak_azgaraz"] = {484,410}, 
-  ["wh_main_estalia_bilbali"] = {389,288}, 
-  ["wh_main_estalia_magritta"] = {390,249}, 
-  ["wh_main_estalia_tobaro"] = {408,254}, 
-  ["wh2_main_skavenblight_skavenblight"] = {448,271}, 
-  ["wh_main_tilea_miragliano"] = {481,268}, 
-  ["wh_main_tilea_luccini"] = {492,215}, 
-  ["wh2_main_sartosa_sartosa"] = {471,198}, 
-  ["wh_main_western_border_princes_myrmidens"] = {536,272}, 
-  ["wh_main_the_vaults_zarakzil"] = {510,274}, 
-  ["wh_main_the_vaults_karak_bhufdar"] = {498,295}, 
-  ["wh_main_western_border_princes_zvorak"] = {559,312}, 
-  ["wh_main_the_vaults_karak_izor"] = {540,334}, 
-  ["wh_main_eastern_border_princes_matorca"] = {592,323}, 
-  ["wh_main_black_mountains_karak_angazhar"] = {588,334}, 
-  ["wh_main_eastern_border_princes_akendorf"] = {632,341}, 
-  ["wh_main_blood_river_valley_varenka_hills"] = {687,340}, 
-  ["wh_main_the_silver_road_karaz_a_karak"] = {722,353}, 
-  ["wh_main_blood_river_valley_dok_karaz"] = {668,311}, 
-  ["wh_main_blood_river_valley_barak_varr"] = {643,316}, 
-  ["wh_main_death_pass_iron_rock"] = {688,294}, 
-  ["wh_main_death_pass_karag_dron"] = {716,317}, 
-  ["wh_main_death_pass_karak_drazh"] = {717,281}, 
-  ["wh_main_eastern_badlands_karak_eight_peaks"] = {720,266}, 
-  ["wh_main_eastern_badlands_valayas_sorrow"] = {693,260}, 
-  ["wh_main_eastern_badlands_crooked_fang_fort"] = {720,238}, 
-  ["wh_main_eastern_badlands_dringorackaz"] = {746,239}, 
-  ["wh_main_desolation_of_nagash_karak_azul"] = {764,250}, 
-  ["wh_main_blightwater_karak_azgal"] = {691,197}, 
-  ["wh_main_blightwater_kradtommen"] = {741,191}, 
-  ["wh_main_blightwater_misty_mountain"] = {776,176}, 
-  ["wh2_main_devils_backbone_lahmia"] = {822,172}, 
-  ["wh2_main_devils_backbone_mahrak"] = {816,123}, 
-  ["wh2_main_devils_backbone_lybaras"] = {848,129}, 
-  ["wh2_main_crater_of_the_walking_dead_doom_glade"] = {853,99}, 
-  ["wh2_main_crater_of_the_walking_dead_rasetra"] = {823,79}, 
-  ["wh2_main_southlands_jungle_teotiqua"] = {835,29}, 
-  ["wh2_main_southlands_jungle_golden_tower_of_the_gods"] = {859,50}, 
-  ["wh2_main_kingdom_of_beasts_the_cursed_jungle"] = {884,67}, 
-  ["wh2_main_kingdom_of_beasts_temple_of_skulls"] = {935,31}, 
-  ["wh2_main_kingdom_of_beasts_serpent_coast"] = {974,20}, 
-  ["wh2_main_charnel_valley_granite_massif"] = {786,121}, 
-  ["wh2_main_charnel_valley_karag_orrud"] = {746,119}, 
-  ["wh2_main_southlands_worlds_edge_mountains_mount_arachnos"] = {748,111}, 
-  ["wh_main_western_badlands_stonemine_tower"] = {630,288}, 
-  ["wh_main_western_badlands_bitterstone_mine"] = {645,251}, 
-  ["wh_main_western_badlands_ekrund"] = {611,251}, 
-  ["wh_main_western_badlands_dragonhorn_mines"] = {627,228}, 
-  ["wh_main_southern_badlands_gronti_mingol"] = {579,219}, 
-  ["wh_main_southern_badlands_galbaraz"] = {612,186}, 
-  ["wh_main_southern_badlands_agrul_migdhal"] = {613,154}, 
-  ["wh_main_southern_badlands_gor_gazan"] = {552,163}, 
-  ["wh_main_blightwater_deff_gorge"] = {696,163}, 
-  ["wh2_main_ash_river_quatar"] = {681,124}, 
-  ["wh2_main_ash_river_numas"] = {630,117}, 
-  ["wh2_main_ash_river_springs_of_eternal_life"] = {661,84}, 
-  ["wh2_main_shifting_sands_ka-sabar"] = {725,36}, 
-  ["wh2_main_southlands_worlds_edge_mountains_karak_zorn"] = {747,20}, 
-  ["wh2_main_heart_of_the_jungle_oreons_camp"] = {692,26}, 
-  ["wh2_main_shifting_sands_antoch"] = {666,32}, 
-  ["wh2_main_shifting_sands_bhagar"] = {607,39}, 
-  ["wh2_main_land_of_the_dervishes_plain_of_tuskers"] = {607,22}, 
-  ["wh2_main_great_mortis_delta_black_pyramid_of_nagash"] = {583,63}, 
-  ["wh2_main_great_desert_of_araby_black_tower_of_arkhan"] = {566,44}, 
-  ["wh2_main_land_of_the_dervishes_sudenburg"] = {565,34}, 
-  ["wh2_main_great_desert_of_araby_bel_aliad"] = {484,76}, 
-  ["wh2_main_great_desert_of_araby_pools_of_despair"] = {518,77}, 
-  ["wh2_main_land_of_the_dead_khemri"] = {579,130}, 
-  ["wh2_main_land_of_the_dead_zandri"] = {518,120}, 
-  ["wh2_main_coast_of_araby_al_haikk"] = {465,130}, 
-  ["wh2_main_coast_of_araby_copher"] = {418,121}, 
-  ["wh2_main_land_of_assassins_lashiek"] = {404,56}, 
-  ["wh2_main_land_of_assassins_palace_of_the_wizard_caliph"] = {397,26}, 
-  ["wh2_main_headhunters_jungle_mangrove_coast"] = {214,21}, 
-  ["wh2_main_headhunters_jungle_oyxl"] = {193,24}, 
-  ["wh2_main_headhunters_jungle_marks_of_the_old_ones"] = {209,41}, 
-  ["wh2_main_southern_great_jungle_axlotl"] = {169,48}, 
-  ["wh2_main_southern_great_jungle_subatuun"] = {145,15}, 
-  ["wh2_main_spine_of_sotek_mine_of_the_bearded_skulls"] = {78,27}, 
-  ["wh2_main_spine_of_sotek_hualotal"] = {87,60}, 
-  ["wh2_main_southern_great_jungle_itza"] = {105,73}, 
-  ["wh2_main_vampire_coast_the_awakening"] = {213,118}, 
-  ["wh2_main_vampire_coast_pox_marsh"] = {232,159}, 
-  ["wh2_main_northern_great_jungle_xahutec"] = {150,160}, 
-  ["wh2_main_the_creeping_jungle_temple_of_kara"] = {124,171}, 
-  ["wh2_main_the_creeping_jungle_tlaxtlan"] = {106,151}, 
-  ["wh2_main_northern_great_jungle_chaqua"] = {108,116}, 
-  ["wh2_main_northern_great_jungle_xlanhuapec"] = {151,99}, 
-  ["wh2_main_the_creeping_jungle_tlanxla"] = {69,136}, 
-  ["wh2_main_jungles_of_green_mists_spektazuma"] = {31,168}, 
-  ["wh2_main_jungles_of_green_mists_wellsprings_of_eternity"] = {23,111}, 
-  ["wh2_main_huahuan_desert_chamber_of_visions"] = {30,76}, 
-  ["wh2_main_huahuan_desert_sentinels_of_xeti"] = {16,52}, 
-  ["wh2_main_huahuan_desert_the_golden_colossus"] = {27,15}, 
-  ["wh2_main_southern_jungle_of_pahualaxa_floating_pyramid"] = {86,200}, 
-  ["wh2_main_southern_jungle_of_pahualaxa_the_high_sentinel"] = {78,227}, 
-  ["wh2_main_southern_jungle_of_pahualaxa_pahuax"] = {73,256}, 
-  ["wh2_main_southern_jungle_of_pahualaxa_monument_of_the_moon"] = {95,259}, 
-  ["wh2_main_northern_jungle_of_pahualaxa_swamp_town"] = {51,259}, 
-  ["wh2_main_northern_jungle_of_pahualaxa_shrine_of_sotek"] = {37,248}, 
-  ["wh2_main_northern_jungle_of_pahualaxa_macu_peaks"] = {31,264}, 
-  ["wh2_main_northern_jungle_of_pahualaxa_port_reaver"] = {57,285}
-}--:map<string, {number, number}>
-
-
-
-
---v function(text: string)
-function GOCLOG(text)
+--Log script to text
+--v function(text: string | number | boolean | CA_CQI)
+local function LOG(text)
   if not __write_output_to_logfile then
-      return; 
+      return;
   end
 
   local logText = tostring(text)
   local logTimeStamp = os.date("%d, %m %Y %X")
-  local popLog = io.open("warhammer_expanded_log.txt","a")
+  local popLog = io.open("MOD_SETTINGS_LOG.txt","a")
   --# assume logTimeStamp: string
-  popLog :write("GOC:  [".. logTimeStamp .. "]:  "..logText .. "  \n")
+  popLog :write("MCM:  [".. logTimeStamp .. "]:  "..logText .. "  \n")
   popLog :flush()
   popLog :close()
 end
 
-
-
-if not not _G.sfo then
-  GOCLOG("Startup: SFO is active!")
-  DF_CHAOS_ARMY_LIST =  {"wh_dlc01_chs_inf_forsaken_0", "wh_main_chs_mon_chaos_warhounds_0", "wh_main_chs_mon_chaos_spawn", "wh_main_chs_mon_chaos_spawn",
-  "chs_zelot", "chs_zelot", "chs_nurgle_sons", "chs_slaanesh_bless", "chs_khorne_berserk", "chs_chaos_dragon", "wh_main_chs_mon_chaos_spawn", "wh_main_chs_mon_chaos_spawn"}
-else
-  GOCLOG("Startup: SFO not active!")
-end
-
-if cm:get_saved_value("whenever catap gets around to adding this ctt shit I guess man") == true then
-  GOCLOG("Startup: CTT is active!")
-
-else
-  GOCLOG("Startup: CTT not active!")
-end
-
-
-
-
---v function() --> vector<CA_FACTION>
-local function GetPlayerFactions()
-  local player_factions = {};
-  local faction_list = cm:model():world():faction_list();
-  for i = 0, faction_list:num_items() - 1 do
-      local curr_faction = faction_list:item_at(i);
-      if (curr_faction:is_human() == true) then
-          table.insert(player_factions, curr_faction);
-      end
-  end
-  return player_factions;
-end;
-
---v function(ax: number, ay: number, bx: number, by: number) --> number
-local function distance_2D(ax, ay, bx, by)
-  return (((bx - ax) ^ 2 + (by - ay) ^ 2) ^ 0.5);
-end;
-
---v function(players: vector<CA_FACTION>, region: CA_REGION) --> boolean
-local function CheckIfPlayerIsNearFaction(players, region)
-  local result = false;
-  local settlement = region:settlement()
-  local radius = 20;
-  for i,value in ipairs(players) do
-      local player_force_list = value:military_force_list();
-      local j = 0;
-      while (result == false) and (j < player_force_list:num_items()) do
-          local player_character = player_force_list:item_at(j):general_character();
-          local distance = distance_2D(settlement:logical_position_x(), settlement:logical_position_y(), player_character:logical_position_x(), player_character:logical_position_y());
-          result = (distance < radius);
-          j = j + 1;
-      end
-      local player_region_list = value:region_list();
-      local j = 0;
-      while (result == false) and (j < player_region_list:num_items()) do
-          local player_character = player_region_list:item_at(j):settlement();
-          local distance = distance_2D(settlement:logical_position_x(), settlement:logical_position_y(), player_character:logical_position_x(), player_character:logical_position_y());
-          result = (distance < radius);
-          j = j + 1;
-      end
-  end
-  GOCLOG("is player near settlement returning ["..tostring(result).."] ")
-  return result;
-end
-
---v function(x: number, y: number) --> boolean
-local function IsValidSpawnPoint(x, y)
-local faction_list = cm:model():world():faction_list();
-
-for i = 0, faction_list:num_items() - 1 do
-  local current_faction = faction_list:item_at(i);
-  local char_list = current_faction:character_list();
-  
-  for i = 0, char_list:num_items() - 1 do
-    local current_char = char_list:item_at(i);
-          if current_char:logical_position_x() == x and current_char:logical_position_y() == y then
-              GOCLOG("Is valid spawn point returning false")
-      return false;
-    end;
-  end;
-  end;
-  GOCLOG("is valid spawn point returning true")
-return true;
-end;
-
-
---v function(region: CA_REGION) --> boolean
-function region_has_portal(region)
-  for i = 1, #goc_settings.DF_CHAOS_PORTAL_BUILDING do
-      if region:building_exists(goc_settings.DF_CHAOS_PORTAL_BUILDING[i]) then
-          if DF_SPAWN_LOCATIONS[region:name()] == nil then
-              GOCLOG("Region with portal ["..region:name().."] doesn't have a set up spawn location!")
-              return false
-          end
-          GOCLOG("Region has portal returning true for region ["..region:name().."] ")
-          return true
-      end
-  end
-  return false
-end
-
---v function(region: CA_REGION) --> boolean
-function region_has_herdstone(region)
-  for i = 1, #DF_HERDSTONE_BUILDINGS do
-      if region:building_exists(DF_HERDSTONE_BUILDINGS[i]) then
-          if DF_SPAWN_LOCATIONS[region:name()] == nil then
-              GOCLOG("Region with herdstone ["..region:name().."] doesn't have a set up spawn location!")
-              return false
-          end
-          GOCLOG("Region has herdstone returning true for region ["..region:name().."] ")
-          return true
-      end
-  end
-  return false
-end
-
-
---v function(region: CA_REGION)
-local function spawn_beastmen(region)
-
-  local unit_string = DF_HERD_ARMY_LIST[cm:random_number(#DF_HERD_ARMY_LIST)]
-  for i = 1, goc_settings.DF_CHAOS_ARMY_SIZES[cm:random_number(#goc_settings.DF_CHAOS_ARMY_SIZES)] do
-      local new_string = unit_string..","..DF_HERD_ARMY_LIST[cm:random_number(#DF_HERD_ARMY_LIST)]
-      unit_string = new_string
-  end
-  GOCLOG("Assembled the spawn string as ["..unit_string.."] ")
-  cm:create_force(
-      DF_HERD_ARMY_FACTION,
-      unit_string,
-      region:name(),
-      DF_SPAWN_LOCATIONS[region:name()][1],
-      DF_SPAWN_LOCATIONS[region:name()][2],
-      true,
-      function(cqi)
-          GOCLOG("Spawned a beastmen army at ["..region:name().."] sucessfully with cqi ["..tostring(cqi).."]")
-          cm:apply_effect_bundle_to_characters_force("wh_main_bundle_military_upkeep_free_force", cqi, 0, true);
-      end)
-  
-      cm:set_saved_value("chaos_gates_cooldown_"..region:province_name(), 18)
-      if cm:is_multiplayer() then --in multiplayer games we tick twice every single round. Double the cooldown
-          cm:set_saved_value("chaos_gates_cooldown_"..region:province_name(), 36)
-      end
-end
-
-
---v function (region: CA_REGION)
-local function beastmen_herds(region)
-  if cm:get_saved_value("chaos_gates_cooldown_"..region:province_name()) == nil then
-      cm:set_saved_value("chaos_gates_cooldown_"..region:province_name(), goc_settings.DF_BASE_COOLDOWN)
-  end
-  local cooldown = cm:get_saved_value("chaos_gates_cooldown_"..region:province_name())
-  if cooldown > 1 then
-      GOCLOG("region ["..region:name().."] is not off cooldown! It has ["..cooldown.."] turns remaining!")
-      cm:set_saved_value("chaos_gates_cooldown_"..region:province_name(), cooldown - 1)
-      return
-  end
-
-  if cm:is_multiplayer() then
-      if CheckIfPlayerIsNearFaction(GetPlayerFactions(), region) == false and IsValidSpawnPoint(region:settlement():logical_position_x() + 2, region:settlement():logical_position_y() + 2) then
-          if cm:random_number(100) <= goc_settings.DF_CHAOS_SPAWN_CHANCE/2 then
-              GOCLOG("Chance check passed, spawning beastmen")
-              spawn_beastmen(region)
-          else
-              GOCLOG("Chance check failed, maybe next time!")
-          end
-      end
-      return
-  end
-
-
-
-  if cm:random_number(100) <= goc_settings.DF_CHAOS_SPAWN_CHANCE then
-      GOCLOG("Chance check passed, spawning beastmen")
-      if CheckIfPlayerIsNearFaction(GetPlayerFactions(), region) == false and IsValidSpawnPoint(region:settlement():logical_position_x() + 1, region:settlement():logical_position_y() + 1) then
-          spawn_beastmen(region)
-      end
-  else
-      GOCLOG("Chance check failed, maybe next time!")
-  end
-
-end
-
---v function(region: CA_REGION)
-local function spawn_chaos(region)
-
-  local unit_string = DF_CHAOS_ARMY_LIST[cm:random_number(#DF_CHAOS_ARMY_LIST)]
-  for i = 1, goc_settings.DF_CHAOS_ARMY_SIZES[cm:random_number(#goc_settings.DF_CHAOS_ARMY_SIZES)] do
-      local new_string = unit_string..","..DF_CHAOS_ARMY_LIST[cm:random_number(#DF_CHAOS_ARMY_LIST)]
-      unit_string = new_string
-  end
-  GOCLOG("Assembled the spawn string as ["..unit_string.."] ")
-  cm:create_force(
-      DF_CHAOS_ARMY_FACTION,
-      unit_string,
-      region:name(),
-      DF_SPAWN_LOCATIONS[region:name()][1],
-      DF_SPAWN_LOCATIONS[region:name()][2],
-      true,
-      function(cqi)
-          GOCLOG("Spawned a chaos army at ["..region:name().."] sucessfully with cqi ["..tostring(cqi).."]")
-          cm:apply_effect_bundle_to_characters_force("wh_main_bundle_military_upkeep_free_force", cqi, 0, true);
-          cm:force_diplomacy("faction:"..DF_CHAOS_ARMY_FACTION, "faction:wh_main_chs_chaos", "war", false, false, false)
-          if cm:get_faction("wh_main_chs_chaos"):is_dead() == false and cm:get_faction(DF_CHAOS_ARMY_FACTION):is_vassal_of(cm:get_faction("wh_main_chs_chaos")) == false then
-              GOCLOG("Making the spawned faction a vassal!")
-              cm:force_make_vassal("wh_main_chs_chaos", DF_CHAOS_ARMY_FACTION)
-          end
-      end)
-  
-      cm:set_saved_value("chaos_gates_cooldown_"..region:province_name(), 18)
-      if cm:is_multiplayer() then --in multiplayer games we tick twice every single round. Double the cooldown
-          cm:set_saved_value("chaos_gates_cooldown_"..region:province_name(), 36)
-      end
-end
-
-
---v function (region: CA_REGION)
-local function chaos_gates(region)
-  if cm:get_saved_value("chaos_gates_cooldown_"..region:province_name()) == nil then
-      cm:set_saved_value("chaos_gates_cooldown_"..region:province_name(), goc_settings.DF_BASE_COOLDOWN)
-  end
-  local cooldown = cm:get_saved_value("chaos_gates_cooldown_"..region:province_name())
-  if cooldown > 1 then
-      GOCLOG("region ["..region:name().."] is not off cooldown! It has ["..cooldown.."] turns remaining!")
-      cm:set_saved_value("chaos_gates_cooldown_"..region:province_name(), cooldown - 1)
-      return
-  end
-
-  if cm:is_multiplayer() then
-      if CheckIfPlayerIsNearFaction(GetPlayerFactions(), region) == false and IsValidSpawnPoint(region:settlement():logical_position_x() + 2, region:settlement():logical_position_y() + 2) then
-          if cm:random_number(100) <= goc_settings.DF_CHAOS_SPAWN_CHANCE/2 then
-              GOCLOG("Chance check passed, spawning chaos")
-              spawn_chaos(region)
-          else
-              GOCLOG("Chance check failed, maybe next time!")
-          end
-      end
-      return
-  end
-
-
-
-  if cm:random_number(100) <= goc_settings.DF_CHAOS_SPAWN_CHANCE then
-      GOCLOG("Chance check passed, spawning chaos")
-      if CheckIfPlayerIsNearFaction(GetPlayerFactions(), region) == false and IsValidSpawnPoint(region:settlement():logical_position_x() + 1, region:settlement():logical_position_y() + 1) then
-          spawn_chaos(region)
-      end
-  else
-      GOCLOG("Chance check failed, maybe next time!")
-  end
-
-end
-
-
-
-core:add_listener(
-  "ChaosGatesTurnStart",
-  "FactionTurnStart",
-  function(context)
-      return context:faction():is_human()
-  end,
-  function(context)
-      local region_list = cm:model():world():region_manager():region_list()
-      for i = 0, region_list:num_items() - 1 do
-          local region = region_list:item_at(i)
-          if not region:settlement():is_null_interface() then
-              if region_has_portal(region) then
-                  chaos_gates(region)
-              end
-          end
-      end
-  end,
-  true)
-
-
---[[ testing code
---v function(text: string)
-function WRITE(text)
+--v function()
+local function GPSESSIONLOG()
   if not __write_output_to_logfile then
-      return; 
+      return;
+  end
+  local logTimeStamp = os.date("%d, %m %Y %X")
+  --# assume logTimeStamp: string
+
+  local popLog = io.open("MOD_SETTINGS_LOG.txt","w+")
+  popLog :write("NEW LOG ["..logTimeStamp.."] \n")
+  popLog :flush()
+  popLog :close() 
+end
+GPSESSIONLOG()
+
+
+
+
+local mod_configuration_manager = {} --# assume mod_configuration_manager: MOD_CONFIGURATION_MANAGER
+
+--v function() --> MOD_CONFIGURATION_MANAGER
+function mod_configuration_manager.init()
+  local self = {} 
+  setmetatable(self, {
+      __index = mod_configuration_manager,
+      __tostring = function() return "MOD_CONFIGURATION_MANAGER" end
+  })--# assume self: MOD_CONFIGURATION_MANAGER
+
+  self._registeredMods = {} --:map<string, MCM_MOD>
+  self._selectedMod = nil --:MCM_MOD
+  self._postProcessCallbacks = {} --:vector<function()>
+  self._preProcessCallbacks  = {} --:vector<function()>
+  self._newGameOnlyCallbacks = {} --:vector<function()>
+  self._warnLuaErrors = false --:boolean
+  self._cachedUIC = {} --:vector<CA_UIC>
+
+  _G.mcm = self
+  return self
+end
+
+--v function(self: MOD_CONFIGURATION_MANAGER, text: any)
+function mod_configuration_manager.log(self, text)
+  LOG(tostring(text))
+end
+
+--v function (self: MOD_CONFIGURATION_MANAGER) --> boolean
+function mod_configuration_manager.has_selected_mod(self)
+  return not not self._selectedMod
+end
+
+--v function(self: MOD_CONFIGURATION_MANAGER, mod_key: string)
+function mod_configuration_manager.make_mod_with_key_selected(self, mod_key)
+  self._selectedMod = self._registeredMods[mod_key]
+end
+
+--v function(self: MOD_CONFIGURATION_MANAGER) --> MCM_MOD
+function mod_configuration_manager.get_current_mod(self)
+  if self._selectedMod == nil then
+      self:log("ERROR: called get_current_mod() with no mod selected!")
+      local null_responce = {} --# assume null_responce: MCM_MOD
+      null_responce.is_null_interface = function() return true end
+      return null_responce
+  end
+  return self._selectedMod
+end
+
+--v function(self: MOD_CONFIGURATION_MANAGER, uic: CA_UIC)
+function mod_configuration_manager.cache_UIC(self, uic)
+  if not is_uicomponent(uic) then
+      self:log("ERROR: callec cache_UIC() but the UIC sent isn't a UIC?")
+      return
+  else
+      table.insert(self._cachedUIC, uic)
+  end
+end
+
+--v function(self: MOD_CONFIGURATION_MANAGER)
+function mod_configuration_manager.clear_UIC(self)
+  local cachedUIC = self._cachedUIC
+  for i = 1, #cachedUIC do
+      local uic = cachedUIC[i]
+      uic:SetVisible(true)
+  end
+end
+
+--v function(self: MOD_CONFIGURATION_MANAGER)
+function mod_configuration_manager.warn_of_error(self)
+  if self._warnLuaErrors then
+
+
+  end
+end
+
+--v function(self: MOD_CONFIGURATION_MANAGER)
+function mod_configuration_manager.set_should_warn(self)
+  self._warnLuaErrors = true
+end
+
+--v function(obj: any) --> boolean
+function mod_configuration_manager.is_mod(obj)
+  return tostring(obj) == "MCM_MOD"
+end
+
+--v function(obj: any) --> boolean
+function mod_configuration_manager.is_tweaker(obj)
+  return tostring(obj) == "MCM_TWEAKER"
+end
+
+--v function(obj: any) --> boolean
+function mod_configuration_manager.is_variable(obj)
+  return tostring(obj) == "MCM_VAR"
+end
+
+--v function(obj: any) --> boolean
+function mod_configuration_manager.is_tweaker_option(obj)
+  return tostring(obj) == "MCM_OPTION"
+end
+
+--logs lua errors to a file after this is called.
+--v [NO_CHECK] 
+--v function (self: MOD_CONFIGURATION_MANAGER)
+function mod_configuration_manager.error_checker(self)
+  --Vanish's PCaller
+  --All credits to vanish
+  --v function(func: function) --> any
+  function safeCall(func)
+      local status, result = pcall(func)
+      if not status then
+          LOG("ERROR")
+          LOG(tostring(result))
+          LOG(debug.traceback());
+          self:warn_of_error()
+      end
+      return result;
+  end
+  
+  
+  --v [NO_CHECK] function(...: any)
+  function pack2(...) return {n=select('#', ...), ...} end
+  --v [NO_CHECK] function(t: vector<WHATEVER>) --> vector<WHATEVER>
+  function unpack2(t) return unpack(t, 1, t.n) end
+  
+  --v [NO_CHECK] function(f: function(), argProcessor: function()) --> function()
+  function wrapFunction(f, argProcessor)
+      return function(...)
+          local someArguments = pack2(...);
+          if argProcessor then
+              safeCall(function() argProcessor(someArguments) end)
+          end
+          local result = pack2(safeCall(function() return f(unpack2( someArguments )) end));
+          return unpack2(result);
+          end
+  end
+  
+  core.trigger_event = wrapFunction(
+      core.trigger_event,
+      function(ab)
+      end
+  );
+  
+  cm.check_callbacks = wrapFunction(
+      cm.check_callbacks,
+      function(ab)
+      end
+  )
+  
+  local currentAddListener = core.add_listener;
+  --v [NO_CHECK] function(core: any, listenerName: any, eventName: any, conditionFunc: any, listenerFunc: any, persistent: any)
+  function myAddListener(core, listenerName, eventName, conditionFunc, listenerFunc, persistent)
+      local wrappedCondition = nil;
+      if is_function(conditionFunc) then
+          --wrappedCondition =  wrapFunction(conditionFunc, function(arg) output("Callback condition called: " .. listenerName .. ", for event: " .. eventName); end);
+          wrappedCondition =  wrapFunction(conditionFunc);
+      else
+          wrappedCondition = conditionFunc;
+      end
+      currentAddListener(
+          core, listenerName, eventName, wrappedCondition, wrapFunction(listenerFunc), persistent
+          --core, listenerName, eventName, wrappedCondition, wrapFunction(listenerFunc, function(arg) output("Callback called: " .. listenerName .. ", for event: " .. eventName); end), persistent
+      )
+  end
+  core.add_listener = myAddListener;
+end
+
+
+
+
+
+local mcm_mod = {} --# assume mcm_mod: MCM_MOD
+
+
+
+
+
+--v function(model: MOD_CONFIGURATION_MANAGER, name: string, ui_name: string, ui_tooltip: string) --> MCM_MOD
+function mcm_mod.new(model, name, ui_name, ui_tooltip)
+  local self = {}
+  setmetatable(self, {
+      __index = mcm_mod,
+      __tostring = function() return "MCM_MOD" end
+  }) --# assume self: MCM_MOD
+
+  self._name = name
+  self._model = model
+  self._tweakers = {} --:map<string, MCM_TWEAKER>
+  self._variables = {} --:map<string, MCM_VAR> 
+
+  self._UIName = ui_name or "unnamed mod"
+  self._UIToolTip = ui_tooltip or " "
+
+  return self
+end
+
+--v function (model: MOD_CONFIGURATION_MANAGER) --> MCM_MOD
+function mcm_mod.null(model)
+  local self = {}
+  setmetatable(self, {
+      __index = mcm_mod,
+      __tostring = function() return "NULL_SCRIPT_INTERFACE" end
+  }) --# assume self: MCM_MOD
+  self._name = ""
+  self._model = model
+  self._tweakers = {}
+  self._variables = {}
+  self._UIName = "NULL INTERFACE"
+  self._UIToolTip = "NULL_INTERFACE"
+  return self
+end
+
+
+
+--v function(self: MCM_MOD) --> string
+function mcm_mod.name(self) 
+  return self._name
+end
+
+--v function(self: MCM_MOD) --> MOD_CONFIGURATION_MANAGER
+function mcm_mod.model(self)
+  return self._model
+end
+
+--v function(self: MCM_MOD, text: any)
+function mcm_mod.log(self, text)
+  self:model():log(text)
+end
+
+
+local mcm_var = {}--# assume mcm_var: MCM_VAR
+
+--v function(mod: MCM_MOD, name: string, min: number, max: number, default: number, step: number, ui_name: string, ui_tooltip: string) --> MCM_VAR
+function mcm_var.new(mod, name, min, max, default, step, ui_name, ui_tooltip)
+  local self = {}
+  setmetatable(self, {
+      __index = mcm_var,
+      __tostring = function() return "MCM_VAR" end
+  }) --# assume self: MCM_VAR
+
+  self._mod = mod
+  self._name = name
+  self._minValue = min
+  self._maxValue = max
+  self._stepValue = step
+  self._defaultValue = default
+  self._UIName = ui_name or "Unnamed Variable"
+  self._UIToolTip = ui_tooltip or " "
+
+  self._currentValue = default
+  
+
+  return self
+end
+
+--v function(mod: MCM_MOD) --> MCM_VAR
+function mcm_var.null(mod)
+  local self = {}
+  setmetatable(self, {
+      __index = mcm_var,
+      __tostring = function() return "NULL_SCRIPT_INTERFACE" end
+  }) --# assume self: MCM_VAR
+
+  self._mod = mod
+  self._name = ""
+  self._minValue = 0
+  self._maxValue = 0
+  self._currentValue = 0
+  self._stepValue = 0
+  self._UIName = ""
+  self._UIToolTip = ""
+  self._callback = nil --:function(context: MOD_CONFIGURATION_MANAGER)
+  return self
+end
+
+
+--v function(self: MCM_VAR) --> boolean
+function mcm_var.is_null_interface(self)
+  return tostring(self) == "NULL_SCRIPT_INTERFACE"
+end
+
+--v function(self: MCM_VAR) --> string
+function mcm_var.name(self)
+  return self._name
+end
+
+--v function(self: MCM_VAR) --> MCM_MOD
+function mcm_var.mod(self)
+  return self._mod
+end
+
+--v function(self: MCM_VAR, text: any)
+function mcm_var.log(self, text)
+  self:mod():log(text)
+end
+  
+--v function(self: MCM_VAR) --> number
+function mcm_var.default_value(self)
+  return self._defaultValue
+end
+
+--v function(self: MCM_VAR) --> number
+function mcm_var.current_value(self)
+  return self._currentValue
+end
+
+--v function(self: MCM_VAR) --> number
+function mcm_var.maximum(self)
+  return self._maxValue
+end
+
+--v function(self: MCM_VAR) --> number
+function mcm_var.minimum(self)
+  return self._minValue
+end
+
+--v function(self: MCM_VAR) --> boolean
+function mcm_var.at_max(self)
+  return self._currentValue == self:maximum()
+end
+
+--v function(self: MCM_VAR) --> boolean
+function mcm_var.at_min(self)
+  return self._currentValue == self:minimum()
+end
+
+--v function(self: MCM_VAR, value: number) --> boolean
+function mcm_var.is_value_valid(self, value)
+  if value > self:maximum() then
+      return false
+  elseif value < self:minimum() then
+      return false
+  else
+      return true
+  end
+end
+
+--v function(self: MCM_VAR, value: number)
+function mcm_var.set_current_value(self, value)
+  self:log("Set the value of var ["..self:name().."] in mod ["..self:mod():name().."] to ["..value.."]")
+  if value > self:maximum() then
+      value = self:maximum()
+      self:log("value was over the maximum, lowered it!")
+  elseif value < self:minimum() then
+      value = self:minimum()
+      self:log("value was under the minimum, raised it!")
+  end
+  self._currentValue = value
+end
+
+--v function(self: MCM_VAR) --> number
+function mcm_var.step(self)
+  return self._stepValue
+end
+
+--v function(self: MCM_VAR)
+function mcm_var.increment_value(self)
+  self:set_current_value(self:current_value() + self:step())
+end
+
+--v function(self: MCM_VAR)
+function mcm_var.decrement_value(self)
+  self:set_current_value(self:current_value() - self:step())
+end
+
+--v function(self: MCM_VAR)
+function mcm_var.callback(self)
+  self._callback(self:mod():model())
+end
+
+--v function(self: MCM_VAR) --> boolean
+function mcm_var.has_callback(self)
+  return not not self._callback
+end
+
+--v function(self: MCM_VAR, callback: function(context: MOD_CONFIGURATION_MANAGER))
+function mcm_var.add_callback(self, callback)
+  self:log("added callback to variable ["..self:name().."] ")
+  self._callback = callback
+end
+
+--v function(self: MCM_VAR, text: string)
+function mcm_var.set_ui_name(self, text)
+  self._UIName = text
+end
+
+--v function(self: MCM_VAR, text: string)
+function mcm_var.set_ui_tooltip(self, text)
+  self._UIToolTip = text
+end
+
+--v function(self: MCM_VAR) --> string
+function mcm_var.ui_name(self)
+  return self._UIName
+end
+
+--v function (self: MCM_VAR) --> string
+function mcm_var.ui_tooltip(self)
+  return self._UIToolTip
+end
+
+local mcm_tweaker = {} --# assume mcm_tweaker: MCM_TWEAKER
+
+--v function(mod: MCM_MOD, name: string, ui_title: string, ui_tooltip: string) --> MCM_TWEAKER
+function mcm_tweaker.new(mod, name, ui_title, ui_tooltip)
+  local self = {}
+  setmetatable(self, {
+      __index = mcm_tweaker,
+      __tostring =  function() return "MCM_TWEAKER" end
+  })--# assume self: MCM_TWEAKER
+  self._mod = mod
+  self._name = name
+  self._UIName = ui_title or "Un-named tweaker"
+  self._UIToolTip = ui_tooltip or " "
+
+  self._options = {} --:map<string, MCM_OPTION>
+  self._numOptions = 0 --:number
+  self._selectedOption = nil --:MCM_OPTION
+
+  return self
+end
+
+--v function(mod: MCM_MOD) --> MCM_TWEAKER
+function mcm_tweaker.null(mod)
+  local self = {}
+  setmetatable(self, {
+      __index = mcm_tweaker,
+      __tostring =  function() return "NULL_SCRIPT_INTERFACE" end
+  })--# assume self: MCM_TWEAKER
+  self._mod = mod
+  self._name = " "
+  self._UITitle = " "
+  self._UIToolTip = " "
+
+  self._options = {} 
+  self._selectedOption = nil 
+  self._numOptions = 0
+
+  return self
+end
+
+--v function(self: MCM_TWEAKER) --> boolean
+function mcm_tweaker.is_null_interface(self)
+  return tostring(self) == "NULL_SCRIPT_INTERFACE"
+end
+
+--v function(self: MCM_TWEAKER) --> MCM_MOD
+function mcm_tweaker.mod(self)
+  return self._mod
+end
+
+--v function(self: MCM_TWEAKER) --> string
+function mcm_tweaker.name(self)
+  return self._name
+end
+
+--v function(self: MCM_TWEAKER, text: any)
+function mcm_tweaker.log(self, text)
+  self:mod():log(text)
+end
+--OPTIONS
+----------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+local mcm_option = {} --# assume mcm_option: MCM_OPTION
+
+--v function(tweaker: MCM_TWEAKER, key: string, ui_name: string, ui_tooltip: string) --> MCM_OPTION
+function mcm_option.new(tweaker, key, ui_name, ui_tooltip)
+  local self = {}
+  setmetatable(self, {
+      __index = mcm_option,
+      __tostring = function() return "MCM_OPTION" end
+  }) --# assume self: MCM_OPTION
+  self._tweaker = tweaker
+  self._wasDefault = false --:boolean
+  self._name = key
+  self._UIName = ui_name or "Unnamed Option"
+  self._UIToolTip = ui_tooltip or " "
+  self._callback = nil --: function(context: MOD_CONFIGURATION_MANAGER)
+  return self
+end
+
+--v function(tweaker: MCM_TWEAKER) --> MCM_OPTION
+function mcm_option.null(tweaker)
+  local self = {}
+  setmetatable(self, {
+      __index = mcm_option,
+      __tostring = function() return "NULL_SCRIPT_INTERFACE" end
+  }) --# assume self: MCM_OPTION
+  self._tweaker = tweaker
+  self._name = "NULL_OPTION"
+  self._UIName = ""
+  self._UIToolTip = ""
+  self._callback = nil 
+  self._wasDefault = false
+  return self
+end
+
+--v function(self: MCM_OPTION) --> boolean
+function mcm_option.is_null_interface(self)
+  return tostring(self) == "NULL_SCRIPT_INTERFACE"
+end
+
+--v function(self: MCM_OPTION) --> string
+function mcm_option.name(self)
+  return self._name
+end
+
+--v function(self: MCM_OPTION) --> MCM_TWEAKER
+function mcm_option.tweaker(self)
+  return self._tweaker
+end
+
+--v function(self: MCM_OPTION, text: any)
+function mcm_option.log(self, text)
+  self:tweaker():log(text)
+end
+
+--v function(self: MCM_OPTION)
+function mcm_option.callback(self)
+  self._callback(self:tweaker():mod():model())
+end
+
+
+--v function(self: MCM_OPTION) --> boolean
+function mcm_option.has_callback(self)
+  return not not self._callback
+end
+
+--v function(self: MCM_OPTION)
+function mcm_option.flag_default(self)
+  self._wasDefault = true
+end
+
+--v function(self: MCM_OPTION) --> boolean
+function mcm_option.is_default(self)
+  return self._wasDefault
+end
+
+--v function(self: MCM_OPTION) 
+function mcm_option.no_longer_default(self)
+  self._wasDefault = false
+end
+
+--v function(self: MCM_OPTION, callback: function(context: MOD_CONFIGURATION_MANAGER))
+function mcm_option.add_callback(self, callback)
+  self:log("added callback to option ["..self:name().."] ")
+  self._callback = callback
+end
+
+
+--v function(self: MCM_OPTION, text: string)
+function mcm_option.set_ui_name(self, text)
+  self._UIName = text
+end
+
+--v function(self: MCM_OPTION, text: string)
+function mcm_option.set_ui_tooltip(self, text)
+  self._UIToolTip = text
+end
+
+--v function(self: MCM_OPTION) --> string
+function mcm_option.ui_name(self)
+  return self._UIName
+end
+
+--v function (self: MCM_OPTION) --> string
+function mcm_option.ui_tooltip(self)
+  return self._UIToolTip
+end
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+--v function(self: MCM_TWEAKER, option: MCM_OPTION)
+function mcm_tweaker.set_selected_option(self, option)
+  self._selectedOption = option
+end
+
+--v function(self: MCM_TWEAKER, option_key: string)
+function mcm_tweaker.set_selected_option_with_key(self, option_key)
+  if self._options[option_key] == nil then
+      return
+  end
+  self._selectedOption = self._options[option_key]
+end
+
+
+--v function(self: MCM_TWEAKER) --> MCM_OPTION
+function mcm_tweaker.selected_option(self)
+  return self._selectedOption
+end
+
+
+--v function(self: MCM_TWEAKER) --> map<string, MCM_OPTION>
+function mcm_tweaker.options(self)
+  return self._options
+end
+
+--v function(self: MCM_TWEAKER, key: string) --> MCM_OPTION
+function mcm_tweaker.get_option_with_key(self, key)
+  if self:options()[key] == nil then
+      self:log("ERROR: Asked for option ["..key.."] which does not exist for the tweaker ["..self:name().."] in the mod ["..self:mod():name().."] ")
+      return mcm_option.null(self)
+  end
+  return self:options()[key]
+end
+
+--v function(self: MCM_TWEAKER, option_key: string) --> boolean
+function mcm_tweaker.has_option(self, option_key)
+  return not not self._options[option_key]
+end
+
+--v function(self: MCM_TWEAKER) --> number
+function mcm_tweaker.num_options(self)
+  return self._numOptions
+end
+
+
+--v function(self: MCM_TWEAKER, key: string, ui_name: string, ui_tooltip: string) --> MCM_OPTION
+function mcm_tweaker.add_option(self, key, ui_name, ui_tooltip)
+  if not (is_string(key) and  (is_string(ui_name) or not ui_name) and (is_string(ui_tooltip) or not ui_tooltip)) then
+      self:log("ERROR: attempted to create a new option for tweaker ["..self:name().."] in mod ["..self:mod():name().."], but a provided key, ui_name or ui_tooltip was not a string!")
+      return mcm_option.null(self)
+  end
+  if not not self:options()[key] then
+      self:log("WARNING: attempted to create an option with key ["..key.."] for tweaker ["..self:name().."] in mod ["..self:mod():name().."], but an option with that key already exists! Returning the existing option instead")
+      return self:options()[key]
+  end
+  if self._numOptions == 8 then
+      self:log("ERROR: attempted to create a new option for tweaker ["..self:name().."] in mod ["..self:mod():name().."] but that tweaker already has 9 options!")
+      return mcm_option.null(self)
+  end
+  local new_option = mcm_option.new(self, key, ui_name, ui_tooltip)
+  self:options()[key] = new_option
+  self._numOptions = self._numOptions + 1
+  self:log("Created Option with key ["..key.."] for tweaker ["..self:name().."] in mod ["..self:mod():name().."]")
+  if self:selected_option() == nil then
+      self:set_selected_option(new_option)
+      new_option:flag_default()
+      self:log("Created Option is the first option for this tweaker, setting it to be the default!")
+  end
+  return self:options()[key]
+end
+
+--v function(self: MCM_TWEAKER, key: string)
+function mcm_tweaker.make_option_default(self, key)
+  if not self:has_option(key) then
+      self:log("Failed to make option ["..key.."] default, it was not found on this tweaker!")
+      return
+  end
+  local opt = self:get_option_with_key(key)
+  opt:flag_default()
+  local old = self:selected_option()
+  old:no_longer_default()
+  self:set_selected_option(opt)
+end
+
+--v function(self: MCM_TWEAKER, text: string)
+function mcm_tweaker.set_ui_name(self, text)
+  self._UIName = text
+end
+
+--v function(self: MCM_TWEAKER, text: string)
+function mcm_tweaker.set_ui_tooltip(self, text)
+  self._UIToolTip = text
+end
+
+--v function(self: MCM_TWEAKER) --> string
+function mcm_tweaker.ui_name(self)
+  return self._UIName
+end
+
+--v function (self: MCM_TWEAKER) --> string
+function mcm_tweaker.ui_tooltip(self)
+  return self._UIToolTip
+end
+  
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+--v function(self: MCM_MOD) --> map<string, MCM_TWEAKER>
+function mcm_mod.tweakers(self)
+  return self._tweakers
+end
+
+--v function(self: MCM_MOD)--> map<string, MCM_VAR>
+function mcm_mod.variables(self)
+  return self._variables
+end
+
+--v function(self: MCM_MOD) --> string
+function mcm_mod.ui_name(self)
+  return self._UIName
+end
+
+--v function(self: MCM_MOD) --> string
+function mcm_mod.ui_tooltip(self)
+  return self._UIToolTip
+end
+
+--v function(self: MCM_MOD, key: string) --> boolean
+function mcm_mod.has_tweaker(self, key)
+  return not not self:tweakers()[key]
+end
+
+--v function(self: MCM_MOD, key: string) --> boolean
+function mcm_mod.has_variable(self, key)
+  return not not self:variables()[key]
+end
+
+--v function(self: MCM_MOD, key: string) --> MCM_TWEAKER
+function mcm_mod.get_tweaker_with_key(self, key)
+  if self:tweakers()[key] == nil then
+      self:log("ERROR: Asked for tweaker ["..key.."] which does not exist for the mod ["..self:name().."]")
+      return mcm_tweaker.null(self)
+  end
+  return self:tweakers()[key]
+end
+
+--v function(self: MCM_MOD, key: string) --> MCM_VAR
+function mcm_mod.get_variable_with_key(self, key)
+  if self:variables()[key] == nil then
+      self:log("ERROR: Asked for tweaker ["..key.."] which does not exist for the mod ["..self:name().."]")
+      return mcm_var.null(self)
+  end
+  return self:variables()[key]
+end
+
+
+
+--v function(self: MCM_MOD, key: string, ui_name: string, ui_tooltip: string) --> MCM_TWEAKER
+function mcm_mod.add_tweaker(self, key, ui_name, ui_tooltip)
+  if not (is_string(key) and  (is_string(ui_name) or not ui_name) and (is_string(ui_tooltip) or not ui_tooltip)) then
+      self:log("ERROR: attempted to create a new tweaker for mod ["..self:name().."], but a provided key, ui_name or ui_tooltip was not a string!")
+      return mcm_tweaker.null(self)
+  end
+  if not not self:tweakers()[key] then
+      self:log("WARNING: attempted to create a tweaker with key ["..key.."] for mod ["..self:name().."], but a tweaker with that key already exists! Returning the existing tweaker instead")
+      return self:tweakers()[key]
   end
 
-  local logText = tostring(text)
-  local popLog = io.open("coordinates.txt","a")
-  popLog :write(logText)
-  popLog :flush()
-  popLog :close()
+  local new_tweaker = mcm_tweaker.new(self, key, ui_name, ui_tooltip)
+  self:tweakers()[key] = new_tweaker
+  self:log("created tweaker ["..key.."] for mod ["..self:name().."]")
+  return self:tweakers()[key]
+end
+
+--v function(self: MCM_MOD, key: string, min: number, max: number, default: number, step: number, ui_name: string, ui_tooltip: string) --> MCM_VAR
+function mcm_mod.add_variable(self, key, min, max, default, step, ui_name, ui_tooltip)
+  if (ui_name and not is_string(ui_name)) or (ui_tooltip and not is_string(ui_tooltip)) or (not is_string(key)) then
+      self:log("ERROR: attempted to create a new variable for mod ["..self:name().."], but a provided key, ui_name or ui_tooltip was not a string!")
+      return mcm_var.null(self)
+  end
+  if not (is_number(min) and is_number(max) and is_number(default) and is_number(step)) then
+      self:log("ERROR: attempted to create a new variable for mod ["..self:name().."], but a provided min, max, default, or step was not a number!")
+      return mcm_var.null(self)
+  end
+  if not not self:variables()[key] then
+      self:log("WARNING: attempted to create a variable with key ["..key.."] for mod ["..self:name().."], but a variable with that key already exists! Returning the existing variable instead")
+      return self:variables()[key]
+  end
+  local new_variable = mcm_var.new(self, key, min, max, default, step, ui_name, ui_tooltip)
+  self:variables()[key] = new_variable
+  self:log("created variable ["..key.."] for mod ["..self:name().."]")
+  return self:variables()[key]
 end
 
 
-core:add_listener(
-  "WritingDownShit",
-  "ShortcutTriggered",
-  function(context) return context.string == "camera_bookmark_view0"; end, --default F9
-  function(context)
-      if not cm:get_saved_value("wars_declared_testing") then
-          for i = 0, cm:model():world():faction_list():num_items() - 1 do
-              if not cm:model():world():faction_list():item_at(i):is_dead() or cm:model():world():faction_list():item_at(i):name() == "wh_main_chs_chaos" then
-                  cm:force_declare_war(cm:model():world():faction_list():item_at(i):name(), "wh_main_chs_chaos", false, false)
-                  cm:set_saved_value("wars_declared_testing", true)
-              end
+--v function(self: MCM_MOD, setting: MCM_TWEAKER | MCM_VAR) --> boolean 
+function mcm_mod.reset_setting_to_default(self, setting)
+  if self:model().is_tweaker(setting) then
+      --# assume setting: MCM_TWEAKER
+      self:log("Resetting a tweaker with name ["..setting:name().."] to default")
+      for key, option in pairs(setting:options()) do
+          if option:is_default() then
+              setting:set_selected_option(option)
+              return true
           end
       end
-
-      local character = cm:get_faction("wh_main_chs_chaos"):faction_leader()
-      WRITE("[\""..character:region():name().." \"] = {"..character:logical_position_x()..","..character:logical_position_y().."}, \n")
-  end,
-  true
-)
---]]
-
-local mcm = _G.mcm
-if not not mcm then
-  local cog = mcm:register_mod("gates_of_chaos", "Gates of Chaos", "Spawns Chaos armies from settlements razed by the Warriors of Chaos")
-  local beastmen = cog:add_tweaker("beastmen", "Beastmen Herdstones", "Allow Beastmen Tribes to spawn from herdstones.")
-  beastmen:add_option("disabled", "Disabled", "Do not spawn beastmen armies from Herdstones")
-  beastmen:add_option("enabled", "Enabled", "Spawn Beastmen armies from herdstones"):add_callback(function(context)
-      core:add_listener(
-          "ChaosGatesBeastmenTurnStart",
-          "FactionTurnStart",
-          function(context)
-              return context:faction():is_human()
-          end,
-          function(context)
-              local region_list = cm:model():world():region_manager():region_list()
-              for i = 0, region_list:num_items() - 1 do
-                  local region = region_list:item_at(i)
-                  if not region:settlement():is_null_interface() then
-                      if region_has_herdstone(region) then
-                          beastmen_herds(region)
-                      end
-                  end
-              end
-          end,
-          true)
-          GOCLOG("MCM Added beastmen ruin spawns!")
-  end)
-  local norscaruins = cog:add_tweaker("norscaruins", "Norscan Ruins", "Allow Chaos Warriors to spawn from Norscan Ruins that have been dedicated to the ruinous powers.")
-  norscaruins:add_option("disabled", "Disabled", "Do not spawn armies from Chaos God Monoliths")
-  norscaruins:add_option("enabled", "Enabled", "Spawn armies from Chaos God Monoliths"):add_callback(function(context)
-      local new_buildings = {
-              "wh_main_NORSCA_settlement_major_coast_norscaruin_khorne",
-              "wh_main_NORSCA_settlement_major_coast_norscaruin_nurgle",
-              "wh_main_NORSCA_settlement_major_coast_norscaruin_slaanesh",
-              "wh_main_NORSCA_settlement_major_coast_norscaruin_tzeentch",
-              "wh_main_NORSCA_settlement_major_norscaruin_khorne",
-              "wh_main_NORSCA_settlement_major_norscaruin_nurgle",
-              "wh_main_NORSCA_settlement_major_norscaruin_slaanesh",
-              "wh_main_NORSCA_settlement_major_norscaruin_tzeentch",
-              "wh_main_NORSCA_settlement_minor_coast_norscaruin_khorne",
-              "wh_main_NORSCA_settlement_minor_coast_norscaruin_nurgle",
-              "wh_main_NORSCA_settlement_minor_coast_norscaruin_slaanesh",
-              "wh_main_NORSCA_settlement_minor_coast_norscaruin_tzeentch",
-              "wh_main_NORSCA_settlement_minor_norscaruin_khorne",
-              "wh_main_NORSCA_settlement_minor_norscaruin_nurgle",
-              "wh_main_NORSCA_settlement_minor_norscaruin_slaanesh",
-              "wh_main_NORSCA_settlement_minor_norscaruin_tzeentch",
-              "wh_main_oak_of_ages_norscaruin_khorne",
-              "wh_main_oak_of_ages_norscaruin_nurgle",
-              "wh_main_oak_of_ages_norscaruin_slaanesh",
-              "wh_main_oak_of_ages_norscaruin_tzeentch",
-              "wh_main_sch_settlement_major_coast_norscaruin_khorne",
-              "wh_main_sch_settlement_major_coast_norscaruin_nurgle",
-              "wh_main_sch_settlement_major_coast_norscaruin_slaanesh",
-              "wh_main_sch_settlement_major_coast_norscaruin_tzeentch",
-              "wh_main_sch_settlement_major_norscaruin_khorne",
-              "wh_main_sch_settlement_major_norscaruin_nurgle",
-              "wh_main_sch_settlement_major_norscaruin_slaanesh",
-              "wh_main_sch_settlement_major_norscaruin_tzeentch",
-              "wh_main_sch_settlement_minor_coast_norscaruin_khorne",
-              "wh_main_sch_settlement_minor_coast_norscaruin_nurgle",
-              "wh_main_sch_settlement_minor_coast_norscaruin_slaanesh",
-              "wh_main_sch_settlement_minor_coast_norscaruin_tzeentch",
-              "wh_main_sch_settlement_minor_norscaruin_khorne",
-              "wh_main_sch_settlement_minor_norscaruin_nurgle",
-              "wh_main_sch_settlement_minor_norscaruin_slaanesh",
-              "wh_main_sch_settlement_minor_norscaruin_tzeentch",
-              "wh_main_sch_special_settlement_altdorf_norscaruin_khorne",
-              "wh_main_sch_special_settlement_altdorf_norscaruin_nurgle",
-              "wh_main_sch_special_settlement_altdorf_norscaruin_slaanesh",
-              "wh_main_sch_special_settlement_altdorf_norscaruin_tzeentch",
-              "wh_main_sch_special_settlement_black_crag_norscaruin_khorne",
-              "wh_main_sch_special_settlement_black_crag_norscaruin_nurgle",
-              "wh_main_sch_special_settlement_black_crag_norscaruin_slaanesh",
-              "wh_main_sch_special_settlement_black_crag_norscaruin_tzeentch",
-              "wh_main_sch_special_settlement_castle_drakenhof_norscaruin_khorne",
-              "wh_main_sch_special_settlement_castle_drakenhof_norscaruin_nurgle",
-              "wh_main_sch_special_settlement_castle_drakenhof_norscaruin_slaanesh",
-              "wh_main_sch_special_settlement_castle_drakenhof_norscaruin_tzeentch",
-              "wh_main_sch_special_settlement_couronne_norscaruin_khorne",
-              "wh_main_sch_special_settlement_couronne_norscaruin_nurgle",
-              "wh_main_sch_special_settlement_couronne_norscaruin_slaanesh",
-              "wh_main_sch_special_settlement_couronne_norscaruin_tzeentch",
-              "wh_main_sch_special_settlement_eight_peaks_norscaruin_khorne",
-              "wh_main_sch_special_settlement_eight_peaks_norscaruin_nurgle",
-              "wh_main_sch_special_settlement_eight_peaks_norscaruin_slaanesh",
-              "wh_main_sch_special_settlement_eight_peaks_norscaruin_tzeentch",
-              "wh_main_sch_special_settlement_karaz_a_karak_norscaruin_khorne",
-              "wh_main_sch_special_settlement_karaz_a_karak_norscaruin_nurgle",
-              "wh_main_sch_special_settlement_karaz_a_karak_norscaruin_slaanesh",
-              "wh_main_sch_special_settlement_karaz_a_karak_norscaruin_tzeentch",
-              "wh_main_sch_special_settlement_kislev_norscaruin_khorne",
-              "wh_main_sch_special_settlement_kislev_norscaruin_nurgle",
-              "wh_main_sch_special_settlement_kislev_norscaruin_slaanesh",
-              "wh_main_sch_special_settlement_kislev_norscaruin_tzeentch",
-              "wh_main_sch_special_settlement_miragliano_norscaruin_khorne",
-              "wh_main_sch_special_settlement_miragliano_norscaruin_nurgle",
-              "wh_main_sch_special_settlement_miragliano_norscaruin_slaanesh",
-              "wh_main_sch_special_settlement_miragliano_norscaruin_tzeentch"
-      } --:vector<string>
-      for i = 1, #new_buildings do
-          table.insert(goc_settings.DF_CHAOS_PORTAL_BUILDING, new_buildings[i])
-      end
-      GOCLOG("MCM Added norscan ruin spawns!")
-  end)
-  cog:add_variable("spawn_rate", 2, 90, 10, 4, "Spawn Chance", "Chance to spawn an army"):add_callback(function(context)
-      goc_settings.DF_CHAOS_SPAWN_CHANCE = context:get_mod("gates_of_chaos"):get_variable_with_key("spawn_rate"):current_value()
-      GOCLOG("MCM Modified Spawn Rate to ["..goc_settings.DF_CHAOS_SPAWN_CHANCE.."]!")
-  end)
-  cog:add_variable("max_army_size", 5, 20, 14, 1, "Army Maximum Size", "Maximum potential size of a spawned army"):add_callback(function(context)
-      local max = context:get_mod("gates_of_chaos"):get_variable_with_key("max_army_size"):current_value()
-      local mid = max - 2 
-      local low = mid - 2
-      goc_settings.DF_CHAOS_ARMY_SIZES = {low, mid, max}
-      GOCLOG("MCM Modified Army Size to ["..max.."],["..mid.."],["..low.."]!")
-  end)
+      self:log("Warning! Asked for a reset to default but could not find an option which has a default flag!")
+      return false
+  elseif self:model().is_variable(setting) then
+      --# assume setting: MCM_VAR
+      self:log("Resetting a variable with name ["..setting:name().."] to default")
+      setting:set_current_value(setting:default_value())
+      return true
+  else
+      self:log("Error! Asked to reset a setting to default by the given object of type ["..type(setting).."], which tostrings to ["..tostring(setting).."], could not be recognized")
+      return false
+  end
 end
 
---[[
+--v function(self: MOD_CONFIGURATION_MANAGER) --> map<string, MCM_MOD>
+function mod_configuration_manager.get_mods(self)
+  return self._registeredMods
+end
 
-UPDATED TO EDGELORD AND THE RAT MAN 
 
---]]
+
+--v function(self: MOD_CONFIGURATION_MANAGER, key: string, ui_name: string, ui_tooltip: string) --> MCM_MOD
+function mod_configuration_manager.register_mod(self, key, ui_name, ui_tooltip)
+  if not (is_string(key) and (is_string(ui_name) or not ui_name) and (is_string(ui_tooltip) or not ui_tooltip))then 
+      self:log("ERROR: attempted to create a new mod, but a provided key, ui_text, or ui_tooltip is not a string!")
+      return mcm_mod.null(self)
+  end
+  if not not self:get_mods()[key] then
+      self:log("WARNING: attempted to create a new mod, but a mod already exists with the provided key!; returning that instead")
+      return self:get_mods()[key]
+  end
+  local new_mod = mcm_mod.new(self, key, ui_name, ui_tooltip)
+  self:get_mods()[key] = new_mod
+  self:log("registered mod ["..key.."]")
+  return self:get_mods()[key]
+end
+
+--v function(self: MOD_CONFIGURATION_MANAGER, key: string) --> MCM_MOD
+function mod_configuration_manager.get_mod(self, key) 
+  if not self:get_mods()[key] then
+      self:log("ERROR: Called get mod for key ["..key.."] but no mod exists with this key!")
+      return mcm_mod.null(self)
+  end
+  return self:get_mods()[key]
+end
+
+--v function(self: MOD_CONFIGURATION_MANAGER, key: string) --> boolean
+function mod_configuration_manager.has_mod(self, key)
+  return not not self._registeredMods[key]
+end
+
+
+--v function(self: MOD_CONFIGURATION_MANAGER, variable: MCM_VAR) 
+function mod_configuration_manager.handle_variable(self, variable)
+  self:log("handling variable ["..variable:name().."] with key [mcm_variable_"..variable:mod():name().."_"..variable:name().."_value] at value ["..tostring(variable:current_value()).."]")
+  cm:set_saved_value("mcm_variable_"..variable:mod():name().."_"..variable:name().."_value", variable:current_value())
+  if variable:has_callback() then
+      variable:callback()
+  end
+  core:trigger_event("mcm_variable_"..variable:mod():name().."_"..variable:name().."_event", tostring(variable:current_value()))
+end
+      
+--v function(self: MOD_CONFIGURATION_MANAGER, tweaker: MCM_TWEAKER)
+function mod_configuration_manager.handle_tweaker(self, tweaker)
+  self:log("handling tweaker ["..tweaker:name().."] with key [mcm_tweaker_"..tweaker:mod():name().."_"..tweaker:name().."_value] with option ["..tostring(tweaker:selected_option():name()).."]")
+  cm:set_saved_value("mcm_tweaker_"..tweaker:mod():name().."_"..tweaker:name().."_value", tweaker:selected_option():name())
+  if tweaker:selected_option():has_callback() then
+      tweaker:selected_option():callback()
+  end
+  core:trigger_event("mcm_tweaker_"..tweaker:mod():name().."_"..tweaker:name().."_event", tostring(tweaker:selected_option():name()))
+  self:log("Triggering event [mcm_tweaker_"..tweaker:mod():name().."_"..tweaker:name().."_event] with value ["..tostring(tweaker:selected_option():name()).."]")
+end
+
+--v function(self: MOD_CONFIGURATION_MANAGER)
+function mod_configuration_manager.restore_save_state(self)
+  self:log("Restoring the Saved State!")
+  for name, mod in pairs(self:get_mods()) do
+      for tweaker_key, tweaker in pairs(mod:tweakers()) do
+          local sv = cm:get_saved_value("mcm_tweaker_"..mod:name().."_"..tweaker:name().."_value")
+          if not not sv then
+              --# assume sv: string
+              tweaker:set_selected_option(tweaker:get_option_with_key(sv))
+          end
+      end
+      for variable_key, variable in pairs(mod:variables()) do
+          local sv = cm:get_saved_value("mcm_variable_"..mod:name().."_"..variable:name().."_value")
+          if not not sv then
+              --# assume sv: number
+              variable:set_current_value(sv)
+          end
+      end
+  end
+end
+
+--v function(self: MOD_CONFIGURATION_MANAGER, name: string) --> boolean
+function mod_configuration_manager.started_with_mod(self, name)
+  local val = cm:get_saved_value("mcm_started_with_mod_"..name)
+  return not not val
+end
+
+
+--v function(self: MOD_CONFIGURATION_MANAGER)
+function mod_configuration_manager.process_all_mods(self)
+  local mcm_finalized = cm:get_saved_value("mcm_finalized") or false
+  for i = 1, #self._preProcessCallbacks do
+      self:log("Running pre process callbacks")
+      self._preProcessCallbacks[i]()
+  end
+  if mcm_finalized then
+      self:restore_save_state()
+  end
+  self:log("Processing Settings")
+  for name, mod in pairs(self:get_mods()) do
+      if not mcm_finalized then
+          cm:set_saved_value("mcm_started_with_mod_"..name, true)
+      end
+      for tweaker_key, tweaker in pairs(mod:tweakers()) do
+          self:handle_tweaker(tweaker)
+      end
+      for variable_key, variable in pairs(mod:variables()) do
+          self:handle_variable(variable)
+      end
+  end
+  if not mcm_finalized then
+      self:log("Running new game callbacks")
+      for i = 1, #self._newGameOnlyCallbacks do
+          self._newGameOnlyCallbacks[i]()
+      end
+  end
+  self:log("Running post process callbacks")
+  for i = 1, #self._postProcessCallbacks do
+      self._postProcessCallbacks[i]()
+  end
+  self:log("MCM Completed")
+  cm:set_saved_value("mcm_finalized", true)
+end
+
+--v function(self: MOD_CONFIGURATION_MANAGER)
+function mod_configuration_manager.sync_for_mp(self)
+  local mcm_finalized = cm:get_saved_value("mcm_finalized") or false
+  if cm:is_multiplayer() and not mcm_finalized then
+      self:log("Beginning MP Settings Snychronization!")
+      local sync_data = {} --:map<string, map<string, WHATEVER>>
+      for name, mod in pairs(self:get_mods()) do
+          self:log("\tPrparing mod with key ["..name.."] for export")
+          sync_data[name.."_T!"] = {}
+          sync_data[name.."_V!"] = {}
+          for tweaker_key, tweaker in pairs(mod:tweakers()) do
+              local value = tweaker:selected_option():name()
+              if value then
+                  self:log("\t\tExporting Tweaker ["..tweaker_key.."] with value ["..value.."]")
+                  sync_data[name.."_T!"][tweaker_key] = value
+              else
+                  self:log("\t\tWARNING: Exporting Tweaker ["..tweaker_key.."] failed. No value is found for this tweaker.")
+              end
+          end
+          for variable_key, variable in pairs(mod:variables()) do
+              self:log("\t\tExporting Variable ["..variable_key.."] with value ["..variable:current_value().."]")
+              sync_data[name.."_V!"][variable_key] = variable:current_value()
+          end
+      end
+      local snyc_string = cm:process_table_save(sync_data)
+      CampaignUI.TriggerCampaignScriptEvent(cm:get_faction(cm:get_local_faction(true)):command_queue_index(), "mcm|sync|"..snyc_string)
+      self:log("Sync data sent!")
+  else
+      self:log("MCM already finalized, or it is a singleplayer game: No MP Sync is being preformed")
+  end
+end
+
+--v function(self: MOD_CONFIGURATION_MANAGER, callback: function())
+function mod_configuration_manager.add_post_process_callback(self, callback)
+  table.insert(self._postProcessCallbacks, callback)
+end
+
+--v function(self: MOD_CONFIGURATION_MANAGER, callback: function())
+function mod_configuration_manager.add_pre_process_callback(self, callback)
+  table.insert(self._preProcessCallbacks, callback)
+end
+
+--v function(self: MOD_CONFIGURATION_MANAGER, callback: function())
+function mod_configuration_manager.add_new_game_only_callback(self, callback)
+  table.insert(self._newGameOnlyCallbacks, callback)
+end
+
+
+
+mod_configuration_manager.init():error_checker()
+core:add_static_object("mod_configuration_manager", _G.mcm, true)

@@ -154,3 +154,7 @@ core:add_listener(
     end,
   true
 );
+
+if not not SRW_Free_Units then
+  PAILOG("supply lines rework")
+end
