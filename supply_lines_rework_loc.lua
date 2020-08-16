@@ -219,6 +219,10 @@ local SRW_Free_Units = {
   ["wh2_main_hef_cav_silver_helms_0-wh2_main_hef_tyrion"] = 0,
   ["wh2_main_hef_cav_silver_helms_1-wh2_main_hef_tyrion"] = 0,
   ["wh2_dlc10_hef_inf_the_scions_of_mathlann_ror_0-wh2_main_hef_tyrion"] = 0,
+  ["wh2_dlc15_hef_inf_silverin_guard_0-wh2_main_hef_tyrion"] = 0,
+  ["wh2_main_hef_inf_lothern_sea_guard_0-wh2_main_hef_tyrion"] = 0,
+  ["wh2_main_hef_inf_lothern_sea_guard_1-wh2_main_hef_tyrion"] = 0,
+  ["wh2_dlc10_hef_inf_the_storm_riders_ror_0-wh2_main_hef_tyrion"] = 0,
   ["wh2_dlc10_hef_inf_shadow_walkers_0-wh2_dlc10_hef_alith_anar"] = 0,
   ["wh2_main_hef_inf_white_lions_of_chrace_0-wh2_main_hef_prince_alastar"] = 0,
   ["wh2_dlc10_hef_inf_the_silverpelts_ror_0-wh2_main_hef_prince_alastar"] = 0,
@@ -1511,32 +1515,32 @@ core:add_listener(
   true
 );
 
-core:add_listener(
-  "SRW_UnitDisbanded",
-  "UnitDisbanded",
-  function(context)
-    local key = context:unit():unit_key()
-    local faction = context:unit():faction()
-    local army = context:unit():military_force();
+-- core:add_listener(
+--   "SRW_UnitDisbanded",
+--   "UnitDisbanded",
+--   function(context)
+--     local key = context:unit():unit_key()
+--     local faction = context:unit():faction()
+--     local army = context:unit():military_force();
 
-    return (faction:is_human() and (SRW_Supply_Cost[key] > 0) and not srw_faction_is_horde(faction) and not (faction:culture() == "wh2_dlc09_tmb_tomb_kings") and not (faction:culture() == "wh_main_brt_bretonnia"))
-  end,  
-  function(context)
-    local army = context:unit():military_force();
-    local key = context:unit():unit_key()
+--     return (faction:is_human() and (SRW_Supply_Cost[key] > 0) and not srw_faction_is_horde(faction) and not (faction:culture() == "wh2_dlc09_tmb_tomb_kings") and not (faction:culture() == "wh_main_brt_bretonnia"))
+--   end,  
+--   function(context)
+--     local army = context:unit():military_force();
+--     local key = context:unit():unit_key()
 
-    cm:callback(function()
-      SRWLOG("======================");
-      SRWLOG("APPLY UPKEEP (DISBAND)");
-      SRWLOG(key)
+--     cm:callback(function()
+--       SRWLOG("======================");
+--       SRWLOG("APPLY UPKEEP (DISBAND)");
+--       SRWLOG(key)
       
-      if army:has_general() then
-        srw_this_army_upkeep(army)
-      end
-    end, 0.4);
-  end,
-  true
-);
+--       if army:has_general() then
+--         srw_this_army_upkeep(army)
+--       end
+--     end, 0.4);
+--   end,
+--   true
+-- );
 
 core:add_listener(
   "SRW_RaiseDead",

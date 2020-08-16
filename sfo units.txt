@@ -44,3 +44,13 @@ FAQ
 
 Q: Что с поддержкой отрядов из других модов?
 A: Этот мод уже поддерживает Mixu's Legendary Lords, Cataph's Southern Realms и Cataph's Kraka Drak. Снабжение для войск из других модов будет определяться автоматически на основании типа отряда
+
+
+
+Supply cost customization
+
+If you are mod creator you can customize supply cost for units via localisation files in your own mods.
+If you want set supply cost for some unit you should add new row in localisation file like this:
+
+If you want add special supply cost for unit in lord army you should add new row like this:
+

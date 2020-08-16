@@ -71,11 +71,10 @@ local function PAINEWLOG()
 end
 PAINEWLOG()
 
-local function pai_culture_check(faction)
+local function pai_culture_check(faction, this_turn)
   PAILOG("-------------");
   PAILOG("CURRENT FACTION IS "..tostring(faction:name()));
   local subculture = faction:subculture();
-  local this_turn = cm:model():turn_number();
   local player_faction = cm:get_local_faction();
   local player_subculture = cm:get_faction(player_faction):subculture();
   --IN ENGAME ALL AI FACTION GIVE FULL BONUS
@@ -83,44 +82,34 @@ local function pai_culture_check(faction)
     PAILOG("WARHAMMER: ENDGAME");
     return true
   end;
-  -- in Marcus Wulfhart campaign all lizardmen give bonus
-  if subculture == "wh2_main_sc_lzd_lizardmen" and player_faction == "wh2_dlc13_emp_the_huntmarshals_expedition" then
-    PAILOG("Marcus Wulfhart VS LIZARDMEN");
-    return true
-  end;
-  if faction:name() == "wh2_dlc13_emp_the_huntmarshals_expedition" and player_subculture == "wh2_main_sc_lzd_lizardmen" then
-    PAILOG("Marcus Wulfhart VS LIZARDMEN");
-    return true
-  end;
-  --some factions are ignore next rules
-  if IGNORE_SAME_CULTURE[subculture] then
-    PAILOG("this faction always give bonus");
-    return true
-  end;
   --  dont give bonus if AI has same culture as player
   if player_subculture == subculture then
       PAILOG("SAME CULTURE AS PLAYER "..tostring(player_faction));
       return false
   end;
-  if vfs.exists("script/campaign/main_warhammer/mod/jadawin_unnatural_selection_2.lua") then
-    PAILOG("UnnaturalSelection 2 is enable");
-    return true
+  PAILOG("NOT SAME CULTURE AS PLAYER");
+  return true
+end;
+
+local function apply_bonus(faction, turn, this_turn)
+  if this_turn < turn then 
+    return
+  end
+
+  local subculture = faction:subculture();
+  local effect_name = ("pai_bonus_"..tostring(turn))
+  
+  if subculture == "wh2_dlc09_sc_tmb_tomb_kings" then
+    effect_name = ("pai_bonus_"..tostring(turn).."_tmb")
+  end
+  
+  if not faction:has_effect_bundle(effect_name) then
+    local faction_name = faction:name()
+    cm:apply_effect_bundle(effect_name, faction_name, 0)
+    PAILOG("APPLY "..effect_name.." TO FACTION "..tostring(faction_name));
   end;
 
-  --in Vortex all cultures give bonus
-  if cm:model():campaign_name("wh2_main_great_vortex") then
-    PAILOG("Vortex - all cultures give bonus");
-    return true
-  end;
-  --give bonus to good faction if player is evil
-  if EVIL_FACTIONS[player_subculture] then
-    PAILOG("give bonus to good faction if player is evil");
-    return true
-  end;
-  --if player not evil see in list
-  PAILOG("if player not evil see in list");
-  return EARLY_GAME_BOOST[subculture]
-end;
+end
 
 core:add_listener(
   "PAI_FactionTurnStart",
@@ -133,25 +122,15 @@ core:add_listener(
   function(context)
     local faction = context:faction();
     local this_turn = cm:model():turn_number();
-    local pai_culture_check = pai_culture_check(faction);
-
-    if this_turn >= 30 and pai_culture_check and not faction:has_effect_bundle("pai_bonus_30") then
-      cm:apply_effect_bundle("pai_bonus_30", faction:name(), 0)
-      PAILOG("APPLY pai_bonus_30 TO FACTION "..tostring(faction:name()));
+    local pai_culture_check = pai_culture_check(faction, this_turn);
+    
+    if pai_culture_check then
+      apply_bonus(faction, 30, this_turn)
+      apply_bonus(faction, 60, this_turn)
+      apply_bonus(faction, 90, this_turn)
+      apply_bonus(faction, 120, this_turn)
     end;
-    if this_turn >= 60 and pai_culture_check and not faction:has_effect_bundle("pai_bonus_60") then
-      cm:apply_effect_bundle("pai_bonus_60", faction:name(), 0)
-      PAILOG("APPLY pai_bonus_60 TO FACTION "..tostring(faction:name()));
-    end;
-    if this_turn >= 90 and not faction:has_effect_bundle("pai_bonus_90") then
-      cm:apply_effect_bundle("pai_bonus_90", faction:name(), 0)
-      PAILOG("APPLY pai_bonus_90 TO FACTION "..tostring(faction:name()));
-    end;   
-    if this_turn >= 120 and not faction:has_effect_bundle("pai_bonus_120") then
-      cm:apply_effect_bundle("pai_bonus_120", faction:name(), 0)
-      PAILOG("APPLY pai_bonus_120 TO FACTION "..tostring(faction:name()));
-    end;
-    end,
+  end,
   true
 );
 
