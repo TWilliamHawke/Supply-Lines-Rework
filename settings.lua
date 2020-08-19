@@ -30,6 +30,7 @@ supply_lines_rw:set_description(loc_prefix.."mod_desc", true)
 supply_lines_rw:set_log_file_path("supply_rework_log.txt")
 
 
+
 local enable_player = supply_lines_rw:add_new_option("a_player_enable", "checkbox")
 enable_player:set_default_value(true)
 enable_player:set_text("mct_supply_lines_rw_a_player_enable_text", true)
@@ -62,8 +63,25 @@ ai_effect:slider_set_min_max(0, 15)
 ai_effect:set_default_value(0)
 ai_effect:slider_set_step_size(1)
 
-local technical = supply_lines_rw:add_new_section("section_test")
-technical:set_localised_text("Debug secction")
+local settings_section = supply_lines_rw:add_new_section("settings_sectiom")
+settings_section:set_localised_text("Advanced settings")
+
+local unit_base_supply = supply_lines_rw:add_new_option("c_c_unit_supply", "slider")
+unit_base_supply:set_text("mct_supply_lines_rw_c_c_unit_supply_text", true)
+unit_base_supply:set_tooltip_text("mct_supply_lines_rw_c_c_unit_supply_tt", true)
+unit_base_supply:slider_set_min_max(-3, 3)
+unit_base_supply:set_default_value(0)
+unit_base_supply:slider_set_step_size(1)
+
+local lord_base_supply = supply_lines_rw:add_new_option("c_d_lord_supply", "slider")
+lord_base_supply:set_text("mct_supply_lines_rw_c_d_lord_supply_text", true)
+lord_base_supply:set_tooltip_text("mct_supply_lines_rw_c_d_lord_supply_tt", true)
+lord_base_supply:slider_set_min_max(0, 30)
+lord_base_supply:set_default_value(0)
+lord_base_supply:slider_set_step_size(1)
+
+local technical = supply_lines_rw:add_new_section("technical_section")
+technical:set_localised_text("Debug section")
 
 local enable_logging = supply_lines_rw:add_new_option("f_enable_logging", "checkbox")
 enable_logging:set_default_value(false)

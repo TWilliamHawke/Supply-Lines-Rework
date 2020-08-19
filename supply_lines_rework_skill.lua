@@ -53,6 +53,8 @@ local ai_supply_enabled = false;
 local ai_supply_mult = 0
 local player_supply_custom_mult = "disabled"
 local bretonnia_supply = false
+local basic_unit_supply = 0
+local basic_lord_supply = 0
 
 local SRW_Free_Units = {
 --Empire
@@ -633,12 +635,15 @@ local SRW_Lord_Skills_Cost = {
   ["wh_main_vmp_mon_vargheists-Carstain"] = {"wh2_dlc11_skill_vmp_bloodline_von_carstein_unique_brooding_horrors", 1},
   ["wh_main_vmp_cav_black_knights_0-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_doomrider", 0},
   ["wh_main_vmp_cav_black_knights_3-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_doomrider", 1},
+  ["wh2_mixu_vmp_cav_black_knights_sword-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_doomrider", 0},
+  ["wh2_mixu_vmp_cav_black_knights_lance-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_doomrider", 1},
   ["wh_dlc04_vmp_cav_vereks_reavers_0-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_doomrider", 2},
   ["wh_dlc04_vmp_inf_sternsmen_0-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_grave_sentinels", 2},
   ["wh_main_vmp_inf_grave_guard_0-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_grave_sentinels", 1},
   ["wh_main_vmp_inf_grave_guard_1-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_grave_sentinels", 1},
   ["wh_dlc02_vmp_cav_blood_knights_0-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_the_ordo_draconis", 3},
   ["wh_main_vmp_inf_crypt_ghouls-Strigoi"] = {"wh2_dlc11_skill_vmp_bloodline_strigoi_unique_grave_eaters", 0},
+  ["mixu_vmp_inf_crypt_ghouls-Strigoi"] = {"wh2_dlc11_skill_vmp_bloodline_strigoi_unique_grave_eaters", 0},
   ["wh_dlc04_vmp_inf_feasters_in_the_dusk_0-Strigoi"] = {"wh2_dlc11_skill_vmp_bloodline_strigoi_unique_grave_eaters", 1},
   ["wh_main_vmp_mon_crypt_horrors-Strigoi"] = {"wh2_dlc11_skill_vmp_bloodline_strigoi_unique_monstrosities_of_morr", 0},
   ["wh_dlc04_vmp_veh_mortis_engine_0-Ghorst"] = {"wh_dlc04_skill_vmp_lord_unique_helman_ghorst_corpse_cart_boost", 0},
@@ -2123,7 +2128,7 @@ local SRW_Supply_Cost = {
   ["wh2_mixu_vmp_cav_mounted_yeomen"] = 0,
   ["mixu_vmp_inf_crypt_ghouls"] = 1,
   ["wh2_mixu_vmp_cav_black_knights_sword"] = 1,
-  ["wh2_mixu_vmp_cav_black_knights_lance"] = 1,
+  ["wh2_mixu_vmp_cav_black_knights_lance"] = 2,
   
   ["wh2_mixu_vmp_inf_wailing_hags"] = 2,
   ["wh2_mixu_vmp_cav_knights_errant"] = 2,
@@ -2229,21 +2234,29 @@ local function calculate_unit_supply(unit)
   if uclass == "com" then
     return 0
   elseif ucost == 0 then
-    return 1
+    return 1 + basic_unit_supply
   elseif ucost >= 1800 then
-    return 4
+    return 4 + basic_unit_supply
   elseif ucost >= 1400 then
-    return 3
+    return 3 + basic_unit_supply
   elseif ucost >= 1000 then
-    return 2
+    return 2 + basic_unit_supply
   elseif ucost >= 600 then
-    return 1
+    return 1 + basic_unit_supply
   end;
-  return 0;
-end;  
+  return basic_unit_supply;
+end; 
+
+local function get_unit_supply(key)
+  if SRW_Supply_Cost[key] ~= nil then
+    return basic_unit_supply + SRW_Supply_Cost[key]
+  else
+    return nil
+  end
+end
 
 local function calculate_army_supply(unit_list, commander)
-  local this_army_supply = 0;
+  local this_army_supply = basic_lord_supply;
   local character = commander:character_subtype_key()
   SRWLOG("--------");
   SRWLOG("Lord of this army is "..tostring(character));
@@ -2251,9 +2264,12 @@ local function calculate_army_supply(unit_list, commander)
   for j = 0, unit_list:num_items() - 1 do
     local unit = unit_list:item_at(j);
     local key = unit:unit_key();
-    local val = SRW_Supply_Cost[key] or calculate_unit_supply(unit);
+    local val = get_unit_supply(key);
+    if val == nil then
+      val = calculate_unit_supply(unit)
+    end;
     if SRW_Free_Units[key.."-"..character] ~= nil then
-      val = SRW_Free_Units[key.."-"..character];
+      val = SRW_Free_Units[key.."-"..character] + basic_unit_supply;
       SRWLOG(tostring(key).." REQUIRES "..val.."SP IN ARMY OF "..tostring(character));
     end
     if SRW_Lord_Group[character] then
@@ -2262,10 +2278,13 @@ local function calculate_army_supply(unit_list, commander)
         local bonus_skill = SRW_Lord_Skills_Cost[key.."-"..name][1]
         local bonus_skill2 = SRW_Lord_Skills_Cost[key.."-"..name][3] or "srw_skill"
         if commander:has_skill(bonus_skill) or commander:has_skill(bonus_skill2) then
-          val = SRW_Lord_Skills_Cost[key.."-"..name][2];
+          val = SRW_Lord_Skills_Cost[key.."-"..name][2] + basic_unit_supply;
           SRWLOG(tostring(name).." HAS "..tostring(bonus_skill).." SO "..tostring(key).." REQUIRES "..val);
         end
       end
+    end
+    if val < 0 then
+      val = 0
     end
     this_army_supply = this_army_supply + val;
   end; --units
@@ -2447,14 +2466,23 @@ local function set_tooltip_text_treasury(faction, component_name)
 
 end;
 
+local function get_unknown_text()
+  local unknown_text = localizator("SRW_unit_supply_cost_unknown")
+  for n = 0, 4 do
+    local this_price_supply = n + basic_unit_supply
+    if this_price_supply < 0 then
+      this_price_supply = 0
+    end
+    unknown_text = string.gsub(unknown_text, "SRW_Cost_"..n, tostring(this_price_supply))
+  end;
+  return unknown_text
+end;
+
 
 local function set_supply_text(cost, is_basic_value)
-  if cost == -1 then
-    return localizator("SRW_unit_supply_cost_unknown")
-  end
 
   if is_basic_value then
-    if cost == 0 then
+    if cost <= 0 then
       return localizator("SRW_unit_supply_cost_zero")
     elseif cost == 1 then
       return localizator("SRW_unit_supply_cost_one")
@@ -2463,7 +2491,7 @@ local function set_supply_text(cost, is_basic_value)
       return string.gsub(imported_text, "SRW_Cost", tostring(cost))    
     end
   else
-    if cost == 0 then
+    if cost <= 0 then
       return localizator("SRW_unit_supply_cost_lord")
     elseif cost == 1 then
       return localizator("SRW_unit_supply_cost_lord_one")
@@ -2472,8 +2500,7 @@ local function set_supply_text(cost, is_basic_value)
       return string.gsub(imported_text, "SRW_Cost", tostring(cost))    
     end
   end
-
-  return localizator("SRW_unit_supply_cost_unknown")
+  return get_unknown_text()
 end
 
 local function set_unit_tooltip(component, text)
@@ -2483,16 +2510,15 @@ local function set_unit_tooltip(component, text)
   local component_name = component:Id();
   local unit_name = string.gsub(component_name, text, "")
   local old_text = component:GetTooltipText();
-  local unit_cost = SRW_Supply_Cost[unit_name] or -1
+  local unit_cost = get_unit_supply(unit_name)
   local is_basic_cost = true
 
   local selected_char = tostring(SRW_selected_character:character_subtype_key())
 
   if SRW_Free_Units[unit_name.."-"..selected_char] ~= nil then
-    unit_cost = SRW_Free_Units[unit_name.."-"..selected_char]
+    unit_cost = SRW_Free_Units[unit_name.."-"..selected_char] + basic_unit_supply  
     is_basic_cost = false
   end
-
   if SRW_Lord_Group[selected_char] then
 
     local name = SRW_Lord_Group[selected_char]
@@ -2502,13 +2528,18 @@ local function set_unit_tooltip(component, text)
       local bonus_skill2 = SRW_Lord_Skills_Cost[unit_name.."-"..name][3] or "srw_skill"
       if SRW_selected_character:has_skill(bonus_skill) or SRW_selected_character:has_skill(bonus_skill2) then
         is_basic_cost = false
-        unit_cost = SRW_Lord_Skills_Cost[unit_name.."-"..name][2];
+        unit_cost = SRW_Lord_Skills_Cost[unit_name.."-"..name][2] + basic_unit_supply;      
       end
     end
   end
 
   SRWLOGDEBUG("SET SUPPLY TEXT FUNCTION IS STARTED");
-  local supply_text = set_supply_text(unit_cost, is_basic_cost)
+  local supply_text
+  if unit_cost == nil then
+    supply_text = get_unknown_text()
+  else
+    supply_text = set_supply_text(unit_cost, is_basic_cost)
+  end
   SRWLOGDEBUG("SET SUPPLY TEXT FUNCTION IS FINISHED");
 
 
@@ -2721,6 +2752,25 @@ core:add_listener(
 );
 
 core:add_listener(
+  "SRW_player_army_created_listener",
+  "MilitaryForceCreated",
+  function(context)
+    local faction = context:military_force_created():faction();
+    return factionChecker(faction)
+  end,
+  function(context)
+    local faction = context:military_force_created():faction();
+    cm:callback(function()
+      SRWLOG("======================");
+      SRWLOG("APPLY UPKEEP (NEW FORCE)");
+      srw_apply_upkeep_penalty(faction);
+    end, 0.1);
+  end,
+  true
+);
+
+
+core:add_listener(
   "SRW_Confederation_Bretonnia",
   "FactionJoinsConfederation",
   function(context)
@@ -2819,12 +2869,15 @@ core:add_listener(
 --================================================================================
 
 local function calculate_army_supply_AI(unit_list, character)
-  local this_army_supply = 0;
+  local this_army_supply = basic_lord_supply;
 
   for j = 0, unit_list:num_items() - 1 do
     local unit = unit_list:item_at(j);
     local key = unit:unit_key();
-    local val = SRW_Supply_Cost[key] or 1;
+    local val = get_unit_supply(key) or calculate_unit_supply(unit);
+    if val < 0 then
+      val = 0
+    end;
     this_army_supply = this_army_supply + val;
   end; --units
 
@@ -2927,6 +2980,12 @@ local function init_mcm(context)
   local h_enable_logging_debug = supply_lines_rw:get_option_by_key("h_enable_logging_debug")
   enable_logging_debug = h_enable_logging_debug:get_finalized_setting()
 
+  local c_c_unit_supply = supply_lines_rw:get_option_by_key("c_c_unit_supply")
+  basic_unit_supply = c_c_unit_supply:get_finalized_setting()
+
+  local c_d_lord_supply = supply_lines_rw:get_option_by_key("c_d_lord_supply")
+  basic_lord_supply = c_d_lord_supply:get_finalized_setting()
+
   if enable_logging_debug then
     enable_logging = true
     enable_logging_ai = true
@@ -2936,16 +2995,14 @@ local function init_mcm(context)
   if not is_ai_enable then
     ai_supply_mult = 0
   end;
-  SRWLOGDEBUG("Ai supply set to "..tostring(ai_supply_mult).." (first init)");
-
-  SRWLOGDEBUG("Player supply set to "..tostring(player_supply_custom_mult).." (first init)");
+  SRWLOGDEBUG("Ai supply now is "..tostring(ai_supply_mult));
 
   local faction = cm:model():world():whose_turn_is_it()
   if not factionChecker(faction) then
     player_supply_custom_mult = 0
   end
   
-  SRWLOGDEBUG("Player supply set to "..tostring(player_supply_custom_mult));
+  SRWLOGDEBUG("Player supply now is "..tostring(player_supply_custom_mult));
   srw_apply_upkeep_penalty(faction);
 
 end;
