@@ -1,0 +1,46 @@
+-- core:add_listener(
+--   "SRW_UnitMergedAndDestroyed",
+--   "UnitMergedAndDestroyed",
+--   function(context)
+--     local key = context:unit():unit_key()
+--     local faction = context:unit():faction()
+--     return SRW_Supply_Cost[key] and factionChecker(faction)
+--   end,  
+--   function(context)
+--     local army = context:unit():military_force();
+--     cm:callback(function()
+--       SRWLOG("======================");
+--       SRWLOG("APPLY UPKEEP (MERGE)");
+--       srw_this_army_upkeep(army)
+--     end, 0.5);
+--   end,
+--   true
+-- );
+
+-- core:add_listener(
+--   "SRW_UnitDisbanded",
+--   "UnitDisbanded",
+--   function(context)
+--     local key = context:unit():unit_key()
+--     local faction = context:unit():faction()
+--     local army = context:unit():military_force();
+
+--     return (faction:is_human() and (SRW_Supply_Cost[key] > 0) and not srw_faction_is_horde(faction) and not (faction:culture() == "wh2_dlc09_tmb_tomb_kings") and not (faction:culture() == "wh_main_brt_bretonnia"))
+--   end,  
+--   function(context)
+--     local army = context:unit():military_force();
+--     local key = context:unit():unit_key()
+
+--     cm:callback(function()
+--       SRWLOG("======================");
+--       SRWLOG("APPLY UPKEEP (DISBAND)");
+--       SRWLOG(key)
+--       SRWLOG(tostring(army:has_general()));
+      
+--       if army:has_general() then
+--         srw_this_army_upkeep(army)
+--       end
+--     end, 0.4);
+--   end,
+--   true
+-- );

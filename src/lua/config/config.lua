@@ -1,0 +1,13 @@
+--logging function.
+local SRW_selected_character = nil;
+local max_supply_per_army = 38;  -- max effect number in effect_bundles_tables
+local ai_supply_enabled = false;
+local ai_supply_mult = 0
+local player_supply_custom_mult = "disabled"
+local bretonnia_supply = false
+local basic_unit_supply = 0
+local basic_lord_supply = 0
+local enable_supply_balance = true
+local max_balance_per_buildings = 3
+local max_balance_per_army = 30
+

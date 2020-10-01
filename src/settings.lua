@@ -22,6 +22,11 @@ function ai_callback(option)
   end;
 end;
 
+-- function effectCallback(option)
+--   return function(option)
+
+--   end
+-- end
 
 local supply_lines_rw = mct:register_mod("supply_lines_rw")
 supply_lines_rw:set_title(loc_prefix.."mod_title", true)
@@ -62,6 +67,16 @@ ai_effect:set_tooltip_text("mct_supply_lines_rw_e_ai_effect_tt", true)
 ai_effect:slider_set_min_max(0, 15)
 ai_effect:set_default_value(0)
 ai_effect:slider_set_step_size(1)
+
+local supply_balance_section = supply_lines_rw:add_new_section("balance_section")
+supply_balance_section:set_localised_text("Supply Balance")
+
+local enable_balance = supply_lines_rw:add_new_option("balance_enable", "checkbox")
+enable_balance:set_default_value(true)
+enable_balance:set_text("mct_supply_lines_rw_a_player_enable_text", true)
+enable_balance:set_tooltip_text("mct_supply_lines_rw_a_player_enable_tt", true)
+enable_balance:add_option_set_callback(player_callback)
+
 
 local settings_section = supply_lines_rw:add_new_section("settings_sectiom")
 settings_section:set_localised_text("Advanced settings")
