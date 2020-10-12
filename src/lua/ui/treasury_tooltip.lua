@@ -46,9 +46,17 @@ local function set_tooltip_text_treasury(faction, component_name)
     lord_text = lord_text..localizator(kraka_text)
   end;
 
+  if vfs.exists("script/campaign/main_warhammer/mod/thom_vulkan.lua") then
+    local vulcan_text = Vulcan_Subculture_Text[culture] or dummy_text
+    lord_text = lord_text..localizator(vulcan_text)
+  end;
+
   local supply_text = localizator("SRW_treasury_tooltip_supply")
   supply_text = string.gsub(supply_text, "SRW_supply", tostring(global_supply))
   local supply_balance_text = "Your supply balance is "..supply_balance
+  if not enable_supply_balance then
+    supply_balance_text = ""
+  end
   local tooltip_text = localizator("SRW_treasury_tooltip_main")..lord_text..supply_text..localizator("SRW_treasury_tooltip_upkeep")..tostring(upkeep_percent).."%\n"..supply_balance_text
 
   if srw_faction_is_horde(faction) then

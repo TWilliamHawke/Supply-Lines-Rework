@@ -2,7 +2,6 @@ local function init_mcm(context)
   local mct = context:mct()
   local supply_lines_rw = mct:get_mod_by_key("supply_lines_rw")
 
-  set_value_from_mcm("c_bret_enable", bretonnia_supply)
   local c_bret_enable = supply_lines_rw:get_option_by_key("c_bret_enable")
   bretonnia_supply =  c_bret_enable:get_finalized_setting()
   SRWLOG("Bretonnia supply is "..tostring(bretonnia_supply));

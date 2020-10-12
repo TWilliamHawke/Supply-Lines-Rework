@@ -32,3 +32,7 @@ local Kraka_Subculture_Text = {
   ["wh_main_sc_dwf_dwarfs"] = "SRW_Subculture_Text_kraka"
 }
 
+local Vulcan_Subculture_Text = {
+  ["wh2_main_sc_skv_skaven"] = "SRW_Subculture_Text_vulcan"
+}
+

@@ -7,7 +7,7 @@ local player_supply_custom_mult = "disabled"
 local bretonnia_supply = false
 local basic_unit_supply = 0
 local basic_lord_supply = 0
-local enable_supply_balance = true
+local enable_supply_balance = false
 local max_balance_per_buildings = 3
 local max_balance_per_army = 30
 
