@@ -12,6 +12,7 @@ local function set_tooltip_text_treasury(faction, component_name)
   local lord_text_key = SRW_Subculture_Text[culture] or dummy_text
   local lord_text = localizator(lord_text_key)
   local supply_balance = get_supply_balance(faction)
+  local supply_penalty = get_supply_penalty(faction)
 
   -- calculate supply and upkeep
   for i = 0, force_list:num_items() - 1 do
@@ -21,7 +22,8 @@ local function set_tooltip_text_treasury(faction, component_name)
       local unit_list = force:unit_list();
       local character = force:general_character();
 
-      local army_supply = calculate_army_supply(unit_list, character);
+      local army_supply = calculate_army_supply(unit_list, character) + supply_penalty;
+
       local army_upkeep_effect = math.floor(army_supply*dif_mod/24)
       global_supply = global_supply + army_supply
       upkeep_percent = upkeep_percent + math.min(army_upkeep_effect, max_supply_per_army) + 1

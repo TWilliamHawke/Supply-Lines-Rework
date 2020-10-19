@@ -154,6 +154,14 @@ local building_unit_bonus = {
   ["wh_main_dwf_wall_1"] = -1,
   ["wh_main_dwf_wall_2"] = -1,
   ["wh_main_dwf_wall_3"] = -1,
+  ["kraka_smith_1"] = 3,
+  ["kraka_smith_2"] = 4,
+  ["kraka_smith_3"] = 5,
+  ["kraka_refugees_1"] = 2,
+  ["kraka_refugees_2"] = 3,
+  ["kraka_slayer"] = 3,
+  ["kraka_barracks_4"] = 4,
+  
 --empire
   ["wh_main_emp_barracks_1"] = 1,
   ["wh_main_emp_barracks_2"] = 2,
@@ -539,9 +547,11 @@ local building_unit_bonus = {
   ["thom_vulkan_weapon_teams_1"] = 2,
   ["thom_vulkan_weapon_teams_2"] = 3,
   ["thom_vulkan_weapon_teams_3"] = 4,
+--Lanmarks
+  ["wh2_dlc15_special_fortress_of_vorag_tower_of_the_bloodytooth"] = 2,
 }
 
-  
+
 local SRW_Subculture_Text = {
   ["wh_main_sc_dwf_dwarfs"] = "SRW_Subculture_Text_dwarves",
   ["wh_main_sc_emp_empire"] = "SRW_Subculture_Text_empire",
@@ -957,8 +967,8 @@ local SRW_Free_Units = {
     ["wh2_dlc15_hef_mon_sun_dragon_imrik-wh2_dlc15_hef_imrik"] = 2,
     ["wh2_dlc15_hef_inf_mistwalkers_faithbearers_0-wh2_dlc15_hef_eltharion"] = 0,
     ["wh2_dlc15_hef_inf_mistwalkers_spireguard_0-wh2_dlc15_hef_eltharion"] = 0,
-    ["wh2_dlc15_hef_inf_mistwalkers_sentinels_0-wh2_dlc15_hef_eltharion"] = 1,
-    ["wh2_dlc15_hef_inf_mistwalkers_skyhawks_0-wh2_dlc15_hef_eltharion"] = 1,
+    ["wh2_dlc15_hef_inf_mistwalkers_sentinels_0-wh2_dlc15_hef_eltharion"] = 0,
+    ["wh2_dlc15_hef_inf_mistwalkers_skyhawks_0-wh2_dlc15_hef_eltharion"] = 0,
     ["wh2_dlc15_hef_inf_mistwalkers_griffon_knights_0-wh2_dlc15_hef_eltharion"] = 2,
     ["wh2_dlc15_hef_mon_war_lions_of_chrace_0-wh2_main_hef_prince_alastar"] = 0,
     ["wh2_dlc15_hef_veh_lion_chariot_of_chrace_0-wh2_main_hef_prince_alastar"] = 0,
@@ -2317,9 +2327,9 @@ local SRW_Supply_Cost = {
     ["wh2_main_hef_cav_tiranoc_chariot"] = 2,
     ["wh2_main_hef_art_eagle_claw_bolt_thrower"] = 2,
     ["wh2_main_hef_inf_swordmasters_of_hoeth_0"] = 3,
+    ["wh2_dlc15_hef_inf_mistwalkers_sentinels_0"] = 2,
+    ["wh2_dlc15_hef_inf_mistwalkers_skyhawks_0"] = 2,
     -- elite
-    ["wh2_dlc15_hef_inf_mistwalkers_sentinels_0"] = 3,
-    ["wh2_dlc15_hef_inf_mistwalkers_skyhawks_0"] = 3,
     ["wh2_dlc15_hef_mon_arcane_phoenix_0"] = 4,
     ["wh2_dlc15_hef_inf_mistwalkers_griffon_knights_0"] = 4,
     ["wh2_dlc15_hef_mon_black_dragon_imrik"] = 5,
@@ -2558,6 +2568,17 @@ local SRW_Supply_Cost = {
     ["wh2_dlc11_cst_art_queen_bess"] = 6,
     
   --Southern Realms
+    ["teb_duellists"] = 1,
+    ["teb_sisters"] = 2,
+    ["teb_xbow_cav"] = 1,
+    ["teb_irrana"] = 1,
+    ["teb_galloper_horse"] = 2,
+    ["teb_galloper"] = 1,
+    ["teb_birdmen"] = 1,
+    ["teb_roc_01"] = 3,
+    ["teb_roc_02"] = 3,
+    ["teb_roc_03"] = 1,
+    ["teb_roc_04"] = 2,
     ["til_sartosa"] = 0,
     ["bor_archers"] = 0,
     ["bor_light_cav"] = 0,
@@ -2696,7 +2717,12 @@ local SRW_Supply_Cost = {
   --Kraka Drac
     ["kraka_quarrel_2h"] = 0,
     ["dwf_orgi"] = 0,
-  
+    ["kraka_marauder_horsemen"] = 0,
+    ["kraka_marauders_1"] = 0,
+    ["kraka_marauders_0"] = 0,
+    
+    ["dwf_runadiers"] = 1,
+    ["kraka_slayers"] = 1,
     ["kraka_wrath"] = 1,
     ["kraka_nor_carrions"] = 1,
     ["kraka_slayers"] = 1,
@@ -2813,6 +2839,12 @@ local SRW_Supply_Cost = {
     ["thom_ferrik_rat_snatchers"] = 2,
     ["thom_ferrik_jezzail"] = 3,
     ["thom_ferrik_rattling"] = 3,
+  --Single unit mods
+    ["cr_lzd_mon_coatl_0"] = 4,
+    ["dwf_runegolem"] = 3,
+    ["cr_hef_veh_lothern_skycutter"] = 3,
+    ["cr_skv_mon_chimaerat_0"] = 3,
+    ["bacr_chs_inf_daemonette"] = 2,
 };
   
   
@@ -2873,6 +2905,19 @@ local function srw_faction_is_horde(faction)
 	return faction:is_allowed_to_capture_territory() == false;
 end;
 
+local function get_army_count(force_list)
+  local army_count = 0
+
+  for i = 0, force_list:num_items() - 1 do
+    local force = force_list:item_at(i);
+    
+    if not force:is_armed_citizenry() and force:has_general() and not force:general_character():character_subtype("wh2_main_def_black_ark") then
+      army_count = army_count + 1
+    end; --of army check
+  end; --of army call
+
+  return army_count
+end;
 --if unit not found in SRW_Supply_Cost
 local function calculate_unit_supply(unit)
   local uclass = unit:unit_class();
@@ -2940,7 +2985,7 @@ local function get_armies_total_cost(faction)
 end;
 
 
-function get_main_building_cost(building, faction)
+local function get_main_building_cost(building, faction)
   local main_building_level = building:building_level()
   local main_building_superchain = building:superchain()
   local culture = faction:culture()
@@ -2966,13 +3011,13 @@ function get_main_building_cost(building, faction)
   end
 end
 local function get_building_var(faction)
-  local unit_cap = 0
+  local supply_form_regions = 0
   local owned_regions = faction:region_list()
   --loop through regions
   for i=0, owned_regions:num_items()-1 do
-    SRWLOG("Looking at owned region: "..owned_regions:item_at(i):name())
+
     local slot_list = owned_regions:item_at(i):slot_list()
-    --loop through slots of this region
+
     for j=0, slot_list:num_items()-1 do
       if not slot_list:is_empty() then
         if slot_list:item_at(j):has_building() then
@@ -2980,18 +3025,18 @@ local function get_building_var(faction)
           local building_name = building:name()
 
           if(j == 0) then
-            unit_cap = unit_cap - get_main_building_cost(building, faction)
+            supply_form_regions = supply_form_regions - get_main_building_cost(building, faction)
           end;
 
           if building_unit_bonus[building_name] then
-            unit_cap = unit_cap + math.min(building_unit_bonus[building_name], max_balance_per_buildings)
+            supply_form_regions = supply_form_regions + math.min(building_unit_bonus[building_name], max_balance_per_buildings)
           end            
         end
       end
     end
   end
 
-  return unit_cap
+  return supply_form_regions
 end
 local function get_supply_balance(faction)
 
@@ -3015,7 +3060,20 @@ local function calculate_supply_balance(faction)
   end
 end
 
+local function get_supply_penalty(faction)
+  local supply_balance = get_supply_balance(faction)
 
+  if supply_balance >= 0 then
+    return 0
+  end
+
+  local force_list = faction:military_force_list();
+  local num_of_armies = get_army_count(force_list)
+  supply_balance = 0 - supply_balance
+
+  return math.ceil(supply_balance/math.sqrt(num_of_armies))
+
+end
 local function calculate_army_supply(unit_list, commander)
   local this_army_supply = basic_lord_supply;
   local character = commander:character_subtype_key()
@@ -3063,14 +3121,14 @@ local function calculate_army_supply(unit_list, commander)
 end;
 
 
-local function srw_calculate_upkeep(force)
+local function srw_calculate_upkeep(force, supply_penalty)
   local multiplier = srw_get_diff_mult();
   local unit_list = force:unit_list();
   local character = force:general_character();
 
   remove_effect(force)
 
-  local effect_strength = calculate_army_supply(unit_list, character);
+  local effect_strength = calculate_army_supply(unit_list, character) + supply_penalty;
   SRWLOG("THIS ARMY REQUIRED "..tostring(effect_strength).." SUPPLY POINTS");
   effect_strength = math.floor(effect_strength*multiplier/24);
 
@@ -3083,6 +3141,8 @@ local function srw_calculate_upkeep(force)
 end;
 
 local function srw_apply_upkeep_penalty(faction)
+  local supply_penalty = get_supply_penalty(faction)
+
   if faction:is_human() then
     local force_list = faction:military_force_list();
     
@@ -3092,7 +3152,7 @@ local function srw_apply_upkeep_penalty(faction)
       if not force:is_armed_citizenry() and force:has_general() and not force:general_character():character_subtype("wh2_main_def_black_ark") then
         SRWLOG("--------");
         SRWLOG("CHECK ARMY #"..tostring(i));
-        srw_calculate_upkeep(force)
+        srw_calculate_upkeep(force, supply_penalty)
       end; --of army check
 
     end; --of army call
@@ -3128,23 +3188,10 @@ local function srw_this_army_upkeep(force)
 
   if force:faction():is_human() and not force:general_character():character_subtype("wh2_main_def_black_ark") then
 
-    srw_calculate_upkeep(force)
+    srw_calculate_upkeep(force, 0)
   end; -- of local faction
 
 end;
-
-local function get_unknown_text()
-  local unknown_text = localizator("SRW_unit_supply_cost_unknown")
-  for n = 0, 4 do
-    local this_price_supply = n + basic_unit_supply
-    if this_price_supply < 0 then
-      this_price_supply = 0
-    end
-    unknown_text = string.gsub(unknown_text, "SRW_Cost_"..n, tostring(this_price_supply))
-  end;
-  return unknown_text
-end;
-
 
 local function localizator(string)
   local langfile, err = io.open("data/language.txt","r")
@@ -3159,6 +3206,19 @@ local function localizator(string)
   else
     return effect.get_localised_string(string)
   end
+end;
+
+
+local function get_unknown_text()
+  local unknown_text = localizator("SRW_unit_supply_cost_unknown")
+  for n = 0, 4 do
+    local this_price_supply = n + basic_unit_supply
+    if this_price_supply < 0 then
+      this_price_supply = 0
+    end
+    unknown_text = string.gsub(unknown_text, "SRW_Cost_"..n, tostring(this_price_supply))
+  end;
+  return unknown_text
 end;
 
 
@@ -3194,24 +3254,17 @@ local function set_new_lord_tooltip(component, faction)
   local supply_balance = get_supply_balance(faction)
 
   local force_list = faction:military_force_list();
-  local army_cost = 0
+  local new_army_cost = get_army_count(force_list)
 
-  for i = 0, force_list:num_items() - 1 do
-    local force = force_list:item_at(i);
-    
-    if not force:is_armed_citizenry() and force:has_general() and not force:general_character():character_subtype("wh2_main_def_black_ark") then
-      army_cost = army_cost + 1
-    end; --of army check
-  end; --of army call
-
-  local negative_balance = army_cost
+  local negative_balance = new_army_cost
   if supply_balance > 0 then
-    negative_balance = army_cost - supply_balance
+    negative_balance = new_army_cost - supply_balance
   end
-  local num_of_armies = army_cost + 1
+  
+  local num_of_armies = new_army_cost + 1
   local upkeep = math.ceil(negative_balance/math.sqrt(num_of_armies))*num_of_armies*srw_get_diff_mult()/24
 
-  local tooltip_text = "Current supply balance is "..supply_balance.."\nNew army will decreace it by "..army_cost.."\nYour army upkeep will be increase by "..math.floor(upkeep)
+  local tooltip_text = "Current supply balance is "..supply_balance.."\nNew army will decreace it by "..new_army_cost.."\nYour army upkeep will be increase by "..math.floor(upkeep)
 
   if is_uicomponent(component) then 
     component:SetTooltipText(tooltip_text, true)
@@ -3234,6 +3287,7 @@ local function set_tooltip_text_treasury(faction, component_name)
   local lord_text_key = SRW_Subculture_Text[culture] or dummy_text
   local lord_text = localizator(lord_text_key)
   local supply_balance = get_supply_balance(faction)
+  local supply_penalty = get_supply_penalty(faction)
 
   -- calculate supply and upkeep
   for i = 0, force_list:num_items() - 1 do
@@ -3243,7 +3297,8 @@ local function set_tooltip_text_treasury(faction, component_name)
       local unit_list = force:unit_list();
       local character = force:general_character();
 
-      local army_supply = calculate_army_supply(unit_list, character);
+      local army_supply = calculate_army_supply(unit_list, character) + supply_penalty;
+
       local army_upkeep_effect = math.floor(army_supply*dif_mod/24)
       global_supply = global_supply + army_supply
       upkeep_percent = upkeep_percent + math.min(army_upkeep_effect, max_supply_per_army) + 1

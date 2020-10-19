@@ -1,4 +1,6 @@
 local function srw_apply_upkeep_penalty(faction)
+  local supply_penalty = get_supply_penalty(faction)
+
   if faction:is_human() then
     local force_list = faction:military_force_list();
     
@@ -8,7 +10,7 @@ local function srw_apply_upkeep_penalty(faction)
       if not force:is_armed_citizenry() and force:has_general() and not force:general_character():character_subtype("wh2_main_def_black_ark") then
         SRWLOG("--------");
         SRWLOG("CHECK ARMY #"..tostring(i));
-        srw_calculate_upkeep(force)
+        srw_calculate_upkeep(force, supply_penalty)
       end; --of army check
 
     end; --of army call

@@ -1,4 +1,4 @@
-function get_main_building_cost(building, faction)
+local function get_main_building_cost(building, faction)
   local main_building_level = building:building_level()
   local main_building_superchain = building:superchain()
   local culture = faction:culture()

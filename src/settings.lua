@@ -1,6 +1,6 @@
 local loc_prefix = "mct_supply_lines_rw_"
 
-function player_callback(option)
+local function player_callback(option)
   local val = option:get_selected_setting()
 
   local player_effect = option:get_mod():get_option_by_key("b_player_effect")
@@ -11,7 +11,7 @@ function player_callback(option)
   end;
 end;
 
-function ai_callback(option)
+local function ai_callback(option)
   local val = option:get_selected_setting()
 
   local ai_effect = option:get_mod():get_option_by_key("e_ai_effect")

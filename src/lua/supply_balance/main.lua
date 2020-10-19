@@ -20,3 +20,17 @@ local function calculate_supply_balance(faction)
   end
 end
 
+local function get_supply_penalty(faction)
+  local supply_balance = get_supply_balance(faction)
+
+  if supply_balance >= 0 then
+    return 0
+  end
+
+  local force_list = faction:military_force_list();
+  local num_of_armies = get_army_count(force_list)
+  supply_balance = 0 - supply_balance
+
+  return math.ceil(supply_balance/math.sqrt(num_of_armies))
+
+end
