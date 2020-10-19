@@ -63,6 +63,8 @@ local SRW_Lord_Group = {
     ["grn_azhag_the_slaughterer"] = "Azhag",
     ["wh_dlc08_nor_wulfrik"] = "Wulfrik",
     ["wh_dlc08_nor_throgg"] = "Throgg",
+    ["ws_grn_tinitt_foureyes"] = "Forest",
+    ["ws_grn_grak_beastbasha"] = "BeastBasha",
   }
   
   

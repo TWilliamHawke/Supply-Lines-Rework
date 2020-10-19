@@ -95,6 +95,14 @@ local building_unit_bonus = {
   ["wh_main_dwf_wall_1"] = -1,
   ["wh_main_dwf_wall_2"] = -1,
   ["wh_main_dwf_wall_3"] = -1,
+  ["kraka_smith_1"] = 3,
+  ["kraka_smith_2"] = 4,
+  ["kraka_smith_3"] = 5,
+  ["kraka_refugees_1"] = 2,
+  ["kraka_refugees_2"] = 3,
+  ["kraka_slayer"] = 3,
+  ["kraka_barracks_4"] = 4,
+  
 --empire
   ["wh_main_emp_barracks_1"] = 1,
   ["wh_main_emp_barracks_2"] = 2,
@@ -480,6 +488,23 @@ local building_unit_bonus = {
   ["thom_vulkan_weapon_teams_1"] = 2,
   ["thom_vulkan_weapon_teams_2"] = 3,
   ["thom_vulkan_weapon_teams_3"] = 4,
+--Lanmarks
+  ["wh2_dlc15_special_fortress_of_vorag_tower_of_the_bloodytooth"] = 2,
+--Grn wez
+  ["ws_grn_squigs_2"] = 4,
+  ["ws_grn_forest_beasts_0"] = 1,
+  ["ws_grn_shaman_1"] = 3,
+  ["ws_grn_shaman_2"] = 4,
+  ["ws_grn_shaman_3"] = 5,
+  ["ws_grn_fungal_cave_1"] = 2,
+  ["ws_grn_fungal_cave_2"] = 3,
+  ["ws_grn_fungal_cave_3"] = 4,
+  ["ws_savage_military_1"] = 2,
+  ["ws_savage_military_2"] = 3,
+  ["ws_savage_military_3"] = 4,
+  ["ws_grn_military_1"] = 1,
+  ["ws_grn_military_2"] = 2,
+  ["ws_grn_military_3"] = 3,
+  ["ws_grn_military_4"] = 4,
 }
 
-  

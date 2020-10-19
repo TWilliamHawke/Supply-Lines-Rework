@@ -733,9 +733,9 @@ local SRW_Supply_Cost = {
     ["wh2_main_hef_cav_tiranoc_chariot"] = 2,
     ["wh2_main_hef_art_eagle_claw_bolt_thrower"] = 2,
     ["wh2_main_hef_inf_swordmasters_of_hoeth_0"] = 3,
+    ["wh2_dlc15_hef_inf_mistwalkers_sentinels_0"] = 2,
+    ["wh2_dlc15_hef_inf_mistwalkers_skyhawks_0"] = 2,
     -- elite
-    ["wh2_dlc15_hef_inf_mistwalkers_sentinels_0"] = 3,
-    ["wh2_dlc15_hef_inf_mistwalkers_skyhawks_0"] = 3,
     ["wh2_dlc15_hef_mon_arcane_phoenix_0"] = 4,
     ["wh2_dlc15_hef_inf_mistwalkers_griffon_knights_0"] = 4,
     ["wh2_dlc15_hef_mon_black_dragon_imrik"] = 5,
@@ -974,6 +974,17 @@ local SRW_Supply_Cost = {
     ["wh2_dlc11_cst_art_queen_bess"] = 6,
     
   --Southern Realms
+    ["teb_duellists"] = 1,
+    ["teb_sisters"] = 2,
+    ["teb_xbow_cav"] = 1,
+    ["teb_irrana"] = 1,
+    ["teb_galloper_horse"] = 2,
+    ["teb_galloper"] = 1,
+    ["teb_birdmen"] = 1,
+    ["teb_roc_01"] = 3,
+    ["teb_roc_02"] = 3,
+    ["teb_roc_03"] = 1,
+    ["teb_roc_04"] = 2,
     ["til_sartosa"] = 0,
     ["bor_archers"] = 0,
     ["bor_light_cav"] = 0,
@@ -1112,7 +1123,12 @@ local SRW_Supply_Cost = {
   --Kraka Drac
     ["kraka_quarrel_2h"] = 0,
     ["dwf_orgi"] = 0,
-  
+    ["kraka_marauder_horsemen"] = 0,
+    ["kraka_marauders_1"] = 0,
+    ["kraka_marauders_0"] = 0,
+    
+    ["dwf_runadiers"] = 1,
+    ["kraka_slayers"] = 1,
     ["kraka_wrath"] = 1,
     ["kraka_nor_carrions"] = 1,
     ["kraka_slayers"] = 1,
@@ -1185,6 +1201,14 @@ local SRW_Supply_Cost = {
     ["colossal_squig"] = 2,
     ["armored_colossal_squig"] = 3,
     ["savage_giant"] = 3,
+    ["ws_grn_inf_da_immortulz"] = 3,
+    ["ws_grn_inf_forest_goblin_hunters"] = 0,
+    ["ws_grn_inf_forest_goblins"] = 0,
+    ["ws_grn_inf_orc_stikka_boyz"] = 0,
+    ["ws_grn_inf_savage_orc_stikkas"] = 0,
+    ["ws_grn_inf_snotlings_waaagh"] = 0,
+    ["ws_grn_mon_stegadon_waaagh"] = 3,
+    ["ws_mon_little_gork"] = 4,
   --Skaven clans
     ["thom_vulkan_stormvermin_shield"] = 1,
     ["thom_vulkan_stormvermin_halberd"] = 1,
@@ -1229,6 +1253,12 @@ local SRW_Supply_Cost = {
     ["thom_ferrik_rat_snatchers"] = 2,
     ["thom_ferrik_jezzail"] = 3,
     ["thom_ferrik_rattling"] = 3,
+  --Single unit mods
+    ["cr_lzd_mon_coatl_0"] = 4,
+    ["dwf_runegolem"] = 3,
+    ["cr_hef_veh_lothern_skycutter"] = 3,
+    ["cr_skv_mon_chimaerat_0"] = 3,
+    ["bacr_chs_inf_daemonette"] = 2,
 };
   
   

@@ -549,6 +549,22 @@ local building_unit_bonus = {
   ["thom_vulkan_weapon_teams_3"] = 4,
 --Lanmarks
   ["wh2_dlc15_special_fortress_of_vorag_tower_of_the_bloodytooth"] = 2,
+--Grn wez
+  ["ws_grn_squigs_2"] = 4,
+  ["ws_grn_forest_beasts_0"] = 1,
+  ["ws_grn_shaman_1"] = 3,
+  ["ws_grn_shaman_2"] = 4,
+  ["ws_grn_shaman_3"] = 5,
+  ["ws_grn_fungal_cave_1"] = 2,
+  ["ws_grn_fungal_cave_2"] = 3,
+  ["ws_grn_fungal_cave_3"] = 4,
+  ["ws_savage_military_1"] = 2,
+  ["ws_savage_military_2"] = 3,
+  ["ws_savage_military_3"] = 4,
+  ["ws_grn_military_1"] = 1,
+  ["ws_grn_military_2"] = 2,
+  ["ws_grn_military_3"] = 3,
+  ["ws_grn_military_4"] = 4,
 }
 
 
@@ -588,6 +604,10 @@ local Kraka_Subculture_Text = {
 
 local Vulcan_Subculture_Text = {
   ["wh2_main_sc_skv_skaven"] = "SRW_Subculture_Text_vulcan"
+}
+
+local Wez_Subculture_Text = {
+  ["wh_main_sc_grn_savage_orcs"] = "SRW_Subculture_Text_wez"
 }
 
 
@@ -902,6 +922,21 @@ local SRW_Free_Units = {
     ["grn_inf_black_orc_dual-grn_grimgor_ironhide"] = 0,
     ["grn_big_uns_shields-grn_azhag_the_slaughterer"] = 0,
     ["wh2_dlc15_grn_cav_squig_hoppers_waaagh_0"] = 2,
+    ["ws_grn_inf_da_immortulz-grn_grimgor_ironhide"] = 1,
+    ["wh2_dlc15_grn_mon_feral_hydra_waaagh_0-ws_grn_grak_beastbasha"] = 1,
+    ["wh2_dlc15_grn_mon_river_trolls_0-ws_grn_grak_beastbasha"] = 0,
+    ["wh2_dlc15_grn_mon_river_trolls_ror_0-ws_grn_grak_beastbasha"] = 0,
+    ["wh2_dlc15_grn_mon_rogue_idol_0-ws_grn_grak_beastbasha"] = 2,
+    ["wh2_dlc15_grn_mon_rogue_idol_ror_0-ws_grn_grak_beastbasha"] = 3,
+    ["wh2_dlc15_grn_mon_stone_trolls_0-ws_grn_grak_beastbasha"] = 0,
+    ["wh2_dlc15_grn_mon_wyvern_waaagh_0-ws_grn_grak_beastbasha"] = 1,
+    ["wh_dlc06_grn_mon_venom_queen_0-ws_grn_grak_beastbasha"] = 3,
+    ["wh_dlc15_grn_mon_arachnarok_spider_waaagh_0-ws_grn_grak_beastbasha"] = 2,
+    ["wh_main_grn_mon_arachnarok_spider_0-ws_grn_grak_beastbasha"] = 2,
+    ["wh_main_grn_mon_giant-ws_grn_grak_beastbasha"] = 1,
+    ["wh_main_grn_mon_trolls-ws_grn_grak_beastbasha"] = 0,
+    ["ws_grn_mon_stegadon_waaagh-ws_grn_grak_beastbasha"] = 1,
+    ["ws_mon_little_gork-ws_grn_grak_beastbasha"] = 2,
   
   --Wood Elves
     ["wh_dlc05_wef_cav_wild_riders_0-dlc05_wef_orion"] = 0,
@@ -1178,6 +1213,8 @@ local SRW_Lord_Group = {
     ["grn_azhag_the_slaughterer"] = "Azhag",
     ["wh_dlc08_nor_wulfrik"] = "Wulfrik",
     ["wh_dlc08_nor_throgg"] = "Throgg",
+    ["ws_grn_tinitt_foureyes"] = "Forest",
+    ["ws_grn_grak_beastbasha"] = "BeastBasha",
   }
   
   
@@ -1560,10 +1597,15 @@ local SRW_Lord_Skills_Cost = {
     ["wh_main_grn_mon_trolls-Wurzag"] = {"wh2_dlc15_skill_unique_grn_wurrzag_colossal_warpaint", 0},
     ["wh_main_grn_mon_giant-Wurzag"] = {"wh2_dlc15_skill_unique_grn_wurrzag_colossal_warpaint", 1},
     ["wh2_dlc15_grn_mon_rogue_idol_0-Wurzag"] = {"wh2_dlc15_skill_unique_grn_wurrzag_colossal_warpaint", 2},
+    ["wh2_dlc15_grn_mon_rogue_idol_ror_0-Wurzag"] = {"wh2_dlc15_skill_unique_grn_wurrzag_colossal_warpaint", 3},
     ["wh_main_grn_mon_arachnarok_spider_0-Wurzag"] = {"wh2_dlc15_skill_unique_grn_wurrzag_colossal_warpaint", 2},
     ["wh_dlc15_grn_mon_arachnarok_spider_waaagh_0-Wurzag"] = {"wh2_dlc15_skill_unique_grn_wurrzag_colossal_warpaint", 2},
-    ["wh2_dlc15_grn_mon_rogue_idol_ror_0-Wurzag"] = {"wh2_dlc15_skill_unique_grn_wurrzag_colossal_warpaint", 3},
     ["wh_dlc06_grn_mon_venom_queen_0-Wurzag"] = {"wh2_dlc15_skill_unique_grn_wurrzag_colossal_warpaint", 3},
+    ["wh_main_grn_mon_arachnarok_spider_0-Forest"] = {"ws_skill_tinitt_foureyes_ancient_behemoths", 2},
+    ["wh_dlc15_grn_mon_arachnarok_spider_waaagh_0-Forest"] = {"ws_skill_tinitt_foureyes_ancient_behemoths", 2},
+    ["wh_dlc06_grn_mon_venom_queen_0-Forest"] = {"ws_skill_tinitt_foureyes_ancient_behemoths", 3},
+    ["wh_main_grn_inf_savage_orc_big_uns-BeastBasha"] = {"ws_skill_grak_beastbasha_rally_da_boyz", 0},
+    ["wh_main_grn_cav_savage_orc_boar_boy_big_uns-BeastBasha"] = {"ws_skill_grak_beastbasha_rally_da_boyz", 0},
   --Norsca
     ["wh_dlc08_nor_mon_skinwolves_0-Wulfrik"] = {"wh_dlc08_skill_nor_wulfrik_battle_fervent_creatures", 0},
     ["wh_dlc08_nor_mon_skinwolves_1-Wulfrik"] = {"wh_dlc08_skill_nor_wulfrik_battle_fervent_creatures", 0},
@@ -2795,6 +2837,14 @@ local SRW_Supply_Cost = {
     ["colossal_squig"] = 2,
     ["armored_colossal_squig"] = 3,
     ["savage_giant"] = 3,
+    ["ws_grn_inf_da_immortulz"] = 3,
+    ["ws_grn_inf_forest_goblin_hunters"] = 0,
+    ["ws_grn_inf_forest_goblins"] = 0,
+    ["ws_grn_inf_orc_stikka_boyz"] = 0,
+    ["ws_grn_inf_savage_orc_stikkas"] = 0,
+    ["ws_grn_inf_snotlings_waaagh"] = 0,
+    ["ws_grn_mon_stegadon_waaagh"] = 3,
+    ["ws_mon_little_gork"] = 4,
   --Skaven clans
     ["thom_vulkan_stormvermin_shield"] = 1,
     ["thom_vulkan_stormvermin_halberd"] = 1,
@@ -3326,6 +3376,11 @@ local function set_tooltip_text_treasury(faction, component_name)
   if vfs.exists("script/campaign/main_warhammer/mod/thom_vulkan.lua") then
     local vulcan_text = Vulcan_Subculture_Text[culture] or dummy_text
     lord_text = lord_text..localizator(vulcan_text)
+  end;
+
+  if vfs.exists("script/campaign/mod/ws_big_waaagh.lua") then
+    local wez_text = Wez_Subculture_Text[culture] or dummy_text
+    lord_text = lord_text..localizator(wez_text)
   end;
 
   local supply_text = localizator("SRW_treasury_tooltip_supply")
