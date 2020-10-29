@@ -300,6 +300,7 @@ local SRW_Lord_Skills_Cost = {
   
     ["wh_dlc04_emp_veh_templehof_luminark_0-emp_balthasar_gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_3", 2},
     ["wh_main_emp_veh_luminark_of_hysh_0-emp_balthasar_gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_3", 1},
+    ["wh_main_emp_veh_hurricanum_0-emp_balthasar_gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_3", 1},
     ["wh_main_emp_veh_steam_tank-emp_balthasar_gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_3", 3},
     ["wh2_dlc13_emp_veh_steam_tank_ror_0-emp_balthasar_gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_3", 3},
   

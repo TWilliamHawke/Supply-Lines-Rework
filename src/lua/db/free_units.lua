@@ -25,7 +25,9 @@ local SRW_Free_Units = {
     ["wh_dlc04_emp_art_sunmaker_0-emp_balthasar_gelt"] = 3,
     ["wh2_dlc13_emp_veh_war_wagon_1_imperial_supply-emp_balthasar_gelt"] = 2,
     ["wh2_dlc13_emp_veh_war_wagon_1-emp_balthasar_gelt"] = 2,
-  
+    ["wh_main_emp_art_galloper_gun-emp_balthasar_gelt"] = 2,
+    ["wh_main_emp_veh_galloper_gun-emp_balthasar_gelt"] = 2,
+
   --sword of emp
     ["wh_main_mid_inf_greatswords-emp_karl_franz"] = 0,
     ["wh_main_avr_inf_greatswords-emp_karl_franz"] = 0,
@@ -261,6 +263,7 @@ local SRW_Free_Units = {
     ["wh_main_dwf_inf_slayers-dwf_ungrim_ironfist"] = 0,
     ["wh2_dlc10_dwf_inf_giant_slayers-dwf_ungrim_ironfist"] = 1,
     ["wh_dlc06_dwf_inf_dragonback_slayers_0-dwf_ungrim_ironfist"] = 0,
+    ["cr_dwf_inf_slayer_pirates_0-dwf_ungrim_ironfist"] = 1,
     ["wh_main_dwf_inf_hammerers-dwf_thorgrim_grudgebearer"] = 0,
     ["wh_main_dwf_inf_longbeards-dwf_thorgrim_grudgebearer"] = 0,
     ["wh_main_dwf_inf_longbeards_1-dwf_thorgrim_grudgebearer"] = 0,
@@ -324,7 +327,11 @@ local SRW_Free_Units = {
     ["wh_main_grn_mon_trolls-ws_grn_grak_beastbasha"] = 0,
     ["ws_grn_mon_stegadon_waaagh-ws_grn_grak_beastbasha"] = 1,
     ["ws_mon_little_gork-ws_grn_grak_beastbasha"] = 2,
-  
+    --mixu
+    ["wh_main_grn_cav_orc_boar_boy_big_uns-grn_gorfang_rotgut"] = 0,
+    ["wh_dlc06_grn_cav_broken_tusks_mob_0-grn_gorfang_rotgut"] = 0,
+    ["wh_main_grn_inf_orc_big_uns-grn_gorfang_rotgut"] = 0,
+
   --Wood Elves
     ["wh_dlc05_wef_cav_wild_riders_0-dlc05_wef_orion"] = 0,
     ["wh_dlc05_wef_cav_wild_riders_1-dlc05_wef_orion"] = 0,
@@ -356,8 +363,13 @@ local SRW_Free_Units = {
     ["wh_pro04_nor_mon_war_mammoth_ror_0-wh_dlc08_nor_wulfrik"] = 2,
     ["wh_dlc08_nor_mon_war_mammoth_ror_1-wh_dlc08_nor_wulfrik"] = 0,
     ["wh_dlc08_nor_mon_war_mammoth_0-wh_dlc08_nor_wulfrik"] = 0,
-  
-  
+    ["wh_dlc08_nor_inf_marauder_berserkers_0-nor_egil_styrbjorn"] = 0,
+    ["wh_pro04_nor_inf_marauder_berserkers_ror_0-nor_egil_styrbjorn"] = 0,
+    ["wh_dlc08_nor_mon_skinwolves_0-nor_egil_styrbjorn"] = 0,
+    ["wh_dlc08_nor_mon_skinwolves_1-nor_egil_styrbjorn"] = 0,
+    ["wh_pro04_nor_mon_skinwolves_ror_0-nor_egil_styrbjorn"] = 0,
+
+    
   --Hight Elves
     ["wh2_main_hef_cav_silver_helms_0-wh2_main_hef_tyrion"] = 0,
     ["wh2_main_hef_cav_silver_helms_1-wh2_main_hef_tyrion"] = 0,
@@ -367,6 +379,7 @@ local SRW_Free_Units = {
     ["wh2_main_hef_inf_lothern_sea_guard_1-wh2_main_hef_tyrion"] = 0,
     ["wh2_dlc10_hef_inf_the_storm_riders_ror_0-wh2_main_hef_tyrion"] = 0,
     ["wh2_dlc15_hef_inf_archers_ror_0-wh2_main_hef_tyrion"] = 0,
+    --aaa
     ["wh2_dlc10_hef_inf_shadow_warriors_0-wh2_dlc10_hef_alith_anar"] = 0,
     ["wh2_dlc10_hef_inf_shadow_walkers_0-wh2_dlc10_hef_alith_anar"] = 0,
     ["wh2_dlc10_hef_inf_the_grey_ror_0-wh2_dlc10_hef_alith_anar"] = 0,
@@ -374,9 +387,16 @@ local SRW_Free_Units = {
     ["wh2_dlc10_hef_inf_the_silverpelts_ror_0-wh2_main_hef_prince_alastar"] = 0,
     ["wh2_dlc10_hef_inf_sisters_of_avelorn_0-wh2_dlc10_hef_alarielle"] = 1,
     ["wh2_dlc10_hef_inf_everqueens_court_guards_ror_0-wh2_dlc10_hef_alarielle"] = 2,
+    ["wh2_dlc15_hef_mon_war_lions_of_chrace_0-wh2_main_hef_prince_alastar"] = 0,
+    ["wh2_dlc15_hef_veh_lion_chariot_of_chrace_0-wh2_main_hef_prince_alastar"] = 0,
+    ["wh2_dlc15_hef_mon_war_lions_of_chrace_ror_0-wh2_main_hef_prince_alastar"] = 0,
+    --teclis
     ["wh2_main_hef_inf_swordmasters_of_hoeth_0-wh2_main_hef_teclis"] = 1,
     ["wh2_main_hef_mon_phoenix_flamespyre-wh2_main_hef_teclis"] = 1,
     ["wh2_main_hef_mon_phoenix_frostheart-wh2_main_hef_teclis"] = 1,
+    ["wh2_dlc15_hef_mon_arcane_phoenix_ror_0-wh2_main_hef_teclis"] = 3,
+    ["wh2_dlc15_hef_mon_arcane_phoenix_0-wh2_main_hef_teclis"] = 2,
+    --imrik
     ["wh2_main_hef_mon_moon_dragon-wh2_dlc15_hef_imrik"] = 2,
     ["wh2_main_hef_mon_star_dragon-wh2_dlc15_hef_imrik"] = 2,
     ["wh2_main_hef_mon_sun_dragon-wh2_dlc15_hef_imrik"] = 1,
@@ -387,20 +407,16 @@ local SRW_Free_Units = {
     ["wh2_dlc15_hef_mon_moon_dragon_imrik-wh2_dlc15_hef_imrik"] = 3,
     ["wh2_dlc15_hef_mon_star_dragon_imrik-wh2_dlc15_hef_imrik"] = 3,
     ["wh2_dlc15_hef_mon_sun_dragon_imrik-wh2_dlc15_hef_imrik"] = 2,
+    ["wh2_jmw_hef_mon_forest_dragon-wh2_dlc15_hef_imrik"] = 1,
+    ["cal_hef_cav_ghost_warriors-wh2_dlc15_hef_imrik"] = 2,
+    ["hef_cal_hef_inf_dragon_guard_ror-wh2_dlc15_hef_imrik"] = 2,
+    ["hef_cal_hef_cav_dragonspine_princes_ror-wh2_dlc15_hef_imrik"] = 3,
+    --elth
     ["wh2_dlc15_hef_inf_mistwalkers_faithbearers_0-wh2_dlc15_hef_eltharion"] = 0,
     ["wh2_dlc15_hef_inf_mistwalkers_spireguard_0-wh2_dlc15_hef_eltharion"] = 0,
     ["wh2_dlc15_hef_inf_mistwalkers_sentinels_0-wh2_dlc15_hef_eltharion"] = 0,
     ["wh2_dlc15_hef_inf_mistwalkers_skyhawks_0-wh2_dlc15_hef_eltharion"] = 0,
     ["wh2_dlc15_hef_inf_mistwalkers_griffon_knights_0-wh2_dlc15_hef_eltharion"] = 2,
-    ["wh2_dlc15_hef_mon_war_lions_of_chrace_0-wh2_main_hef_prince_alastar"] = 0,
-    ["wh2_dlc15_hef_veh_lion_chariot_of_chrace_0-wh2_main_hef_prince_alastar"] = 0,
-    ["wh2_dlc15_hef_mon_war_lions_of_chrace_ror_0-wh2_main_hef_prince_alastar"] = 0,
-    ["wh2_dlc15_hef_mon_arcane_phoenix_ror_0-wh2_main_hef_teclis"] = 3,
-    ["wh2_dlc15_hef_mon_arcane_phoenix_0-wh2_main_hef_teclis"] = 2,
-    ["wh2_jmw_hef_mon_forest_dragon-wh2_dlc15_hef_imrik"] = 1,
-    ["cal_hef_cav_ghost_warriors-wh2_dlc15_hef_imrik"] = 2,
-    ["hef_cal_hef_inf_dragon_guard_ror-wh2_dlc15_hef_imrik"] = 2,
-    ["hef_cal_hef_cav_dragonspine_princes_ror-wh2_dlc15_hef_imrik"] = 3,
     ["hef_cal_hef_mon_baith_caradan_ror-wh2_dlc15_hef_imrik"] = 3,
     ["hef_yvr_inf_archers_mistwalkers-wh2_dlc15_hef_eltharion"] = 0,
   
@@ -412,6 +428,9 @@ local SRW_Free_Units = {
     ["wh2_dlc10_hef_cav_the_fireborn_ror_0-hef_prince_imrik"] = 2,
     ["wh2_main_hef_inf_white_lions_of_chrace_0-hef_korhil"] = 0,
     ["wh2_dlc10_hef_inf_the_silverpelts_ror_0-hef_korhil"] = 0,
+    ["wh2_dlc15_hef_mon_war_lions_of_chrace_0-hef_korhil"] = 0,
+    ["wh2_dlc15_hef_veh_lion_chariot_of_chrace_0-hef_korhil"] = 0,
+    ["wh2_dlc15_hef_mon_war_lions_of_chrace_ror_0-hef_korhil"] = 0,
     ["wh2_main_hef_inf_swordmasters_of_hoeth_0-hef_belannaer"] = 0,
     ["wh2_main_hef_inf_phoenix_guard-hef_bloodline_caradryan"] = 1,
     ["wh2_main_hef_mon_phoenix_flamespyre-hef_bloodline_caradryan"] = 1,
@@ -517,6 +536,20 @@ local SRW_Free_Units = {
     ["wh2_main_skv_inf_warpfire_thrower-Thom_vulkan_moltskin_searflesh"] = 0,
     ["wh2_dlc12_skv_inf_warpfire_thrower_ror_tech_lab_0-Thom_vulkan_moltskin_searflesh"] = 1,
     ["thom_vulkan_warpfire_throwers-Thom_vulkan_moltskin_searflesh"] = 0,
+    ["wh2_main_skv_inf_stormvermin_0-skv_feskit"] = 0,
+    ["wh2_main_skv_inf_stormvermin_1-skv_feskit"] = 0,
+    ["wh2_dlc12_skv_inf_clanrats_ror_0-skv_feskit"] = 0,
+    ["wh2_dlc12_skv_inf_stormvermin_ror_0-skv_feskit"] = 0,
+    ["thom_ferrik_stormvermin_2h-skv_feskit"] = 0,
+    ["thom_ferrik_stormvermin_halberd-skv_feskit"] = 0,
+    ["thom_ferrik_stormvermin_shield-skv_feskit"] = 0,
+    ["thom_ferrik_forge_guard-skv_feskit"] = 1,
+    ["thom_ferrik_gold_rats-skv_feskit"] = 1,
+    ["thom_ferrik_ironbreaker-skv_feskit"] = 2,
+    ["thom_vulkan_ashen_gaurd_shield-skv_feskit"] = 1,
+    ["thom_vulkan_ashen_gaurd_halberd-skv_feskit"] = 1,
+    ["thom_vulkan_stormvermin_shield-skv_feskit"] = 0,
+    ["thom_vulkan_stormvermin_halberd-skv_feskit"] = 0,
   --Vampire Coast
     ["wh2_dlc11_cst_inf_syreens-wh2_dlc11_cst_cylostra"] = 0,
     ["wh2_dlc11_cst_mon_mournguls_0-wh2_dlc11_cst_cylostra"] = 0,

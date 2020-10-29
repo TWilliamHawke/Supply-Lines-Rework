@@ -65,6 +65,9 @@ local SRW_Lord_Group = {
     ["wh_dlc08_nor_throgg"] = "Throgg",
     ["ws_grn_tinitt_foureyes"] = "Forest",
     ["ws_grn_grak_beastbasha"] = "BeastBasha",
+  --TEB
+    --["teb_tilea"] = "Tileaman",
+    --["teb_borgio_the_besieger"] = "Besieger",
   }
   
   

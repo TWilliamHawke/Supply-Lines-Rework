@@ -25,7 +25,10 @@ local Mixu2_Subculture_Text = {
   ["wh2_main_sc_hef_high_elves"] = "SRW_Subculture_Text_mixu2_hef",
   ["wh_dlc05_sc_wef_wood_elves"] = "SRW_Subculture_Text_mixu2_wef",
   ["wh2_main_sc_def_dark_elves"] = "SRW_Subculture_Text_mixu2_def",
-  ["wh2_main_sc_lzd_lizardmen"] = "SRW_Subculture_Text_mixu2_lzd"
+  ["wh2_main_sc_lzd_lizardmen"] = "SRW_Subculture_Text_mixu2_lzd",
+  ["wh_main_sc_grn_greenskins"] = "SRW_Subculture_Text_mixu2_grn",
+  ["wh2_main_sc_skv_skaven"] = "SRW_Subculture_Text_mixu2_skv",
+  ["wh_main_sc_nor_norsca"] = "SRW_Subculture_Text_mixu2_nor"
 }
 
 local Kraka_Subculture_Text = {

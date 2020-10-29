@@ -53,13 +53,20 @@ local function set_tooltip_text_treasury(faction, component_name)
     lord_text = lord_text..localizator(vulcan_text)
   end;
 
+  if vfs.exists("script/campaign/mod/ws_big_waaagh.lua") then
+    local wez_text = Wez_Subculture_Text[culture] or dummy_text
+    lord_text = lord_text..localizator(wez_text)
+  end;
+
   local supply_text = localizator("SRW_treasury_tooltip_supply")
   supply_text = string.gsub(supply_text, "SRW_supply", tostring(global_supply))
-  local supply_balance_text = "Your supply balance is "..supply_balance
+  
+  local supply_balance_text = localizator("SRW_supply_balance_text")..supply_balance
   if not enable_supply_balance then
     supply_balance_text = ""
   end
-  local tooltip_text = localizator("SRW_treasury_tooltip_main")..lord_text..supply_text..localizator("SRW_treasury_tooltip_upkeep")..tostring(upkeep_percent).."%\n"..supply_balance_text
+
+  local tooltip_text = localizator("SRW_treasury_tooltip_main")..lord_text..supply_text..localizator("SRW_treasury_tooltip_upkeep")..tostring(upkeep_percent).."%"..supply_balance_text
 
   if srw_faction_is_horde(faction) then
     tooltip_text = localizator("SRW_Subculture_Text_hordes")
