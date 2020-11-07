@@ -368,7 +368,10 @@ local SRW_Free_Units = {
     ["wh_dlc08_nor_mon_skinwolves_0-nor_egil_styrbjorn"] = 0,
     ["wh_dlc08_nor_mon_skinwolves_1-nor_egil_styrbjorn"] = 0,
     ["wh_pro04_nor_mon_skinwolves_ror_0-nor_egil_styrbjorn"] = 0,
-
+    ["wh_main_nor_mon_chaos_trolls-wh_dlc08_nor_throgg"] = 0,
+    ["wh_dlc01_chs_mon_trolls_1-wh_dlc08_nor_throgg"] = 0,
+    ["wh2_dlc15_grn_mon_stone_trolls_0_n-wh_dlc08_nor_throgg"] = 0,
+    ["wh2_dlc15_grn_mon_river_trolls_0_n-wh_dlc08_nor_throgg"] = 0,
     
   --Hight Elves
     ["wh2_main_hef_cav_silver_helms_0-wh2_main_hef_tyrion"] = 0,

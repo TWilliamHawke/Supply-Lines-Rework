@@ -653,9 +653,15 @@ local SRW_Supply_Cost = {
     ["wh_dlc08_nor_mon_norscan_ice_trolls_0"] = 2,
     ["wh_dlc08_nor_mon_fimir_0"] = 2,
     ["wh_dlc08_nor_mon_fimir_1"] = 2,
+    ["wh_dlc01_chs_mon_trolls_1"] = 2,
+    ["wh2_dlc15_grn_mon_stone_trolls_0_n"] = 2,
+    ["wh2_dlc15_grn_mon_river_trolls_0_n"] = 2,
+    ["wh_dlc01_chs_cav_gorebeast_chariot"] = 2,
+    ["wh_dlc08_nor_mon_norscan_giant_0"] = 2,
+    ["wh_dlc08_nor_mon_frost_wyrm_0"] = 2,
+    
     --elite
-    ["wh_dlc08_nor_mon_norscan_giant_0"] = 3,
-    ["wh_dlc08_nor_mon_frost_wyrm_0"] = 3,
+    ["wh_main_chs_art_hellcannon_n"] = 3,
     ["wh_dlc08_nor_mon_war_mammoth_1"] = 3,
     ["wh_dlc08_nor_mon_war_mammoth_2"] = 3,
     -- ROR
@@ -665,7 +671,7 @@ local SRW_Supply_Cost = {
     ["wh_pro04_nor_mon_skinwolves_ror_0"] = 2,
     ["wh_dlc08_nor_mon_war_mammoth_ror_1"] = 2,
     ["wh_pro04_nor_mon_fimir_ror_0"] = 3,
-    ["wh_dlc08_nor_mon_frost_wyrm_ror_0"] = 4,
+    ["wh_dlc08_nor_mon_frost_wyrm_ror_0"] = 3,
     ["wh_pro04_nor_mon_war_mammoth_ror_0"] = 4,
     ["wh_dlc08_nor_art_hellcannon_battery"] = 4,
     --============================================================

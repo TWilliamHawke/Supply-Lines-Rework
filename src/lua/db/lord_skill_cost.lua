@@ -394,8 +394,8 @@ local SRW_Lord_Skills_Cost = {
     ["wh_dlc08_nor_mon_fimir_0-Throgg"] = {"wh_dlc08_skill_nor_throgg_unique_king_of_trolls", 0},
     ["wh_dlc08_nor_mon_fimir_1-Throgg"] = {"wh_dlc08_skill_nor_throgg_unique_king_of_trolls", 0},
     ["wh_dlc08_nor_mon_frost_wyrm_0-Throgg"] = {"wh_dlc08_skill_nor_throgg_unique_king_of_trolls", 1},
-    ["wh_pro04_nor_mon_fimir_ror_0-Throgg"] = {"wh_dlc08_skill_nor_throgg_battle_primordial_masters", 1},
-    ["wh_dlc08_nor_mon_frost_wyrm_ror_0-Throgg"] = {"wh_dlc08_skill_nor_throgg_battle_primordial_masters", 2},
+    ["wh_pro04_nor_mon_fimir_ror_0-Throgg"] = {"wh_dlc08_skill_nor_throgg_battle_primordial_masters", 0},
+    ["wh_dlc08_nor_mon_frost_wyrm_ror_0-Throgg"] = {"wh_dlc08_skill_nor_throgg_battle_primordial_masters", 1},
   
   }
   
