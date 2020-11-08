@@ -28,9 +28,8 @@ core:add_listener(
   "SRW_UnitTooltip_merc",
   "ComponentMouseOn",
   function(context)
-    local faction = cm:model():world():whose_turn_is_it()
     local component = UIComponent(context.component):Id()
-    return cm.campaign_ui_manager:is_panel_open("units_panel") and player_supply_custom_mult ~=0 and string.find(component, "_mercenary") and factionChecker(faction)
+    return cm.campaign_ui_manager:is_panel_open("units_panel") and player_supply_custom_mult ~=0 and string.find(component, "_mercenary") and uiFactionChecker()
   end,
   function(context)
     local component = UIComponent(context.component)
@@ -44,9 +43,8 @@ core:add_listener(
   "SRW_UnitTooltip_rec",
   "ComponentMouseOn",
   function(context)
-    local faction = cm:model():world():whose_turn_is_it()
     local component = UIComponent(context.component):Id()
-    return cm.campaign_ui_manager:is_panel_open("units_panel") and player_supply_custom_mult ~=0 and string.find(component, "_recruitable") and factionChecker(faction)
+    return cm.campaign_ui_manager:is_panel_open("units_panel") and player_supply_custom_mult ~=0 and string.find(component, "_recruitable") and uiFactionChecker()
   end,
   function(context)
     local component = UIComponent(context.component)
@@ -59,9 +57,9 @@ core:add_listener(
   "SRW_UnitTooltip_new_lord",
   "ComponentMouseOn",
   function(context)
-    local faction = cm:model():world():whose_turn_is_it()
     local component = UIComponent(context.component):Id()
-    return component == "button_raise" and player_supply_custom_mult ~=0 and factionChecker(faction)
+    --raise new lord, not undead
+    return component == "button_raise" and player_supply_custom_mult ~=0 and uiFactionChecker()
   end,
   function(context)
     local component = UIComponent(context.component)
@@ -78,7 +76,7 @@ core:add_listener(
   "SRW_Character_Selected",
   "CharacterSelected",
   function(context)
-    return context:character():faction():is_human() and context:character():has_military_force()
+    return context:character():has_military_force()
   end,
   function(context)
     SRW_selected_character = context:character();
@@ -87,3 +85,33 @@ core:add_listener(
   true
 )
 
+-- core:add_listener(
+--   "SRW_UnitTooltip_lord_upkeep",
+--   "ComponentMouseOn",
+--   function(context)
+--     local component = UIComponent(context.component):Id()
+--     return component == "dy_upkeep" and player_supply_custom_mult ~=0 and uiFactionChecker()
+--   end,
+--   function(context)
+--     local component = UIComponent(context.component)
+
+--     set_army_supply_tooltip(component)
+    
+--   end,
+--   true
+-- )
+
+core:add_listener(
+  "SRW_UnitTooltip_army",
+  "ComponentMouseOn",
+  function(context)
+    local component = UIComponent(context.component):Id()
+    return cm.campaign_ui_manager:is_panel_open("units_panel") and string.find(component, "LandUnit") and player_supply_custom_mult ~=0 and uiFactionChecker()
+  end,
+  function(context)
+    local component = UIComponent(context.component)
+    set_unit_in_army_tooltip(component)
+    
+  end,
+  true
+)

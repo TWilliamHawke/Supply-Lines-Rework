@@ -10,4 +10,4 @@ local basic_lord_supply = 0
 local enable_supply_balance = false
 local max_balance_per_buildings = 3
 local max_balance_per_army = 30
-
+local ui_faction_check = nil;

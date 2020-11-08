@@ -15,3 +15,12 @@ local function factionChecker(faction)
   return true
 end;
 
+local function uiFactionChecker()
+  if ui_faction_check ~= nil then 
+    return ui_faction_check
+  end
+
+  local faction = cm:model():world():whose_turn_is_it()
+  ui_faction_check = factionChecker(faction)
+  return ui_faction_check
+end;
