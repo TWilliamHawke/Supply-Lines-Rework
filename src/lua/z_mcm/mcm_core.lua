@@ -39,6 +39,17 @@ local function init_mcm(context)
   local c_d_lord_supply = supply_lines_rw:get_option_by_key("c_d_lord_supply")
   basic_lord_supply = c_d_lord_supply:get_finalized_setting()
 
+  local enable_supply_balance_cfg = supply_lines_rw:get_option_by_key("balance_enable")
+  enable_supply_balance = enable_supply_balance_cfg:get_finalized_setting()
+
+  local max_balance_per_building_cfg = supply_lines_rw:get_option_by_key("balance_per_building")
+  max_balance_per_buildings = max_balance_per_building_cfg:get_finalized_setting()
+  max_balance_per_building_cfg:set_uic_visibility(enable_supply_balance)
+
+  local max_balance_per_army_cfg = supply_lines_rw:get_option_by_key("balance_per_army")
+  max_balance_per_army = max_balance_per_army_cfg:get_finalized_setting()
+  max_balance_per_army_cfg:set_uic_visibility(enable_supply_balance)
+
   if enable_logging_debug then
     enable_logging = true
     enable_logging_ai = true

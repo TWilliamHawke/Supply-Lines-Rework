@@ -1,6 +1,7 @@
 local function get_supply_balance(faction)
+  local culture = faction:subculture();
 
-  if not enable_supply_balance then
+  if not enable_supply_balance or culture == "wh_dlc05_sc_wef_wood_elves" then
     return 0
   end;
 

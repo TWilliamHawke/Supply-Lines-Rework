@@ -22,11 +22,21 @@ local function ai_callback(option)
   end;
 end;
 
--- function effectCallback(option)
---   return function(option)
+function effectCallback(option)
+  local val = option:get_selected_setting()
 
---   end
--- end
+  local max_building = option:get_mod():get_option_by_key("balance_per_building")
+  local max_army = option:get_mod():get_option_by_key("balance_per_army")
+
+  if val then
+    max_building:set_uic_visibility(true)
+    max_army:set_uic_visibility(true)
+  else
+    max_building:set_uic_visibility(false)
+    max_army:set_uic_visibility(false)
+  end;
+
+end
 
 local supply_lines_rw = mct:register_mod("supply_lines_rw")
 supply_lines_rw:set_title(loc_prefix.."mod_title", true)
@@ -68,14 +78,28 @@ ai_effect:slider_set_min_max(0, 15)
 ai_effect:set_default_value(0)
 ai_effect:slider_set_step_size(1)
 
-local supply_balance_section = supply_lines_rw:add_new_section("balance_section")
-supply_balance_section:set_localised_text("Supply Balance")
+local supply_balance_section = supply_lines_rw:add_new_section("o_balance_section")
+supply_balance_section:set_localised_text("[BETA] Supply Balance")
 
 local enable_balance = supply_lines_rw:add_new_option("balance_enable", "checkbox")
-enable_balance:set_default_value(true)
-enable_balance:set_text("mct_supply_lines_rw_a_player_enable_text", true)
-enable_balance:set_tooltip_text("mct_supply_lines_rw_a_player_enable_tt", true)
-enable_balance:add_option_set_callback(player_callback)
+enable_balance:set_default_value(false)
+enable_balance:set_text("mct_supply_lines_rw_balance_enable_text", true)
+enable_balance:set_tooltip_text("mct_supply_lines_rw_balance_enable_tt", true)
+enable_balance:add_option_set_callback(effectCallback)
+
+local max_balance_per_building = supply_lines_rw:add_new_option("balance_per_building", "slider")
+max_balance_per_building:slider_set_min_max(0, 5)
+max_balance_per_building:set_default_value(3)
+max_balance_per_building:slider_set_step_size(1)
+max_balance_per_building:set_text("mct_supply_lines_rw_balance_per_building_text", true)
+max_balance_per_building:set_tooltip_text("mct_supply_lines_rw_balance_per_building_tt", true)
+
+local max_balance_per_army = supply_lines_rw:add_new_option("balance_per_army", "slider")
+max_balance_per_army:slider_set_min_max(0, 30)
+max_balance_per_army:set_default_value(30)
+max_balance_per_army:slider_set_step_size(1)
+max_balance_per_army:set_text("mct_supply_lines_rw_balance_per_army_text", true)
+max_balance_per_army:set_tooltip_text("mct_supply_lines_rw_balance_per_army_tt", true)
 
 
 local settings_section = supply_lines_rw:add_new_section("settings_sectiom")

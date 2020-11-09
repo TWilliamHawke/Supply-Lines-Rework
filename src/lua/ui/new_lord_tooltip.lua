@@ -1,7 +1,12 @@
-local function set_new_lord_tooltip(component, faction)
+local function set_new_lord_tooltip(component)
   if not enable_supply_balance then
     return
   end;
+  
+  local faction = cm:model():world():whose_turn_is_it()
+  local culture = faction:subculture();
+
+  if culture == "wh_dlc05_sc_wef_wood_elves" then return end;
 
   local supply_balance = get_supply_balance(faction)
 

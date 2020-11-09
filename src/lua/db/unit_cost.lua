@@ -1174,6 +1174,11 @@ local SRW_Supply_Cost = {
     ["mixu_vmp_inf_crypt_ghouls"] = 1,
     ["wh2_mixu_vmp_cav_black_knights_sword"] = 1,
     ["wh2_mixu_vmp_cav_black_knights_lance"] = 2,
+    ["mixu_vmp_mon_feral_manticore"] = 1,
+    ["mixu_vmp_mon_mournguls_0"] = 2,
+    ["mixu_vmp_mon_the_grey_men"] = 2,
+    ["mixu_vmp_mon_vargheists"] = 2,
+    ["mixu_vmp_mon_terrorgheist"] = 4,
     
     ["wh2_mixu_vmp_inf_wailing_hags"] = 2,
     ["wh2_mixu_vmp_cav_knights_errant"] = 2,
@@ -1182,6 +1187,7 @@ local SRW_Supply_Cost = {
     ["wh2_mixu_vmp_cav_knights_of_the_realm"] = 3,
     ["wh2_mixu_vmp_cav_questing_knights"] = 3,
     ["wh2_mixu_vmp_cav_black_grail_knights"] = 4,
+    ["mixu_vmp_cav_pegasus_knights"] = 2,
   
     ["wh2_mixu_vmp_ror_the_hungry"] = 2,
     ["wh2_mixu_vmp_ror_bastardiers_of_chalons"] = 1,

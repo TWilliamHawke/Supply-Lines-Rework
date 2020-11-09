@@ -1,7 +1,7 @@
 --if unit not found in SRW_Supply_Cost
 local function calculate_unit_supply(unit)
   local uclass = unit:unit_class();
-  local ucat = unit:unit_category();
+  --local ucat = unit:unit_category();
   local ucost = unit:get_unit_custom_battle_cost()
   if uclass == "com" then
     return 0

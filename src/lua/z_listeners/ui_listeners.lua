@@ -25,36 +25,7 @@ core:add_listener(
 )
 
 core:add_listener(
-  "SRW_UnitTooltip_merc",
-  "ComponentMouseOn",
-  function(context)
-    local component = UIComponent(context.component):Id()
-    return cm.campaign_ui_manager:is_panel_open("units_panel") and player_supply_custom_mult ~=0 and string.find(component, "_mercenary") and uiFactionChecker()
-  end,
-  function(context)
-    local component = UIComponent(context.component)
-    set_unit_tooltip(component, "_mercenary")
-  end,
-  true
-)
-
-
-core:add_listener(
-  "SRW_UnitTooltip_rec",
-  "ComponentMouseOn",
-  function(context)
-    local component = UIComponent(context.component):Id()
-    return cm.campaign_ui_manager:is_panel_open("units_panel") and player_supply_custom_mult ~=0 and string.find(component, "_recruitable") and uiFactionChecker()
-  end,
-  function(context)
-    local component = UIComponent(context.component)
-    set_unit_tooltip(component, "_recruitable")
-  end,
-  true
-)
-
-core:add_listener(
-  "SRW_UnitTooltip_new_lord",
+  "SRW_new_lord_tooltip",
   "ComponentMouseOn",
   function(context)
     local component = UIComponent(context.component):Id()
@@ -63,13 +34,35 @@ core:add_listener(
   end,
   function(context)
     local component = UIComponent(context.component)
-    local faction = cm:model():world():whose_turn_is_it()
 
-    set_new_lord_tooltip(component, faction)
+    set_new_lord_tooltip(component)
     
   end,
   true
 )
+
+core:add_listener(
+  "SRW_UnitTooltip",
+  "ComponentMouseOn",
+  function(context)
+    local component = UIComponent(context.component):Id()
+    return cm.campaign_ui_manager:is_panel_open("units_panel") and player_supply_custom_mult ~=0 and uiFactionChecker()
+  end,
+  function(context)
+    local component = UIComponent(context.component)
+    local component_id = component:Id()
+
+    if string.find(component_id, "LandUnit") then
+      set_unit_in_army_tooltip(component)
+    elseif string.find(component_id, "_recruitable") then
+      set_unit_tooltip(component, "_recruitable")
+    elseif string.find(component_id, "_mercenary") then
+      set_unit_tooltip(component, "_mercenary")
+    end;
+  end,
+  true
+)
+
 
 --USED IN UNIT HINT
 core:add_listener(
@@ -101,17 +94,3 @@ core:add_listener(
 --   true
 -- )
 
-core:add_listener(
-  "SRW_UnitTooltip_army",
-  "ComponentMouseOn",
-  function(context)
-    local component = UIComponent(context.component):Id()
-    return cm.campaign_ui_manager:is_panel_open("units_panel") and string.find(component, "LandUnit") and player_supply_custom_mult ~=0 and uiFactionChecker()
-  end,
-  function(context)
-    local component = UIComponent(context.component)
-    set_unit_in_army_tooltip(component)
-    
-  end,
-  true
-)

@@ -62,7 +62,8 @@ local function set_tooltip_text_treasury(faction, component_name)
   supply_text = string.gsub(supply_text, "SRW_supply", tostring(global_supply))
   
   local supply_balance_text = localizator("SRW_supply_balance_text")..supply_balance
-  if not enable_supply_balance then
+  SRWLOG(supply_balance_text)
+  if not enable_supply_balance or culture == "wh_dlc05_sc_wef_wood_elves" then
     supply_balance_text = ""
   end
 
