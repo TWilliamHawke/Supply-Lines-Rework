@@ -132,9 +132,7 @@ local SRW_Supply_Cost = {
 
   --
 
---other
-
--- Amazon
+--Amazon
   --core
   ["troy_dlc1_ama_hip_amazon_archers"] = 0,
   ["troy_dlc1_ama_gen_stoneslingers"] = 0,
@@ -204,7 +202,7 @@ local SRW_Supply_Cost = {
   ["troy_dlc1_myth_special_sirens"] = 4,
   ["troy_dlc1_myth_special_spartoi"] = 4,
   ["troy_dlc2_warriors_of_artemis"] = 4,
--- Troyan
+--Troyan
   --core
   ["troy_aen_dardanian_gang"] = 0,
   ["troy_aen_dardanian_mob"] = 0,
@@ -455,9 +453,7 @@ local function set_unit_tooltip(component, text)
   local unit_name = string.gsub(component_name, text, "")
   local old_text = component:GetTooltipText();
   local unit_cost = SRW_Supply_Cost[unit_name]
-  SRWLOG("unit cost is"..unit_cost)
 
-  --if old_text:find("col:red") then return end
   local supply_text = localizator("SRW_unit_supply_cost_unknown")
 
   if unit_cost == 0 then
@@ -471,25 +467,15 @@ local function set_unit_tooltip(component, text)
 
   elseif unit_cost and unit_cost > 1 then
     local imported_text = localizator("SRW_unit_supply_cost_many")
-
     supply_text = string.gsub(imported_text, "SRW_Cost", tostring(unit_cost))
-
   end;
   
-  SRWLOG("supply_text is "..supply_text)
-
   if string.find(old_text, supply_text) then return end
-  SRWLOG("before final text ")
 
   local final_text = string.gsub(old_text, "\n", "\n[[col:yellow]]"..supply_text.."[[/col]]\n", 1)
-  SRWLOG("final_text done ")
 
   if is_uicomponent(component) then 
-  SRWLOG("before set tooltip ")
-
     component:SetTooltipText(final_text, true)
-    SRWLOG("after set tooltip ")
-
   end;
 end;
 

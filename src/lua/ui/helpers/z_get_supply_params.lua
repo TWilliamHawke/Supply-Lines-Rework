@@ -22,5 +22,10 @@ local function get_supply_params(unit_name)
     end
   end
 
+  if selected_char == "wh2_main_def_black_ark" then
+    is_basic_cost = false
+    unit_cost = 0
+  end
+
   return unit_cost, is_basic_cost
 end

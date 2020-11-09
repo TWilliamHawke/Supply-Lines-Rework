@@ -13,7 +13,7 @@ local function get_armies_total_cost(faction)
       end;
     end; --of army check
   end; --of force list loop
-  SRWLOG("total army cost is"..tostring(armies_total_cost))
+  SRWLOG("total army cost is "..tostring(armies_total_cost))
   return armies_total_cost
 end;
 

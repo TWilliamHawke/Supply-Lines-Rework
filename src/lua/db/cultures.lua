@@ -14,32 +14,27 @@ local SRW_Subculture_Text = {
   -- ["wh_main_sc_teb_teb"] = "",
 }
 
-local Mixu1_Subculture_Text = {
-  ["wh_main_sc_emp_empire"] = "SRW_Subculture_Text_mixu_emp",
-  ["wh_main_sc_ksl_kislev"] = "SRW_Subculture_Text_mixu_ksl",
-  ["wh_dlc05_sc_wef_wood_elves"] = "SRW_Subculture_Text_mixu_wef",
-  ["wh_main_sc_dwf_dwarfs"] = "SRW_Subculture_Text_mixu_dwf"
+local modded_subculture_text = {
+  ["mixu1-wh_main_sc_emp_empire"] = "SRW_Subculture_Text_mixu_emp",
+  ["mixu1-wh_main_sc_ksl_kislev"] = "SRW_Subculture_Text_mixu_ksl",
+  ["mixu1-wh_dlc05_sc_wef_wood_elves"] = "SRW_Subculture_Text_mixu_wef",
+  ["mixu1-wh_main_sc_dwf_dwarfs"] = "SRW_Subculture_Text_mixu_dwf",
+  ["mixu2-wh2_main_sc_hef_high_elves"] = "SRW_Subculture_Text_mixu2_hef",
+  ["mixu2-wh_dlc05_sc_wef_wood_elves"] = "SRW_Subculture_Text_mixu2_wef",
+  ["mixu2-wh2_main_sc_def_dark_elves"] = "SRW_Subculture_Text_mixu2_def",
+  ["mixu2-wh2_main_sc_lzd_lizardmen"] = "SRW_Subculture_Text_mixu2_lzd",
+  ["mixu2-wh_main_sc_grn_greenskins"] = "SRW_Subculture_Text_mixu2_grn",
+  ["mixu2-wh2_main_sc_skv_skaven"] = "SRW_Subculture_Text_mixu2_skv",
+  ["mixu2-wh_main_sc_nor_norsca"] = "SRW_Subculture_Text_mixu2_nor",
+  ["kraka-wh_main_sc_dwf_dwarfs"] = "SRW_Subculture_Text_kraka",
+  ["vulcan-wh2_main_sc_skv_skaven"] = "SRW_Subculture_Text_vulcan",
+  ["wez-wh_main_sc_grn_savage_orcs"] = "SRW_Subculture_Text_wez",
 }
 
-local Mixu2_Subculture_Text = {
-  ["wh2_main_sc_hef_high_elves"] = "SRW_Subculture_Text_mixu2_hef",
-  ["wh_dlc05_sc_wef_wood_elves"] = "SRW_Subculture_Text_mixu2_wef",
-  ["wh2_main_sc_def_dark_elves"] = "SRW_Subculture_Text_mixu2_def",
-  ["wh2_main_sc_lzd_lizardmen"] = "SRW_Subculture_Text_mixu2_lzd",
-  ["wh_main_sc_grn_greenskins"] = "SRW_Subculture_Text_mixu2_grn",
-  ["wh2_main_sc_skv_skaven"] = "SRW_Subculture_Text_mixu2_skv",
-  ["wh_main_sc_nor_norsca"] = "SRW_Subculture_Text_mixu2_nor"
+local supported_mods_prefix = {
+  {"script/campaign/main_warhammer/mod/mixu_le_bruckner.lua", "mixu1-"},
+  {"script/campaign/mod/mixu_darkhand.lua", "mixu2-"},
+  {"script/campaign/mod/cataph_kraka.lua", "kraka-"},
+  {"script/campaign/main_warhammer/mod/thom_vulkan.lua", "vulcan-"},
+  {"script/campaign/mod/ws_big_waaagh.lua", "wez-"},
 }
-
-local Kraka_Subculture_Text = {
-  ["wh_main_sc_dwf_dwarfs"] = "SRW_Subculture_Text_kraka"
-}
-
-local Vulcan_Subculture_Text = {
-  ["wh2_main_sc_skv_skaven"] = "SRW_Subculture_Text_vulcan"
-}
-
-local Wez_Subculture_Text = {
-  ["wh_main_sc_grn_savage_orcs"] = "SRW_Subculture_Text_wez"
-}
-

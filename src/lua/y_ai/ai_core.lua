@@ -18,16 +18,16 @@ local function srw_calculate_upkeep_AI(force)
   local unit_list = force:unit_list();
   local character = force:general_character():character_subtype_key();
 
-  remove_effect(force, true)
+  remove_effect(force, ai_supply_enabled)
 
   if ai_supply_mult > 0 then
     local effect_strength = calculate_army_supply_AI(unit_list, character);
     SRWLOGAI("THIS ARMY HAS "..tostring(unit_list:num_items()).." UNITS");
     SRWLOGAI("THIS ARMY REQUIRED "..tostring(effect_strength).." SUPPLY POINTS");
-    effect_strength = math.floor(effect_strength*ai_supply_mult/24);
-    if effect_strength > 0 then
-      apply_effect(effect_strength, force, true)
-      SRWLOGAI("APPLY EFFECT: +"..tostring(effect_strength).."% TO UPKEEP");
+
+    local upkeep_mod = get_upkeep_from_supply(effect_strength, ai_supply_mult);
+    if upkeep_mod > 0 then
+      apply_effect(upkeep_mod, force, ai_supply_enabled)
     end;
   end
 end;

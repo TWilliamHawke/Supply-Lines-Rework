@@ -9,8 +9,7 @@ local function set_tooltip_text_treasury(faction, component_name)
   local dif_mod = srw_get_diff_mult();
   local force_list = faction:military_force_list();
   local dummy_text = "SRW_dummy_text"
-  local lord_text_key = SRW_Subculture_Text[culture] or dummy_text
-  local lord_text = localizator(lord_text_key)
+  local lord_text = get_subculture_text(culture)
   local supply_balance = get_supply_balance(faction)
   local supply_penalty = get_supply_penalty(faction)
 
@@ -23,40 +22,13 @@ local function set_tooltip_text_treasury(faction, component_name)
       local character = force:general_character();
 
       local army_supply = calculate_army_supply(unit_list, character) + supply_penalty;
-
-      local army_upkeep_effect = math.floor(army_supply*dif_mod/24)
       global_supply = global_supply + army_supply
-      upkeep_percent = upkeep_percent + math.min(army_upkeep_effect, max_supply_per_army) + 1
+
+      upkeep_percent = upkeep_percent + get_upkeep_from_supply(army_supply, dif_mod) + 1
     end; --of army check
   end; --of army call
+
   if upkeep_percent < 0 then upkeep_percent = 0 end;
-
-  --generate text
-
-  if vfs.exists("script/campaign/main_warhammer/mod/mixu_le_bruckner.lua") then
-    local mixu1_text = Mixu1_Subculture_Text[culture] or dummy_text
-    lord_text = lord_text..localizator(mixu1_text)
-  end;
-
-  if vfs.exists("script/campaign/mod/mixu_darkhand.lua") then
-    local mixu2_text = Mixu2_Subculture_Text[culture] or dummy_text
-    lord_text = lord_text..localizator(mixu2_text)
-  end;
-
-  if vfs.exists("script/campaign/mod/cataph_kraka.lua") then
-    local kraka_text = Kraka_Subculture_Text[culture] or dummy_text
-    lord_text = lord_text..localizator(kraka_text)
-  end;
-
-  if vfs.exists("script/campaign/main_warhammer/mod/thom_vulkan.lua") then
-    local vulcan_text = Vulcan_Subculture_Text[culture] or dummy_text
-    lord_text = lord_text..localizator(vulcan_text)
-  end;
-
-  if vfs.exists("script/campaign/mod/ws_big_waaagh.lua") then
-    local wez_text = Wez_Subculture_Text[culture] or dummy_text
-    lord_text = lord_text..localizator(wez_text)
-  end;
 
   local supply_text = localizator("SRW_treasury_tooltip_supply")
   supply_text = string.gsub(supply_text, "SRW_supply", tostring(global_supply))

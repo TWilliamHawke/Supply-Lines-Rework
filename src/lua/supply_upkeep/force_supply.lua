@@ -7,7 +7,7 @@ local function srw_calculate_upkeep(force, supply_penalty)
 
   local effect_strength = calculate_army_supply(unit_list, character) + supply_penalty;
   SRWLOG("THIS ARMY REQUIRED "..tostring(effect_strength).." SUPPLY POINTS");
-  effect_strength = math.floor(effect_strength*multiplier/24);
+  effect_strength = get_upkeep_from_supply(effect_strength, multiplier);
 
   if effect_strength > 0 then
     apply_effect(effect_strength, force)

@@ -1,11 +1,10 @@
 local function apply_effect(effect_strength, force, hide_log)
-  local upkeep_mod = math.min(effect_strength, max_supply_per_army);
-  local effect_bundle = "srw_bundle_force_upkeep_" .. upkeep_mod;
+  local effect_bundle = "srw_bundle_force_upkeep_" .. effect_strength;
 
   cm:apply_effect_bundle_to_characters_force(effect_bundle, force:general_character():cqi(), -1, true);
 
   if not hide_log then
-    SRWLOG("APPLY EFFECT: +"..tostring(upkeep_mod).."% TO UPKEEP");
+    SRWLOG("APPLY EFFECT: +"..tostring(effect_strength).."% TO UPKEEP");
   end
 end;
 
