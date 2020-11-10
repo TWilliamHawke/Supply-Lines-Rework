@@ -11,17 +11,28 @@ local function set_new_lord_tooltip(component)
   local supply_balance = get_supply_balance(faction)
 
   local force_list = faction:military_force_list();
-  local new_army_cost = get_army_count(force_list)
+  local current_army_count = get_army_count(force_list)
+  local future_army_count = current_army_count + 1
+  local supply_decreasing = math.min(current_army_count, max_balance_per_army)
 
-  local negative_balance = new_army_cost
-  if supply_balance > 0 then
-    negative_balance = new_army_cost - supply_balance
+  local current_supply_penalty = 0
+  if supply_balance < 0 then
+    current_supply_penalty = calculate_supply_penalty(supply_balance*-1, current_army_count)*current_army_count
   end
-  
-  local num_of_armies = new_army_cost + 1
-  local upkeep = math.ceil(negative_balance/math.sqrt(num_of_armies))*num_of_armies*srw_get_diff_mult()/24
 
-  local tooltip_text = "Current supply balance is "..supply_balance.."\nNew army will decreace it by "..new_army_cost.."\nYour army upkeep will be increase by "..math.floor(upkeep)
+  local negative_balance = supply_decreasing - supply_balance
+
+  if negative_balance < 0 then
+    negative_balance = 0
+  end;
+
+  local future_supply_penalty = calculate_supply_penalty(negative_balance, future_army_count)*future_army_count
+
+  local tooltip_text = localizator("SRW_new_lord_supply_balance")..supply_balance..localizator("SRW_new_lord_decrease")..supply_decreasing..localizator("SRW_new_lord_consumption")..tostring(future_supply_penalty - current_supply_penalty)
+
+  if future_supply_penalty > 20 then
+    tooltip_text = tooltip_text..localizator("SRW_new_lord_suggestion")
+  end;
 
   if is_uicomponent(component) then 
     component:SetTooltipText(tooltip_text, true)

@@ -8,8 +8,8 @@ local function set_unit_in_army_tooltip(component)
   local unit_list = force:unit_list()
   local unit_number = component_name:match("(%d+)")
   
-  if unit_number == 0 then return end;
-
+  if unit_number == "0" then return end;
+  
   local index = tonumber(unit_number) + get_num_of_agents(unit_list)
   local unit = unit_list:item_at(index);
   local unit_name = unit:unit_key();

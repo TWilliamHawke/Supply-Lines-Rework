@@ -32,6 +32,6 @@ local function get_supply_penalty(faction)
   local num_of_armies = get_army_count(force_list)
   supply_balance = 0 - supply_balance
 
-  return math.ceil(supply_balance/math.sqrt(num_of_armies))
+  return calculate_supply_penalty(supply_balance, num_of_armies)
 
 end

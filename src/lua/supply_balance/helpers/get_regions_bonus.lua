@@ -11,17 +11,15 @@ local function get_building_var(faction)
         if slot_list:item_at(j):has_building() then
           local building = slot_list:item_at(j):building()
           local building_name = building:name()
-          --main building
-          if(j == 0) then
+          --main building hasspecial formula
+          if j == 0 then
             supply_form_regions = supply_form_regions - get_main_building_cost(building, faction)
-          end;
-          --other buildings
-          if building_unit_bonus[building_name] then
+          elseif building_unit_bonus[building_name] then
             supply_form_regions = supply_form_regions + math.min(building_unit_bonus[building_name], max_balance_per_buildings)
           end;         
-        end --of check has_building
-      end --of check is_emty
-    end --of slot loop
+        end -- of has_building check
+      end -- of is_emty check
+    end -- of slot loop
   end -- of region loop
 
   return supply_form_regions
