@@ -559,7 +559,17 @@ local SRW_Free_Units = {
     ["wh2_dlc11_cst_mon_mournguls_ror_0-wh2_dlc11_cst_cylostra"] = 1,
     ["wh2_dlc11_cst_mon_necrofex_colossus_0-wh2_dlc11_cst_noctilus"] = 2,
     ["wh2_dlc11_cst_mon_necrofex_colossus_ror_0-wh2_dlc11_cst_noctilus"] = 3,
-  
+  --Kislev
+    ["wh_main_ksv_veh_war_wagon-wh2_deco_boris"] = 0,
+    ["wh_main_ksv_veh_ungol_wagon-wh2_deco_boris"] = 0,
+    ["wh_main_ksv_art_light_cannon_ror-wh2_deco_boris"] = 2,
+    ["wh_main_ksv_art_grand_cannon-wh2_deco_boris"] = 3,
+    ["wh_main_ksv_art_light_cannon-wh2_deco_boris"] = 1,
+    ["wh_main_ksv_art_urugan-wh2_deco_boris"] = 1,
+    ["wh_main_ksl_cav_son-wh2_deco_boris"] = 2,
+    ["wh_main_ksl_inf_keeper-mixu_katarin_the_ice_queen"] = 0,
+    ["wh_main_ksl_inf_streltsi-mixu_katarin_the_ice_queen"] = 0,
+    ["wh_main_ksl_inf_streltsi_pole-mixu_katarin_the_ice_queen"] = 0,
     --Other LL
       -- dlc04_emp_volkmar
       -- 

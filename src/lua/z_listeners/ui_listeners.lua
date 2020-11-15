@@ -51,6 +51,7 @@ core:add_listener(
   function(context)
     local component = UIComponent(context.component)
     local component_id = component:Id()
+    if string.find(component_id, "QueuedLandUnit") then return end;
 
     if string.find(component_id, "LandUnit") then
       set_unit_in_army_tooltip(component)

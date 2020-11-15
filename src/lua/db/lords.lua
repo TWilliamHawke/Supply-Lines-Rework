@@ -68,6 +68,9 @@ local SRW_Lord_Group = {
   --TEB
     --["teb_tilea"] = "Tileaman",
     --["teb_borgio_the_besieger"] = "Besieger",
+  --Kislev
+    ["wh2_deco_boris"] = "Boris",
+    ["mixu_katarin_the_ice_queen"] = "Katya",
   }
   
   

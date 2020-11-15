@@ -398,7 +398,12 @@ local SRW_Lord_Skills_Cost = {
     ["wh_dlc08_nor_mon_frost_wyrm_0-Throgg"] = {"wh_dlc08_skill_nor_throgg_unique_king_of_trolls", 1},
     ["wh_pro04_nor_mon_fimir_ror_0-Throgg"] = {"wh_dlc08_skill_nor_throgg_battle_primordial_masters", 0},
     ["wh_dlc08_nor_mon_frost_wyrm_ror_0-Throgg"] = {"wh_dlc08_skill_nor_throgg_battle_primordial_masters", 1},
-  
+  --Kislev
+    ["wh_main_ksl_cav_legion-Boris"] = {"wh_dlc08_skill_ksl_lord_unique_boris_1", 1},
+    ["wh_main_ksl_inf_kreml-Boris"] = {"wh_dlc08_skill_ksl_lord_unique_boris_2", 1},
+    ["wh_main_ksl_cav_bolgasgrad_ror-Boris"] = {"wh_dlc08_skill_ksl_lord_unique_boris_2", 2},
+    ["wh_main_ksl_inf_kreml-Katya"] = {"mixu_ksl_katarin_bokha_special_royal_guard", 1},
+    ["wh_main_ksl_cav_bolgasgrad_ror-Katya"] = {"mixu_ksl_katarin_bokha_special_royal_guard", 2},
   }
   
   
