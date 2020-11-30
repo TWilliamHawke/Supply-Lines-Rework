@@ -4,42 +4,8 @@ local function set_tooltip_text_treasury(faction, component_name)
 
   local culture = faction:subculture();
   local component = find_uicomponent(core:get_ui_root(), component_name)
-  local global_supply = 0
-  local upkeep_percent = -1
-  local dif_mod = srw_get_diff_mult();
-  local force_list = faction:military_force_list();
-  local dummy_text = "SRW_dummy_text"
-  local lord_text = get_subculture_text(culture)
-  local supply_balance = get_supply_balance(faction)
-  local supply_penalty = get_supply_penalty(faction)
 
-  -- calculate supply and upkeep
-  for i = 0, force_list:num_items() - 1 do
-    local force = force_list:item_at(i);
-    
-    if not force:is_armed_citizenry() and force:has_general() and not force:general_character():character_subtype("wh2_main_def_black_ark") then
-      local unit_list = force:unit_list();
-      local character = force:general_character();
-
-      local army_supply = calculate_army_supply(unit_list, character) + supply_penalty;
-      global_supply = global_supply + army_supply
-
-      upkeep_percent = upkeep_percent + get_upkeep_from_supply(army_supply, dif_mod) + 1
-    end; --of army check
-  end; --of army call
-
-  if upkeep_percent < 0 then upkeep_percent = 0 end;
-
-  local supply_text = localizator("SRW_treasury_tooltip_supply")
-  supply_text = string.gsub(supply_text, "SRW_supply", tostring(global_supply))
-  
-  local supply_balance_text = localizator("SRW_supply_balance_text")..supply_balance
-  SRWLOG(supply_balance_text)
-  if not enable_supply_balance or culture == "wh_dlc05_sc_wef_wood_elves" then
-    supply_balance_text = ""
-  end
-
-  local tooltip_text = localizator("SRW_treasury_tooltip_main")..lord_text..supply_text..localizator("SRW_treasury_tooltip_upkeep")..tostring(upkeep_percent).."%"..supply_balance_text
+  local tooltip_text = ""
 
   if srw_faction_is_horde(faction) then
     tooltip_text = localizator("SRW_Subculture_Text_hordes")
@@ -49,6 +15,8 @@ local function set_tooltip_text_treasury(faction, component_name)
     tooltip_text = localizator("SRW_Subculture_Text_bretonnia")
   elseif player_supply_custom_mult == 0 then
     tooltip_text = "Your units doesn`t need addition supply"
+  else
+    tooltip_text = construct_treasury_tooltip(faction)
   end;
 
   --apply text

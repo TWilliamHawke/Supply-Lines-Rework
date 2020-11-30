@@ -432,6 +432,10 @@ local building_unit_bonus = {
   ["wh2_dlc14_skv_weaponteams_1"] = 2,
   ["wh2_main_special_mors_hq_1"] = 2,
   ["wh2_main_special_corrupted_spawning_pool_1"] = 2,
+
+  --==================
+  -- dont forget HE lions and sisters
+  --=======================
   --walls
   ["wh2_main_skv_defence_major_1"] = -1,
   ["wh2_main_skv_defence_major_2"] = -1,

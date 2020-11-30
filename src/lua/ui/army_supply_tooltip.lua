@@ -3,7 +3,8 @@ local function set_army_supply_tooltip(component)
   if not SRW_selected_character:has_military_force() then return end;
 
   local faction = SRW_selected_character:faction()
-  local supply_penalty = get_supply_penalty(faction)
+  local supply_balance = get_supply_balance(faction)
+  local supply_penalty = get_supply_penalty(faction, supply_balance)
   local force = SRW_selected_character:military_force()
   local unit_list = force:unit_list();
 
