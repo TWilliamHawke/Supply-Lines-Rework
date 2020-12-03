@@ -1,3 +1,7 @@
+--========================
+-- Main Listeners start HERE
+--========================
+
 core:add_listener(
   "SRW_FactionTurnStart",
   "FactionTurnStart",
@@ -11,8 +15,6 @@ core:add_listener(
       SRWLOG("======================");
       SRWLOG("APPLY UPKEEP (TURN START)");
       srw_apply_upkeep_penalty(faction);
-      SRWLOG("FACTION NAME IS "..tostring(faction:name()));
-      SRWLOG("FACTION CULTURE IS "..tostring(faction:subculture()));
       calculate_supply_balance(faction);
   end,
   true
@@ -156,24 +158,6 @@ core:add_listener(
   true
 );
 
-
-core:add_listener(
-  "SRW_Confederation_Bretonnia",
-  "FactionJoinsConfederation",
-  function(context)
-    local faction = context:confederation();
-    return (factionChecker(faction))
-  end,  
-  function(context)
-    local faction = context:confederation();
-    cm:callback(function()
-      SRWLOG("======================");
-      SRWLOG("REMOVE UPKEEP FOR BERTONNIA");
-      srw_remove_upkeep_penalty(faction);
-    end, 0.1);
-  end,
-  true
-);
 
 core:add_listener(
   "SRW_SETTLEMENT_CAPTURED",

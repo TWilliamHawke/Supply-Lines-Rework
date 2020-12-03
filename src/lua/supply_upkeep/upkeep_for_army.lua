@@ -1,9 +1,11 @@
 --single army version of script
-local function srw_this_army_upkeep(force)
+-- doesnt use anomore
 
-  if force:faction():is_human() and not force:general_character():character_subtype("wh2_main_def_black_ark") then
+-- local function srw_this_army_upkeep(force)
 
-    srw_calculate_upkeep(force, 0)
-  end; -- of local faction
+--   if force:faction():is_human() and not force:general_character():character_subtype("wh2_main_def_black_ark") then
 
-end;
+--     srw_calculate_upkeep(force, 0)
+--   end; -- of local faction
+
+-- end;

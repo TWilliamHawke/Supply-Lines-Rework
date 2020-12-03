@@ -1,6 +1,10 @@
+---=======================
+-- UI helpers start here
+--========================
+
 local game_lang = nil
 
-local function get_game_language()
+function helpers.get_game_language()
   if game_lang then return game_lang end;
 
   local langfile, err = io.open("data/language.txt","r")

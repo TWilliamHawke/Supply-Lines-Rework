@@ -1,3 +1,9 @@
+--=============================
+-- Main Supply balance scripts
+--=============================
+
+
+--return current supply_balance
 local function get_supply_balance(faction)
   local culture = faction:subculture();
 
@@ -11,6 +17,7 @@ local function get_supply_balance(faction)
   return region_supply - army_supply
 end
 
+--main script used in listeners
 local function calculate_supply_balance(faction)
   remove_supply_balance_effect(faction)
 
@@ -21,6 +28,7 @@ local function calculate_supply_balance(faction)
   end
 end
 
+--return additional supply for each army if balance is negative
 local function get_supply_penalty(faction, supply_balance)
 
   if supply_balance >= 0 then
@@ -28,7 +36,7 @@ local function get_supply_penalty(faction, supply_balance)
   end
 
   local force_list = faction:military_force_list();
-  local num_of_armies = get_army_count(force_list)
+  local num_of_armies = helpers.get_army_count(force_list)
   --supply_balance = 0 - supply_balance
 
   return calculate_supply_penalty(0 - supply_balance, num_of_armies)

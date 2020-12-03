@@ -10,17 +10,17 @@ local function set_unit_in_army_tooltip(component)
 
   if unit_number == "0" then return end;
   
-  local index = tonumber(unit_number) + get_num_of_agents(unit_list)
+  local index = tonumber(unit_number) + helpers.get_num_of_agents(unit_list)
   local unit = unit_list:item_at(index);
   local unit_name = unit:unit_key();
 
-  local unit_cost, is_basic_cost = get_supply_params(unit_name)
+  local unit_cost, is_basic_cost = helpers.get_supply_params(unit_name)
   if not unit_cost then
-    unit_cost =  calculate_unit_supply(unit)
+    unit_cost = helpers.calculate_unit_supply(unit)
   end;
 
   local supply_text = set_supply_text(unit_cost, is_basic_cost, true)
 
-  finalize_unit_tooltip(component, supply_text, "||")
+  helpers.finalize_unit_tooltip(component, supply_text, "||")
 
 end;

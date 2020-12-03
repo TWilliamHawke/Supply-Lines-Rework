@@ -1,3 +1,7 @@
+--========================
+-- UI Listeners start HERE
+--========================
+
 core:add_listener(
   "SRW_TreasuryTooltip",
   "ComponentMouseOn",

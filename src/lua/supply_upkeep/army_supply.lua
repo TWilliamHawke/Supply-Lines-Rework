@@ -1,3 +1,7 @@
+--====================================
+-- Main script section start
+--====================================
+
 local function calculate_army_supply(unit_list, commander)
   local this_army_supply = basic_lord_supply;
   local character = commander:character_subtype_key()
@@ -7,10 +11,10 @@ local function calculate_army_supply(unit_list, commander)
   for j = 0, unit_list:num_items() - 1 do
     local unit = unit_list:item_at(j);
     local key = unit:unit_key();
-    local val = get_unit_supply(key);
+    local val = helpers.get_unit_supply(key);
 
     if val == nil then
-      val = calculate_unit_supply(unit)
+      val = helpers.calculate_unit_supply(unit)
     end;
 
     if SRW_Free_Units[key.."-"..character] ~= nil then

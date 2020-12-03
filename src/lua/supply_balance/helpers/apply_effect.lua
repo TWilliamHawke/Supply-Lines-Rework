@@ -1,3 +1,8 @@
+--===========================
+-- Supply balance section start
+--============================
+
+
 local function apply_supply_balance_effect(faction, effect_strength)
   local effect_name = "srw_bundle_supply_balance_"..math.min(effect_strength, 25)
   cm:apply_effect_bundle(effect_name, faction:name(), -1)

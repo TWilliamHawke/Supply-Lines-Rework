@@ -1,5 +1,5 @@
 --if unit not found in SRW_Supply_Cost
-local function calculate_unit_supply(unit)
+function helpers.calculate_unit_supply(unit)
   local uclass = unit:unit_class();
   --local ucat = unit:unit_category();
   local ucost = unit:get_unit_custom_battle_cost()
@@ -19,7 +19,7 @@ local function calculate_unit_supply(unit)
   return basic_unit_supply;
 end; 
 
-local function get_unit_supply(key)
+function helpers.get_unit_supply(key)
   if SRW_Supply_Cost[key] ~= nil then
     return basic_unit_supply + SRW_Supply_Cost[key]
   else

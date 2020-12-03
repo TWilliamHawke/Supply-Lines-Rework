@@ -1,4 +1,4 @@
-local function get_army_count(force_list)
+function helpers.get_army_count(force_list)
   local army_count = 0
 
   for i = 0, force_list:num_items() - 1 do

@@ -1,4 +1,4 @@
-local function apply_effect(effect_strength, force, hide_log)
+function helpers.apply_effect(effect_strength, force, hide_log)
   local effect_bundle = "srw_bundle_force_upkeep_" .. effect_strength;
 
   cm:apply_effect_bundle_to_characters_force(effect_bundle, force:general_character():cqi(), -1, true);
@@ -8,7 +8,7 @@ local function apply_effect(effect_strength, force, hide_log)
   end
 end;
 
-local function remove_effect(force, hide_log)
+function helpers.remove_effect(force, hide_log)
   for k = 1, max_supply_per_army do
     local effect = "srw_bundle_force_upkeep_" .. k
 

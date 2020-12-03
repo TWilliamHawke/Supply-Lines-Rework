@@ -3,7 +3,7 @@ core:add_listener(
   "FactionTurnStart",
   function(context)
     local faction = context:faction()
-    return (not faction:is_human() and not srw_faction_is_horde(faction) and not (faction:culture() == "wh2_dlc09_tmb_tomb_kings"))
+    return (not faction:is_human() and not helpers.srw_faction_is_horde(faction) and not (faction:culture() == "wh2_dlc09_tmb_tomb_kings"))
   end,  
   -- true,
   function(context) 

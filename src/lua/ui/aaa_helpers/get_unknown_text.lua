@@ -1,5 +1,5 @@
-local function get_unknown_text()
-  local unknown_text = localizator("SRW_unit_supply_cost_unknown")
+function helpers.get_unknown_text()
+  local unknown_text = helpers.localizator("SRW_unit_supply_cost_unknown")
   for n = 0, 4 do
     local this_price_supply = n + basic_unit_supply
     if this_price_supply < 0 then

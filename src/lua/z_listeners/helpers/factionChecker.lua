@@ -1,3 +1,7 @@
+--========================
+-- Helpers for listeners
+--========================
+
 local function factionChecker(faction)
   local culture = faction:culture()
   local subculture = faction:subculture()
@@ -5,7 +9,7 @@ local function factionChecker(faction)
   if not faction:is_human() then
     return false
   end
-  if srw_faction_is_horde(faction) then
+  if helpers.srw_faction_is_horde(faction) then
     return false
   end
   if culture == "wh_main_brt_bretonnia" then
@@ -24,7 +28,7 @@ local function factionChecker(faction)
 end;
 
 local function uiFactionChecker()
-  if ui_faction_check ~= nil then --from cash
+  if ui_faction_check ~= nil then --from cache
     return ui_faction_check
   end
 

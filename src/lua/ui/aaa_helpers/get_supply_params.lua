@@ -1,7 +1,7 @@
-local function get_supply_params(unit_name)
+function helpers.get_supply_params(unit_name)
   local selected_char = tostring(SRW_selected_character:character_subtype_key())
   local is_basic_cost = true
-  local unit_cost = get_unit_supply(unit_name)
+  local unit_cost = helpers.get_unit_supply(unit_name)
 
 
   if SRW_Free_Units[unit_name.."-"..selected_char] ~= nil then

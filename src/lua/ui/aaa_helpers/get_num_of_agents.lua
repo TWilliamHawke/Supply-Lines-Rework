@@ -1,4 +1,4 @@
-local function get_num_of_agents(unit_list)
+function helpers.get_num_of_agents(unit_list)
   local num_of_agents = 0
 
   for j = 1, unit_list:num_items() - 1 do

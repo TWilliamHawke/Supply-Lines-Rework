@@ -1,4 +1,4 @@
-local function finalize_unit_tooltip(component, supply_text, regexp)
+function helpers.finalize_unit_tooltip(component, supply_text, regexp)
   local old_text = component:GetTooltipText();
 
   if string.find(old_text, supply_text) then return end

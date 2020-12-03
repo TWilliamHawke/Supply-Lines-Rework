@@ -268,6 +268,8 @@ local building_unit_bonus = {
   ["wh_main_vmp_garrison_1"] = -1,
   ["wh_main_vmp_garrison_2"] = -1,
   ["wh2_main_vmp_defence_norsca_1"] = -1,
+  ["wh2_main_special_castle_drachenfels_1"] = 2,
+  ["wh2_main_special_castle_drachenfels_2"] = 4,
 --coast
   ["wh2_dlc11_vampirecoast_military_barracks_1"] = 1,
   ["wh2_dlc11_vampirecoast_military_barracks_2"] = 2,

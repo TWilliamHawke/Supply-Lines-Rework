@@ -1,3 +1,8 @@
+--============================
+-- Main UI scripts start here
+--============================
+
+-- doesnt used
 local function set_army_supply_tooltip(component)
   if not SRW_selected_character then return end;
   if not SRW_selected_character:has_military_force() then return end;

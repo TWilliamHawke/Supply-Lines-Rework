@@ -9,5 +9,5 @@ local function set_supply_text(cost, is_basic_value, is_present)
     return string.gsub(imported_text, "SRW_Cost", tostring(cost))    
   end
 
-  return get_unknown_text()
+  return helpers.get_unknown_text()
 end
