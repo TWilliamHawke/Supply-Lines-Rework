@@ -29,6 +29,7 @@ local modded_subculture_text = {
   ["kraka-wh_main_sc_dwf_dwarfs"] = "SRW_Subculture_Text_kraka",
   ["vulcan-wh2_main_sc_skv_skaven"] = "SRW_Subculture_Text_vulcan",
   ["wez-wh_main_sc_grn_savage_orcs"] = "SRW_Subculture_Text_wez",
+  ["ovn-wh_main_sc_emp_araby"] = "SRW_Subculture_Text_ara"
 }
 
 local supported_mods_prefix = {
@@ -38,4 +39,5 @@ local supported_mods_prefix = {
   {"script/campaign/main_warhammer/mod/thom_vulkan.lua", "vulcan-"},
   {"script/campaign/main_warhammer/mod/pj_kislev_start.lua", "kisl-"},
   {"script/campaign/mod/ws_big_waaagh.lua", "wez-"},
+  {"script/campaign/mod/ovn_victory_conditions.lua", "ovn-"},
 }

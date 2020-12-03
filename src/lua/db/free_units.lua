@@ -570,6 +570,16 @@ local SRW_Free_Units = {
     ["wh_main_ksl_inf_keeper-mixu_katarin_the_ice_queen"] = 0,
     ["wh_main_ksl_inf_streltsi-mixu_katarin_the_ice_queen"] = 0,
     ["wh_main_ksl_inf_streltsi_pole-mixu_katarin_the_ice_queen"] = 0,
+  --OVN
+    ["OtF_khemri_rangers-arb_fatandira"] = 0,
+    ["ovn_jag-arb_fatandira"] = 0,
+    ["ovn_jag_ror-arb_fatandira"] = 0,
+    ["ovn_arb_cav_jezzail_camel-arb_fatandira"] = 1,
+    ["OtF_khemri_kepra_guard-arb_golden_magus"] = 0,
+    ["ovn_arb_mon_genie-arb_golden_magus"] = 1,
+    ["ovn_ifreet-arb_golden_magus"] = 0,
+    ["wh_main_arb_cav_magic_carpet_0-arb_golden_magus"] = 0,
+    
     --Other LL
       -- dlc04_emp_volkmar
       -- 

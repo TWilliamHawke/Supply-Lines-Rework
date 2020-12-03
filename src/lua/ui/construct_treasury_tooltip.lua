@@ -5,8 +5,8 @@ local function construct_treasury_tooltip(faction)
   local dif_mod = srw_get_diff_mult();
   local force_list = faction:military_force_list();
   local lord_text = get_subculture_text(culture)
-  local supply_balance = 0
-  local supply_penalty = 0
+  local supply_balance = get_supply_balance(faction)
+  local supply_penalty = get_supply_penalty(faction, supply_balance)
   
   --return "Replaced text"
 
@@ -32,7 +32,7 @@ local function construct_treasury_tooltip(faction)
   
   local supply_balance_text = ""
 
-  if enable_supply_balance and not culture == "wh_dlc05_sc_wef_wood_elves" then
+  if enable_supply_balance and not (culture == "wh_dlc05_sc_wef_wood_elves") then
     supply_balance_text = localizator("SRW_supply_balance_text")..supply_balance
   end
 

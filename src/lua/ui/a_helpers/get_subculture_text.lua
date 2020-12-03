@@ -1,7 +1,13 @@
+local subculture_text = nil;
+
 local function get_subculture_text(culture)
+  if subculture_text then
+    return subculture_text
+  end
+
   local dummy_text = "SRW_dummy_text"
   local lord_text_key = SRW_Subculture_Text[culture] or dummy_text
-  local subculture_text = localizator(lord_text_key)
+  subculture_text = localizator(lord_text_key)
 
   for k=1, #supported_mods_prefix do
     local path = supported_mods_prefix[k][1]
@@ -15,3 +21,4 @@ local function get_subculture_text(culture)
 
   return subculture_text
 end;
+
