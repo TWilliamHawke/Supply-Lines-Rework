@@ -11,6 +11,8 @@ core:add_listener(
       SRWLOG("======================");
       SRWLOG("APPLY UPKEEP (TURN START)");
       srw_apply_upkeep_penalty(faction);
+      SRWLOG("FACTION NAME IS "..tostring(faction:name()));
+      SRWLOG("FACTION CULTURE IS "..tostring(faction:subculture()));
       calculate_supply_balance(faction);
   end,
   true

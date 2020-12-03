@@ -71,6 +71,11 @@ local SRW_Lord_Group = {
   --Kislev
     ["wh2_deco_boris"] = "Boris",
     ["mixu_katarin_the_ice_queen"] = "Katya",
+  --Lost factions
+    ["aky_chief_fimir_great_weapons"] = "Fimir",
+    ["elo_chief_ugma"] = "Trololo",
+    
+  
   }
   
   

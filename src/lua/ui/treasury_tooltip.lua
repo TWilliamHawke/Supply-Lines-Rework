@@ -7,7 +7,7 @@ local function set_tooltip_text_treasury(faction, component_name)
 
   local tooltip_text = ""
 
-  if srw_faction_is_horde(faction) then
+  if srw_faction_is_horde(faction) or culture == "wh_main_sc_nor_warp" or culture == "wh_main_sc_nor_troll" then
     tooltip_text = localizator("SRW_Subculture_Text_hordes")
   elseif culture == "wh2_dlc09_sc_tmb_tomb_kings" then
     tooltip_text = localizator("SRW_Subculture_Text_tomb_kings")
