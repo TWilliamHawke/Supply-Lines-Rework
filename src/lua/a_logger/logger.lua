@@ -1,4 +1,4 @@
-local enable_logging = true
+local enable_logging = false;
 local enable_logging_ai = false
 local enable_logging_debug = false
 

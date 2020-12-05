@@ -6,7 +6,7 @@ local function srw_calculate_upkeep(force, supply_penalty)
   helpers.remove_effect(force)
 
   local supply_demand_this_army = calculate_army_supply(unit_list, character) + supply_penalty;
-  SRWLOG("THIS ARMY REQUIRED "..tostring(effect_strength).." SUPPLY POINTS");
+  SRWLOG("THIS ARMY REQUIRED "..tostring(supply_demand_this_army).." SUPPLY POINTS");
   local effect_strength = helpers.get_upkeep_from_supply(supply_demand_this_army, multiplier);
 
   if effect_strength > 0 then

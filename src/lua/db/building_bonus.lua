@@ -346,13 +346,15 @@ local building_unit_bonus = {
   ["wh2_main_def_defence_minor_2"] = -1,
   ["wh2_main_def_defence_norsca_1"] = -1,
 --hight elves
-  ["wh2_dlc10_hef_aesanar_camp"] = 2,
+  ["wh2_dlc10_hef_aesanar_camp"] = 3,
   ["wh2_main_hef_barracks_1"] = 1,
   ["wh2_main_hef_barracks_2"] = 2,
   ["wh2_main_hef_barracks_3"] = 3,
   ["wh2_main_hef_dragons_1"] = 4,
   ["wh2_main_hef_dragons_2"] = 5,
-  ["wh2_main_hef_hunters_1"] = 3,
+  ["wh2_main_hef_hunters_1"] = 2,
+  ["wh2_main_hef_hunters_2"] = 3,
+  ["wh2_dlc10_hef_hunters_3"] = 4,
   ["wh2_main_hef_mages_1"] = 3,
   ["wh2_main_hef_mages_2"] = 4,
   ["wh2_main_hef_mages_3"] = 5,
@@ -417,8 +419,10 @@ local building_unit_bonus = {
   ["wh2_main_skv_engineers_1"] = 3,
   ["wh2_main_skv_engineers_2"] = 4,
   ["wh2_main_skv_engineers_3"] = 5,
-  ["wh2_main_skv_monsters_1"] = 3,
-  ["wh2_main_skv_monsters_2"] = 5,
+  ["wh2_main_skv_monsters_1"] = 2,
+  ["wh2_main_skv_monsters_2"] = 3,
+  ["wh2_main_skv_monsters_3"] = 4,
+  ["wh2_main_skv_monsters_4"] = 5,
   ["wh2_main_skv_plagues_1"] = 3,
   ["wh2_main_skv_plagues_2"] = 4,
   ["wh2_main_skv_plagues_3"] = 5,
@@ -434,10 +438,6 @@ local building_unit_bonus = {
   ["wh2_dlc14_skv_weaponteams_1"] = 2,
   ["wh2_main_special_mors_hq_1"] = 2,
   ["wh2_main_special_corrupted_spawning_pool_1"] = 2,
-
-  --==================
-  -- dont forget HE lions and sisters
-  --=======================
   --walls
   ["wh2_main_skv_defence_major_1"] = -1,
   ["wh2_main_skv_defence_major_2"] = -1,

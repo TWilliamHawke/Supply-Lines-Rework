@@ -23,10 +23,10 @@ local SRW_Lord_Group = {
     ["wh2_dlc10_hef_alarielle"] = "Alarielle",
     ["wh2_main_def_morathi"] = "Morathi",
     ["wh2_dlc14_def_high_beastmaster"] = "BeastMaster",
+    --liz and skav
     ["wh2_main_lzd_saurus_old_blood"] = "Zaurus",
     ["wh2_main_lzd_kroq_gar"] = "Zaurus",
     ["wh2_dlc13_lzd_gor_rok"] = "Zaurus",
-  --liz and skav
     ["wh2_dlc12_lzd_red_crested_skink_chief"] = "Skink",
     ["wh2_dlc12_lzd_red_crested_skink_chief_legendary"] = "Skink",
     ["wh2_dlc13_lzd_red_crested_skink_chief_horde"] = "Skink",
@@ -65,6 +65,8 @@ local SRW_Lord_Group = {
     ["wh_dlc08_nor_throgg"] = "Throgg",
     ["ws_grn_tinitt_foureyes"] = "Forest",
     ["ws_grn_grak_beastbasha"] = "BeastBasha",
+  --Wood elves
+    
   --TEB
     --["teb_tilea"] = "Tileaman",
     --["teb_borgio_the_besieger"] = "Besieger",
