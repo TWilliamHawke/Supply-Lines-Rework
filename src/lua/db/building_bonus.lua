@@ -472,7 +472,7 @@ local building_unit_bonus = {
   ["thom_ferrik_forge_1"] = 3,
   ["thom_ferrik_forge_2"] = 4,
   ["thom_ferrik_forge_3"] = 5,
-  ["thom_ferrik_HQ_1"] = 0,
+  ["thom_ferrik_HQ_1"] = 1,
   ["thom_ferrik_HQ_2"] = 1,
   ["thom_ferrik_HQ_3"] = 2,
   ["thom_ferrik_weaponteams_1"] = 2,
@@ -492,6 +492,9 @@ local building_unit_bonus = {
   ["thom_vulkan_weapon_teams_1"] = 2,
   ["thom_vulkan_weapon_teams_2"] = 3,
   ["thom_vulkan_weapon_teams_3"] = 4,
+  ["trikstab_laboratory_1"] = 3,
+  ["trikstab_laboratory_2"] = 4,
+  ["trikstab_laboratory_3"] = 5,
 --Lanmarks
   ["wh2_dlc15_special_fortress_of_vorag_tower_of_the_bloodytooth"] = 2,
 --Grn wez

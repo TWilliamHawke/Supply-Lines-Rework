@@ -27,13 +27,16 @@ function effectCallback(option)
 
   local max_building = option:get_mod():get_option_by_key("balance_per_building")
   local max_army = option:get_mod():get_option_by_key("balance_per_army")
+  local emp_penalty = option:get_mod():get_option_by_key("big_empire_penalty")
 
   if val then
     max_building:set_uic_visibility(true)
     max_army:set_uic_visibility(true)
+    emp_penalty:set_uic_visibility(true)
   else
     max_building:set_uic_visibility(false)
     max_army:set_uic_visibility(false)
+    emp_penalty:set_uic_visibility(false)
   end;
 
 end
@@ -79,7 +82,7 @@ ai_effect:set_default_value(0)
 ai_effect:slider_set_step_size(1)
 
 local supply_balance_section = supply_lines_rw:add_new_section("o_balance_section")
-supply_balance_section:set_localised_text("[BETA] Supply Balance")
+supply_balance_section:set_localised_text("Militant Supply Reserves")
 
 local enable_balance = supply_lines_rw:add_new_option("balance_enable", "checkbox")
 enable_balance:set_default_value(false)
@@ -94,12 +97,33 @@ max_balance_per_building:slider_set_step_size(1)
 max_balance_per_building:set_text("mct_supply_lines_rw_balance_per_building_text", true)
 max_balance_per_building:set_tooltip_text("mct_supply_lines_rw_balance_per_building_tt", true)
 
-local max_balance_per_army = supply_lines_rw:add_new_option("balance_per_army", "slider")
-max_balance_per_army:slider_set_min_max(0, 30)
-max_balance_per_army:set_default_value(30)
-max_balance_per_army:slider_set_step_size(1)
+local max_balance_per_army = supply_lines_rw:add_new_option("balance_per_army", "dropdown")
 max_balance_per_army:set_text("mct_supply_lines_rw_balance_per_army_text", true)
 max_balance_per_army:set_tooltip_text("mct_supply_lines_rw_balance_per_army_tt", true)
+max_balance_per_army:add_dropdown_values({
+  {key = "99", text = "Unlimited", tt = "Supply Reserve reduction from one army is unlimited", is_default = true},
+  {key = "0", text = "0 (Disable)", tt = "Your armies will not affect Supply Reserves", is_default = false},
+  {key = "1", text = "1", tt = "Each your army will not decrease Supply Reserves by more than 1", is_default = false},
+  {key = "2", text = "2", tt = "Each your army will not decrease Supply Reserves by more than 2", is_default = false},
+  {key = "3", text = "3", tt = "Each your army will not decrease Supply Reserves by more than 3", is_default = false},
+  {key = "5", text = "5", tt = "Each your army will not decrease Supply Reserves by more than 5", is_default = false},
+  {key = "10", text = "10", tt = "Each your army will not decrease Supply Reserves by more than 10", is_default = false},
+})
+
+-- max_balance_per_army:slider_set_min_max(0, 30)
+-- max_balance_per_army:set_default_value(30)
+-- max_balance_per_army:slider_set_step_size(1)
+
+local big_empire_penalty = supply_lines_rw:add_new_option("big_empire_penalty", "dropdown")
+big_empire_penalty:set_text("mct_supply_lines_rw_big_empire_penalty_text", true)
+big_empire_penalty:set_tooltip_text("mct_supply_lines_rw_big_empire_penalty_tt", true)
+big_empire_penalty:add_dropdown_values({
+  {key = "999", text = "Disable", tt = "Big empire penalty disabled.", is_default = true},
+  {key = "50", text = "50 cities", tt = "It will affect every city after the 50th", is_default = false},
+  {key = "75", text = "75 cities", tt = "It will affect every city after the 75th", is_default = false},
+  {key = "100", text = "100 cities", tt = "It will affect every city after the 100th", is_default = false},
+  {key = "150", text = "150 cities", tt = "It will affect every city after the 150th", is_default = false},
+})
 
 
 local settings_section = supply_lines_rw:add_new_section("settings_sectiom")

@@ -5,9 +5,11 @@ local SRW_Lord_Skills_Cost = {
     ["wh_main_vmp_mon_varghulf-Isabella"] = {"wh2_dlc11_skill_vmp_isabella_unique_4", 1},
     ["wh_dlc04_vmp_mon_devils_swartzhafen_0-Isabella"] = {"wh2_dlc11_skill_vmp_isabella_unique_3", 1},
     ["wh_main_vmp_mon_terrorgheist-Isabella"] = {"wh2_dlc11_skill_vmp_isabella_unique_5", 2},
+    --carshtain
     ["wh_dlc04_vmp_mon_devils_swartzhafen_0-Carstain"] = {"wh2_dlc11_skill_vmp_bloodline_von_carstein_unique_brooding_horrors", 2},
     ["wh_main_vmp_mon_vargheists-Carstain"] = {"wh2_dlc11_skill_vmp_bloodline_von_carstein_unique_brooding_horrors", 1},
     ["mixu_vmp_mon_vargheists-Carstain"] = {"wh2_dlc11_skill_vmp_bloodline_von_carstein_unique_brooding_horrors", 1},
+    --blood dragon
     ["wh_main_vmp_cav_black_knights_0-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_doomrider", 0},
     ["wh_main_vmp_cav_black_knights_3-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_doomrider", 1},
     ["wh2_mixu_vmp_cav_black_knights_sword-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_doomrider", 0},
@@ -20,13 +22,18 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_mixu_vmp_ror_the_dreadwings-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_the_ordo_draconis", 3},
     ["dismounted_blood_knights-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_the_ordo_draconis", 2},
     ["dismounted_blood_knights_shield-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_the_ordo_draconis", 2},
+    ["dec_kastellans-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_the_ordo_draconis", 2},
+    --Strigoi
     ["wh_main_vmp_inf_crypt_ghouls-Strigoi"] = {"wh2_dlc11_skill_vmp_bloodline_strigoi_unique_grave_eaters", 0},
     ["mixu_vmp_inf_crypt_ghouls-Strigoi"] = {"wh2_dlc11_skill_vmp_bloodline_strigoi_unique_grave_eaters", 0},
+    ["dec_lahmian-Strigoi"] = {"wh2_dlc11_skill_vmp_bloodline_strigoi_unique_grave_eaters", 1},
     ["wh_dlc04_vmp_inf_feasters_in_the_dusk_0-Strigoi"] = {"wh2_dlc11_skill_vmp_bloodline_strigoi_unique_grave_eaters", 1},
     ["wh_main_vmp_mon_crypt_horrors-Strigoi"] = {"wh2_dlc11_skill_vmp_bloodline_strigoi_unique_monstrosities_of_morr", 0},
+    --ghorst
     ["wh_dlc04_vmp_veh_mortis_engine_0-Ghorst"] = {"wh_dlc04_skill_vmp_lord_unique_helman_ghorst_corpse_cart_boost", 0},
     ["wh_main_vmp_veh_black_coach-Ghorst"] = {"wh_dlc04_skill_vmp_lord_unique_helman_ghorst_corpse_cart_boost", 0},
     ["wh_dlc04_vmp_veh_claw_of_nagash_0-Ghorst"] = {"wh_dlc04_skill_vmp_lord_unique_helman_ghorst_corpse_cart_boost", 1},
+    --Mixu
     ["wh_main_vmp_cav_black_knights_0-Mixu_Knight"] = {"mixu_vmp_bloodline_fallen_knight_special_2_brothers_in_death", 0},
     ["wh_main_vmp_cav_black_knights_3-Mixu_Knight"] = {"mixu_vmp_bloodline_fallen_knight_special_2_brothers_in_death", 1},
     ["wh2_mixu_vmp_cav_black_knights_sword-Mixu_Knight"] = {"mixu_vmp_bloodline_fallen_knight_special_2_brothers_in_death", 0},
@@ -39,8 +46,30 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_mixu_vmp_cav_questing_knights-Mixu_Knight"] = {"mixu_vmp_bloodline_fallen_knight_special_2_brothers_in_death", 2},
     ["wh2_mixu_vmp_cav_knights_of_the_realm-Mixu_Knight"] = {"mixu_vmp_bloodline_fallen_knight_special_2_brothers_in_death", 2},
     ["wh2_mixu_vmp_ror_the_dreadwings-Mixu_Knight"] = {"mixu_vmp_bloodline_fallen_knight_special_2_brothers_in_death", 4},
+    ["dec_kastellans-Mixu_Knight"] = {"mixu_vmp_bloodline_fallen_knight_special_2_brothers_in_death", 2},
+    --IMBA !!
+    ["wh_dlc04_vmp_inf_sternsmen_0-Imbalash"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_grave_sentinels", 1},
+    ["wh_main_vmp_inf_grave_guard_0-Imbalash"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_grave_sentinels", 0},
+    ["wh_main_vmp_inf_grave_guard_1-Imbalash"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_grave_sentinels", 0},
+    ["wh_dlc02_vmp_cav_blood_knights_0-Imbalash"] = {"vmp_fbktm", 0},
+    ["dismounted_blood_knights-Imbalash"] = {"vmp_fbktm", 0},
+    ["dismounted_blood_knights_shield-Imbalash"] = {"vmp_fbktm", 0},
+    ["wh2_mixu_vmp_ror_the_dreadwings-Imbalash"] = {"vmp_fbktm", 1},
+    ["wh_main_vmp_cav_black_knights_0-Imbalash"] = {"vmp_fbk50", 0},
+    ["wh_main_vmp_cav_black_knights_3-Imbalash"] = {"vmp_fbk50", 0},
+    ["dec_kastellans-Imbalash"] = {"vmp_fbktm", 0},
+    ["dec_hell_knights-Imbalash"] = {"vmp_fbk50", 1},
+    ["wh2_mixu_vmp_cav_black_knights_sword-Imbalash"] = {"vmp_fbk50", 0},
+    ["wh2_mixu_vmp_cav_black_knights_lance-Imbalash"] = {"vmp_fbk50", 0},
+    ["wh_dlc04_vmp_cav_vereks_reavers_0-Imbalash"] = {"vmp_fbk50", 1},
+    ["wh2_mixu_vmp_cav_knights_of_the_realm-Imbalash"] = {"vmp_fbk50", 1},
+    ["wh2_mixu_vmp_cav_knights_errant-Imbalash"] = {"vmp_fbk50", 0},
+    ["wh2_mixu_vmp_cav_questing_knights-Imbalash"] = {"vmp_fbk50", 1},
+    ["wh2_mixu_vmp_cav_black_grail_knights-Imbalash"] = {"vmp_fbk50", 2},
+    ["mixu_vmp_cav_pegasus_knights-Imbalash"] = {"vmp_fbk50", 0},
+    ["wh2_mixu_vmp_ror_the_rose_lances-Imbalash"] = {"vmp_fbk50", 1},
+    ["wh_main_vmp_cav_hexwraiths-Imbalash"] = {"vmp_fbk50", 1},
 
-  
   --Hight Elves
     ["wh2_main_hef_inf_phoenix_guard-Tyrion"] = {"wh2_main_skill_hef_dedication_asuryan", 2},
     ["wh2_main_hef_inf_phoenix_guard-Tyrion"] = {"wh2_main_skill_hef_dedication_asuryan", 2},
@@ -165,6 +194,7 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_main_lzd_mon_bastiladon_2-Tehen"] = {"wh2_dlc12_skill_lzd_tehenhauin_2", 0, "wh2_dlc12_skill_lzd_tehenhauin_6"},
     ["wh2_main_lzd_mon_bastiladon_blessed_2-Tehen"] = {"wh2_dlc12_skill_lzd_tehenhauin_2", 0, "wh2_dlc12_skill_lzd_tehenhauin_6"},
   --Skaven
+    --Tretch
     ["wh2_main_skv_inf_stormvermin_0-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
     ["wh2_main_skv_inf_stormvermin_1-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
     ["wh2_dlc12_skv_inf_stormvermin_ror_0-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
@@ -178,13 +208,20 @@ local SRW_Lord_Skills_Cost = {
     ["thom_vulkan_ashen_gaurd_halberd-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 1},
     ["thom_vulkan_stormvermin_shield-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
     ["thom_vulkan_stormvermin_halberd-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
+    ["clan_vrrtkin_stormvermin-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
+    ["clan_vrrtkin_stormvermin_shield-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
 
+    --ikit
     ["wh2_dlc12_skv_veh_doom_flayer_0-Ikit"] = {"wh2_dlc12_skill_skv_ikit_unique_4", 0},
     ["wh2_dlc12_skv_veh_doom_flayer_ror_tech_lab_0-Ikit"] = {"wh2_dlc12_skill_skv_ikit_unique_4", 1},
     ["wh2_dlc12_skv_veh_doom_flayer_ror_0-Ikit"] = {"wh2_dlc12_skill_skv_ikit_unique_4", 1},
     ["wh2_main_skv_veh_doomwheel-Ikit"] = {"wh2_dlc12_skill_skv_ikit_unique_4", 1},
     ["wh2_dlc12_skv_veh_doomwheel_ror_0-Ikit"] = {"wh2_dlc12_skill_skv_ikit_unique_4", 2},
     ["wh2_dlc12_skv_veh_doomwheel_ror_tech_lab_0-Ikit"] = {"wh2_dlc12_skill_skv_ikit_unique_4", 2},
+    ["clan_vrrtkin_veh_doom_flayer-Ikit"] = {"wh2_dlc12_skill_skv_ikit_unique_4", 0},
+    ["clan_vrrtkin_veh_doomwheel-Ikit"] = {"wh2_dlc12_skill_skv_ikit_unique_4", 1},
+
+    --warlock lord
     ["wh2_main_skv_inf_warpfire_thrower-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_3", 1},
     ["wh2_dlc12_skv_inf_warpfire_thrower_ror_tech_lab_0-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_3", 2},
     ["wh2_dlc12_skv_inf_warplock_jezzails_0-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_3", 2},
@@ -198,16 +235,25 @@ local SRW_Lord_Skills_Cost = {
     ["thom_vulkan_jezzail-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_3", 2},
     ["thom_ferrik_jezzail-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_3", 2},
     ["thom_ferrik_rattling-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_3", 2},
+    ["clan_vrrtkin_warpfire_thrower-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_3", 1},
+    ["clan_vrrtkin_inf_warplock_jezzails-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_3", 2},
     ["wh2_dlc12_skv_veh_doom_flayer_0-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_2", 1},
+    ["clan_vrrtkin_veh_doom_flayer-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_2", 1},
     ["wh2_dlc12_skv_veh_doom_flayer_ror_tech_lab_0-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_2", 2},
     ["wh2_dlc12_skv_veh_doom_flayer_ror_0-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_2", 2},
     ["wh2_main_skv_veh_doomwheel-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_2", 2},
+    ["clan_vrrtkin_veh_doomwheel-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_2", 2},
     ["wh2_dlc12_skv_veh_doomwheel_ror_0-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_2", 3},
     ["wh2_dlc12_skv_veh_doomwheel_ror_tech_lab_0-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_2", 3},
+    --assassin lord
     ["wh2_main_skv_inf_gutter_runner_slingers_0-Assassin"] = {"wh2_dlc14_skill_skv_assassins_missile_damage", 0},
     ["wh2_main_skv_inf_gutter_runner_slingers_1-Assassin"] = {"wh2_dlc14_skill_skv_assassins_missile_damage", 0},
     ["wh2_main_skv_inf_gutter_runners_0-Assassin"] = {"wh2_dlc14_skill_skv_assassins_missile_damage", 0},
     ["wh2_main_skv_inf_gutter_runners_1-Assassin"] = {"wh2_dlc14_skill_skv_assassins_missile_damage", 0},
+    ["wh2_main_skv_inf_gutter_runners_0_0_vrritkin-Assassin"] = {"wh2_dlc14_skill_skv_assassins_missile_damage", 0},
+    ["wh2_main_skv_inf_gutter_runner_slingers_0_vrritkin-Assassin"] = {"wh2_dlc14_skill_skv_assassins_missile_damage", 0},
+
+    --ferric
     ["wh2_main_skv_inf_stormvermin_0-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 0},
     ["wh2_main_skv_inf_stormvermin_1-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 0},
     ["wh2_dlc12_skv_inf_stormvermin_ror_0-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 0},
@@ -221,6 +267,9 @@ local SRW_Lord_Skills_Cost = {
     ["thom_vulkan_ashen_gaurd_halberd-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 1},
     ["thom_vulkan_stormvermin_shield-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 0},
     ["thom_vulkan_stormvermin_halberd-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 0},
+    ["clan_vrrtkin_stormvermin-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 0},
+    ["clan_vrrtkin_stormvermin_shield-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 0},
+
   --VCoast
     ["wh2_dlc11_cst_inf_zombie_deckhands_mob_ror_0-Harkon"] = {"wh2_dlc11_skill_cst_luthor_unique_1", 0},
     ["wh2_dlc11_cst_inf_depth_guard_0-Harkon"] = {"wh2_dlc11_skill_cst_luthor_unique_1", 0},
@@ -393,6 +442,10 @@ local SRW_Lord_Skills_Cost = {
     ["wh_dlc06_grn_mon_venom_queen_0-Forest"] = {"ws_skill_tinitt_foureyes_ancient_behemoths", 3},
     ["wh_main_grn_inf_savage_orc_big_uns-BeastBasha"] = {"ws_skill_grak_beastbasha_rally_da_boyz", 0},
     ["wh_main_grn_cav_savage_orc_boar_boy_big_uns-BeastBasha"] = {"ws_skill_grak_beastbasha_rally_da_boyz", 0},
+  --Wood Elves
+    ["wh_dlc05_wef_mon_treekin_0-Treeman"] = {"wh_dlc05_skill_wef_ancient_treeman_unique_damage_resistance_treekin", 1},
+    ["wh_pro04_wef_mon_treekin_ror_0-Treeman"] = {"wh_dlc05_skill_wef_ancient_treeman_unique_damage_resistance_treekin", 2},
+    ["wh2_dlc16_wef_mon_malicious_treekin_0-Treeman"] = {"wh_dlc05_skill_wef_ancient_treeman_unique_damage_resistance_treekin", 1},
   --Norsca
     ["wh_dlc08_nor_mon_skinwolves_0-Wulfrik"] = {"wh_dlc08_skill_nor_wulfrik_battle_fervent_creatures", 0},
     ["wh_dlc08_nor_mon_skinwolves_1-Wulfrik"] = {"wh_dlc08_skill_nor_wulfrik_battle_fervent_creatures", 0},
@@ -408,6 +461,6 @@ local SRW_Lord_Skills_Cost = {
     ["wh_main_ksl_cav_bolgasgrad_ror-Boris"] = {"wh_dlc08_skill_ksl_lord_unique_boris_2", 2},
     ["wh_main_ksl_inf_kreml-Katya"] = {"mixu_ksl_katarin_bokha_special_royal_guard", 1},
     ["wh_main_ksl_cav_bolgasgrad_ror-Katya"] = {"mixu_ksl_katarin_bokha_special_royal_guard", 2},
-  }
+}
   
   

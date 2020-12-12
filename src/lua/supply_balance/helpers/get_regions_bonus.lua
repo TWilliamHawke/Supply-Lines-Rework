@@ -3,6 +3,9 @@ local function get_building_var(faction)
   local regions_list = faction:region_list()
 
   for i=0, regions_list:num_items()-1 do
+    if i >= big_empire_penalty_start then
+      supply_form_regions = supply_form_regions - 1;
+    end
 
     local slot_list = regions_list:item_at(i):slot_list()
 
@@ -11,7 +14,7 @@ local function get_building_var(faction)
         if slot_list:item_at(j):has_building() then
           local building = slot_list:item_at(j):building()
           local building_name = building:name()
-          --main building hasspecial formula
+          --main building has special formula
           if j == 0 then
             supply_form_regions = supply_form_regions - get_main_building_cost(building, faction)
           elseif building_unit_bonus[building_name] then

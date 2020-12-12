@@ -47,8 +47,12 @@ local function init_mcm(context)
   max_balance_per_building_cfg:set_uic_visibility(enable_supply_balance)
 
   local max_balance_per_army_cfg = supply_lines_rw:get_option_by_key("balance_per_army")
-  max_balance_per_army = max_balance_per_army_cfg:get_finalized_setting()
+  max_balance_per_army = tonumber(max_balance_per_army_cfg:get_finalized_setting())
   max_balance_per_army_cfg:set_uic_visibility(enable_supply_balance)
+
+  local big_empire_penalty_cfg = supply_lines_rw:get_option_by_key("big_empire_penalty")
+  big_empire_penalty_start = tonumber(big_empire_penalty_cfg:get_finalized_setting())
+  big_empire_penalty_cfg:set_uic_visibility(enable_supply_balance)
 
   if enable_logging_debug then
     enable_logging = true

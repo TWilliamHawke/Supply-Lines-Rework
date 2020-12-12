@@ -7,6 +7,7 @@ local SRW_Lord_Group = {
     ["wh2_dlc11_vmp_bloodline_strigoi"] = "Strigoi",
     ["dlc04_vmp_helman_ghorst"] = "Ghorst",
     ["vmp_bloodline_fallen_knight"] = "Mixu_Knight",
+    ["vmp_abh"] = "Imbalash",
   --elves
     ["wh2_main_hef_tyrion"] = "Tyrion",
     ["wh2_dlc15_hef_archmage_beasts"] = "Tyrion",
@@ -66,7 +67,10 @@ local SRW_Lord_Group = {
     ["ws_grn_tinitt_foureyes"] = "Forest",
     ["ws_grn_grak_beastbasha"] = "BeastBasha",
   --Wood elves
-    
+    ["wh2_dlc16_wef_malicious_ancient_treeman_beasts"] = "Treeman",
+    ["wh2_dlc16_wef_malicious_ancient_treeman_life"] = "Treeman",
+    ["wh2_dlc16_wef_malicious_ancient_treeman_shadows"] = "Treeman",
+    ["dlc05_wef_ancient_treeman"] = "Treeman",
   --TEB
     --["teb_tilea"] = "Tileaman",
     --["teb_borgio_the_besieger"] = "Besieger",

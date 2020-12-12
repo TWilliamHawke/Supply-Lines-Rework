@@ -12,6 +12,7 @@ local function get_supply_balance(faction)
   end;
 
   local army_supply = get_armies_total_cost(faction)
+
   local region_supply = get_building_var(faction)
   
   return region_supply - army_supply

@@ -1,12 +1,17 @@
 function helpers.construct_treasury_tooltip(faction)
+  SRWLOGDEBUG("Constructor IS STARTED");
+
   local culture = faction:subculture();
   local global_supply = 0
   local upkeep_percent = -1
   local dif_mod = helpers.srw_get_diff_mult();
   local force_list = faction:military_force_list();
   local lord_text = helpers.get_subculture_text(culture)
+  SRWLOGDEBUG("Suply will start now");
   local supply_balance = get_supply_balance(faction)
+  SRWLOGDEBUG("Suply pt1 is finished");
   local supply_penalty = get_supply_penalty(faction, supply_balance)
+  SRWLOGDEBUG("Suply was calculated correctly");
   
   --return "Replaced text"
 
@@ -38,5 +43,6 @@ function helpers.construct_treasury_tooltip(faction)
 
   local tooltip_text = helpers.localizator("SRW_treasury_tooltip_main")..lord_text..supply_text..helpers.localizator("SRW_treasury_tooltip_upkeep")..tostring(upkeep_percent).."%"..supply_balance_text
 
+  SRWLOGDEBUG("Constructor IS FINISHED");
   return tooltip_text
 end;

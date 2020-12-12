@@ -28,8 +28,11 @@ local modded_subculture_text = {
   ["mixu2-wh_main_sc_nor_norsca"] = "SRW_Subculture_Text_mixu2_nor",
   ["kraka-wh_main_sc_dwf_dwarfs"] = "SRW_Subculture_Text_kraka",
   ["vulcan-wh2_main_sc_skv_skaven"] = "SRW_Subculture_Text_vulcan",
+  ["vrrtkin-wh2_main_sc_skv_skaven"] = "SRW_Subculture_Text_vrrtkin",
+  ["skurvy-wh2_main_sc_skv_skaven"] = "SRW_Subculture_Text_skurvy",
   ["wez-wh_main_sc_grn_savage_orcs"] = "SRW_Subculture_Text_wez",
   ["ovn-wh_main_sc_emp_araby"] = "SRW_Subculture_Text_ara"
+  
 }
 
 local supported_mods_prefix = {
@@ -37,7 +40,10 @@ local supported_mods_prefix = {
   {"script/campaign/mod/mixu_darkhand.lua", "mixu2-"},
   {"script/campaign/mod/cataph_kraka.lua", "kraka-"},
   {"script/campaign/main_warhammer/mod/thom_vulkan.lua", "vulcan-"},
+  {"script/campaign/main_warhammer/mod/clan_vrritkin_lord.lua", "vrrtkin-"},
+  {"script/campaign/mod/liger_skurvy.lua", "skurvy-"},
   {"script/campaign/main_warhammer/mod/pj_kislev_start.lua", "kisl-"},
   {"script/campaign/mod/ws_big_waaagh.lua", "wez-"},
   {"script/campaign/mod/ovn_victory_conditions.lua", "ovn-"},
+  
 }

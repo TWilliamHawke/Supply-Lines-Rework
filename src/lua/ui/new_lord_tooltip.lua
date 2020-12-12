@@ -1,5 +1,5 @@
 local function set_new_lord_tooltip(component)
-  if not enable_supply_balance then
+  if not enable_supply_balance or (max_balance_per_army == 0) then
     return
   end;
   
@@ -19,16 +19,23 @@ local function set_new_lord_tooltip(component)
   if supply_balance < 0 then
     current_supply_penalty = calculate_supply_penalty(supply_balance*-1, current_army_count)*current_army_count
   end
-
+  
   local negative_balance = supply_decreasing - supply_balance
+  
 
   if negative_balance < 0 then
     negative_balance = 0
   end;
 
+
   local future_supply_penalty = calculate_supply_penalty(negative_balance, future_army_count)*future_army_count
+  SRWLOGDEBUG("future supply penalty is "..tostring(future_supply_penalty))
+
 
   local tooltip_text = helpers.localizator("SRW_new_lord_supply_balance")..supply_balance..helpers.localizator("SRW_new_lord_decrease")..supply_decreasing..helpers.localizator("SRW_new_lord_consumption")..tostring(future_supply_penalty - current_supply_penalty)
+
+  SRWLOGDEBUG("tooltip text finished")
+  SRWLOGDEBUG("---------------------")
 
   if future_supply_penalty > 20 then
     tooltip_text = tooltip_text..helpers.localizator("SRW_new_lord_suggestion")
