@@ -340,12 +340,16 @@ local SRW_Free_Units = {
     ["wh_pro04_wef_cav_wild_riders_ror_0-dlc05_wef_orion"] = 0,
     ["wh2_dlc16_wef_cav_great_stag_knights_ror_0-dlc05_wef_orion"] = 2,
     ["wh2_dlc16_wef_cav_great_stag_knights_0-dlc05_wef_orion"] = 1,
+    --tree
     ["wh_dlc05_wef_mon_treekin_0-dlc05_wef_durthu"] = 0,
     ["wh_pro04_wef_mon_treekin_ror_0-dlc05_wef_durthu"] = 1,
     ["wh2_dlc16_wef_mon_malicious_treekin_0-dlc05_wef_durthu"] = 0,
     ["wh_dlc05_wef_mon_treeman_0-dlc05_wef_durthu"] = 1,
     ["wh2_dlc16_wef_inf_dryads_ror_0-dlc05_wef_durthu"] = 0,
     ["wh2_dlc16_wef_mon_malicious_treeman_0-dlc05_wef_durthu"] = 1,
+    ["cr_wef_mon_malicious_bowtreeman_0-dlc05_wef_durthu"] = 1,
+    ["cr_wef_mon_bowtreeman_1-dlc05_wef_durthu"] = 1,
+    ["cr_wef_mon_bowtreeman_0-dlc05_wef_durthu"] = 2,
     -- ["wh_dlc05_wef_cav_hawk_riders_0-wef_naieth_the_prophetess"] = 0,
     -- ["wh_dlc05_wef_mon_great_eagle_0-wef_naieth_the_prophetess"] = 0,
     -- ["wh_dlc05_wef_cav_sisters_thorn_0-wef_naieth_the_prophetess"] = 0,
@@ -354,6 +358,7 @@ local SRW_Free_Units = {
     ["wh_dlc05_wef_inf_deepwood_scouts_1-wef_daith"] = 0,
     ["wh_dlc05_wef_inf_deepwood_scouts_1_qb-wef_daith"] = 0,
     ["wh_dlc05_wef_inf_waywatchers_0-wef_daith"] = 0,
+    --sisters
     ["wh_dlc05_wef_inf_deepwood_scouts_0-wh2_dlc16_wef_sisters_of_twilight"] = 0,
     ["wh_pro04_wef_inf_waywatchers_ror_0-wh2_dlc16_wef_sisters_of_twilight"] = 1,
     ["wh_dlc05_wef_inf_deepwood_scouts_1-wh2_dlc16_wef_sisters_of_twilight"] = 0,
@@ -364,18 +369,20 @@ local SRW_Free_Units = {
     ["wh2_dlc16_wef_mon_hawks_0-wh2_dlc16_wef_sisters_of_twilight"] = 0,
     ["wh_dlc05_wef_inf_waywatchers_0-wh2_dlc16_wef_sisters_of_twilight"] = 0,
     ["wh_dlc05_wef_forest_dragon_0-wh2_dlc16_wef_sisters_of_twilight"] = 1,
+    --drycha
     ["wh_dlc05_wef_mon_treekin_0-wh2_dlc16_wef_drycha"] = 0,
     ["wh2_dlc16_wef_mon_malicious_treekin_0-wh2_dlc16_wef_drycha"] = 0,
     ["wh2_dlc16_wef_inf_dryads_ror_0-wh2_dlc16_wef_drycha"] = 0,
     ["wh_dlc05_wef_mon_treeman_0-wh2_dlc16_wef_drycha"] = 1,
     ["wh2_dlc16_wef_mon_malicious_treeman_0-wh2_dlc16_wef_drycha"] = 1,
     ["wh_pro04_wef_mon_treekin_ror_0-wh2_dlc16_wef_drycha"] = 1,
+    ["cr_wef_mon_malicious_bowtreeman_0-wh2_dlc16_wef_drycha"] = 1,
+    ["cr_wef_mon_bowtreeman_1-wh2_dlc16_wef_drycha"] = 1,
+    ["cr_wef_mon_bowtreeman_0-wh2_dlc16_wef_drycha"] = 2,
     ["wh_dlc05_wef_inf_wardancers_0-wef_wychwethyl"] = 0,
     ["wh_dlc05_wef_inf_wardancers_1-wef_wychwethyl"] = 0,
     ["wh2_dlc16_wef_inf_bladesingers_0-wef_wychwethyl"] = 0,
     ["wh_pro04_wef_inf_wardancers_ror_0-wef_wychwethyl"] = 0,
-
-
     --wef_naieth_the_prophetess
   --Norsca
     ["wh_dlc08_nor_inf_marauder_champions_0-wh_dlc08_nor_wulfrik"] = 0,

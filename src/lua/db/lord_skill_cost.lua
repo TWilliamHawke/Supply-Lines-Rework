@@ -106,6 +106,8 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_dlc15_hef_inf_archers_ror_0-Tyrion"] = {"wh2_main_skill_hef_dedication_isha", 0},
     ["wh2_dlc10_hef_mon_treekin_0-Alarielle"] = {"wh2_dlc10_skill_hef_alarielle_fire_and_blood_4", 0},
     ["wh2_dlc10_hef_mon_treeman_0-Alarielle"] = {"wh2_dlc10_skill_hef_alarielle_fire_and_blood_4", 2},
+    ["cr_hef_mon_bowtreeman_0-Alarielle"] = {"wh2_dlc10_skill_hef_alarielle_fire_and_blood_4", 2},
+
     
   --Dark Elves
     ["wh2_main_def_inf_shades_0-Morathi"] = {"wh2_main_skill_def_morathi_unique_3_3", 0},
