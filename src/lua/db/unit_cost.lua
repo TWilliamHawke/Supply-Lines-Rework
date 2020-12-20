@@ -1777,6 +1777,7 @@ local SRW_Supply_Cost = {
     ["cr_lzd_mon_coatl_0"] = 4,
     ["dwf_runegolem"] = 3,
     ["cr_hef_veh_lothern_skycutter"] = 3,
+    ["cr_hef_veh_lothern_skycutter_ror"] = 4,
     ["wh2_mixu_def_inf_ossian_guard"] = 4,
     ["wh2_mixu_nor_art_hellcannon"] = 3,
     ["bacr_chs_inf_daemonette"] = 2,
