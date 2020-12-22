@@ -3,7 +3,6 @@ core:add_listener(
     "MctInitialized",
     true,
     function(context)
-
       init_mcm(context)
     end,
     true
@@ -17,6 +16,7 @@ core:add_listener(
     true,
     function(context)
       init_mcm(context)
+      finalize_mcm()
     end,
     true
 )

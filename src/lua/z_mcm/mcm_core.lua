@@ -2,9 +2,6 @@ local function init_mcm(context)
   local mct = context:mct()
   local supply_lines_rw = mct:get_mod_by_key("supply_lines_rw")
 
-  local c_bret_enable = supply_lines_rw:get_option_by_key("c_bret_enable")
-  bretonnia_supply =  c_bret_enable:get_finalized_setting()
-  SRWLOG("Bretonnia supply is "..tostring(bretonnia_supply));
   
   local a_player_enable = supply_lines_rw:get_option_by_key("a_player_enable")
   local is_player_enable =  a_player_enable:get_finalized_setting()
@@ -64,15 +61,6 @@ local function init_mcm(context)
     ai_supply_mult = 0
   end;
   SRWLOGDEBUG("Ai supply now is "..tostring(ai_supply_mult));
-
-  local faction = cm:model():world():whose_turn_is_it()
-  if not factionChecker(faction) then
-    player_supply_custom_mult = 0
-  else
-    srw_apply_upkeep_penalty(faction);
-  end
-  
-  SRWLOGDEBUG("Player supply now is "..tostring(player_supply_custom_mult));
 
 end;
 
