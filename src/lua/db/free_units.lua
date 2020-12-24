@@ -509,18 +509,33 @@ local SRW_Free_Units = {
     ["wh2_dlc12_lzd_inf_saurus_warriors_ror_0-wh2_main_lzd_kroq_gar"] = 0,
     ["wh2_main_lzd_inf_saurus_spearmen_blessed_1-wh2_main_lzd_kroq_gar"] = 0,
     ["wh2_main_lzd_inf_saurus_warriors_blessed_1-wh2_main_lzd_kroq_gar"] = 0,
+    ["thom_Cold_one_riders-wh2_main_lzd_kroq_gar"] = 0,
+    ["Emerald_Scales-wh2_main_lzd_kroq_gar"] = 0,
+    ["Eyes_of_the_desert-wh2_main_lzd_kroq_gar"] = 0,
+    --mazda
     ["wh2_main_lzd_inf_temple_guards-wh2_main_lzd_lord_mazdamundi"] = 0,
     ["wh2_dlc12_lzd_inf_temple_guards_ror_0-wh2_main_lzd_lord_mazdamundi"] = 1,
     ["wh2_main_lzd_inf_temple_guards_blessed-wh2_main_lzd_lord_mazdamundi"] = 0,
+    ["Solar_Guard-wh2_main_lzd_lord_mazdamundi"] = 0,
+    ["Gilded_Guard-wh2_main_lzd_lord_mazdamundi"] = 0,
+    ["Gate_Guard-wh2_main_lzd_lord_mazdamundi"] = 0,
+    ["Mist_Guard-wh2_main_lzd_lord_mazdamundi"] = 0,
+    ["Luna_Guard-wh2_main_lzd_lord_mazdamundi"] = 0,
+    ["Guards_of_the_Great_Plan-wh2_main_lzd_lord_mazdamundi"] = 0,
+
+    --tiktaq
+    ["thom_Teradon_riders-wh2_dlc12_lzd_tiktaqto"] = 0,
     ["wh2_main_lzd_cav_terradon_riders_1-wh2_dlc12_lzd_tiktaqto"] = 0,
     ["wh2_dlc12_lzd_cav_terradon_riders_ror_0-wh2_dlc12_lzd_tiktaqto"] = 0,
     ["wh2_dlc12_lzd_cav_ripperdactyl_riders_0-wh2_dlc12_lzd_tiktaqto"] = 0,
     ["wh2_dlc12_lzd_cav_terradon_riders_1_tlaqua-wh2_dlc12_lzd_tiktaqto"] = 0,
     ["wh2_main_lzd_cav_terradon_riders_blessed_1-wh2_dlc12_lzd_tiktaqto"] = 0,
     ["wh2_dlc12_lzd_cav_ripperdactyl_riders_ror_0-wh2_dlc12_lzd_tiktaqto"] = 0,
+    --mixu
     ["wh2_dlc12_lzd_mon_salamander_pack_ror_0-lzd_tetto_eko"] = 0,
     ["wh2_dlc12_lzd_mon_salamander_pack_0-lzd_tetto_eko"] = 0,
     ["wh2_dlc12_lzd_mon_ancient_salamander_0-lzd_tetto_eko"] = 1,
+    --gor rok
     ["wh2_main_lzd_inf_saurus_spearmen_0-wh2_dlc13_lzd_gor_rok"] = 0,
     ["wh2_main_lzd_inf_saurus_spearmen_1-wh2_dlc13_lzd_gor_rok"] = 0,
     ["wh2_main_lzd_inf_saurus_warriors_0-wh2_dlc13_lzd_gor_rok"] = 0,
@@ -528,12 +543,15 @@ local SRW_Free_Units = {
     ["wh2_dlc12_lzd_inf_saurus_warriors_ror_0-wh2_dlc13_lzd_gor_rok"] = 0,
     ["wh2_main_lzd_inf_saurus_spearmen_blessed_1-wh2_dlc13_lzd_gor_rok"] = 0,
     ["wh2_main_lzd_inf_saurus_warriors_blessed_1-wh2_dlc13_lzd_gor_rok"] = 0,
+    ["Emerald_Scales-wh2_dlc13_lzd_gor_rok"] = 0,
+    ["Eyes_of_the_desert-wh2_dlc13_lzd_gor_rok"] = 0,
+    --nakai
     ["wh2_main_lzd_mon_kroxigors-wh2_dlc13_lzd_nakai"] = 0,
     ["wh2_main_lzd_mon_kroxigors_blessed-wh2_dlc13_lzd_nakai"] = 0,
     ["wh2_dlc13_lzd_mon_sacred_kroxigors_0-wh2_dlc13_lzd_nakai"] = 0,
     ["wh2_dlc13_lzd_mon_sacred_kroxigors_0_nakai-wh2_dlc13_lzd_nakai"] = 0,
     ["wh2_dlc13_lzd_mon_sacred_kroxigors_ror_0-wh2_dlc13_lzd_nakai"] = 1,
-  
+    ["thom_krox-wh2_dlc13_lzd_nakai"] = 0,
   --Skaven
     ["wh2_main_skv_inf_stormvermin_0-wh2_main_skv_queek_headtaker"] = 0,
     ["wh2_main_skv_inf_stormvermin_1-wh2_main_skv_queek_headtaker"] = 0,
@@ -551,7 +569,7 @@ local SRW_Free_Units = {
     ["thom_vulkan_stormvermin_halberd-wh2_main_skv_queek_headtaker"] = 0,
     ["clan_vrrtkin_stormvermin-wh2_main_skv_queek_headtaker"] = 0,
     ["clan_vrrtkin_stormvermin_shield-wh2_main_skv_queek_headtaker"] = 0,
-
+    ["mixu_skv_inf_mordrat_guard-wh2_main_skv_queek_headtaker"] = 0,
     --scrolk
     ["wh2_main_skv_art_plagueclaw_catapult-wh2_main_skv_lord_skrolk"] = 1,
     ["wh2_main_skv_inf_plague_monks-wh2_main_skv_lord_skrolk"] = 0,
@@ -560,7 +578,11 @@ local SRW_Free_Units = {
     ["wh2_main_skv_inf_plague_monks_vrritkin-wh2_main_skv_lord_skrolk"] = 0,
     ["wh2_main_skv_inf_plague_monk_censer_bearer_vrritkin-wh2_main_skv_lord_skrolk"] = 0,
     ["clan_vrrtkin_gas_monks_censer-wh2_main_skv_lord_skrolk"] = 0,
-
+    ["plb_skv_inf_scourge_sentinels-wh2_main_skv_lord_skrolk"] = 0,
+    ["plb_skv_inf_scourge_sentinel_ror-wh2_main_skv_lord_skrolk"] = 1,
+    ["plb_skv_inf_plague_monk_ror-wh2_main_skv_lord_skrolk"] = 0,
+    ["plb_skv_inf_censer_bearer_ror-wh2_main_skv_lord_skrolk"] = 0,
+    ["plb_skv_art_plagueclaw_catapult_ror-wh2_main_skv_lord_skrolk"] = 2,
     --ikit
     ["wh2_dlc12_skv_inf_ratling_gun_0-wh2_dlc12_skv_ikit_claw"] = 1,
     ["wh2_dlc12_skv_inf_ratling_gun_ror_0-wh2_dlc12_skv_ikit_claw"] = 2,
@@ -579,7 +601,7 @@ local SRW_Free_Units = {
     ["wh2_main_skv_inf_handguns_ror-wh2_dlc12_skv_ikit_claw"] = 0,
     ["clan_vrrtkin_warpfire_thrower-wh2_dlc12_skv_ikit_claw"] = 0,
     ["clan_vrrtkin_inf_warplock_jezzails-wh2_dlc12_skv_ikit_claw"] = 1,
-
+    ["mixu_skv_inf_skullsplinters-wh2_dlc12_skv_ikit_claw"] = 2,
     --sniktch
     ["wh2_main_skv_inf_gutter_runner_slingers_0-wh2_dlc14_skv_deathmaster_snikch"] = 0,
     ["wh2_main_skv_inf_gutter_runner_slingers_1-wh2_dlc14_skv_deathmaster_snikch"] = 0,
@@ -611,6 +633,7 @@ local SRW_Free_Units = {
     ["cr_skv_mon_burrowing_behemoth_0_flesh_lab-wh2_dlc16_skv_throt_the_unclean"] = 0,
     ["clan_vrrtkin_ratogres-wh2_dlc16_skv_throt_the_unclean"] = 0,
     ["clan_vrrtkin_ratogres_ror-wh2_dlc16_skv_throt_the_unclean"] = 0,
+    ["mixu_skv_mon_warp_runners-wh2_dlc16_skv_throt_the_unclean"] = 0,
 
   --clans
     ["wh2_main_skv_inf_warpfire_thrower-Thom_vulkan_moltskin_searflesh"] = 0,
@@ -632,7 +655,7 @@ local SRW_Free_Units = {
     ["thom_vulkan_stormvermin_halberd-skv_feskit"] = 0,
     ["clan_vrrtkin_stormvermin-skv_feskit"] = 0,
     ["clan_vrrtkin_stormvermin_shield-skv_feskit"] = 0,
-
+    ["mixu_skv_inf_mordrat_guard-skv_feskit"] = 0,
     --liger_skv_skretch
     ["wh2_main_skv_inf_handguns-liger_skv_skretch"] = 0,
     ["wh2_main_skv_inf_handguns_ror-liger_skv_skretch"] = 0,
@@ -688,6 +711,7 @@ local SRW_Free_Units = {
     ["wh2_main_skv_art_warp_lightning_cannon_vrritkin-liger_skv_skretch"] = 1,
     ["clan_vrrtkin_art_poison_wind_mortar-liger_skv_skretch"] = 1,
     ["clan_vrrtkin_art_poison_wind_mortar_ror-liger_skv_skretch"] = 2,
+    ["mixu_skv_inf_skullsplinters-liger_skv_skretch"] = 2,
     --
     ["clan_vrrtkin_globeclaw_catapult-clan_vrritkin_lord_trikstab"] = 1,
     ["clan_vrrtkin_death_globe_bombardiers-clan_vrritkin_lord_trikstab"] = 0,

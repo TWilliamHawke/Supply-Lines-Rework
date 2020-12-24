@@ -140,7 +140,16 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_main_lzd_inf_temple_guards_blessed-Zaurus"] = {"wh2_main_skill_lzd_blessing_quetzl", 1},
     ["wh2_dlc12_lzd_inf_saurus_warriors_ror_0-Zaurus"] = {"wh2_main_skill_lzd_blessing_quetzl", 1},
     ["wh2_dlc12_lzd_inf_temple_guards_ror_0-Zaurus"] = {"wh2_main_skill_lzd_blessing_quetzl", 2},
-  
+    ["Solar_Guard-Zaurus"] = {"wh2_main_skill_lzd_blessing_quetzl", 1},
+    ["Gilded_Guard-Zaurus"] = {"wh2_main_skill_lzd_blessing_quetzl", 1},
+    ["Gate_Guard-Zaurus"] = {"wh2_main_skill_lzd_blessing_quetzl", 1},
+    ["Mist_Guard-Zaurus"] = {"wh2_main_skill_lzd_blessing_quetzl", 1},
+    ["Luna_Guard-Zaurus"] = {"wh2_main_skill_lzd_blessing_quetzl", 1},
+    ["Guards_of_the_Great_Plan-Zaurus"] = {"wh2_main_skill_lzd_blessing_quetzl", 1},
+    ["Emerald_Scales-Zaurus"] = {"wh2_main_skill_lzd_blessing_quetzl", 0},
+    ["Eyes_of_the_desert-Zaurus"] = {"wh2_main_skill_lzd_blessing_quetzl", 0},
+    
+    ["thom_Cold_one_riders-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 0},
     ["wh2_main_lzd_cav_cold_one_spearmen_1-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 0},
     ["wh2_main_lzd_cav_cold_one_spearriders_blessed_0-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 0},
     ["wh2_main_lzd_cav_cold_ones_1-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 0},
@@ -173,6 +182,7 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_dlc12_lzd_cav_ripperdactyl_riders_ror_0-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 2},
     ["wh2_dlc12_lzd_mon_ancient_stegadon_ror_0-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 4},
     ["wh2_dlc13_lzd_mon_dread_saurian_ror_0-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 5},
+    ["thom_star_chamber_veteran-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 3},
   
     ["wh2_main_lzd_cav_cold_one_spearmen_1-Skink"] = {"wh2_dlc12_skill_lzd_skink_chief_unique_3", 0},
     ["wh2_main_lzd_cav_cold_one_spearriders_blessed_0-Skink"] = {"wh2_dlc12_skill_lzd_skink_chief_unique_3", 0},
@@ -183,12 +193,15 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_main_lzd_cav_terradon_riders_1-Skink"] = {"wh2_dlc12_skill_lzd_skink_chief_unique_3", 0},
     ["wh2_main_lzd_cav_terradon_riders_blessed_1-Skink"] = {"wh2_dlc12_skill_lzd_skink_chief_unique_3", 0},
     ["wh2_dlc12_lzd_cav_terradon_riders_ror_0-Skink"] = {"wh2_dlc12_skill_lzd_skink_chief_unique_3", 1},
-  
+    ["thom_Cold_one_riders-Skink"] = {"wh2_dlc12_skill_lzd_skink_chief_unique_3", 1},
+    ["thom_Teradon_riders-Skink"] = {"wh2_dlc12_skill_lzd_skink_chief_unique_3", 1},
+
     ["wh2_main_lzd_mon_kroxigors-Kroxi"] = {"wh2_dlc13_skill_lzd_ancient_kroxigor_unique_3", 1, "wh2_dlc13_skill_lzd_ancient_kroxigor_unique_4"},
     ["wh2_main_lzd_mon_kroxigors_blessed-Kroxi"] = {"wh2_dlc13_skill_lzd_ancient_kroxigor_unique_3", 1, "wh2_dlc13_skill_lzd_ancient_kroxigor_unique_4"},
     ["wh2_dlc13_lzd_mon_sacred_kroxigors_0-Kroxi"] = {"wh2_dlc13_skill_lzd_ancient_kroxigor_unique_3", 1, "wh2_dlc13_skill_lzd_ancient_kroxigor_unique_4"},
     ["wh2_dlc13_lzd_mon_sacred_kroxigors_0_nakai-Kroxi"] = {"wh2_dlc13_skill_lzd_ancient_kroxigor_unique_3", 1, "wh2_dlc13_skill_lzd_ancient_kroxigor_unique_4"},
     ["wh2_dlc13_lzd_mon_sacred_kroxigors_ror_0-Kroxi"] = {"wh2_dlc13_skill_lzd_ancient_kroxigor_unique_3", 2, "wh2_dlc13_skill_lzd_ancient_kroxigor_unique_4"},
+    ["thom_krox-Kroxi"] = {"wh2_dlc13_skill_lzd_ancient_kroxigor_unique_3", 2, "wh2_dlc13_skill_lzd_ancient_kroxigor_unique_4"},
   
     ["wh2_main_lzd_mon_bastiladon_0-Tehen"] = {"wh2_dlc12_skill_lzd_tehenhauin_2", 0, "wh2_dlc12_skill_lzd_tehenhauin_6"},
     ["wh2_dlc12_lzd_mon_bastiladon_3-Tehen"] = {"wh2_dlc12_skill_lzd_tehenhauin_2", 0, "wh2_dlc12_skill_lzd_tehenhauin_6"},
@@ -212,7 +225,6 @@ local SRW_Lord_Skills_Cost = {
     ["thom_vulkan_stormvermin_halberd-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
     ["clan_vrrtkin_stormvermin-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
     ["clan_vrrtkin_stormvermin_shield-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
-
     --ikit
     ["wh2_dlc12_skv_veh_doom_flayer_0-Ikit"] = {"wh2_dlc12_skill_skv_ikit_unique_4", 0},
     ["wh2_dlc12_skv_veh_doom_flayer_ror_tech_lab_0-Ikit"] = {"wh2_dlc12_skill_skv_ikit_unique_4", 1},
