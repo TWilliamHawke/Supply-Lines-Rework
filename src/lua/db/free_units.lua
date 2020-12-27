@@ -7,6 +7,8 @@ local SRW_Free_Units = {
     ["wh_main_emp_inf_greatswords-emp_karl_franz"] = 0,
     ["wh2_dlc13_emp_inf_greatswords_imperial_supply-emp_karl_franz"] = 0,
     ["wh2_dlc13_emp_inf_greatswords_ror_0-emp_karl_franz"] = 0,
+    ["Carroburg-emp_karl_franz"] = 1,
+
     ["wh2_dlc13_emp_inf_huntsmen_0-wh2_dlc13_emp_cha_markus_wulfhart_0"] = 0,
     ["wh2_dlc13_emp_inf_huntsmen_0_imperial_supply-wh2_dlc13_emp_cha_markus_wulfhart_0"] = 0,
     ["wh2_dlc13_emp_inf_huntsmen_ror_0-wh2_dlc13_emp_cha_markus_wulfhart_0"] = 0,
@@ -280,6 +282,9 @@ local SRW_Free_Units = {
     ["wh_main_vmp_cav_black_knights_0-vmp_mannfred_von_carstein"] = 0,
     ["wh_main_vmp_cav_black_knights_3-vmp_mannfred_von_carstein"] = 0,
     ["wh_dlc04_vmp_cav_vereks_reavers_0-vmp_mannfred_von_carstein"] = 1,
+    ["ror_vamp_doomr-vmp_mannfred_von_carstein"] = 0, -- black kn
+    ["ror_vamp_templewights-vmp_mannfred_von_carstein"] = 1, --grave g
+    ["ror_vamp_helmut-vmp_mannfred_von_carstein"] = 1, --grave g
     ["dec_grave_halbs-vmp_mannfred_von_carstein"] = 0,
     ["wh_dlc04_vmp_veh_mortis_engine_0-dlc04_vmp_helman_ghorst"] = 0,
     ["wh_dlc04_vmp_veh_claw_of_nagash_0-dlc04_vmp_helman_ghorst"] = 0,
@@ -312,7 +317,6 @@ local SRW_Free_Units = {
     ["grn_inf_black_orc_shields-grn_grimgor_ironhide"] = 0,
     ["grn_inf_black_orc_dual-grn_grimgor_ironhide"] = 0,
     ["grn_big_uns_shields-grn_azhag_the_slaughterer"] = 0,
-    ["wh2_dlc15_grn_cav_squig_hoppers_waaagh_0"] = 2,
     ["ws_grn_inf_da_immortulz-grn_grimgor_ironhide"] = 1,
     ["wh2_dlc15_grn_mon_feral_hydra_waaagh_0-ws_grn_grak_beastbasha"] = 1,
     ["wh2_dlc15_grn_mon_river_trolls_0-ws_grn_grak_beastbasha"] = 0,
@@ -332,6 +336,12 @@ local SRW_Free_Units = {
     ["wh_main_grn_cav_orc_boar_boy_big_uns-grn_gorfang_rotgut"] = 0,
     ["wh_dlc06_grn_cav_broken_tusks_mob_0-grn_gorfang_rotgut"] = 0,
     ["wh_main_grn_inf_orc_big_uns-grn_gorfang_rotgut"] = 0,
+    --ror
+    ["Stabba_Stickpokers-dlc06_grn_skarsnik"] = 0, --ni gobb
+    ["Grokkamobs-grn_gorfang_rotgut"] = 0, --savage boars
+    ["Grokkamobs-dlc06_grn_wurrzag_da_great_prophet"] = 0, --savage boars
+    ["Drillaz-grn_grimgor_ironhide"] = 1, -- bl orcs
+    ["grn_bonebreakers-grn_grimgor_ironhide"] = 1, --bl orcs
 
   --Wood Elves
     ["wh_dlc05_wef_cav_wild_riders_0-dlc05_wef_orion"] = 0,
@@ -340,6 +350,8 @@ local SRW_Free_Units = {
     ["wh_pro04_wef_cav_wild_riders_ror_0-dlc05_wef_orion"] = 0,
     ["wh2_dlc16_wef_cav_great_stag_knights_ror_0-dlc05_wef_orion"] = 2,
     ["wh2_dlc16_wef_cav_great_stag_knights_0-dlc05_wef_orion"] = 1,
+    ["ror_we_daughters-dlc05_wef_orion"] = 1, --thorn
+    ["or_spe-dlc05_wef_orion"] = 1, --wildcav
     --tree
     ["wh_dlc05_wef_mon_treekin_0-dlc05_wef_durthu"] = 0,
     ["wh_pro04_wef_mon_treekin_ror_0-dlc05_wef_durthu"] = 1,
@@ -350,14 +362,19 @@ local SRW_Free_Units = {
     ["cr_wef_mon_malicious_bowtreeman_0-dlc05_wef_durthu"] = 1,
     ["cr_wef_mon_bowtreeman_1-dlc05_wef_durthu"] = 1,
     ["cr_wef_mon_bowtreeman_0-dlc05_wef_durthu"] = 2,
+    ["ror_we_willow-dlc05_wef_durthu"] = 0, --dryad
+    ["du_war-dlc05_wef_durthu"] = 2, --treeman
     -- ["wh_dlc05_wef_cav_hawk_riders_0-wef_naieth_the_prophetess"] = 0,
     -- ["wh_dlc05_wef_mon_great_eagle_0-wef_naieth_the_prophetess"] = 0,
     -- ["wh_dlc05_wef_cav_sisters_thorn_0-wef_naieth_the_prophetess"] = 0,
-    ["wh_pro04_wef_inf_waywatchers_ror_0-wef_daith"] = 0,
+    ["wh_pro04_wef_inf_waywatchers_ror_0-wef_daith"] = 1,
     ["wh_dlc05_wef_inf_deepwood_scouts_0-wef_daith"] = 0,
     ["wh_dlc05_wef_inf_deepwood_scouts_1-wef_daith"] = 0,
     ["wh_dlc05_wef_inf_deepwood_scouts_1_qb-wef_daith"] = 0,
     ["wh_dlc05_wef_inf_waywatchers_0-wef_daith"] = 0,
+    ["ror_we_elrod-wef_daith"] = 0, --glade archers
+    ["ror_we_shadow-wef_daith"] = 0, --scout archers
+    ["wef_ashenhawks-wef_daith"] = 1, --waywa
     --sisters
     ["wh_dlc05_wef_inf_deepwood_scouts_0-wh2_dlc16_wef_sisters_of_twilight"] = 0,
     ["wh_pro04_wef_inf_waywatchers_ror_0-wh2_dlc16_wef_sisters_of_twilight"] = 1,
@@ -369,6 +386,10 @@ local SRW_Free_Units = {
     ["wh2_dlc16_wef_mon_hawks_0-wh2_dlc16_wef_sisters_of_twilight"] = 0,
     ["wh_dlc05_wef_inf_waywatchers_0-wh2_dlc16_wef_sisters_of_twilight"] = 0,
     ["wh_dlc05_wef_forest_dragon_0-wh2_dlc16_wef_sisters_of_twilight"] = 1,
+    ["ror_we_taroc-wh2_dlc16_wef_sisters_of_twilight"] = 0, --hawk
+    ["ror_we_elrod-wh2_dlc16_wef_sisters_of_twilight"] = 0, --glade archers
+    ["ror_we_shadow-wh2_dlc16_wef_sisters_of_twilight"] = 0, --scout archers
+    ["wef_ashenhawks-wh2_dlc16_wef_sisters_of_twilight"] = 1, --waywa
     --drycha
     ["wh_dlc05_wef_mon_treekin_0-wh2_dlc16_wef_drycha"] = 0,
     ["wh2_dlc16_wef_mon_malicious_treekin_0-wh2_dlc16_wef_drycha"] = 0,
@@ -379,10 +400,13 @@ local SRW_Free_Units = {
     ["cr_wef_mon_malicious_bowtreeman_0-wh2_dlc16_wef_drycha"] = 1,
     ["cr_wef_mon_bowtreeman_1-wh2_dlc16_wef_drycha"] = 1,
     ["cr_wef_mon_bowtreeman_0-wh2_dlc16_wef_drycha"] = 2,
+    ["ror_we_willow-wh2_dlc16_wef_drycha"] = 0, --dryad
+    ["du_war-wh2_dlc16_wef_drycha"] = 2, --treeman
     ["wh_dlc05_wef_inf_wardancers_0-wef_wychwethyl"] = 0,
     ["wh_dlc05_wef_inf_wardancers_1-wef_wychwethyl"] = 0,
     ["wh2_dlc16_wef_inf_bladesingers_0-wef_wychwethyl"] = 0,
     ["wh_pro04_wef_inf_wardancers_ror_0-wef_wychwethyl"] = 0,
+    ["wef_cult_blood_queen-wef_wychwethyl"] = 2, --dancers
     --wef_naieth_the_prophetess
   --Norsca
     ["wh_dlc08_nor_inf_marauder_champions_0-wh_dlc08_nor_wulfrik"] = 0,
@@ -479,20 +503,30 @@ local SRW_Free_Units = {
     ["wh2_dlc10_def_inf_the_hellebronai_ror_0-wh2_main_def_malekith"] = 0,
     ["wh2_main_def_inf_darkshards_1-wh2_main_def_malekith"] = 0,
     ["wh2_dlc10_def_inf_the_bolt_fiends_ror_0-wh2_main_def_malekith"] = 0,
+    ["def_rime-wh2_main_def_malekith"] = 0, --shard
+    ["def_soul-wh2_main_def_malekith"] = 0, --sword
+    ["voiceless_ones-wh2_main_def_malekith"] = 0, --spear
+    --loh
     ["wh2_main_def_inf_black_ark_corsairs_0-wh2_dlc11_def_lokhir"] = 0,
     ["wh2_main_def_inf_black_ark_corsairs_1-wh2_dlc11_def_lokhir"] = 0,
+    --helebr
     ["wh2_main_def_inf_witch_elves_0-wh2_dlc10_def_crone_hellebron"] = 0,
     ["wh2_dlc10_def_inf_sisters_of_slaughter-wh2_dlc10_def_crone_hellebron"] = 0,
     ["wh2_main_def_inf_har_ganeth_executioners_0-wh2_dlc10_def_crone_hellebron"] = 1,
     ["wh2_dlc10_def_inf_blades_of_the_blood_queen_ror_0-wh2_dlc10_def_crone_hellebron"] = 2,
     ["wh2_dlc10_def_inf_sisters_of_the_singing_doom_ror_0-wh2_dlc10_def_crone_hellebron"] = 0,
+    ["ossian_guard-wh2_dlc10_def_crone_hellebron"] = 2, --exe
+    --malus
     ["wh2_main_def_cav_cold_one_chariot-wh2_dlc14_def_malus_darkblade"] = 0,
     ["wh2_main_def_cav_cold_one_knights_0-wh2_dlc14_def_malus_darkblade"] = 0,
     ["wh2_main_def_cav_cold_one_knights_1-wh2_dlc14_def_malus_darkblade"] = 0,
     ["wh2_dlc10_def_cav_knights_of_the_ebon_claw_ror_0-wh2_dlc14_def_malus_darkblade"] = 1,
+    ["def_ebon-wh2_dlc14_def_malus_darkblade"] = 0, --co kni
+    --mixu
     ["wh2_main_def_inf_witch_elves_0-def_tullaris_dreadbringer"] = 0,
     ["wh2_main_def_inf_har_ganeth_executioners_0-def_tullaris_dreadbringer"] = 1,
     ["wh2_dlc10_def_inf_blades_of_the_blood_queen_ror_0-def_tullaris_dreadbringer"] = 2,
+    ["ossian_guard-def_tullaris_dreadbringer"] = 2, --exe
     ["wh2_dlc10_def_inf_sisters_of_the_singing_doom_ror_0-def_tullaris_dreadbringer"] = 0,
     
   --Lizardmen
@@ -512,6 +546,7 @@ local SRW_Free_Units = {
     ["thom_Cold_one_riders-wh2_main_lzd_kroq_gar"] = 0,
     ["Emerald_Scales-wh2_main_lzd_kroq_gar"] = 0,
     ["Eyes_of_the_desert-wh2_main_lzd_kroq_gar"] = 0,
+    ["roy_lzd_inf_saurus_cohort_of_the_copper_sun-wh2_main_lzd_kroq_gar"] = 0,
     --mazda
     ["wh2_main_lzd_inf_temple_guards-wh2_main_lzd_lord_mazdamundi"] = 0,
     ["wh2_dlc12_lzd_inf_temple_guards_ror_0-wh2_main_lzd_lord_mazdamundi"] = 1,
@@ -522,6 +557,7 @@ local SRW_Free_Units = {
     ["Mist_Guard-wh2_main_lzd_lord_mazdamundi"] = 0,
     ["Luna_Guard-wh2_main_lzd_lord_mazdamundi"] = 0,
     ["Guards_of_the_Great_Plan-wh2_main_lzd_lord_mazdamundi"] = 0,
+    ["roy_lzd_inf_temple_guards_of_xlanhuapec-wh2_main_lzd_lord_mazdamundi"] = 1,
 
     --tiktaq
     ["thom_Teradon_riders-wh2_dlc12_lzd_tiktaqto"] = 0,
@@ -531,6 +567,8 @@ local SRW_Free_Units = {
     ["wh2_dlc12_lzd_cav_terradon_riders_1_tlaqua-wh2_dlc12_lzd_tiktaqto"] = 0,
     ["wh2_main_lzd_cav_terradon_riders_blessed_1-wh2_dlc12_lzd_tiktaqto"] = 0,
     ["wh2_dlc12_lzd_cav_ripperdactyl_riders_ror_0-wh2_dlc12_lzd_tiktaqto"] = 0,
+    ["roy_lzd_cav_the_wind_that_hungers-wh2_dlc12_lzd_tiktaqto"] = 1,
+
     --mixu
     ["wh2_dlc12_lzd_mon_salamander_pack_ror_0-lzd_tetto_eko"] = 0,
     ["wh2_dlc12_lzd_mon_salamander_pack_0-lzd_tetto_eko"] = 0,
@@ -552,6 +590,9 @@ local SRW_Free_Units = {
     ["wh2_dlc13_lzd_mon_sacred_kroxigors_0_nakai-wh2_dlc13_lzd_nakai"] = 0,
     ["wh2_dlc13_lzd_mon_sacred_kroxigors_ror_0-wh2_dlc13_lzd_nakai"] = 1,
     ["thom_krox-wh2_dlc13_lzd_nakai"] = 0,
+    ["roy_lzd_mon_kroxigor_yellow_crested-wh2_dlc13_lzd_nakai"] = 1,
+    ["roy_lzd_mon_kroxigor_shrouded_cohort-wh2_dlc13_lzd_nakai"] = 1,
+
   --Skaven
     ["wh2_main_skv_inf_stormvermin_0-wh2_main_skv_queek_headtaker"] = 0,
     ["wh2_main_skv_inf_stormvermin_1-wh2_main_skv_queek_headtaker"] = 0,

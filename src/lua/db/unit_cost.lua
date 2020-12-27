@@ -443,7 +443,7 @@ local SRW_Supply_Cost = {
     ["wh_jmw_emp_cav_wardens"] = 2,
     ["wh_jmw_emp_inf_grudgebringer"] = 2,
     ["helhunters_redeemers"] = 2,
-  -- Dwarfs
+  --Dwarfs
     --core
     ["wh_main_dwf_inf_miners_0"] = 0,
     ["wh_main_dwf_inf_miners_1"] = 0,
@@ -869,7 +869,6 @@ local SRW_Supply_Cost = {
     ["wh2_dlc10_def_mon_chill_of_sontar_ror_0"] = 4,
     ["wh2_dlc14_def_mon_bloodwrack_medusa_ror_0"] = 4,
     ["wh2_dlc10_def_inf_blades_of_the_blood_queen_ror_0"] = 4,
-    
   --Lizardmen
     ["wh2_main_lzd_cav_cold_ones_feral_0"] = 0,
     ["wh2_main_lzd_inf_skink_cohort_0"] = 0,
@@ -1788,6 +1787,89 @@ local SRW_Supply_Cost = {
     ["thom_Chameleion_Skinks"] = 1,
     ["thom_star_chamber_veteran"] = 4,
     ["thom_krox"] = 2,
+  --rors
+    --DEf
+    ["def_ebon"] = 2, --co kni
+    ["def_rime"] = 1, --shard
+    ["def_soul"] = 1, --sword
+    ["voiceless_ones"] = 1, --spear
+    ["ossian_guard"] = 4, --exe
+    ["ravenspears"] = 1, --riders
+    --grn
+    ["Stabba_Stickpokers"] = 2, --ni gobb
+    ["Grokkamobs"] = 2, --savage boars
+    ["Harboth"] = 1, -- orc arrers
+    ["Frik"] = 2, -- squig
+    ["grn_bouncers"] = 2, --squig
+    ["Drillaz"] = 3, -- bl orcs
+    ["grn_bonebreakers"] = 3, --bl orcs
+    --vmp
+    ["ror_vamp_fire"] = 1, --skeletons
+    ["ror_vamp_thugs"] = 1, --clanrat
+    ["ror_vamp_damned"] = 1, --skeletons
+    ["ror_vamp_knockers"] = 1, --zom
+    ["ror_vamp_deathsheads"] = 2, --halb
+    ["ror_vamp_deathsheads_ost"] = 2, --halb
+    ["ror_vamp_doomr"] = 2, -- black kn
+    ["ror_vamp_templewights"] = 3, --grave g
+    ["ror_vamp_helmut"] = 3, --grave g
+    ["ror_vamp_chill"] = 3, --ghosts
+    ["ror_vamp_dhrox"] = 4, -- vargu
+    ["vmp_drak_temp"] = 5, --blod kn
+    ["knights_of_the_red_death"] = 5, --blod kn
+    --wef
+    ["ror_we_daughters"] = 3, --thorn
+    ["ror_we_taroc"] = 2, --hawk
+    ["ror_we_elrod"] = 1, --glade archers
+    ["ror_we_shadow"] = 2, --scout archers
+    ["ror_we_willow"] = 1, --dryad
+    ["du_war"] = 4, --treeman
+    ["or_spe"] = 3, --wildcav
+    ["wef_ashenhawks"] = 3, --waywa
+    ["wef_cult_blood_queen"] = 2, --dancers
+    --emp
+    ["Carroburg"] = 3,
+    ["Deathjacks"] = 1,
+    ["Ironsides"] = 2,
+    ["Kragsburg"] = 1,
+    ["Defiants"] = 1,
+    ["Grundel"] = 1,
+    ["Manann"] = 1,
+    ["Teutogen"] = 3,
+    --lzd
+    ["roy_lzd_inf_skink_mist_runners"] = 1,
+    ["roy_lzd_inf_skink_red_shields"] = 1,
+    ["roy_lzd_inf_skink_shrouded_cohort"] = 1,
+    ["roy_lzd_inf_skink_yellow_crested_cohort"] = 1,
+    ["roy_lzd_inf_skink_eye_of_the_canopy"] = 2,
+    ["roy_lzd_inf_saurus_cohort_of_the_copper_sun"] = 2,
+    ["roy_lzd_inf_temple_guards_of_xlanhuapec"] = 3,
+    ["roy_lzd_mon_kroxigor_yellow_crested"] = 3,
+    ["roy_lzd_mon_kroxigor_shrouded_cohort"] = 3,
+    ["roy_lzd_cav_the_wind_that_hungers"] = 3,
+    ["roy_lzd_cav_tichi_huichis_raiders"] = 2,
+    --dark omen
+    ["skeleton_archers"] = 0,
+    ["elrod_wood_elf_glade_guards"] = 1,
+    ["carlsson_guard"] = 1,
+    ["dargrimm_firebeard_dwarf_warriors"] = 1,
+    ["uter_blomkwist_imperial_mortar"] = 4,
+    ["helmgart_bowmen"] = 1,
+    ["grudgebringer_crossbow"] = 1,
+    ["galed_elf_archers"] = 2,
+    ["keelers_longbows"] = 2,
+    ["azguz_bloodfist_dwarf_warriors"] = 2,
+    ["grudgebringer_cannon"] = 4,
+    ["black_avangers"] = 2,
+    ["countess_guard"] = 3,
+    ["ragnars_wolves"] = 3,
+    ["urblab_rotgut_mercenary_ogres"] = 3,
+    ["carlsson_cavalry"] = 3,
+    ["treeman_knarlroot"] = 5,
+    ["vannheim_75th"] = 3,
+    ["treeman_gnarl_fist"] = 5,
+    ["grudgebringer_infantry"] = 4,
+    ["grudgebringer_cavalry"] = 4,
   --ChaosRobbie mods
     ["bacr_chs_inf_daemonette"] = 2,
     ["dwf_runegolem"] = 3,
@@ -1814,6 +1896,7 @@ local SRW_Supply_Cost = {
     ["cr_hef_mon_bowtreeman_0"] = 4,
     ["cr_wef_mon_bowtreeman_1"] = 3,
     ["cr_wef_mon_bowtreeman_0"] = 3,
+    ["cr_grn_art_spear_chukka"] = 2,
   --Single unit mods
     ["wh2_mixu_def_inf_ossian_guard"] = 4,
     ["wh2_mixu_nor_art_hellcannon"] = 3,

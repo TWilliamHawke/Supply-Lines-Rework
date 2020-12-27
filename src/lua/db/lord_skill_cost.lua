@@ -5,6 +5,7 @@ local SRW_Lord_Skills_Cost = {
     ["wh_main_vmp_mon_varghulf-Isabella"] = {"wh2_dlc11_skill_vmp_isabella_unique_4", 1},
     ["wh_dlc04_vmp_mon_devils_swartzhafen_0-Isabella"] = {"wh2_dlc11_skill_vmp_isabella_unique_3", 1},
     ["wh_main_vmp_mon_terrorgheist-Isabella"] = {"wh2_dlc11_skill_vmp_isabella_unique_5", 2},
+    ["ror_vamp_dhrox-Isabella"] = {"wh2_dlc11_skill_vmp_isabella_unique_4", 2}, -- vargu
     --carshtain
     ["wh_dlc04_vmp_mon_devils_swartzhafen_0-Carstain"] = {"wh2_dlc11_skill_vmp_bloodline_von_carstein_unique_brooding_horrors", 2},
     ["wh_main_vmp_mon_vargheists-Carstain"] = {"wh2_dlc11_skill_vmp_bloodline_von_carstein_unique_brooding_horrors", 1},
@@ -22,7 +23,12 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_mixu_vmp_ror_the_dreadwings-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_the_ordo_draconis", 3},
     ["dismounted_blood_knights-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_the_ordo_draconis", 2},
     ["dismounted_blood_knights_shield-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_the_ordo_draconis", 2},
+    ["vmp_drak_temp-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_the_ordo_draconis", 3}, --blod kn
+    ["knights_of_the_red_death-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_the_ordo_draconis", 3}, --blod kn
     ["dec_kastellans-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_the_ordo_draconis", 2},
+    ["ror_vamp_doomr-Blood_Dragon"] =  {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_doomrider", 1},
+    ["ror_vamp_templewights-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_grave_sentinels", 2},
+    ["ror_vamp_helmut-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_grave_sentinels", 2},
     --Strigoi
     ["wh_main_vmp_inf_crypt_ghouls-Strigoi"] = {"wh2_dlc11_skill_vmp_bloodline_strigoi_unique_grave_eaters", 0},
     ["mixu_vmp_inf_crypt_ghouls-Strigoi"] = {"wh2_dlc11_skill_vmp_bloodline_strigoi_unique_grave_eaters", 0},
@@ -34,6 +40,7 @@ local SRW_Lord_Skills_Cost = {
     ["wh_main_vmp_veh_black_coach-Ghorst"] = {"wh_dlc04_skill_vmp_lord_unique_helman_ghorst_corpse_cart_boost", 0},
     ["wh_dlc04_vmp_veh_claw_of_nagash_0-Ghorst"] = {"wh_dlc04_skill_vmp_lord_unique_helman_ghorst_corpse_cart_boost", 1},
     --Mixu
+    ["ror_vamp_doomr-Mixu_Knight"] =  {"mixu_vmp_bloodline_fallen_knight_special_2_brothers_in_death", 1},
     ["wh_main_vmp_cav_black_knights_0-Mixu_Knight"] = {"mixu_vmp_bloodline_fallen_knight_special_2_brothers_in_death", 0},
     ["wh_main_vmp_cav_black_knights_3-Mixu_Knight"] = {"mixu_vmp_bloodline_fallen_knight_special_2_brothers_in_death", 1},
     ["wh2_mixu_vmp_cav_black_knights_sword-Mixu_Knight"] = {"mixu_vmp_bloodline_fallen_knight_special_2_brothers_in_death", 0},
@@ -42,6 +49,8 @@ local SRW_Lord_Skills_Cost = {
     ["wh_dlc02_vmp_cav_blood_knights_0-Mixu_Knight"] = {"mixu_vmp_bloodline_fallen_knight_special_2_brothers_in_death", 2},
     ["dismounted_blood_knights-Mixu_Knight"] = {"mixu_vmp_bloodline_fallen_knight_special_2_brothers_in_death", 2},
     ["dismounted_blood_knights_shield-Mixu_Knight"] = {"mixu_vmp_bloodline_fallen_knight_special_2_brothers_in_death", 2},
+    ["vmp_drak_temp-Mixu_Knight"] = {"mixu_vmp_bloodline_fallen_knight_special_2_brothers_in_death", 4}, --blod kn
+    ["knights_of_the_red_death-Mixu_Knight"] = {"mixu_vmp_bloodline_fallen_knight_special_2_brothers_in_death", 4}, --blod kn
     ["wh2_mixu_vmp_cav_knights_errant-Mixu_Knight"] = {"mixu_vmp_bloodline_fallen_knight_special_2_brothers_in_death", 1},
     ["wh2_mixu_vmp_cav_questing_knights-Mixu_Knight"] = {"mixu_vmp_bloodline_fallen_knight_special_2_brothers_in_death", 2},
     ["wh2_mixu_vmp_cav_knights_of_the_realm-Mixu_Knight"] = {"mixu_vmp_bloodline_fallen_knight_special_2_brothers_in_death", 2},
@@ -51,12 +60,17 @@ local SRW_Lord_Skills_Cost = {
     ["wh_dlc04_vmp_inf_sternsmen_0-Imbalash"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_grave_sentinels", 1},
     ["wh_main_vmp_inf_grave_guard_0-Imbalash"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_grave_sentinels", 0},
     ["wh_main_vmp_inf_grave_guard_1-Imbalash"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_grave_sentinels", 0},
+    ["ror_vamp_templewights-Imbalash"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_grave_sentinels", 1},
+    ["ror_vamp_helmut-Imbalash"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_grave_sentinels", 1},
     ["wh_dlc02_vmp_cav_blood_knights_0-Imbalash"] = {"vmp_fbktm", 0},
     ["dismounted_blood_knights-Imbalash"] = {"vmp_fbktm", 0},
     ["dismounted_blood_knights_shield-Imbalash"] = {"vmp_fbktm", 0},
+    ["vmp_drak_temp-Imbalash"] = {"vmp_fbktm", 1}, --blod kn
+    ["knights_of_the_red_death-Imbalash"] = {"vmp_fbktm", 1}, --blod kn
     ["wh2_mixu_vmp_ror_the_dreadwings-Imbalash"] = {"vmp_fbktm", 1},
     ["wh_main_vmp_cav_black_knights_0-Imbalash"] = {"vmp_fbk50", 0},
     ["wh_main_vmp_cav_black_knights_3-Imbalash"] = {"vmp_fbk50", 0},
+    ["ror_vamp_doomr-Imbalash"] =  {"vmp_fbk50", 0},
     ["dec_kastellans-Imbalash"] = {"vmp_fbktm", 0},
     ["dec_hell_knights-Imbalash"] = {"vmp_fbk50", 1},
     ["wh2_mixu_vmp_cav_black_knights_sword-Imbalash"] = {"vmp_fbk50", 0},
@@ -122,6 +136,7 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_main_def_cav_cold_one_knights_0-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_cold_ones", 0},
     ["wh2_dlc14_def_cav_scourgerunner_chariot_ror_0-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_cold_ones", 2},
     ["wh2_dlc10_def_cav_knights_of_the_ebon_claw_ror_0-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_cold_ones", 2},
+    ["def_ebon-wh2_dlc14_def_malus_darkblade"] = {"wh2_dlc14_skill_def_beastmaster_cold_ones", 1},
     ["wh2_dlc14_def_mon_bloodwrack_medusa_0-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_medusas", 2},
     ["wh2_dlc14_def_veh_bloodwrack_shrine_0-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_medusas", 2},
     ["wh2_dlc14_def_mon_bloodwrack_medusa_ror_0-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_medusas", 3},
@@ -148,7 +163,9 @@ local SRW_Lord_Skills_Cost = {
     ["Guards_of_the_Great_Plan-Zaurus"] = {"wh2_main_skill_lzd_blessing_quetzl", 1},
     ["Emerald_Scales-Zaurus"] = {"wh2_main_skill_lzd_blessing_quetzl", 0},
     ["Eyes_of_the_desert-Zaurus"] = {"wh2_main_skill_lzd_blessing_quetzl", 0},
-    
+    ["roy_lzd_inf_saurus_cohort_of_the_copper_sun"] = {"wh2_main_skill_lzd_blessing_quetzl", 1},
+    ["roy_lzd_inf_temple_guards_of_xlanhuapec"] = {"wh2_main_skill_lzd_blessing_quetzl", 2},
+
     ["thom_Cold_one_riders-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 0},
     ["wh2_main_lzd_cav_cold_one_spearmen_1-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 0},
     ["wh2_main_lzd_cav_cold_one_spearriders_blessed_0-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 0},
@@ -202,7 +219,9 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_dlc13_lzd_mon_sacred_kroxigors_0_nakai-Kroxi"] = {"wh2_dlc13_skill_lzd_ancient_kroxigor_unique_3", 1, "wh2_dlc13_skill_lzd_ancient_kroxigor_unique_4"},
     ["wh2_dlc13_lzd_mon_sacred_kroxigors_ror_0-Kroxi"] = {"wh2_dlc13_skill_lzd_ancient_kroxigor_unique_3", 2, "wh2_dlc13_skill_lzd_ancient_kroxigor_unique_4"},
     ["thom_krox-Kroxi"] = {"wh2_dlc13_skill_lzd_ancient_kroxigor_unique_3", 2, "wh2_dlc13_skill_lzd_ancient_kroxigor_unique_4"},
-  
+    ["roy_lzd_mon_kroxigor_yellow_crested-Kroxi"] = {"wh2_dlc13_skill_lzd_ancient_kroxigor_unique_3", 1, "wh2_dlc13_skill_lzd_ancient_kroxigor_unique_4"},
+    ["roy_lzd_mon_kroxigor_shrouded_cohort-Kroxi"] = {"wh2_dlc13_skill_lzd_ancient_kroxigor_unique_3", 1, "wh2_dlc13_skill_lzd_ancient_kroxigor_unique_4"},
+
     ["wh2_main_lzd_mon_bastiladon_0-Tehen"] = {"wh2_dlc12_skill_lzd_tehenhauin_2", 0, "wh2_dlc12_skill_lzd_tehenhauin_6"},
     ["wh2_dlc12_lzd_mon_bastiladon_3-Tehen"] = {"wh2_dlc12_skill_lzd_tehenhauin_2", 0, "wh2_dlc12_skill_lzd_tehenhauin_6"},
     ["wh2_main_lzd_mon_bastiladon_1-Tehen"] = {"wh2_dlc12_skill_lzd_tehenhauin_2", 0, "wh2_dlc12_skill_lzd_tehenhauin_6"},
@@ -435,12 +454,19 @@ local SRW_Lord_Skills_Cost = {
     ["wh_dlc06_grn_cav_durkits_squigs_0-Goblin"] = {"wh_dlc06_skill_grn_lord_battle_riderz", 1},
     ["colossal_squig-Goblin"] = {"wh_dlc06_skill_grn_lord_battle_riderz", 1},
     ["armored_colossal_squig-Goblin"] = {"wh_dlc06_skill_grn_lord_battle_riderz", 2},
+    ["Stabba_Stickpokers-Goblin"] = {"wh_dlc06_skill_grn_lord_battle_riderz", 0},
+    ["Frik-Goblin"] = {"wh_dlc06_skill_grn_lord_battle_riderz", 1}, -- squig
+    ["grn_bouncers-Goblin"] = {"wh_dlc06_skill_grn_lord_battle_riderz", 1}, --squig
+
+    --azhag
     ["grn_savage_big_great-Azhag"] = {"wh_dlc08_skill_grn_azhag_unique_0", 0},
     ["wh_main_grn_cav_orc_boar_boy_big_uns-Azhag"] = {"wh_dlc08_skill_grn_azhag_unique_0", 0},
     ["wh_main_grn_cav_savage_orc_boar_boy_big_uns-Azhag"] = {"wh_dlc08_skill_grn_azhag_unique_0", 0},
     ["wh_main_grn_inf_savage_orc_big_uns-Azhag"] = {"wh_dlc08_skill_grn_azhag_unique_0", 0},
     ["wh_main_grn_inf_orc_big_uns-Azhag"] = {"wh_dlc08_skill_grn_azhag_unique_0", 0},
     ["wh_dlc06_grn_cav_broken_tusks_mob_0-Azhag"] = {"wh_dlc08_skill_grn_azhag_unique_0", 0},
+    ["Grokkamobs-Azhag"] = {"wh_dlc08_skill_grn_azhag_unique_0", 0},
+    --wurzag
     ["wh2_dlc15_grn_mon_river_trolls_0-Wurzag"] = {"wh2_dlc15_skill_unique_grn_wurrzag_colossal_warpaint", 0},
     ["wh2_dlc15_grn_mon_river_trolls_ror_0-Wurzag"] = {"wh2_dlc15_skill_unique_grn_wurrzag_colossal_warpaint", 0},
     ["wh2_dlc15_grn_mon_stone_trolls_0-Wurzag"] = {"wh2_dlc15_skill_unique_grn_wurrzag_colossal_warpaint", 0},
@@ -451,11 +477,13 @@ local SRW_Lord_Skills_Cost = {
     ["wh_main_grn_mon_arachnarok_spider_0-Wurzag"] = {"wh2_dlc15_skill_unique_grn_wurrzag_colossal_warpaint", 2},
     ["wh_dlc15_grn_mon_arachnarok_spider_waaagh_0-Wurzag"] = {"wh2_dlc15_skill_unique_grn_wurrzag_colossal_warpaint", 2},
     ["wh_dlc06_grn_mon_venom_queen_0-Wurzag"] = {"wh2_dlc15_skill_unique_grn_wurrzag_colossal_warpaint", 3},
+    --forest
     ["wh_main_grn_mon_arachnarok_spider_0-Forest"] = {"ws_skill_tinitt_foureyes_ancient_behemoths", 2},
     ["wh_dlc15_grn_mon_arachnarok_spider_waaagh_0-Forest"] = {"ws_skill_tinitt_foureyes_ancient_behemoths", 2},
     ["wh_dlc06_grn_mon_venom_queen_0-Forest"] = {"ws_skill_tinitt_foureyes_ancient_behemoths", 3},
     ["wh_main_grn_inf_savage_orc_big_uns-BeastBasha"] = {"ws_skill_grak_beastbasha_rally_da_boyz", 0},
     ["wh_main_grn_cav_savage_orc_boar_boy_big_uns-BeastBasha"] = {"ws_skill_grak_beastbasha_rally_da_boyz", 0},
+    ["Grokkamobs-BeastBasha"] = {"ws_skill_grak_beastbasha_rally_da_boyz", 0},
   --Wood Elves
     ["wh_dlc05_wef_mon_treekin_0-Treeman"] = {"wh_dlc05_skill_wef_ancient_treeman_unique_damage_resistance_treekin", 1},
     ["wh_pro04_wef_mon_treekin_ror_0-Treeman"] = {"wh_dlc05_skill_wef_ancient_treeman_unique_damage_resistance_treekin", 2},
