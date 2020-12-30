@@ -27,6 +27,10 @@ local function calculate_supply_balance(faction)
   if supply_balance > 0 then
     apply_supply_balance_effect(faction, supply_balance)
   end
+
+  if supply_balance < 0 then
+    create_negative_sb_effect(faction, supply_balance)
+  end;
 end
 
 --return additional supply for each army if balance is negative
