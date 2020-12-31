@@ -3,6 +3,19 @@
 --========================
 
 core:add_listener(
+  "SRW_BuildingTooltip",
+  "ComponentMouseOn",
+  function(context)
+    return cm.campaign_ui_manager:is_panel_open("settlement_panel") and (enable_supply_balance == true) and uiFactionChecker(true)
+  end,
+  function(context)
+    local component = UIComponent(context.component)
+    set_building_tooltip(component)
+  end,
+  true
+)
+
+core:add_listener(
   "SRW_TreasuryTooltip",
   "ComponentMouseOn",
   function(context)

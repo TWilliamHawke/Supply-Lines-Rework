@@ -7,14 +7,6 @@ local function get_main_building_cost(building, faction)
     return 1
   end;
 
-  -- if culture == "wh_dlc05_wef_wood_elves" then
-  --   if wood_elves_trees[main_building_superchain] then
-  --     return 1
-  --   else
-  --     return 0
-  --   end
-  -- end;
-
   if main_building_level == 5 then
     return 3
   elseif main_building_level == 4 then

@@ -20,7 +20,9 @@ local function set_tooltip_text_treasury(faction, component_name)
   end;
 
   --apply text
-  component:SetTooltipText(tooltip_text, true)
+  if is_uicomponent(component) then 
+    component:SetTooltipText(tooltip_text, true)
+  end;
   SRWLOGDEBUG("SET TREASURY TOOLTIP FUNCTION IS FINISHED");
 
 end;
