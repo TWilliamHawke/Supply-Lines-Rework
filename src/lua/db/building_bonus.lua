@@ -376,6 +376,14 @@ local building_unit_bonus = {
   ["wh2_main_hef_defence_minor_1"] = -1,
   ["wh2_main_hef_defence_minor_2"] = -1,
   ["wh2_main_hef_defence_norsca_1"] = -1,
+  --dragonprinces
+  ["low_hef_dragon_legion_palace_caledor_1"] = 2,
+  ["low_hef_dragon_legion_palace_caledor_2"] = 3,
+  ["low_hef_dragon_legion_palace_caledor_3"] = 4,
+  ["low_hef_dragon_legion_palace_caledor_4"] = 5,
+  ["wh2_main_hef_dragons_pre"] = 3,
+  ["wh2_main_hef_dragons_1"] = 4,
+  ["wh2_main_hef_dragons_2"] = 5,
 --lizardmen
   ["wh2_main_lzd_beasts_1"] = 3,
   ["wh2_main_lzd_beasts_2"] = 4,

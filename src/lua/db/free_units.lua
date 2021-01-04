@@ -509,7 +509,21 @@ local SRW_Free_Units = {
     ["wh2_dlc15_hef_inf_mistwalkers_skyhawks_0-wh2_dlc15_hef_eltharion"] = 0,
     ["wh2_dlc15_hef_inf_mistwalkers_griffon_knights_0-wh2_dlc15_hef_eltharion"] = 2,
     ["hef_yvr_inf_archers_mistwalkers-wh2_dlc15_hef_eltharion"] = 0,
-  
+    --dragonprinces
+    ["wh2_low_hef_inf_legion_dragon_spearmen_0-wh2_dlc15_hef_imrik"] = 0,
+    ["wh2_low_hef_inf_legion_dragon_swordsmen_0-wh2_dlc15_hef_imrik"] = 0,
+    ["wh2_low_hef_inf_legion_dragon_swordsmen_archers_0-wh2_dlc15_hef_imrik"] = 0,
+    ["wh2_low_hef_cav_legion_dragon_chariot_0-wh2_dlc15_hef_imrik"] = 0,
+    ["wh2_low_hef_inf_legion_dragon_spearmen_archers_shielded_0-wh2_dlc15_hef_imrik"] = 1,
+    ["wh2_low_hef_cav_legion_dragon_legion_knights_0-wh2_dlc15_hef_imrik"] = 1,
+    ["wh2_low_hef_cav_legion_dragon_legion_knights_1-wh2_dlc15_hef_imrik"] = 1,
+    ["wh2_low_hef_art_legion_dragon_bolt_thrower-wh2_dlc15_hef_imrik"] = 1,
+    ["wh2_low_hef_inf_legion_dragon_guard_0-wh2_dlc15_hef_imrik"] = 2,
+    ["wh2_low_hef_inf_legion_dragon_swordmasters_0-wh2_dlc15_hef_imrik"] = 2,
+    ["wh2_low_hef_inf_legion_dragon_guard_archer_0-wh2_dlc15_hef_imrik"] = 2,
+    ["wh2_low_hef_cav_legion_dragon_legion_knights_2-wh2_dlc15_hef_imrik"] = 2,
+    ["wh2_low_hef_cav_legion_dragon_legion_knight_archers_0-wh2_dlc15_hef_imrik"] = 2,
+
     --mixu
     ["wh2_main_hef_mon_moon_dragon-hef_prince_imrik"] = 2,
     ["wh2_main_hef_mon_star_dragon-hef_prince_imrik"] = 2,
@@ -672,6 +686,8 @@ local SRW_Free_Units = {
     ["clan_vrrtkin_warpfire_thrower-wh2_dlc12_skv_ikit_claw"] = 0,
     ["clan_vrrtkin_inf_warplock_jezzails-wh2_dlc12_skv_ikit_claw"] = 1,
     ["mixu_skv_inf_skullsplinters-wh2_dlc12_skv_ikit_claw"] = 2,
+    ["crxe_skv_mon_stormfiend_0-wh2_dlc12_skv_ikit_claw"] = 2,
+    ["crxe_skv_mon_stormfiend_1-wh2_dlc12_skv_ikit_claw"] = 2,
     --sniktch
     ["wh2_main_skv_inf_gutter_runner_slingers_0-wh2_dlc14_skv_deathmaster_snikch"] = 0,
     ["wh2_main_skv_inf_gutter_runner_slingers_1-wh2_dlc14_skv_deathmaster_snikch"] = 0,
@@ -704,6 +720,8 @@ local SRW_Free_Units = {
     ["clan_vrrtkin_ratogres-wh2_dlc16_skv_throt_the_unclean"] = 0,
     ["clan_vrrtkin_ratogres_ror-wh2_dlc16_skv_throt_the_unclean"] = 0,
     ["mixu_skv_mon_warp_runners-wh2_dlc16_skv_throt_the_unclean"] = 0,
+    ["crxe_skv_mon_stormfiend_0-wh2_dlc16_skv_throt_the_unclean"] = 2,
+    ["crxe_skv_mon_stormfiend_1-wh2_dlc16_skv_throt_the_unclean"] = 2,
 
   --clans
     ["wh2_main_skv_inf_warpfire_thrower-Thom_vulkan_moltskin_searflesh"] = 0,

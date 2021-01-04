@@ -1229,7 +1229,20 @@ local SRW_Supply_Cost = {
     ["yvr_inf_sea_guard"] = 1,
     ["hef_yvr_inf_archers_mistwalkers"] = 1,
     ["yvr_inf_cove_warriors"] = 2,
-  
+    --Dragonprinces
+    ["wh2_low_hef_inf_legion_dragon_spearmen_0"] = 2,
+    ["wh2_low_hef_inf_legion_dragon_swordsmen_0"] = 2,
+    ["wh2_low_hef_inf_legion_dragon_swordsmen_archers_0"] = 2,
+    ["wh2_low_hef_cav_legion_dragon_chariot_0"] = 2,
+    ["wh2_low_hef_inf_legion_dragon_spearmen_archers_shielded_0"] = 3,
+    ["wh2_low_hef_cav_legion_dragon_legion_knights_0"] = 3,
+    ["wh2_low_hef_cav_legion_dragon_legion_knights_1"] = 3,
+    ["wh2_low_hef_art_legion_dragon_bolt_thrower"] = 3,
+    ["wh2_low_hef_inf_legion_dragon_guard_0"] = 4,
+    ["wh2_low_hef_inf_legion_dragon_swordmasters_0"] = 4,
+    ["wh2_low_hef_inf_legion_dragon_guard_archer_0"] = 4,
+    ["wh2_low_hef_cav_legion_dragon_legion_knights_2"] = 4,
+    ["wh2_low_hef_cav_legion_dragon_legion_knight_archers_0"] = 4,
   --Kraka Drac
     ["kraka_quarrel_2h"] = 0,
     ["dwf_orgi"] = 0,
@@ -1917,6 +1930,8 @@ local SRW_Supply_Cost = {
     ["cr_wef_mon_bowtreeman_1"] = 3,
     ["cr_wef_mon_bowtreeman_0"] = 3,
     ["cr_grn_art_spear_chukka"] = 2,
+    ["crxe_skv_mon_stormfiend_0"] = 4,
+    ["crxe_skv_mon_stormfiend_1"] = 4,
   --Single unit mods
     ["wh2_mixu_def_inf_ossian_guard"] = 4,
     ["wh2_mixu_nor_art_hellcannon"] = 3,
