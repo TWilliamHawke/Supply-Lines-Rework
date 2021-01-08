@@ -199,7 +199,6 @@ local SRW_Free_Units = {
     ["wh_main_wis_inf_halberdiers-dlc03_emp_boris_todbringer"] = 0,
     ["wh_main_sol_inf_halberdiers-dlc03_emp_boris_todbringer"] = 0,
     ["wh_main_hun_inf_halberdiers-dlc03_emp_boris_todbringer"] = 0,
-    ["wh_dlc04_emp_inf_silver_bullets_0-dlc03_emp_boris_todbringer"] = 0,
     ["wh_main_emp_inf_halberdiers-emp_valmir_von_raukov"] = 0,
     ["wh2_dlc13_emp_inf_halberdiers_ror_0-emp_valmir_von_raukov"] = 0,
     ["wh2_dlc13_emp_inf_halberdiers_imperial_supply-emp_valmir_von_raukov"] = 0,
@@ -455,7 +454,6 @@ local SRW_Free_Units = {
     ["wh_dlc08_nor_mon_skinwolves_0-nor_egil_styrbjorn"] = 0,
     ["wh_dlc08_nor_mon_skinwolves_1-nor_egil_styrbjorn"] = 0,
     ["wh_pro04_nor_mon_skinwolves_ror_0-nor_egil_styrbjorn"] = 0,
-    ["wh_main_nor_mon_chaos_trolls-wh_dlc08_nor_throgg"] = 0,
     ["wh_dlc01_chs_mon_trolls_1-wh_dlc08_nor_throgg"] = 0,
     ["wh2_dlc15_grn_mon_stone_trolls_0_n-wh_dlc08_nor_throgg"] = 0,
     ["wh2_dlc15_grn_mon_river_trolls_0_n-wh_dlc08_nor_throgg"] = 0,
@@ -502,6 +500,7 @@ local SRW_Free_Units = {
     ["hef_cal_hef_inf_dragon_guard_ror-wh2_dlc15_hef_imrik"] = 2,
     ["hef_cal_hef_cav_dragonspine_princes_ror-wh2_dlc15_hef_imrik"] = 3,
     ["hef_cal_hef_mon_baith_caradan_ror-wh2_dlc15_hef_imrik"] = 3,
+    ["wh2_dlc10_hef_cav_the_fireborn_ror_0-wh2_dlc15_hef_imrik"] = 3,
     --elth
     ["wh2_dlc15_hef_inf_mistwalkers_faithbearers_0-wh2_dlc15_hef_eltharion"] = 0,
     ["wh2_dlc15_hef_inf_mistwalkers_spireguard_0-wh2_dlc15_hef_eltharion"] = 0,
@@ -654,6 +653,7 @@ local SRW_Free_Units = {
     ["clan_vrrtkin_stormvermin-wh2_main_skv_queek_headtaker"] = 0,
     ["clan_vrrtkin_stormvermin_shield-wh2_main_skv_queek_headtaker"] = 0,
     ["mixu_skv_inf_mordrat_guard-wh2_main_skv_queek_headtaker"] = 0,
+    ["singe_sk_stormvermin_bonebreakers-wh2_main_skv_queek_headtaker"] = 0,
     --scrolk
     ["wh2_main_skv_art_plagueclaw_catapult-wh2_main_skv_lord_skrolk"] = 1,
     ["wh2_main_skv_inf_plague_monks-wh2_main_skv_lord_skrolk"] = 0,
@@ -722,6 +722,7 @@ local SRW_Free_Units = {
     ["mixu_skv_mon_warp_runners-wh2_dlc16_skv_throt_the_unclean"] = 0,
     ["crxe_skv_mon_stormfiend_0-wh2_dlc16_skv_throt_the_unclean"] = 2,
     ["crxe_skv_mon_stormfiend_1-wh2_dlc16_skv_throt_the_unclean"] = 2,
+    ["singe_sk_stormvermin_bonebreakers-wh2_dlc16_skv_throt_the_unclean"] = 0,
 
   --clans
     ["wh2_main_skv_inf_warpfire_thrower-Thom_vulkan_moltskin_searflesh"] = 0,
@@ -744,6 +745,8 @@ local SRW_Free_Units = {
     ["clan_vrrtkin_stormvermin-skv_feskit"] = 0,
     ["clan_vrrtkin_stormvermin_shield-skv_feskit"] = 0,
     ["mixu_skv_inf_mordrat_guard-skv_feskit"] = 0,
+    ["singe_sk_stormvermin_bonebreakers-skv_feskit"] = 0,
+
     --liger_skv_skretch
     ["wh2_main_skv_inf_handguns-liger_skv_skretch"] = 0,
     ["wh2_main_skv_inf_handguns_ror-liger_skv_skretch"] = 0,
@@ -776,10 +779,8 @@ local SRW_Free_Units = {
     ["thom_ferrik_inf_poison_wind_mortar_ror_0-liger_skv_skretch"] = 2,
     ["wh2_main_skv_art_skurvymortar-liger_skv_skretch"] = 1,
     ["clan_vrrtkin_poison_wind_globadiers-liger_skv_skretch"] = 0,
-    ["wh2_main_skv_inf_poison_wind_globadiers-liger_skv_skretch"] = 0,
     ["clan_vrrtkin_skv_inf_warp_grinder-liger_skv_skretch"] = 0,
     ["clan_vrrtkin_death_globe_bombardiers-liger_skv_skretch"] = 0,
-    ["wh2_main_skv_inf_death_globe_bombardiers-liger_skv_skretch"] = 0,
     ["clan_vrrtkin_warpfire_thrower-liger_skv_skretch"] = 0,
     ["clan_vrrtkin_inf_warplock_jezzails-liger_skv_skretch"] = 1,
     ["clan_vrrtkin_gasthrower-liger_skv_skretch"] = 1,
@@ -805,7 +806,6 @@ local SRW_Free_Units = {
     ["clan_vrrtkin_death_globe_bombardiers-clan_vrritkin_lord_trikstab"] = 0,
     ["clan_vrrtkin_art_poison_wind_mortar-clan_vrritkin_lord_trikstab"] = 1,
     ["clan_vrrtkin_art_poison_wind_mortar_ror-clan_vrritkin_lord_trikstab"] = 2,
-    ["clan_vrrtkin_death_globe_bombardiers-clan_vrritkin_lord_trikstab"] = 0,
     ["clan_vrrtkin_poison_wind_globadiers-clan_vrritkin_lord_trikstab"] = 0,
     ["clan_vrrtkin_gasthrower-clan_vrritkin_lord_trikstab"] = 1,
     ["clan_vrrtkin_mortar-clan_vrritkin_lord_trikstab"] = 1,

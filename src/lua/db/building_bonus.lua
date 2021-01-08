@@ -382,8 +382,6 @@ local building_unit_bonus = {
   ["low_hef_dragon_legion_palace_caledor_3"] = 4,
   ["low_hef_dragon_legion_palace_caledor_4"] = 5,
   ["wh2_main_hef_dragons_pre"] = 3,
-  ["wh2_main_hef_dragons_1"] = 4,
-  ["wh2_main_hef_dragons_2"] = 5,
 --lizardmen
   ["wh2_main_lzd_beasts_1"] = 3,
   ["wh2_main_lzd_beasts_2"] = 4,
@@ -443,7 +441,6 @@ local building_unit_bonus = {
   ["wh2_dlc12_special_warpstone_tractor_beam_1"] = 1,
   ["wh2_dlc12_special_warpstone_tractor_beam_2"] = 3,
   ["wh2_dlc14_special_skv_eshin_den"] = 2,
-  ["wh2_dlc14_skv_weaponteams_1"] = 2,
   ["wh2_main_special_mors_hq_1"] = 2,
   ["wh2_main_special_corrupted_spawning_pool_1"] = 2,
   --walls

@@ -22,7 +22,7 @@ local function ai_callback(option)
   end;
 end;
 
-function effectCallback(option)
+local function effectCallback(option)
   local val = option:get_selected_setting()
 
   local max_building = option:get_mod():get_option_by_key("balance_per_building")
