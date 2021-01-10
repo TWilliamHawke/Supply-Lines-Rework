@@ -78,11 +78,11 @@ local function start_locking()
     NCAISLOG(subculture.." -- "..permission)
 
     if permission == "none" then
-      cm:force_diplomacy("subculture:"..subculture, "subculture:"..subculture, "form confederation", false, false, false);
+      cm:force_diplomacy("subculture:"..subculture, "subculture:"..subculture, "form confederation", false, false, true);
 
     elseif permission == "minor" then
       --enable conf for all
-      cm:force_diplomacy("subculture:"..subculture, "subculture:"..subculture, "form confederation", true, true, false);
+      cm:force_diplomacy("subculture:"..subculture, "subculture:"..subculture, "form confederation", true, true, true);
 
       --disable conf for major factions
       local major_factions = no_conf_main_factions[subculture];
@@ -119,14 +119,14 @@ local function lock_major_confederation_again(faction_name)
     for i = 1, #major_factions do
       if faction_name ~= major_factions[i] then
         NCAISLOG("Block confederation between "..faction_name.." and "..major_factions[i])
-        cm:force_diplomacy("faction:" .. faction_name, "faction:"..major_factions[i], "form confederation", false, false, false);
+        cm:force_diplomacy("faction:" .. faction_name, "faction:"..major_factions[i], "form confederation", false, false, true);
       end;
     end
 
   elseif no_conf_subcultures[subculture] == "none" then
 
-    NCAISLOG("Block confederation between "..faction_name.." and "..subculture)
-    cm:force_diplomacy("faction:"..faction_name, "subculture:"..subculture, "form confederation", false, false, false);
+    NCAISLOG("Block confederation for "..subculture)
+    cm:force_diplomacy("subculture:"..subculture, "subculture:"..subculture, "form confederation", false, false, true);
 
   end;
 
@@ -148,7 +148,7 @@ end;
 core:add_listener(
   "confederation_expired",
   "ScriptEventConfederationExpired",
-  function(context)    
+  function(context)
     return true;
   end,
   function(context)
@@ -167,7 +167,7 @@ core:add_listener(
 core:add_listener(
   "Conf_conf_joins_confederation",
   "FactionJoinsConfederation",
-  function(context)    
+  function(context)
     return true;
   end,
   function(context)

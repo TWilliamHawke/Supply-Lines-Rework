@@ -1,6 +1,6 @@
 local SRW_Free_Units = {
   --Empire
-  
+
     ["wh_main_emp_cav_reiksguard-emp_karl_franz"] = 0,
     ["wh_dlc04_emp_cav_zintlers_reiksguard_0-emp_karl_franz"] = 1,
     ["wh2_dlc13_emp_cav_reiksguard_imperial_supply-emp_karl_franz"] = 0,
@@ -9,12 +9,17 @@ local SRW_Free_Units = {
     ["wh2_dlc13_emp_inf_greatswords_ror_0-emp_karl_franz"] = 0,
     ["Carroburg-emp_karl_franz"] = 1,
     ["wh2_mixu_emp_ror_knights_of_the_black_rose-emp_karl_franz"] = 1,
+    ["emp_inf_reiksguard-emp_karl_franz"] = 0,
+    ["emp_inf_reiksguard_halberdiers-emp_karl_franz"] = 0,
+    ["emp_inf_carroburg_greatswords_ror-emp_karl_franz"] = 1,
+    ["emp_inf_reiksguard_great-emp_karl_franz"] = 1,
+    ["emp_cav_reiksguard_inner_circle-emp_karl_franz"] = 2,
 
     ["wh2_dlc13_emp_inf_huntsmen_0-wh2_dlc13_emp_cha_markus_wulfhart_0"] = 0,
     ["wh2_dlc13_emp_inf_huntsmen_0_imperial_supply-wh2_dlc13_emp_cha_markus_wulfhart_0"] = 0,
     ["wh2_dlc13_emp_inf_huntsmen_ror_0-wh2_dlc13_emp_cha_markus_wulfhart_0"] = 0,
     ["wh2_dlc13_emp_inf_archers_ror_0-wh2_dlc13_emp_cha_markus_wulfhart_0"] = 0,
-  
+
     ["wh2_dlc13_emp_veh_war_wagon_ror_0-emp_balthasar_gelt"] = 3,
     ["wh2_dlc13_emp_art_great_cannon_imperial_supply-emp_balthasar_gelt"] = 2,
     ["wh2_dlc13_emp_art_helblaster_volley_gun_imperial_supply-emp_balthasar_gelt"] = 2,
@@ -233,6 +238,10 @@ local SRW_Free_Units = {
     ["wh_main_wis_cav_demigryph_knights_1-emp_helmut_feuerbach"] = 2,
     ["wh_main_sol_cav_demigryph_knights_1-emp_helmut_feuerbach"] = 2,
     ["wh_main_hun_cav_demigryph_knights_1-emp_helmut_feuerbach"] = 2,
+    ["wh_jmw_emp_cav_demigryph_kgriff-emp_helmut_feuerbach"] = 2,
+    ["wh_jmw_emp_cav_demigryph_kgriff_hell-emp_helmut_feuerbach"] = 2,
+    ["wh_jmw_emp_cav_demigryph_taalsf-emp_helmut_feuerbach"] = 2,
+    ["wh_jmw_emp_cav_demigryph_taalsf_hell-emp_helmut_feuerbach"] = 2,
     ["wh2_mixu_emp_ror_knights_of_taals_fury-emp_helmut_feuerbach"] = 3,
     ["wh_dlc04_emp_cav_royal_altdorf_gryphites_0-emp_helmut_feuerbach"] = 3,
     --art
@@ -409,7 +418,6 @@ local SRW_Free_Units = {
     ["wh_dlc05_wef_inf_deepwood_scouts_1-wh2_dlc16_wef_sisters_of_twilight"] = 0,
     ["wh_dlc05_wef_inf_deepwood_scouts_1_qb-wh2_dlc16_wef_sisters_of_twilight"] = 0,
     ["wh_dlc05_wef_cav_hawk_riders_0-wh2_dlc16_wef_sisters_of_twilight"] = 0,
-    ["wh_dlc05_wef_mon_great_eagle_0-wh2_dlc16_wef_sisters_of_twilight"] = 0,
     ["wh2_dlc16_wef_mon_feral_manticore-wh2_dlc16_wef_sisters_of_twilight"] = 0,
     ["wh2_dlc16_wef_mon_hawks_0-wh2_dlc16_wef_sisters_of_twilight"] = 0,
     ["wh_dlc05_wef_inf_waywatchers_0-wh2_dlc16_wef_sisters_of_twilight"] = 0,
@@ -473,14 +481,14 @@ local SRW_Free_Units = {
     ["wh2_dlc10_hef_inf_the_grey_ror_0-wh2_dlc10_hef_alith_anar"] = 0,
     ["wh2_main_hef_inf_white_lions_of_chrace_0-wh2_main_hef_prince_alastar"] = 0,
     ["wh2_dlc10_hef_inf_the_silverpelts_ror_0-wh2_main_hef_prince_alastar"] = 0,
-    ["wh2_dlc10_hef_inf_sisters_of_avelorn_0-wh2_dlc10_hef_alarielle"] = 1,
-    ["wh2_dlc10_hef_inf_everqueens_court_guards_ror_0-wh2_dlc10_hef_alarielle"] = 2,
+    ["wh2_dlc10_hef_inf_sisters_of_avelorn_0-wh2_dlc10_hef_alarielle"] = 2,
+    ["wh2_dlc10_hef_inf_everqueens_court_guards_ror_0-wh2_dlc10_hef_alarielle"] = 3,
     ["wh2_dlc15_hef_mon_war_lions_of_chrace_0-wh2_main_hef_prince_alastar"] = 0,
     ["wh2_dlc15_hef_veh_lion_chariot_of_chrace_0-wh2_main_hef_prince_alastar"] = 0,
     ["wh2_dlc15_hef_mon_war_lions_of_chrace_ror_0-wh2_main_hef_prince_alastar"] = 0,
     --teclis
     ["wh2_main_hef_inf_swordmasters_of_hoeth_0-wh2_main_hef_teclis"] = 1,
-    ["wh2_main_hef_mon_phoenix_flamespyre-wh2_main_hef_teclis"] = 1,
+    ["wh2_main_hef_mon_phoenix_flamespyre-wh2_main_hef_teclis"] = 0,
     ["wh2_main_hef_mon_phoenix_frostheart-wh2_main_hef_teclis"] = 1,
     ["wh2_dlc15_hef_mon_arcane_phoenix_ror_0-wh2_main_hef_teclis"] = 3,
     ["wh2_dlc15_hef_mon_arcane_phoenix_0-wh2_main_hef_teclis"] = 2,

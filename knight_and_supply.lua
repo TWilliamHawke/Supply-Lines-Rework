@@ -4,8 +4,8 @@ local function KNASLOGCORE(text)
   local logText = tostring(text)
   local popLog = io.open("supply_rework_log.txt","a")
   popLog :write("SRW: "..logText .. "  \n")
-  popLog :flush()
-  popLog :close()
+  popLog :flush();
+  popLog :close();
 end
 
 local function KNASLOG(text)
@@ -21,8 +21,8 @@ local function KNASNEWLOG()
 
   local popLog = io.open("supply_rework_log.txt","w+")
   popLog :write("NEW LOG ["..logTimeStamp.."] \n")
-  popLog :flush()
-  popLog :close() 
+  popLog :flush();
+  popLog :close();
 end
 KNASNEWLOG()
 
@@ -41,8 +41,8 @@ local function set_bretonnia_faction_supply(faction)
     local force = force_list:item_at(i);
     
     if not force:is_armed_citizenry() and force:has_general() then
-      SRWLOG("--------");
-      SRWLOG("CHECK ARMY #"..tostring(i));
+      KNASLOG("--------");
+      KNASLOG("CHECK ARMY #"..tostring(i));
       set_bretonnia_army_supply(force)
     end; --of army check
   end; --of force_list loop
