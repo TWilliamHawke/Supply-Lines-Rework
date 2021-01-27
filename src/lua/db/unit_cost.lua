@@ -772,13 +772,13 @@ local SRW_Supply_Cost = {
     ["wh2_dlc16_wef_mon_hawks_0"] = 1,
     ["wh_dlc05_wef_inf_wardancers_0"] = 1,
     ["wh_dlc05_wef_inf_wardancers_1"] = 1,
+    ["wh_dlc05_wef_inf_wildwood_rangers_0"] = 1,
     -- rare
     ["wh_dlc05_wef_mon_treekin_0"] = 2,
     ["wh2_dlc16_wef_mon_malicious_treekin_0"] = 2,
     ["wh_dlc05_wef_cav_wild_riders_0"] = 2,
     ["wh_dlc05_wef_cav_wild_riders_1"] = 2,
     ["wh_dlc05_wef_cav_sisters_thorn_0"] = 2,
-    ["wh_dlc05_wef_inf_wildwood_rangers_0"] = 2,
     ["wh_dlc05_wef_inf_waywatchers_0"] = 2,
     ["wh2_dlc16_wef_inf_bladesingers_0"] = 2,
     -- elite
@@ -795,7 +795,7 @@ local SRW_Supply_Cost = {
     ["wh2_dlc16_wef_inf_dryads_ror_0"] = 1,
     ["wh_pro04_wef_mon_treekin_ror_0"] = 3,
     ["wh_pro04_wef_cav_wild_riders_ror_0"] = 3,
-    ["wh_pro04_wef_inf_wildwood_rangers_ror_0"] = 3,
+    ["wh_pro04_wef_inf_wildwood_rangers_ror_0"] = 2,
     ["wh_pro04_wef_inf_waywatchers_ror_0"] = 3,
     
     

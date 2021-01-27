@@ -13,5 +13,6 @@ local max_balance_per_army = 30
 local big_empire_penalty_start = 999;
 --Cached values
 local ui_faction_check = nil;
+local block_scripts = false;
 
 local helpers = {}

@@ -1050,5 +1050,18 @@ local building_unit_bonus = {
   ["roy_amz_garrison_2"] = -1,
   ["roy_amz_garrison_minor"] = -1,
   ["roy_amz_garrison_minor_2"] = -1,
+  --Ports
+  ["wh2_dlc11_vampirecoast_port_1"] = 1,
+  ["wh2_dlc11_vampirecoast_port_2"] = 1,
+  ["wh2_dlc11_vampirecoast_port_3"] = 1,
+  ["wh2_main_def_port_1"] = 1,
+  ["wh2_main_def_port_2"] = 1,
+  ["wh2_main_def_port_3"] = 1,
+  ["wh2_main_hef_port_1"] = 1,
+  ["wh2_main_hef_port_2"] = 1,
+  ["wh2_main_hef_port_3"] = 1,
+  ["wh_main_nor_port"] = 1,
+  ["wh_main_nor_port_2"] = 1,
+  ["wh_main_nor_port_3"] = 1,
 }
 

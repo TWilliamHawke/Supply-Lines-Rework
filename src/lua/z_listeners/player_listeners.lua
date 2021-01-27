@@ -174,3 +174,35 @@ core:add_listener(
   end,
   true
 );
+
+core:add_listener(
+  "SRW_UNIT_DISBANDED",
+  "UnitDisbanded",
+  function(context)
+    local faction = context:unit():faction()
+    return (factionChecker(faction))
+  end,
+  function(context)
+    if block_scripts then return end;
+    local faction_name = context:unit():faction():name();
+    block_scripts = faction_name;
+
+    cm:callback(function()
+      if not block_scripts then return end;
+      local faction = cm:get_faction(block_scripts);
+
+      if faction then
+
+        SRWLOG("======================");
+        SRWLOG("UNIT DISBANDED");
+        srw_apply_upkeep_penalty(faction);
+        calculate_supply_balance(faction);
+        block_scripts = false;
+      end;
+    end, 0.2);
+
+  end,
+  true
+);
+
+
