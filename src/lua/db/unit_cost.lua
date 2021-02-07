@@ -2243,6 +2243,10 @@ local SRW_Supply_Cost = {
     ["wh2_main_def_mon_pagowyrm_1"] = 5,
     ["wh2_main_def_mon_sciowyrm_1"] = 5,
     ["wh2_main_hef_mon_merwyrm_ror"] = 6,
+    ["cr_def_mon_sea_dragon"] = 4,
+    ["cr_def_mon_helldrake_pack"] = 2,
+    
+
     --BowTreeman
       ["cr_wef_inf_malicious_bowdryads_0"] = 0,
       ["cr_hef_inf_bowdryads_0"] = 0,

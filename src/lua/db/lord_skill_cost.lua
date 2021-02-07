@@ -153,6 +153,9 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_dlc14_def_veh_bloodwrack_shrine_0-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_medusas", 2},
     ["wh2_dlc14_def_mon_bloodwrack_medusa_ror_0-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_medusas", 3},
     ["wh2_main_def_mon_black_dragon-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_black_dragon", 3},
+    ["cr_def_mon_sea_dragon-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_black_dragon", 3},
+    ["cr_def_mon_helldrake_pack-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_black_dragon", 1},
+
     ["wh2_main_def_mon_war_hydra-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_war_hydra_kharibdyss", 2},
     ["wh2_dlc10_def_mon_kharibdyss_0-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_war_hydra_kharibdyss", 2},
     ["wh2_dlc10_def_mon_chill_of_sontar_ror_0-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_war_hydra_kharibdyss", 3},
