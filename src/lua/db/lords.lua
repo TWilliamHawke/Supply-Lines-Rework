@@ -66,6 +66,8 @@ local SRW_Lord_Group = {
     ["wh_dlc08_nor_throgg"] = "Throgg",
     ["ws_grn_tinitt_foureyes"] = "Forest",
     ["ws_grn_grak_beastbasha"] = "BeastBasha",
+    ["emp_cha_helborg"] = "Helborg",
+    ["wh_main_dwf_cha_greybeard"] = "GreyBeard",
   --Wood elves
     ["wh2_dlc16_wef_malicious_ancient_treeman_beasts"] = "Treeman",
     ["wh2_dlc16_wef_malicious_ancient_treeman_life"] = "Treeman",

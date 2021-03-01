@@ -2,18 +2,18 @@ local SRW_Free_Units = {
   --Empire
 
     ["wh_main_emp_cav_reiksguard-emp_karl_franz"] = 0,
-    ["wh_dlc04_emp_cav_zintlers_reiksguard_0-emp_karl_franz"] = 1,
     ["wh2_dlc13_emp_cav_reiksguard_imperial_supply-emp_karl_franz"] = 0,
+    ["emp_inf_reiksguard-emp_karl_franz"] = 0,
+    ["emp_inf_reiksguard_halberdiers-emp_karl_franz"] = 0,
+    ["wh_dlc04_emp_cav_zintlers_reiksguard_0-emp_karl_franz"] = 1,
+    ["wh2_mixu_emp_ror_knights_of_the_black_rose-emp_karl_franz"] = 1,
+    ["emp_inf_reiksguard_great-emp_karl_franz"] = 1,
+    ["emp_cav_reiksguard_inner_circle-emp_karl_franz"] = 2,
     ["wh_main_emp_inf_greatswords-emp_karl_franz"] = 0,
     ["wh2_dlc13_emp_inf_greatswords_imperial_supply-emp_karl_franz"] = 0,
     ["wh2_dlc13_emp_inf_greatswords_ror_0-emp_karl_franz"] = 0,
-    ["Carroburg-emp_karl_franz"] = 1,
-    ["wh2_mixu_emp_ror_knights_of_the_black_rose-emp_karl_franz"] = 1,
-    ["emp_inf_reiksguard-emp_karl_franz"] = 0,
-    ["emp_inf_reiksguard_halberdiers-emp_karl_franz"] = 0,
     ["emp_inf_carroburg_greatswords_ror-emp_karl_franz"] = 1,
-    ["emp_inf_reiksguard_great-emp_karl_franz"] = 1,
-    ["emp_cav_reiksguard_inner_circle-emp_karl_franz"] = 2,
+    ["Carroburg-emp_karl_franz"] = 1,
 
     ["wh2_dlc13_emp_inf_huntsmen_0-wh2_dlc13_emp_cha_markus_wulfhart_0"] = 0,
     ["wh2_dlc13_emp_inf_huntsmen_0_imperial_supply-wh2_dlc13_emp_cha_markus_wulfhart_0"] = 0,
@@ -300,18 +300,39 @@ local SRW_Free_Units = {
   
   --Dwarves
     ["wh_main_dwf_inf_slayers-dwf_ungrim_ironfist"] = 0,
-    ["wh2_dlc10_dwf_inf_giant_slayers-dwf_ungrim_ironfist"] = 1,
+    ["wh2_dlc10_dwf_inf_giant_slayers-dwf_ungrim_ironfist"] = 0,
     ["wh_dlc06_dwf_inf_dragonback_slayers_0-dwf_ungrim_ironfist"] = 0,
-    ["cr_dwf_inf_slayer_pirates_0-dwf_ungrim_ironfist"] = 1,
+    ["cr_dwf_inf_slayer_pirates_0-dwf_ungrim_ironfist"] = 0,
+    ["elo_dwf_inf_slayers-dwf_ungrim_ironfist"] = 0,
+    ["zorn_construct-dwf_ungrim_ironfist"] = 0,
+    ["wh_main_dwf_inf_slayers_grey_supply-dwf_ungrim_ironfist"] = 0,
+    ["elo_dwf_inf_giant_slayers-dwf_ungrim_ironfist"] = 0,
+    ["wh2_dwf_inf_giant_slayers_grey_supply-dwf_ungrim_ironfist"] = 0,
+    --thorgrim
     ["wh_main_dwf_inf_hammerers-dwf_thorgrim_grudgebearer"] = 0,
     ["wh_main_dwf_inf_longbeards-dwf_thorgrim_grudgebearer"] = 0,
     ["wh_main_dwf_inf_longbeards_1-dwf_thorgrim_grudgebearer"] = 0,
     ["wh_dlc06_dwf_inf_old_grumblers_0-dwf_thorgrim_grudgebearer"] = 1,
     ["wh_dlc06_dwf_inf_peak_gate_guard_0-dwf_thorgrim_grudgebearer"] = 2,
+    ["wh_main_dwf_inf_longbeards_1_grey_supply-dwf_thorgrim_grudgebearer"] = 0,
+    ["wh_main_dwf_inf_longbeards_grey_supply-dwf_thorgrim_grudgebearer"] = 0,
+    ["wh_main_dwf_inf_hammerers_grey_supply-dwf_thorgrim_grudgebearer"] = 1,
+    ["hammerers_muskets-dwf_thorgrim_grudgebearer"] = 2,
+    --mods
     ["wh_main_dwf_inf_ironbreakers-dwf_kazador_dragonslayer"] = 2,
     ["wh_dlc06_dwf_inf_norgrimlings_ironbreakers_0-dwf_kazador_dragonslayer"] = 2,
     ["dwf_huskarls-dwf_kraka_drak"] = 1,
-    
+    ["grey_tank-wh_main_dwf_cha_greybeard"] = 2,
+    ["grey_empire_fire_tank-wh_main_dwf_cha_greybeard"] = 3,
+    ["elo_grey_flamegyro-wh_main_dwf_cha_greybeard"] = 1,
+    ["elo_gyro_warpbomber-wh_main_dwf_cha_greybeard"] = 1,
+    ["grey_gyrotransport-wh_main_dwf_cha_greybeard"] = 0,
+    ["grey_gyrotransport_shieldwall-wh_main_dwf_cha_greybeard"] = 0,
+    ["grey_gyrotransport_linebreakers-wh_main_dwf_cha_greybeard"] = 0,
+    ["wh_main_dwf_veh_gyrobomber-wh_main_dwf_cha_greybeard"] = 0,
+    ["wh_main_dwf_veh_gyrocopter_0-wh_main_dwf_cha_greybeard"] = 0,
+    ["wh_main_dwf_veh_gyrocopter_1-wh_main_dwf_cha_greybeard"] = 0,
+
   --Vampire Counts
     ["wh_dlc04_vmp_inf_sternsmen_0-vmp_mannfred_von_carstein"] = 1,
     ["wh_main_vmp_inf_grave_guard_0-vmp_mannfred_von_carstein"] = 0,
@@ -662,6 +683,9 @@ local SRW_Free_Units = {
     ["clan_vrrtkin_stormvermin_shield-wh2_main_skv_queek_headtaker"] = 0,
     ["mixu_skv_inf_mordrat_guard-wh2_main_skv_queek_headtaker"] = 0,
     ["singe_sk_stormvermin_bonebreakers-wh2_main_skv_queek_headtaker"] = 0,
+    ["advice_skv_shockvermin-wh2_main_skv_queek_headtaker"] = 0,
+    ["advice_skv_techguard-wh2_main_skv_queek_headtaker"] = 0,
+
     --scrolk
     ["wh2_main_skv_art_plagueclaw_catapult-wh2_main_skv_lord_skrolk"] = 1,
     ["wh2_main_skv_inf_plague_monks-wh2_main_skv_lord_skrolk"] = 0,
@@ -754,6 +778,8 @@ local SRW_Free_Units = {
     ["clan_vrrtkin_stormvermin_shield-skv_feskit"] = 0,
     ["mixu_skv_inf_mordrat_guard-skv_feskit"] = 0,
     ["singe_sk_stormvermin_bonebreakers-skv_feskit"] = 0,
+    ["advice_skv_shockvermin-skv_feskit"] = 0,
+    ["advice_skv_techguard-skv_feskit"] = 0,
 
     --liger_skv_skretch
     ["wh2_main_skv_inf_handguns-liger_skv_skretch"] = 0,
