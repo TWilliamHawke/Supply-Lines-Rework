@@ -19,11 +19,13 @@ local SRW_Lord_Group = {
     ["wh2_dlc15_hef_archmage_light"] = "Tyrion",
     ["wh2_dlc15_hef_archmage_metal"] = "Tyrion",
     ["wh2_dlc15_hef_archmage_shadows"] = "Tyrion",
+    ["AK_hef_seahelm"] = "Tyrion",
     ["wh2_main_hef_prince"] = "Tyrion",
     ["wh2_main_hef_princess"] = "Tyrion",
     ["wh2_dlc10_hef_alarielle"] = "Alarielle",
     ["wh2_main_def_morathi"] = "Morathi",
     ["wh2_dlc14_def_high_beastmaster"] = "BeastMaster",
+    ["AK_aislinn"] = "Seaguard",
     --liz and skav
     ["wh2_main_lzd_saurus_old_blood"] = "Zaurus",
     ["wh2_main_lzd_kroq_gar"] = "Zaurus",

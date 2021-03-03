@@ -728,7 +728,7 @@ local SRW_Supply_Cost = {
     ["wh_main_vmp_inf_cairn_wraiths"] = 2,
     ["wh_main_vmp_mon_vargheists"] = 2,
     ["wh_main_vmp_veh_black_coach"] = 2,
-    ["wh_dlc04_vmp_veh_mortis_engine_0"] = 2,
+    ["wh_dlc04_vmp_veh_mortis_engine_0"] = 3,
     -- elite
     ["wh_main_vmp_cav_hexwraiths"] = 3,
     ["wh_main_vmp_mon_varghulf"] = 3,
@@ -743,7 +743,7 @@ local SRW_Supply_Cost = {
     ["wh_dlc04_vmp_inf_sternsmen_0"] = 3,
     ["wh_dlc04_vmp_cav_chillgheists_0"] = 3,
     ["wh_dlc04_vmp_mon_devils_swartzhafen_0"] = 3,
-    ["wh_dlc04_vmp_veh_claw_of_nagash_0"] = 3,
+    ["wh_dlc04_vmp_veh_claw_of_nagash_0"] = 4,
   --Wood elves
     ["wh_dlc05_wef_inf_dryads_0"] = 0,
     ["wh_dlc05_wef_inf_eternal_guard_0"] = 0,
@@ -2271,7 +2271,7 @@ local SRW_Supply_Cost = {
       ["cr_skv_mon_burrowing_behemoth_0"] = 2,
       ["cr_skv_mon_burrowing_behemoth_0_flesh_lab"] = 2,
   
-  --Single unit mods
+  --Small unit mods
     ["advice_skv_shockvermin"] = 2,
     ["advice_skv_techguard"] = 3,
     ["singe_sk_stormvermin_bonebreakers"] = 2,
@@ -2297,6 +2297,13 @@ local SRW_Supply_Cost = {
     ["plb_skv_inf_plague_monk_ror"] = 2,
     ["plb_skv_inf_censer_bearer_ror"] = 2,
     ["plb_skv_art_plagueclaw_catapult_ror"] = 4,
+    --hef sea
+    ["AK_hef_sea_company"] = 0,
+    ["AK_hef_sea_silver"] = 1,
+    ["AK_hef_sea_rangers"] = 1,
+    ["AK_hef_sea_roc_riders"] = 1,
+    ["AKcr_hef_merwyrm"] = 4,
+    ["AKcr_hef_skycutter"] = 2,
   --South Dwarfs
     --core
     ["engineer_land_mine"] = 0,
