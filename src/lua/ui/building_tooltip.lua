@@ -28,11 +28,14 @@ local function set_building_tooltip(component)
   end;
 
   supply_balance_change = math.min(supply_balance_change, max_balance_per_buildings)
+  SRWLOGDEBUG("supply_balance_change was calculated correctly");
+
   if supply_balance_change > 0 then
     supply_balance_change = "+"..supply_balance_change
   end
 
   local supply_text = supply_balance_change.." "..helpers.localizator("SRW_building_supply")
+  SRWLOGDEBUG("supply_balance_text was set correctly");
 
   cm:callback(function()
     helpers.finalize_unit_tooltip(component, supply_text, "\n")

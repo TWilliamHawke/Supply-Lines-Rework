@@ -14,6 +14,7 @@ local SRW_Free_Units = {
     ["wh2_dlc13_emp_inf_greatswords_ror_0-emp_karl_franz"] = 0,
     ["emp_inf_carroburg_greatswords_ror-emp_karl_franz"] = 1,
     ["Carroburg-emp_karl_franz"] = 1,
+    ["CTT_emp_reiksfoot-emp_karl_franz"] = 0,
 
     ["wh2_dlc13_emp_inf_huntsmen_0-wh2_dlc13_emp_cha_markus_wulfhart_0"] = 0,
     ["wh2_dlc13_emp_inf_huntsmen_0_imperial_supply-wh2_dlc13_emp_cha_markus_wulfhart_0"] = 0,
@@ -155,6 +156,7 @@ local SRW_Free_Units = {
     ["wh2_dlc13_emp_cav_empire_knights_imperial_supply-emp_marius_leitdorf"] = 0,
     ["wh2_dlc13_emp_cav_knights_blazing_sun_0_imperial_supply-emp_marius_leitdorf"] = 0,
     ["wh_dlc04_emp_inf_silver_bullets_0-emp_aldebrand_ludenhof"] = 0,
+    ["CTT_emp_handgunners_reg-emp_aldebrand_ludenhof"] = 0,
     ["wh2_dlc13_emp_inf_handgunners_ror_0-emp_aldebrand_ludenhof"] = 0,
     ["wh2_dlc13_emp_inf_handgunners_imperial_supply-emp_aldebrand_ludenhof"] = 0,
     ["wh_main_emp_inf_handgunners-emp_aldebrand_ludenhof"] = 0,
@@ -175,6 +177,7 @@ local SRW_Free_Units = {
     ["wh_main_emp_inf_halberdiers-dlc03_emp_boris_todbringer"] = 0,
     ["wh2_dlc13_emp_inf_halberdiers_imperial_supply-dlc03_emp_boris_todbringer"] = 0,
     ["wh2_dlc13_emp_inf_halberdiers_ror_0-dlc03_emp_boris_todbringer"] = 0,
+    ["CTT_emp_handgunners_reg-dlc03_emp_boris_todbringer"] = 0,
     ["wh2_dlc13_emp_inf_handgunners_imperial_supply-dlc03_emp_boris_todbringer"] = 0,
     ["wh2_dlc13_emp_inf_handgunners_ror_0-dlc03_emp_boris_todbringer"] = 0,
     ["wh_main_emp_inf_handgunners-dlc03_emp_boris_todbringer"] = 0,
@@ -204,9 +207,11 @@ local SRW_Free_Units = {
     ["wh_main_wis_inf_halberdiers-dlc03_emp_boris_todbringer"] = 0,
     ["wh_main_sol_inf_halberdiers-dlc03_emp_boris_todbringer"] = 0,
     ["wh_main_hun_inf_halberdiers-dlc03_emp_boris_todbringer"] = 0,
+    ["CTT_emp_halberdiers_reg-dlc03_emp_boris_todbringer"] = 0,
     ["wh_main_emp_inf_halberdiers-emp_valmir_von_raukov"] = 0,
     ["wh2_dlc13_emp_inf_halberdiers_ror_0-emp_valmir_von_raukov"] = 0,
     ["wh2_dlc13_emp_inf_halberdiers_imperial_supply-emp_valmir_von_raukov"] = 0,
+    ["CTT_emp_halberdiers_reg-emp_valmir_von_raukov"] = 0,
     ["wh2_dlc13_emp_cav_demigryph_knights_0_imperial_supply-emp_helmut_feuerbach"] = 2,
     ["wh2_dlc13_emp_cav_demigryph_knights_1_imperial_supply-emp_helmut_feuerbach"] = 2,
     ["wh2_dlc13_emp_veh_steam_tank_imperial_supply-emp_helmut_feuerbach"] = 2,
@@ -602,7 +607,29 @@ local SRW_Free_Units = {
     ["wh2_dlc10_def_inf_blades_of_the_blood_queen_ror_0-def_tullaris_dreadbringer"] = 2,
     ["ossian_guard-def_tullaris_dreadbringer"] = 2, --exe
     ["wh2_dlc10_def_inf_sisters_of_the_singing_doom_ror_0-def_tullaris_dreadbringer"] = 0,
+    --Rakarth
     
+    ["wh2_dlc10_def_mon_feral_manticore_0-wh2_twa03_def_rakarth"] = 0,
+    ["wh2_twa03_def_mon_war_mammoth_0-wh2_twa03_def_rakarth"] = 1,
+    ["wh2_dlc14_def_mon_bloodwrack_medusa_0-wh2_twa03_def_rakarth"] = 1,
+    ["wh2_dlc14_def_veh_bloodwrack_shrine_0-wh2_twa03_def_rakarth"] = 1,
+    ["wh2_main_def_mon_war_hydra-wh2_twa03_def_rakarth"] = 1,
+    ["wh2_dlc10_def_mon_kharibdyss_0-wh2_twa03_def_rakarth"] = 1,
+    ["wh2_main_def_mon_black_dragon-wh2_twa03_def_rakarth"] = 2,
+    ["wh2_main_lzd_mon_stegadon_0-wh2_twa03_def_rakarth"] = 0,
+    ["wh2_main_lzd_mon_carnosaur_0-wh2_twa03_def_rakarth"] = 2,
+    ["wh2_dlc10_def_mon_chill_of_sontar_ror_0-wh2_twa03_def_rakarth"] = 2,
+    ["wh2_dlc14_def_mon_bloodwrack_medusa_ror_0-wh2_twa03_def_rakarth"] = 2,
+    ["wh2_main_def_mon_pagowyrm_0-wh2_twa03_def_rakarth"] = 3,
+    ["wh2_main_def_mon_sciowyrm_0-wh2_twa03_def_rakarth"] = 3,
+    ["wh2_main_def_mon_pagowyrm_1-wh2_twa03_def_rakarth"] = 3,
+    ["wh2_main_def_mon_sciowyrm_1-wh2_twa03_def_rakarth"] = 3,
+    ["wh2_main_hef_mon_merwyrm_ror-wh2_twa03_def_rakarth"] = 4,
+    ["cr_def_mon_sea_dragon-wh2_twa03_def_rakarth"] = 2,
+    ["cr_def_mon_helldrake_pack-wh2_twa03_def_rakarth"] = 0,
+    ["jvj_royal_war_hydra-wh2_twa03_def_rakarth"] = 2,
+    ["jvj_veteran_war_hydra-wh2_twa03_def_rakarth"] = 2,
+    ["jvj_spellthirster_hydra-wh2_twa03_def_rakarth"] = 2,
   --Lizardmen
     ["wh2_main_lzd_cav_cold_ones_1-wh2_main_lzd_kroq_gar"] = 0,
     ["wh2_main_lzd_cav_horned_ones_0-wh2_main_lzd_kroq_gar"] = 0,
@@ -688,6 +715,10 @@ local SRW_Free_Units = {
     ["singe_sk_stormvermin_bonebreakers-wh2_main_skv_queek_headtaker"] = 0,
     ["advice_skv_shockvermin-wh2_main_skv_queek_headtaker"] = 0,
     ["advice_skv_techguard-wh2_main_skv_queek_headtaker"] = 0,
+    ["fts_shadowvermin_halberd-wh2_main_skv_queek_headtaker"] = 0,
+    ["fts_shadowvermin_dualsword-wh2_main_skv_queek_headtaker"] = 0,
+    ["CTT_skv_storm-wh2_main_skv_queek_headtaker"] = 0,
+    ["CTT_skv_storm_hw-wh2_main_skv_queek_headtaker"] = 0,
 
     --scrolk
     ["wh2_main_skv_art_plagueclaw_catapult-wh2_main_skv_lord_skrolk"] = 1,
@@ -730,7 +761,7 @@ local SRW_Free_Units = {
     ["wh2_main_skv_inf_gutter_runners_1-wh2_dlc14_skv_deathmaster_snikch"] = 0,
     ["wh2_main_skv_inf_gutter_runners_0_0_vrritkin-wh2_dlc14_skv_deathmaster_snikch"] = 0,
     ["wh2_main_skv_inf_gutter_runner_slingers_0_vrritkin-wh2_dlc14_skv_deathmaster_snikch"] = 0,
-
+    ["fts_gutter_bombadiers-wh2_dlc14_skv_deathmaster_snikch"] = 0,
     --throt
     ["wh2_dlc16_skv_mon_rat_ogres_flesh_lab-wh2_dlc16_skv_throt_the_unclean"] = 0,
     ["wh2_main_skv_mon_rat_ogres-wh2_dlc16_skv_throt_the_unclean"] = 0,
@@ -758,6 +789,7 @@ local SRW_Free_Units = {
     ["crxe_skv_mon_stormfiend_0-wh2_dlc16_skv_throt_the_unclean"] = 2,
     ["crxe_skv_mon_stormfiend_1-wh2_dlc16_skv_throt_the_unclean"] = 2,
     ["singe_sk_stormvermin_bonebreakers-wh2_dlc16_skv_throt_the_unclean"] = 0,
+    ["fts_shadow_ogre-wh2_dlc16_skv_throt_the_unclean"] = 0,
 
   --clans
     ["wh2_main_skv_inf_warpfire_thrower-Thom_vulkan_moltskin_searflesh"] = 0,
@@ -783,6 +815,10 @@ local SRW_Free_Units = {
     ["singe_sk_stormvermin_bonebreakers-skv_feskit"] = 0,
     ["advice_skv_shockvermin-skv_feskit"] = 0,
     ["advice_skv_techguard-skv_feskit"] = 0,
+    ["fts_shadowvermin_halberd-skv_feskit"] = 0,
+    ["fts_shadowvermin_dualsword-skv_feskit"] = 0,
+    ["CTT_skv_storm-skv_feskit"] = 0,
+    ["CTT_skv_storm_hw-skv_feskit"] = 0,
 
     --liger_skv_skretch
     ["wh2_main_skv_inf_handguns-liger_skv_skretch"] = 0,

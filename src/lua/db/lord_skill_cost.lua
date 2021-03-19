@@ -29,12 +29,15 @@ local SRW_Lord_Skills_Cost = {
     ["ror_vamp_doomr-Blood_Dragon"] =  {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_doomrider", 1},
     ["ror_vamp_templewights-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_grave_sentinels", 2},
     ["ror_vamp_helmut-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_grave_sentinels", 2},
+    ["dec_grave_halbs-Blood_Dragon"] =  {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_grave_sentinels", 1},
+
     --Strigoi
     ["wh_main_vmp_inf_crypt_ghouls-Strigoi"] = {"wh2_dlc11_skill_vmp_bloodline_strigoi_unique_grave_eaters", 0},
     ["mixu_vmp_inf_crypt_ghouls-Strigoi"] = {"wh2_dlc11_skill_vmp_bloodline_strigoi_unique_grave_eaters", 0},
     ["dec_lahmian-Strigoi"] = {"wh2_dlc11_skill_vmp_bloodline_strigoi_unique_grave_eaters", 1},
     ["wh_dlc04_vmp_inf_feasters_in_the_dusk_0-Strigoi"] = {"wh2_dlc11_skill_vmp_bloodline_strigoi_unique_grave_eaters", 1},
     ["wh_main_vmp_mon_crypt_horrors-Strigoi"] = {"wh2_dlc11_skill_vmp_bloodline_strigoi_unique_monstrosities_of_morr", 0},
+    ["CTT_vmp_ghouls-Strigoi"] = {"wh2_dlc11_skill_vmp_bloodline_strigoi_unique_grave_eaters", 0},
     --ghorst
     ["wh_dlc04_vmp_veh_mortis_engine_0-Ghorst"] = {"wh_dlc04_skill_vmp_lord_unique_helman_ghorst_corpse_cart_boost", 1},
     ["wh_main_vmp_veh_black_coach-Ghorst"] = {"wh_dlc04_skill_vmp_lord_unique_helman_ghorst_corpse_cart_boost", 0},
@@ -173,6 +176,15 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_main_def_mon_war_hydra-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_war_hydra_kharibdyss", 2},
     ["wh2_dlc10_def_mon_kharibdyss_0-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_war_hydra_kharibdyss", 2},
     ["wh2_dlc10_def_mon_chill_of_sontar_ror_0-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_war_hydra_kharibdyss", 3},
+
+    ["wh2_dlc14_def_cav_scourgerunner_chariot_0-Rakarth"] = {"wh2_twa03_skill_def_rakarth_harpyclaw_bolts", 1},
+    ["wh2_main_def_art_reaper_bolt_thrower-Rakarth"] = {"wh2_twa03_skill_def_rakarth_harpyclaw_bolts", 1},
+    ["wh2_dlc14_def_cav_scourgerunner_chariot_ror_0-Rakarth"] = {"wh2_twa03_skill_def_rakarth_harpyclaw_bolts", 2},
+    ["wh2_main_def_cav_cold_one_chariot-Rakarth"] = {"wh2_twa03_skill_def_rakarth_pack_hunters", 0},
+    ["wh2_main_def_cav_cold_one_knights_0-Rakarth"] = {"wh2_twa03_skill_def_rakarth_pack_hunters", 0},
+    ["wh2_main_def_cav_cold_one_knights_1-Rakarth"] = {"wh2_twa03_skill_def_rakarth_pack_hunters", 1},
+    ["wh2_dlc10_def_cav_knights_of_the_ebon_claw_ror_0-Rakarth"] = {"wh2_twa03_skill_def_rakarth_pack_hunters", 2},
+    
   --LizardMen
     ["wh2_main_lzd_inf_saurus_spearmen_0-Zaurus"] = {"wh2_main_skill_lzd_blessing_quetzl", 0},
     ["wh2_main_lzd_inf_saurus_warriors_0-Zaurus"] = {"wh2_main_skill_lzd_blessing_quetzl", 0},
@@ -276,7 +288,10 @@ local SRW_Lord_Skills_Cost = {
     ["singe_sk_stormvermin_bonebreakers-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
     ["advice_skv_shockvermin-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
     ["advice_skv_techguard-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
-
+    ["fts_shadowvermin_halberd-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
+    ["fts_shadowvermin_dualsword-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
+    ["CTT_skv_storm-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
+    ["CTT_skv_storm_hw-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
     --ikit
     ["wh2_dlc12_skv_veh_doom_flayer_0-Ikit"] = {"wh2_dlc12_skill_skv_ikit_unique_4", 0},
     ["wh2_dlc12_skv_veh_doom_flayer_ror_tech_lab_0-Ikit"] = {"wh2_dlc12_skill_skv_ikit_unique_4", 1},
@@ -320,7 +335,7 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_main_skv_inf_gutter_runners_1-Assassin"] = {"wh2_dlc14_skill_skv_assassins_missile_damage", 0},
     ["wh2_main_skv_inf_gutter_runners_0_0_vrritkin-Assassin"] = {"wh2_dlc14_skill_skv_assassins_missile_damage", 0},
     ["wh2_main_skv_inf_gutter_runner_slingers_0_vrritkin-Assassin"] = {"wh2_dlc14_skill_skv_assassins_missile_damage", 0},
-
+    ["fts_gutter_bombadiers-Assassin"] = {"wh2_dlc14_skill_skv_assassins_missile_damage", 0},
     --ferric
     ["wh2_main_skv_inf_stormvermin_0-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 0},
     ["wh2_main_skv_inf_stormvermin_1-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 0},
@@ -340,6 +355,10 @@ local SRW_Lord_Skills_Cost = {
     ["singe_sk_stormvermin_bonebreakers-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 0},
     ["advice_skv_shockvermin-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 0},
     ["advice_skv_techguard-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 0},
+    ["fts_shadowvermin_halberd-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 0},
+    ["fts_shadowvermin_dualsword-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 0},
+    ["CTT_skv_storm-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 0},
+    ["CTT_skv_storm_hw-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 0},
 
   --VCoast
     ["wh2_dlc11_cst_inf_zombie_deckhands_mob_ror_0-Harkon"] = {"wh2_dlc11_skill_cst_luthor_unique_1", 0},
@@ -380,6 +399,8 @@ local SRW_Lord_Skills_Cost = {
     ["wh_dlc04_emp_inf_silver_bullets_0-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 0},
     ["wh2_dlc13_emp_inf_handgunners_ror_0-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 0},
     ["wh2_dlc13_emp_inf_handgunners_imperial_supply-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 0},
+    ["CTT_emp_handgunners_reg-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 0},
+
     ["wh_dlc04_emp_inf_stirlands_revenge_0-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 0},
     ["wh_main_mid_inf_handgunners-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 0},
     ["wh_main_avr_inf_handgunners-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 0},
@@ -447,7 +468,7 @@ local SRW_Lord_Skills_Cost = {
     ["wh_main_wis_inf_huntsmen_0-Hunter"] = {"wh2_dlc13_skill_emp_hunts_marshal_unique_1", 0},
     ["wh_main_sol_inf_huntsmen_0-Hunter"] = {"wh2_dlc13_skill_emp_hunts_marshal_unique_1", 0},
     ["wh_main_hun_inf_huntsmen_0-Hunter"] = {"wh2_dlc13_skill_emp_hunts_marshal_unique_1", 0},
-  
+
     ["wh_main_emp_inf_greatswords-Hunter"] = {"wh2_dlc13_skill_emp_hunts_marshal_unique_0", 1},
     ["wh2_dlc13_emp_inf_greatswords_imperial_supply-Hunter"] = {"wh2_dlc13_skill_emp_hunts_marshal_unique_0", 1},
     ["wh2_dlc13_emp_inf_greatswords_ror_0-Hunter"] = {"wh2_dlc13_skill_emp_hunts_marshal_unique_0", 1},
@@ -464,6 +485,7 @@ local SRW_Lord_Skills_Cost = {
     ["wh_main_wis_inf_greatswords-Hunter"] = {"wh2_dlc13_skill_emp_hunts_marshal_unique_0", 1},
     ["wh_main_sol_inf_greatswords-Hunter"] = {"wh2_dlc13_skill_emp_hunts_marshal_unique_0", 1},
     ["wh_main_hun_inf_greatswords-Hunter"] = {"wh2_dlc13_skill_emp_hunts_marshal_unique_0", 1},
+    ["CTT_emp_halberdiers_reg-Hunter"] = {"wh2_dlc13_skill_emp_hunts_marshal_unique_0", 0},
     ["wh_main_emp_inf_halberdiers-Hunter"] = {"wh2_dlc13_skill_emp_hunts_marshal_unique_0", 0},
     ["wh2_dlc13_emp_inf_halberdiers_ror_0-Hunter"] = {"wh2_dlc13_skill_emp_hunts_marshal_unique_0", 0},
     ["wh2_dlc13_emp_inf_halberdiers_imperial_supply-Hunter"] = {"wh2_dlc13_skill_emp_hunts_marshal_unique_0", 0},
@@ -488,6 +510,7 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_dlc13_emp_inf_greatswords_ror_0-Helborg"] = {"skill_emp_lord_unique_campaign_kurt_helborg_for_emperor", 0},
     ["emp_inf_carroburg_greatswords_ror-Helborg"] = {"skill_emp_lord_unique_campaign_kurt_helborg_for_emperor", 1},
     ["Carroburg-Helborg"] = {"skill_emp_lord_unique_campaign_kurt_helborg_for_emperor", 1},
+    ["CTT_emp_reiksfoot-Helborg"] = {"skill_emp_lord_unique_campaign_kurt_helborg_for_emperor", 0},
     ["wh_main_mid_inf_greatswords-Helborg"] = {"skill_emp_lord_unique_campaign_kurt_helborg_for_emperor", 0},
     ["wh_main_avr_inf_greatswords-Helborg"] = {"skill_emp_lord_unique_campaign_kurt_helborg_for_emperor", 0},
     ["wh_main_rek_inf_greatswords-Helborg"] = {"skill_emp_lord_unique_campaign_kurt_helborg_for_emperor", 0},
@@ -632,7 +655,7 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_dlc10_dwf_inf_giant_slayers-GreyBeard"] = {"elo_greybeard_doomseeker", 0},
     ["cr_dwf_inf_slayer_pirates_0-GreyBeard"] = {"elo_greybeard_doomseeker", 0},
     ["elo_dwf_inf_slayers-GreyBeard"] = {"elo_greybeard_doomseeker", 0},
-    ["zorn_construct-GreyBeard"] = {"elo_greybeard_doomseeker", 0},
+    --["zorn_construct-GreyBeard"] = {"elo_greybeard_doomseeker", 0},
     ["wh_main_dwf_inf_slayers_grey_supply-GreyBeard"] = {"elo_greybeard_doomseeker", 0},
     ["elo_dwf_inf_giant_slayers-GreyBeard"] = {"elo_greybeard_doomseeker", 0},
     ["wh2_dwf_inf_giant_slayers_grey_supply-GreyBeard"] = {"elo_greybeard_doomseeker", 0},
