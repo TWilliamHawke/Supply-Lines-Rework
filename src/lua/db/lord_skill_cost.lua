@@ -176,6 +176,9 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_main_def_mon_war_hydra-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_war_hydra_kharibdyss", 2},
     ["wh2_dlc10_def_mon_kharibdyss_0-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_war_hydra_kharibdyss", 2},
     ["wh2_dlc10_def_mon_chill_of_sontar_ror_0-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_war_hydra_kharibdyss", 3},
+    ["jvj_royal_war_hydra-wh2_twa03_def_rakarth"] = {"wh2_dlc14_skill_def_beastmaster_war_hydra_kharibdyss", 3},
+    ["jvj_veteran_war_hydra-wh2_twa03_def_rakarth"] = {"wh2_dlc14_skill_def_beastmaster_war_hydra_kharibdyss", 3},
+    ["jvj_spellthirster_hydra-wh2_twa03_def_rakarth"] = {"wh2_dlc14_skill_def_beastmaster_war_hydra_kharibdyss", 3},
 
     ["wh2_dlc14_def_cav_scourgerunner_chariot_0-Rakarth"] = {"wh2_twa03_skill_def_rakarth_harpyclaw_bolts", 1},
     ["wh2_main_def_art_reaper_bolt_thrower-Rakarth"] = {"wh2_twa03_skill_def_rakarth_harpyclaw_bolts", 1},
@@ -445,11 +448,11 @@ local SRW_Lord_Skills_Cost = {
     ["wh_jmw_emp_inf_ironsides-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 0},
     ["wh_jmw_emp_inf_ironsides_launchers-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 0},
   
-    ["wh_dlc04_emp_veh_templehof_luminark_0-emp_balthasar_gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_3", 2},
-    ["wh_main_emp_veh_luminark_of_hysh_0-emp_balthasar_gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_3", 1},
-    ["wh_main_emp_veh_hurricanum_0-emp_balthasar_gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_3", 1},
-    ["wh_main_emp_veh_steam_tank-emp_balthasar_gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_3", 3},
-    ["wh2_dlc13_emp_veh_steam_tank_ror_0-emp_balthasar_gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_3", 3},
+    ["wh_dlc04_emp_veh_templehof_luminark_0-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_3", 2},
+    ["wh_main_emp_veh_luminark_of_hysh_0-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_3", 1},
+    ["wh_main_emp_veh_hurricanum_0-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_3", 1},
+    ["wh_main_emp_veh_steam_tank-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_3", 2},
+    ["wh2_dlc13_emp_veh_steam_tank_ror_0-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_3", 3},
   
     ["wh2_dlc13_emp_inf_huntsmen_0-Hunter"] = {"wh2_dlc13_skill_emp_hunts_marshal_unique_1", 0},
     ["wh2_dlc13_emp_inf_huntsmen_0_imperial_supply-Hunter"] = {"wh2_dlc13_skill_emp_hunts_marshal_unique_1", 0},
@@ -503,8 +506,8 @@ local SRW_Lord_Skills_Cost = {
     ["wh_main_sol_inf_halberdiers-Hunter"] = {"wh2_dlc13_skill_emp_hunts_marshal_unique_0", 0},
     ["wh_main_hun_inf_halberdiers-Hunter"] = {"wh2_dlc13_skill_emp_hunts_marshal_unique_0", 0},
     --Kurt Helborg from swords of empire
-    ["emp_inf_reiksguard_halberdiers-Helborg"] = {"skill_emp_lord_unique_campaign_kurt_helborg_for_emperor", 0},
-    ["emp_inf_reiksguard_great-Helborg"] = {"skill_emp_lord_unique_campaign_kurt_helborg_for_emperor", 1},
+    --["emp_inf_reiksguard_halberdiers-Helborg"] = {"skill_emp_lord_unique_campaign_kurt_helborg_for_emperor", 0},
+    --["emp_inf_reiksguard_great-Helborg"] = {"skill_emp_lord_unique_campaign_kurt_helborg_for_emperor", 1},
     ["wh_main_emp_inf_greatswords-Helborg"] = {"skill_emp_lord_unique_campaign_kurt_helborg_for_emperor", 0},
     ["wh2_dlc13_emp_inf_greatswords_imperial_supply-Helborg"] = {"skill_emp_lord_unique_campaign_kurt_helborg_for_emperor", 0},
     ["wh2_dlc13_emp_inf_greatswords_ror_0-Helborg"] = {"skill_emp_lord_unique_campaign_kurt_helborg_for_emperor", 0},

@@ -3,6 +3,7 @@ local function set_new_lord_tooltip(component)
     return
   end;
   
+  SRWLOGDEBUG("Supply balance is on")
   local faction = cm:model():world():whose_turn_is_it()
   local culture = faction:subculture();
 

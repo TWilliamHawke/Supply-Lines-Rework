@@ -630,6 +630,8 @@ local SRW_Free_Units = {
     ["jvj_royal_war_hydra-wh2_twa03_def_rakarth"] = 2,
     ["jvj_veteran_war_hydra-wh2_twa03_def_rakarth"] = 2,
     ["jvj_spellthirster_hydra-wh2_twa03_def_rakarth"] = 2,
+    ["cr_bst_mon_preyton_0-wh2_twa03_def_rakarth"] = 1,
+
   --Lizardmen
     ["wh2_main_lzd_cav_cold_ones_1-wh2_main_lzd_kroq_gar"] = 0,
     ["wh2_main_lzd_cav_horned_ones_0-wh2_main_lzd_kroq_gar"] = 0,
@@ -754,6 +756,14 @@ local SRW_Free_Units = {
     ["mixu_skv_inf_skullsplinters-wh2_dlc12_skv_ikit_claw"] = 2,
     ["crxe_skv_mon_stormfiend_0-wh2_dlc12_skv_ikit_claw"] = 2,
     ["crxe_skv_mon_stormfiend_1-wh2_dlc12_skv_ikit_claw"] = 2,
+    ["skorne_skv_mon_stormfiend_2-wh2_dlc12_skv_ikit_claw"] = 2,
+    ["skorne_skv_mon_stormfiend_5-wh2_dlc12_skv_ikit_claw"] = 2,
+    ["skorne_skv_mon_stormfiend_6-wh2_dlc12_skv_ikit_claw"] = 2,
+    ["skorne_skv_stormfiend_ror_tech_lab_3-wh2_dlc12_skv_ikit_claw"] = 3,
+    ["crxe_skv_mon_stormfiend_ror_tech_lab_0-wh2_dlc12_skv_ikit_claw"] = 3,
+    ["crxe_skv_mon_stormfiend_ror_tech_lab_1-wh2_dlc12_skv_ikit_claw"] = 3,
+    ["crxe_skv_mon_stormfiend_3-wh2_dlc12_skv_ikit_claw"] = 2,
+    ["crxe_skv_mon_stormfiend_4-wh2_dlc12_skv_ikit_claw"] = 2,
     --sniktch
     ["wh2_main_skv_inf_gutter_runner_slingers_0-wh2_dlc14_skv_deathmaster_snikch"] = 0,
     ["wh2_main_skv_inf_gutter_runner_slingers_1-wh2_dlc14_skv_deathmaster_snikch"] = 0,
@@ -790,6 +800,14 @@ local SRW_Free_Units = {
     ["crxe_skv_mon_stormfiend_1-wh2_dlc16_skv_throt_the_unclean"] = 2,
     ["singe_sk_stormvermin_bonebreakers-wh2_dlc16_skv_throt_the_unclean"] = 0,
     ["fts_shadow_ogre-wh2_dlc16_skv_throt_the_unclean"] = 0,
+    ["skorne_skv_mon_stormfiend_2-wh2_dlc16_skv_throt_the_unclean"] = 2,
+    ["skorne_skv_mon_stormfiend_5-wh2_dlc16_skv_throt_the_unclean"] = 2,
+    ["skorne_skv_mon_stormfiend_6-wh2_dlc16_skv_throt_the_unclean"] = 2,
+    ["skorne_skv_stormfiend_ror_tech_lab_3-wh2_dlc16_skv_throt_the_unclean"] = 3,
+    ["crxe_skv_mon_stormfiend_ror_tech_lab_0-wh2_dlc16_skv_throt_the_unclean"] = 3,
+    ["crxe_skv_mon_stormfiend_ror_tech_lab_1-wh2_dlc16_skv_throt_the_unclean"] = 3,
+    ["crxe_skv_mon_stormfiend_3-wh2_dlc16_skv_throt_the_unclean"] = 2,
+    ["crxe_skv_mon_stormfiend_4-wh2_dlc16_skv_throt_the_unclean"] = 2,
 
   --clans
     ["wh2_main_skv_inf_warpfire_thrower-Thom_vulkan_moltskin_searflesh"] = 0,

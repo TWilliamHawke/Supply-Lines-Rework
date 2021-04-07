@@ -797,8 +797,6 @@ local SRW_Supply_Cost = {
     ["wh_pro04_wef_cav_wild_riders_ror_0"] = 3,
     ["wh_pro04_wef_inf_wildwood_rangers_ror_0"] = 2,
     ["wh_pro04_wef_inf_waywatchers_ror_0"] = 3,
-    
-    
   --Norsca
     ["wh_dlc08_nor_mon_warwolves_0"] = 0,
     ["wh_main_nor_mon_chaos_warhounds_0"] = 0,
@@ -833,6 +831,7 @@ local SRW_Supply_Cost = {
     --elite
     ["wh_dlc08_nor_mon_war_mammoth_1"] = 3,
     ["wh_dlc08_nor_mon_war_mammoth_2"] = 3,
+    ["wh_main_chs_art_hellcannon_n"] = 3,
     -- ROR
     ["wh_pro04_nor_inf_chaos_marauders_ror_0"] = 1,
     ["wh_pro04_nor_inf_marauder_berserkers_ror_0"] = 1,
@@ -2256,7 +2255,7 @@ local SRW_Supply_Cost = {
     ["wh2_main_hef_mon_merwyrm_ror"] = 6,
     ["cr_def_mon_sea_dragon"] = 4,
     ["cr_def_mon_helldrake_pack"] = 2,
-    
+    ["cr_bst_mon_preyton_0"] = 3,
 
     --BowTreeman
       ["cr_wef_inf_malicious_bowdryads_0"] = 0,
@@ -2281,7 +2280,14 @@ local SRW_Supply_Cost = {
       ["cr_skv_mon_aberrations_0_flesh_lab"] = 1,
       ["cr_skv_mon_burrowing_behemoth_0"] = 2,
       ["cr_skv_mon_burrowing_behemoth_0_flesh_lab"] = 2,
-  
+      ["skorne_skv_mon_stormfiend_2"] = 4,
+      ["skorne_skv_mon_stormfiend_5"] = 4,
+      ["skorne_skv_mon_stormfiend_6"] = 4,
+      ["skorne_skv_stormfiend_ror_tech_lab_3"] = 5,
+      ["crxe_skv_mon_stormfiend_ror_tech_lab_0"] = 5,
+      ["crxe_skv_mon_stormfiend_ror_tech_lab_1"] = 5,
+      ["crxe_skv_mon_stormfiend_3"] = 4,
+      ["crxe_skv_mon_stormfiend_4"] = 4,
   --Small unit mods
     ["advice_skv_shockvermin"] = 2,
     ["advice_skv_techguard"] = 3,

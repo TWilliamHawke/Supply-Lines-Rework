@@ -46,12 +46,12 @@ core:add_listener(
   "ComponentMouseOn",
   function(context)
     local component = UIComponent(context.component):Id()
-    --raise new lord, not undead
+    --this is raise new lord button, not undead button
     return component == "button_raise" and player_supply_custom_mult ~=0 and uiFactionChecker()
   end,
   function(context)
     local component = UIComponent(context.component)
-
+    SRWLOGDEBUG("Component created");
     set_new_lord_tooltip(component)
     
   end,
