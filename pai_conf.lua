@@ -1,0 +1,126 @@
+local prefix = "pai_mcm_"
+
+local pai_conf = mct:register_mod("progressive_ai_bonuses")
+pai_conf:set_title("Progressive AI Bonuses")
+pai_conf:set_author("TWilliam")
+pai_conf:set_description("Progressive AI Bonuses")
+
+local max_tiers = pai_conf:add_new_option("a_max_tiers", "slider")
+max_tiers:set_text("Max tiers")
+max_tiers:set_tooltip_text("Max tiers")
+max_tiers:slider_set_min_max(0, 10)
+max_tiers:set_default_value(4)
+max_tiers:slider_set_step_size(1)
+
+local tier_timeout = pai_conf:add_new_option("a_tier_interval", "slider")
+tier_timeout:set_text("Tier Interval")
+tier_timeout:set_tooltip_text("Tier Interval")
+tier_timeout:slider_set_min_max(5, 50)
+tier_timeout:set_default_value(30)
+tier_timeout:slider_set_step_size(5)
+
+local a_dummy = pai_conf:add_new_option("a_zdummy", "dummy")
+a_dummy:set_uic_visibility(false)
+
+local supply_balance_section = pai_conf:add_new_section("o_balance_section")
+supply_balance_section:set_localised_text("Progressive values")
+
+local b_dummy = pai_conf:add_new_option("b_zdummy", "dummy")
+b_dummy:set_uic_visibility(false)
+
+local c_dummy = pai_conf:add_new_option("c_zdummy", "dummy")
+c_dummy:set_uic_visibility(false)
+
+local d_dummy = pai_conf:add_new_option("d_zdummy", "dummy")
+d_dummy:set_uic_visibility(false)
+
+local e_dummy = pai_conf:add_new_option("e_zdummy", "dummy")
+e_dummy:set_uic_visibility(false)
+
+
+local base_upkeep = pai_conf:add_new_option("b_upkeep_first_turn", "slider")
+base_upkeep:set_text("Base Upkeep Bonus")
+base_upkeep:set_tooltip_text("Base Upkeep Bonus")
+base_upkeep:slider_set_min_max(-20, 0)
+base_upkeep:set_default_value(-5)
+base_upkeep:slider_set_step_size(1)
+
+local upkeep_per_level = pai_conf:add_new_option("b_upkeep_per_level", "slider")
+upkeep_per_level:set_text("upkeep_per_level")
+upkeep_per_level:set_tooltip_text("upkeep_per_level")
+upkeep_per_level:slider_set_min_max(-20, 0)
+upkeep_per_level:set_default_value(-5)
+upkeep_per_level:slider_set_step_size(1)
+
+local base_growth = pai_conf:add_new_option("c_growth_first_turn", "slider")
+base_growth:set_text("Base Growth Bonus")
+base_growth:set_tooltip_text("Base Growth Bonus")
+base_growth:slider_set_min_max(0, 100)
+base_growth:set_default_value(25)
+base_growth:slider_set_step_size(5)
+
+local growth_per_level = pai_conf:add_new_option("c_growth_per_level", "slider")
+growth_per_level:set_text("growth_per_level")
+growth_per_level:set_tooltip_text("growth_per_level")
+growth_per_level:slider_set_min_max(0, 100)
+growth_per_level:set_default_value(25)
+growth_per_level:slider_set_step_size(5)
+
+local base_exp = pai_conf:add_new_option("d_unit_exp_first_turn", "slider")
+base_exp:set_text("Base Exp Bonus")
+base_exp:set_tooltip_text("Base Exp Bonus")
+base_exp:slider_set_min_max(0, 500)
+base_exp:set_default_value(100)
+base_exp:slider_set_step_size(25)
+
+local exp_per_level = pai_conf:add_new_option("d_unit_exp_per_level", "slider")
+exp_per_level:set_text("exp_per_level")
+exp_per_level:set_tooltip_text("exp_per_level")
+exp_per_level:slider_set_min_max(0, 500)
+exp_per_level:set_default_value(100)
+exp_per_level:slider_set_step_size(25)
+
+local base_tech = pai_conf:add_new_option("e_research_first_turn", "slider")
+base_tech:set_text("Base Tech Bonus")
+base_tech:set_tooltip_text("Base Tech Bonus")
+base_tech:slider_set_min_max(0, 100)
+base_tech:set_default_value(20)
+base_tech:slider_set_step_size(5)
+
+local tech_per_level = pai_conf:add_new_option("e_research_per_level", "slider")
+tech_per_level:set_text("tech_per_level")
+tech_per_level:set_tooltip_text("tech_per_level")
+tech_per_level:slider_set_min_max(0, 100)
+tech_per_level:set_default_value(0)
+tech_per_level:slider_set_step_size(5)
+
+local base_rank = pai_conf:add_new_option("f_lord_level_first_turn", "slider")
+base_rank:set_text("Base Lord rank Bonus")
+base_rank:set_tooltip_text("Base Lord rank Bonus")
+base_rank:slider_set_min_max(0, 5)
+base_rank:set_default_value(0)
+base_rank:slider_set_step_size(1)
+
+local rank_per_level = pai_conf:add_new_option("f_lord_level_per_level", "slider")
+rank_per_level:set_text("rank_per_level")
+rank_per_level:set_tooltip_text("rank_per_level")
+rank_per_level:slider_set_min_max(0, 5)
+rank_per_level:set_default_value(3)
+rank_per_level:slider_set_step_size(1)
+
+local base_horde_growth = pai_conf:add_new_option("g_horde_growth_first_turn", "slider")
+base_horde_growth:set_text("Base Lord rank Bonus")
+base_horde_growth:set_tooltip_text("Base Lord rank Bonus")
+base_horde_growth:slider_set_min_max(0, 20)
+base_horde_growth:set_default_value(5)
+base_horde_growth:slider_set_step_size(1)
+
+local horde_growth_per_level = pai_conf:add_new_option("g_horde_growth_per_level", "slider")
+horde_growth_per_level:set_text("rank_per_level")
+horde_growth_per_level:set_tooltip_text("rank_per_level")
+horde_growth_per_level:slider_set_min_max(0, 20)
+horde_growth_per_level:set_default_value(5)
+horde_growth_per_level:slider_set_step_size(1)
+
+local static_values_section = pai_conf:add_new_section("static_values")
+static_values_section:set_localised_text("Static values")
