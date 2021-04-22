@@ -295,6 +295,8 @@ local SRW_Lord_Skills_Cost = {
     ["fts_shadowvermin_dualsword-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
     ["CTT_skv_storm-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
     ["CTT_skv_storm_hw-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
+    ["stig_skv_inf_stormvermin_deathvermin-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
+
     --ikit
     ["wh2_dlc12_skv_veh_doom_flayer_0-Ikit"] = {"wh2_dlc12_skill_skv_ikit_unique_4", 0},
     ["wh2_dlc12_skv_veh_doom_flayer_ror_tech_lab_0-Ikit"] = {"wh2_dlc12_skill_skv_ikit_unique_4", 1},
@@ -362,6 +364,7 @@ local SRW_Lord_Skills_Cost = {
     ["fts_shadowvermin_dualsword-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 0},
     ["CTT_skv_storm-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 0},
     ["CTT_skv_storm_hw-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 0},
+    ["stig_skv_inf_stormvermin_deathvermin-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 1},
 
   --VCoast
     ["wh2_dlc11_cst_inf_zombie_deckhands_mob_ror_0-Harkon"] = {"wh2_dlc11_skill_cst_luthor_unique_1", 0},
