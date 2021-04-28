@@ -344,12 +344,14 @@ local SRW_Free_Units = {
     ["wh_main_vmp_cav_black_knights_0-vmp_mannfred_von_carstein"] = 0,
     ["wh_main_vmp_cav_black_knights_3-vmp_mannfred_von_carstein"] = 0,
     ["wh_dlc04_vmp_cav_vereks_reavers_0-vmp_mannfred_von_carstein"] = 1,
+    ["dec_hell_knights-vmp_mannfred_von_carstein"] = 1,
+    ["vmp_mousillon_unit_black_knights_hellsteed"] = 0,
     ["ror_vamp_doomr-vmp_mannfred_von_carstein"] = 0, -- black kn
     ["ror_vamp_templewights-vmp_mannfred_von_carstein"] = 1, --grave g
     ["ror_vamp_helmut-vmp_mannfred_von_carstein"] = 1, --grave g
     ["dec_grave_halbs-vmp_mannfred_von_carstein"] = 0,
-    ["wh_dlc04_vmp_veh_mortis_engine_0-dlc04_vmp_helman_ghorst"] = 0,
-    ["wh_dlc04_vmp_veh_claw_of_nagash_0-dlc04_vmp_helman_ghorst"] = 0,
+    ["wh_dlc04_vmp_veh_mortis_engine_0-dlc04_vmp_helman_ghorst"] = 1,
+    ["wh_dlc04_vmp_veh_claw_of_nagash_0-dlc04_vmp_helman_ghorst"] = 2,
 
   --Greenskins
     ["wh_main_grn_inf_black_orcs-grn_grimgor_ironhide"] = 0,
