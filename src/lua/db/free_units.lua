@@ -358,7 +358,7 @@ local SRW_Free_Units = {
     ["wh_main_grn_inf_orc_big_uns-grn_grimgor_ironhide"] = 0,
     ["wh_main_grn_cav_orc_boar_boy_big_uns-grn_grimgor_ironhide"] = 0,
     ["wh_dlc06_grn_inf_krimson_killerz_0-grn_grimgor_ironhide"] = 1,
-    ["wh_main_grn_inf_night_goblins-dlc06_grn_skarsnik"] = 0,
+    -- ["wh_main_grn_inf_night_goblins-dlc06_grn_skarsnik"] = 0,
     ["wh_dlc06_grn_inf_da_warlords_boyz_0-dlc06_grn_skarsnik"] = 0,
     ["wh_main_grn_inf_night_goblin_archers-dlc06_grn_skarsnik"] = 0,
     ["wh_main_grn_inf_night_goblin_fanatics-dlc06_grn_skarsnik"] = 0,
@@ -375,7 +375,23 @@ local SRW_Free_Units = {
     ["wh2_dlc15_grn_veh_snotling_pump_wagon_ror_0-wh2_dlc15_grn_grom_the_paunch"] = 0,
     ["wh_dlc06_grn_cav_moon_howlers_0-dlc06_grn_skarsnik"] = 0,
     ["wh_dlc06_grn_cav_deff_creepers_0-dlc06_grn_skarsnik"] = 0,
-  
+    --wh2_dlc15_grn_orc_warboss_oglok
+    ["grn_savage_big_great-wh2_dlc15_grn_orc_warboss_oglok"] = 0,
+    ["wh_main_grn_cav_orc_boar_boy_big_uns-wh2_dlc15_grn_orc_warboss_oglok"] = 0,
+    ["wh_main_grn_cav_savage_orc_boar_boy_big_uns-wh2_dlc15_grn_orc_warboss_oglok"] = 0,
+    ["wh_main_grn_inf_savage_orc_big_uns-wh2_dlc15_grn_orc_warboss_oglok"] = 0,
+    ["wh_main_grn_inf_orc_big_uns-wh2_dlc15_grn_orc_warboss_oglok"] = 0,
+    ["wh_dlc06_grn_cav_broken_tusks_mob_0-wh2_dlc15_grn_orc_warboss_oglok"] = 0,
+    ["Grokkamobs-wh2_dlc15_grn_orc_warboss_oglok"] = 0,
+    ["grn_big_uns_shields-wh2_dlc15_grn_orc_warboss_oglok"] = 0,
+
+    --wh2_dlc15_grn_goblin_great_shaman_raknik
+    ["wh2_dlc15_grn_cav_forest_goblin_spider_riders_waaagh_0-wh2_dlc15_grn_goblin_great_shaman_raknik"] = 0, --go
+    ["wh_dlc06_grn_cav_deff_creepers_0-wh2_dlc15_grn_goblin_great_shaman_raknik"] = 0,
+    ["wh_main_grn_mon_arachnarok_spider_0-wh2_dlc15_grn_goblin_great_shaman_raknik"] = 2,
+    ["wh_dlc15_grn_mon_arachnarok_spider_waaagh_0-wh2_dlc15_grn_goblin_great_shaman_raknik"] = 2,
+    ["wh_dlc06_grn_mon_venom_queen_0-wh2_dlc15_grn_goblin_great_shaman_raknik"] = 3,
+
     --extended
     ["goblin_boss-dlc06_grn_skarsnik"] = 0,
     ["grn_inf_black_orc_shields-grn_grimgor_ironhide"] = 0,

@@ -330,12 +330,12 @@ local SRW_Lord_Skills_Cost = {
     ["thom_ferrik_rattling-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_3", 2},
     ["clan_vrrtkin_warpfire_thrower-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_3", 1},
     ["clan_vrrtkin_inf_warplock_jezzails-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_3", 2},
-    ["wh2_dlc12_skv_veh_doom_flayer_0-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_2", 1},
     ["clan_vrrtkin_veh_doom_flayer-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_2", 1},
+    ["clan_vrrtkin_veh_doomwheel-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_2", 2},
+    ["wh2_dlc12_skv_veh_doom_flayer_0-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_2", 1},
     ["wh2_dlc12_skv_veh_doom_flayer_ror_tech_lab_0-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_2", 2},
     ["wh2_dlc12_skv_veh_doom_flayer_ror_0-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_2", 2},
     ["wh2_main_skv_veh_doomwheel-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_2", 2},
-    ["clan_vrrtkin_veh_doomwheel-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_2", 2},
     ["wh2_dlc12_skv_veh_doomwheel_ror_0-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_2", 3},
     ["wh2_dlc12_skv_veh_doomwheel_ror_tech_lab_0-Warlock"] = {"wh2_dlc12_skill_skv_engineer_unique_2", 3},
     --assassin lord
@@ -578,7 +578,7 @@ local SRW_Lord_Skills_Cost = {
     ["emp_cav_reiksguard_inner_circle-Helborg"] = {"skill_emp_lord_unique_campaign_kurt_helborg_grand_order", 2},
 
   --Greenskin
-    ["wh_main_grn_inf_night_goblins-Goblin"] = {"wh_dlc06_skill_grn_lord_battle_ard_ladz", 0},
+    -- ["wh_main_grn_inf_night_goblins-Goblin"] = {"wh_dlc06_skill_grn_lord_battle_ard_ladz", 0},
     ["wh_dlc06_grn_inf_da_warlords_boyz_0-Goblin"] = {"wh_dlc06_skill_grn_lord_battle_ard_ladz", 0},
     ["wh_main_grn_inf_night_goblin_archers-Goblin"] = {"wh_dlc06_skill_grn_lord_battle_ard_ladz", 0},
     ["wh_main_grn_inf_night_goblin_fanatics-Goblin"] = {"wh_dlc06_skill_grn_lord_battle_ard_ladz", 0},

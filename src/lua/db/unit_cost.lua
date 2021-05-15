@@ -670,7 +670,7 @@ local SRW_Supply_Cost = {
     ["wh_main_grn_inf_savage_orc_big_uns"] = 1,
     ["wh_main_grn_inf_orc_big_uns"] = 1,
     ["wh_main_grn_inf_night_goblin_fanatics"] = 1,
-    ["wh_main_grn_inf_night_goblins"] = 1,
+    ["wh_main_grn_inf_night_goblins"] = 0,
     ["wh_main_grn_inf_night_goblin_archers"] = 1,
     ["wh_main_grn_inf_night_goblin_fanatics_1"] = 1,
     ["wh_main_grn_mon_trolls"] = 1,
@@ -685,9 +685,9 @@ local SRW_Supply_Cost = {
     -- elite
     ["wh2_dlc15_grn_mon_feral_hydra_waaagh_0"] = 3,
     ["wh2_dlc15_grn_mon_wyvern_waaagh_0"] = 3,
+    ["wh_main_grn_mon_giant"] = 3,
     ["wh2_dlc15_grn_mon_rogue_idol_0"] = 4,
     ["wh_main_grn_mon_arachnarok_spider_0"] = 4,
-    ["wh_main_grn_mon_giant"] = 3,
     ["wh_dlc15_grn_mon_arachnarok_spider_waaagh_0"] = 4,
     
     -- ROR
@@ -699,7 +699,7 @@ local SRW_Supply_Cost = {
     ["wh_dlc06_grn_cav_broken_tusks_mob_0"] = 2,
     ["wh_dlc06_grn_cav_durkits_squigs_0"] = 2,
     ["wh_dlc06_grn_inf_da_eight_peaks_loonies_0"] = 2,
-    ["wh_dlc06_grn_inf_da_warlords_boyz_0"] = 2,
+    ["wh_dlc06_grn_inf_da_warlords_boyz_0"] = 1,
     ["wh_dlc06_grn_inf_da_rusty_arrers_0"] = 2,
     ["wh2_dlc15_grn_mon_river_trolls_ror_0"] = 3,
     ["wh_dlc06_grn_inf_krimson_killerz_0"] = 3,

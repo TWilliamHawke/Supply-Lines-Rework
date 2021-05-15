@@ -61,6 +61,7 @@ local SRW_Lord_Group = {
     ["wh2_dlc13_emp_cha_huntsmarshal_0"] = "Hunter",
     ["emp_balthasar_gelt"] = "Gelt",
     ["grn_goblin_great_shaman"] = "Goblin",
+    ["wh2_dlc15_grn_goblin_great_shaman_raknik"] = "Goblin",
     ["dlc06_grn_night_goblin_warboss"] = "Goblin",
     ["dlc06_grn_skarsnik"] = "Goblin",
     ["dlc06_grn_wurrzag_da_great_prophet"] = "Wurzag",
