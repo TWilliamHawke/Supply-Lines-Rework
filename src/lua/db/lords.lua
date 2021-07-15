@@ -1,4 +1,5 @@
 local SRW_Lord_Group = {
+  --from agent_subtypes_tables
   --vcounts
     ["pro02_vmp_isabella_von_carstein"] = "Isabella",
     ["wh2_dlc11_vmp_bloodline_von_carstein"] = "Carstain",
@@ -27,7 +28,7 @@ local SRW_Lord_Group = {
     ["wh2_twa03_def_rakarth"] = "Rakarth",
     ["wh2_dlc14_def_high_beastmaster"] = "BeastMaster",
     ["AK_aislinn"] = "Seaguard",
-    --liz and skav
+  --lizards
     ["wh2_main_lzd_saurus_old_blood"] = "Zaurus",
     ["wh2_main_lzd_kroq_gar"] = "Zaurus",
     ["wh2_dlc13_lzd_gor_rok"] = "Zaurus",
@@ -37,6 +38,9 @@ local SRW_Lord_Group = {
     ["wh2_dlc13_lzd_kroxigor_ancient"] = "Kroxi",
     ["wh2_dlc13_lzd_kroxigor_ancient_horde"] = "Kroxi",
     ["wh2_dlc12_lzd_tehenhauin"] = "Tehen",
+    ["wh2_dlc17_lzd_oxyotl"] = "Oxyotl",
+    
+  --skv
     ["wh2_dlc09_skv_tretch_craventail"] = "Tretch",
     ["wh2_dlc12_skv_ikit_claw"] = "Ikit",
     ["wh2_dlc12_skv_warlock_master"] = "Warlock",
@@ -57,26 +61,37 @@ local SRW_Lord_Group = {
     ["wh2_dlc11_cst_admiral_tech_03"] = "Pirate",
     ["wh2_dlc11_cst_noctilus"] = "Noctil",
     ["wh2_dlc11_cst_aranessa"] = "Aranessa",
-  --Old world
-    ["wh2_dlc13_emp_cha_huntsmarshal_0"] = "Hunter",
-    ["emp_balthasar_gelt"] = "Gelt",
+  --Greenskin
     ["grn_goblin_great_shaman"] = "Goblin",
     ["wh2_dlc15_grn_goblin_great_shaman_raknik"] = "Goblin",
     ["dlc06_grn_night_goblin_warboss"] = "Goblin",
     ["dlc06_grn_skarsnik"] = "Goblin",
     ["dlc06_grn_wurrzag_da_great_prophet"] = "Wurzag",
     ["grn_azhag_the_slaughterer"] = "Azhag",
-    ["wh_dlc08_nor_wulfrik"] = "Wulfrik",
-    ["wh_dlc08_nor_throgg"] = "Throgg",
     ["ws_grn_tinitt_foureyes"] = "Forest",
     ["ws_grn_grak_beastbasha"] = "BeastBasha",
+  --Old world
+    ["wh_dlc08_nor_wulfrik"] = "Wulfrik",
+    ["dlc04_emp_volkmar"] = "Volkmar",
+    ["wh_dlc08_nor_throgg"] = "Throgg",
+    ["wh2_dlc13_emp_cha_huntsmarshal_0"] = "Hunter",
+    ["emp_balthasar_gelt"] = "Gelt",
     ["emp_cha_helborg"] = "Helborg",
+    ["vmp_heinrich_kemmler"] = "Kemler",
+  --Dwarves
     ["wh_main_dwf_cha_greybeard"] = "GreyBeard",
+    ["dlc06_dwf_belegar"] = "Belegar",
+    ["dwf_thorgrim_grudgebearer"] = "Thorgrim",
+    ["pro01_dwf_grombrindal"] = "Whitedwarf",
+    ["wh2_dlc17_dwf_thorek"] = "Thorek",
+    
   --Wood elves
     ["wh2_dlc16_wef_malicious_ancient_treeman_beasts"] = "Treeman",
     ["wh2_dlc16_wef_malicious_ancient_treeman_life"] = "Treeman",
     ["wh2_dlc16_wef_malicious_ancient_treeman_shadows"] = "Treeman",
     ["dlc05_wef_ancient_treeman"] = "Treeman",
+    ["roy_zoat_lord"] = "Zoat",
+    
   --TEB
     --["teb_tilea"] = "Tileaman",
     --["teb_borgio_the_besieger"] = "Besieger",

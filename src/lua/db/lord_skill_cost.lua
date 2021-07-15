@@ -1,11 +1,17 @@
 local SRW_Lord_Skills_Cost = {
   --Vampire counts
-    ["wh_main_vmp_mon_vargheists-Isabella"] = {"wh2_dlc11_skill_vmp_isabella_unique_3", 0},
-    ["mixu_vmp_mon_vargheists-Isabella"] = {"wh2_dlc11_skill_vmp_isabella_unique_3", 0},
-    ["wh_main_vmp_mon_varghulf-Isabella"] = {"wh2_dlc11_skill_vmp_isabella_unique_4", 1},
-    ["wh_dlc04_vmp_mon_devils_swartzhafen_0-Isabella"] = {"wh2_dlc11_skill_vmp_isabella_unique_3", 1},
+    ["wh_main_vmp_mon_vargheists-Isabella"] = {"wh2_dlc11_skill_vmp_isabella_unique_5", 0},
+    ["mixu_vmp_mon_vargheists-Isabella"] = {"wh2_dlc11_skill_vmp_isabella_unique_5", 0},
+    ["wh_main_vmp_mon_varghulf-Isabella"] = {"wh2_dlc11_skill_vmp_isabella_unique_5", 1},
+    ["wh_dlc04_vmp_mon_devils_swartzhafen_0-Isabella"] = {"wh2_dlc11_skill_vmp_isabella_unique_5", 1},
     ["wh_main_vmp_mon_terrorgheist-Isabella"] = {"wh2_dlc11_skill_vmp_isabella_unique_5", 2},
-    ["ror_vamp_dhrox-Isabella"] = {"wh2_dlc11_skill_vmp_isabella_unique_4", 2}, -- vargu
+    ["ror_vamp_dhrox-Isabella"] = {"wh2_dlc11_skill_vmp_isabella_unique_5", 2}, -- vargu
+    --Kemler
+    ["wh_main_vmp_inf_cairn_wraiths-Kemler"] = {"wh2_dlc17_skill_vmp_heinrich_kemmler_unique_wightblades", 0},
+    ["wh_main_vmp_cav_hexwraiths-Kemler"] = {"wh2_dlc17_skill_vmp_heinrich_kemmler_unique_wightblades", 1},
+    ["wh_dlc04_vmp_cav_chillgheists_0-Kemler"] = {"wh2_dlc17_skill_vmp_heinrich_kemmler_unique_wightblades", 1},
+    ["ror_vamp_chill-Kemler"] = {"wh2_dlc17_skill_vmp_heinrich_kemmler_unique_wightblades", 1},
+
     --carshtain
     ["wh_dlc04_vmp_mon_devils_swartzhafen_0-Carstain"] = {"wh2_dlc11_skill_vmp_bloodline_von_carstein_unique_brooding_horrors", 1},
     ["wh_main_vmp_mon_vargheists-Carstain"] = {"wh2_dlc11_skill_vmp_bloodline_von_carstein_unique_brooding_horrors", 0},
@@ -134,13 +140,20 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_dlc10_hef_inf_the_scions_of_mathlann_ror_0-Tyrion"] = {"wh2_main_skill_hef_dedication_isha", 0},
     ["wh2_dlc15_hef_inf_silverin_guard_0-Tyrion"] = {"wh2_main_skill_hef_dedication_isha", 0},
     ["wh2_main_hef_inf_lothern_sea_guard_0-Tyrion"] = {"wh2_main_skill_hef_dedication_mathlann", 0},
-    ["wh2_main_hef_inf_lothern_sea_guard_1-Tyrion"] = {"wh2_main_skill_hef_dedication_mathlann", 1},
+    ["wh2_main_hef_inf_lothern_sea_guard_1-Tyrion"] = {"wh2_main_skill_hef_dedication_mathlann", 0},
     ["AK_hef_sea_silver-Tyrion"] = {"wh2_main_skill_hef_dedication_mathlann", 0},
     ["AK_hef_sea_rangers-Tyrion"] = {"wh2_main_skill_hef_dedication_mathlann", 0},
     ["AK_hef_sea_roc_riders-Tyrion"] = {"wh2_main_skill_hef_dedication_mathlann", 0},
     ["wh2_dlc10_hef_inf_the_storm_riders_ror_0-Tyrion"] = {"wh2_main_skill_hef_dedication_mathlann", 1},
+    ["wh2_dlc15_hef_inf_archers_ror_0-Tyrion"] = {"wh2_main_skill_hef_dedication_isha", 0},
+    ["wh2_main_hef_inf_archers_0-Tyrion"] = {"wh2_main_skill_hef_dedication_isha", 0},
+    ["wh2_main_hef_inf_archers_1-Tyrion"] = {"wh2_main_skill_hef_dedication_isha", 0},
+    ["wh2_dlc15_hef_inf_archers_ror_0-Tyrion"] = {"wh2_main_skill_hef_dedication_isha", 0},
+    ["wh2_dlc10_hef_inf_sisters_of_avelorn_0-Tyrion"] = {"wh2_main_skill_hef_dedication_isha", 3},
+    ["wh2_dlc10_hef_inf_everqueens_court_guards_ror_0-Tyrion"] = {"wh2_main_skill_hef_dedication_isha", 4},
+    --mods
     ["wh2_main_hef_inf_lothern_sea_guard_0-Seaguard"] = {"wh2_main_skill_hef_dedication_mathlann", 0},
-    ["wh2_main_hef_inf_lothern_sea_guard_1-Seaguard"] = {"wh2_main_skill_hef_dedication_mathlann", 1},
+    ["wh2_main_hef_inf_lothern_sea_guard_1-Seaguard"] = {"wh2_main_skill_hef_dedication_mathlann", 0},
     ["AK_hef_sea_silver-Seaguard"] = {"wh2_main_skill_hef_dedication_mathlann", 0},
     ["AK_hef_sea_rangers-Seaguard"] = {"wh2_main_skill_hef_dedication_mathlann", 0},
     ["AK_hef_sea_roc_riders-Seaguard"] = {"wh2_main_skill_hef_dedication_mathlann", 0},
@@ -149,9 +162,6 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_dlc10_hef_inf_the_silverpelts_ror_0-Seaguard"] = {"AK_aislinn_unique_king", 1},
     ["wh2_dlc15_hef_mon_war_lions_of_chrace_ror_0-Seaguard"] = {"AK_aislinn_unique_king", 1},
     ["wh2_dlc15_hef_mon_war_lions_of_chrace_0-Seaguard"] = {"AK_aislinn_unique_king", 0},
-    ["wh2_dlc15_hef_inf_archers_ror_0-Tyrion"] = {"wh2_main_skill_hef_dedication_isha", 0},
-    ["wh2_dlc10_hef_inf_sisters_of_avelorn_0-Tyrion"] = {"wh2_main_skill_hef_dedication_isha", 3},
-    ["wh2_dlc10_hef_inf_everqueens_court_guards_ror_0-Tyrion"] = {"wh2_main_skill_hef_dedication_isha", 4},
     ["wh2_dlc10_hef_mon_treekin_0-Alarielle"] = {"wh2_dlc10_skill_hef_alarielle_fire_and_blood_4", 0},
     ["wh2_dlc10_hef_mon_treeman_0-Alarielle"] = {"wh2_dlc10_skill_hef_alarielle_fire_and_blood_4", 2},
     ["cr_hef_mon_bowtreeman_0-Alarielle"] = {"wh2_dlc10_skill_hef_alarielle_fire_and_blood_4", 2},
@@ -231,10 +241,10 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_main_lzd_mon_bastiladon_blessed_2-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 1},
     ["wh2_dlc12_lzd_cav_ripperdactyl_riders_0-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 1},
     ["wh2_main_lzd_cav_horned_ones_0-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 1},
-    ["wh2_main_lzd_mon_stegadon_0-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 1},
-    ["wh2_dlc12_lzd_mon_ancient_salamander_0-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 2},
-    ["wh2_main_lzd_mon_stegadon_1-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 2},
-    ["wh2_main_lzd_mon_stegadon_blessed_1-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 2},
+    ["wh2_main_lzd_mon_stegadon_0-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 2},
+    ["wh2_dlc12_lzd_mon_ancient_salamander_0-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 1},
+    ["wh2_main_lzd_mon_stegadon_1-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 3},
+    ["wh2_main_lzd_mon_stegadon_blessed_1-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 3},
     ["wh2_main_lzd_mon_ancient_stegadon-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 3},
     ["wh2_dlc12_lzd_mon_ancient_stegadon_1-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 3},
     ["wh2_main_lzd_mon_carnosaur_0-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 3},
@@ -249,7 +259,11 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_dlc12_lzd_mon_ancient_stegadon_ror_0-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 4},
     ["wh2_dlc13_lzd_mon_dread_saurian_ror_0-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 5},
     ["thom_star_chamber_veteran-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 3},
-  
+    ["wh2_dlc17_lzd_mon_coatl_0-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 2},
+    ["wh2_dlc17_lzd_mon_troglodon_0-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 3},
+    ["wh2_dlc17_lzd_mon_coatl_ror_0-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 3},
+    ["wh2_dlc17_lzd_mon_troglodon_ror_0-Zaurus"] = {"wh2_main_skill_lzd_blessing_itzl", 3},
+
     ["wh2_main_lzd_cav_cold_one_spearmen_1-Skink"] = {"wh2_dlc12_skill_lzd_skink_chief_unique_3", 0},
     ["wh2_main_lzd_cav_cold_one_spearriders_blessed_0-Skink"] = {"wh2_dlc12_skill_lzd_skink_chief_unique_3", 0},
     ["wh2_main_lzd_cav_cold_ones_1-Skink"] = {"wh2_dlc12_skill_lzd_skink_chief_unique_3", 0},
@@ -276,6 +290,13 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_main_lzd_mon_bastiladon_1-Tehen"] = {"wh2_dlc12_skill_lzd_tehenhauin_2", 0, "wh2_dlc12_skill_lzd_tehenhauin_6"},
     ["wh2_main_lzd_mon_bastiladon_2-Tehen"] = {"wh2_dlc12_skill_lzd_tehenhauin_2", 0, "wh2_dlc12_skill_lzd_tehenhauin_6"},
     ["wh2_main_lzd_mon_bastiladon_blessed_2-Tehen"] = {"wh2_dlc12_skill_lzd_tehenhauin_2", 0, "wh2_dlc12_skill_lzd_tehenhauin_6"},
+
+    ["wh2_dlc17_lzd_mon_coatl_0-Oxyotl"] = {"wh2_dlc17_skill_lzd_oxyotl_unique_explorer_of_lost_worlds", 1},
+    ["wh2_dlc17_lzd_mon_troglodon_0-Oxyotl"] = {"wh2_dlc17_skill_lzd_oxyotl_unique_explorer_of_lost_worlds", 1},
+    ["wh2_dlc17_lzd_mon_coatl_ror_0-Oxyotl"] = {"wh2_dlc17_skill_lzd_oxyotl_unique_explorer_of_lost_worlds", 2},
+    ["wh2_dlc17_lzd_mon_troglodon_ror_0-Oxyotl"] = {"wh2_dlc17_skill_lzd_oxyotl_unique_explorer_of_lost_worlds", 2},
+
+
   --Skaven
     --Tretch
     ["wh2_main_skv_inf_stormvermin_0-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
@@ -619,14 +640,44 @@ local SRW_Lord_Skills_Cost = {
     ["wh_main_grn_inf_savage_orc_big_uns-BeastBasha"] = {"ws_skill_grak_beastbasha_rally_da_boyz", 0},
     ["wh_main_grn_cav_savage_orc_boar_boy_big_uns-BeastBasha"] = {"ws_skill_grak_beastbasha_rally_da_boyz", 0},
     ["Grokkamobs-BeastBasha"] = {"ws_skill_grak_beastbasha_rally_da_boyz", 0},
+  --Dwarfs
+    ["wh_main_dwf_inf_irondrakes_0-Whitedwarf"] = {"wh2_dlc17_dwf_grombrindal_unique_rouse_the_engineers", 1},
+    ["wh_main_dwf_inf_irondrakes_2-Whitedwarf"] = {"wh2_dlc17_dwf_grombrindal_unique_rouse_the_engineers", 1},
+    ["wh_main_dwf_veh_gyrobomber-Whitedwarf"] = {"wh2_dlc17_dwf_grombrindal_unique_rouse_the_engineers", 0},
+    ["wh_main_dwf_veh_gyrocopter_0-Whitedwarf"] = {"wh2_dlc17_dwf_grombrindal_unique_rouse_the_engineers", 0},
+    ["wh_main_dwf_veh_gyrocopter_1-Whitedwarf"] = {"wh2_dlc17_dwf_grombrindal_unique_rouse_the_engineers", 0},
+    ["wh_dlc06_dwf_veh_skyhammer_0-Whitedwarf"] = {"wh2_dlc17_dwf_grombrindal_unique_rouse_the_engineers", 1},
+    ["wh_main_dwf_art_grudge_thrower-Whitedwarf"] = {"wh2_dlc17_dwf_grombrindal_unique_rouse_the_engineers", 1},
+    ["wh_main_dwf_art_cannon-Whitedwarf"] = {"wh2_dlc17_dwf_grombrindal_unique_rouse_the_engineers", 1},
+    ["wh_main_dwf_art_flame_cannon-Whitedwarf"] = {"wh2_dlc17_dwf_grombrindal_unique_rouse_the_engineers", 1},
+    ["wh_main_dwf_art_organ_gun-Whitedwarf"] = {"wh2_dlc17_dwf_grombrindal_unique_rouse_the_engineers", 1},
+    ["wh_dlc06_dwf_art_gob_lobber_0-Whitedwarf"] = {"wh2_dlc17_dwf_grombrindal_unique_rouse_the_engineers", 2},
+
+    ["wh_dlc06_dwf_inf_bugmans_rangers_0-Belegar"] = {"wh2_dlc17_dwf_belegar_unique_tunnel_warfare", 0},
+    ["wh_dlc06_dwf_inf_rangers_1-Belegar"] = {"wh2_dlc17_dwf_belegar_unique_tunnel_warfare", 0},
+    ["wh_dlc06_dwf_inf_ulthars_raiders_0-Belegar"] = {"wh2_dlc17_dwf_belegar_unique_tunnel_warfare", 0},
+    ["wh_dlc06_dwf_art_bolt_thrower_0-Belegar"] = {"wh2_dlc17_dwf_belegar_unique_tunnel_warfare", 0},
+    ["wh_dlc06_dwf_art_bolt_thrower_0-Thorgrim"] = {"wh_dlc08_skill_dwf_lord_thorgrim_unique_2", 1},
+    ["wh_main_dwf_art_grudge_thrower-Thorgrim"] = {"wh_dlc08_skill_dwf_lord_thorgrim_unique_2", 2},
+    ["wh_main_dwf_art_cannon-Thorgrim"] = {"wh_dlc08_skill_dwf_lord_thorgrim_unique_2", 2},
+    ["wh_main_dwf_art_flame_cannon-Thorgrim"] = {"wh_dlc08_skill_dwf_lord_thorgrim_unique_2", 2},
+    ["wh_main_dwf_art_organ_gun-Thorgrim"] = {"wh_dlc08_skill_dwf_lord_thorgrim_unique_2", 2},
+    ["wh_dlc06_dwf_art_gob_lobber_0-Thorgrim"] = {"wh_dlc08_skill_dwf_lord_thorgrim_unique_2", 3},
+
   --Wood Elves
     ["wh_dlc05_wef_mon_treekin_0-Treeman"] = {"wh_dlc05_skill_wef_ancient_treeman_unique_damage_resistance_treekin", 1},
     ["wh_pro04_wef_mon_treekin_ror_0-Treeman"] = {"wh_dlc05_skill_wef_ancient_treeman_unique_damage_resistance_treekin", 2},
     ["wh2_dlc16_wef_mon_malicious_treekin_0-Treeman"] = {"wh_dlc05_skill_wef_ancient_treeman_unique_damage_resistance_treekin", 1},
+    ["wh2_dlc16_wef_mon_zoats-Zoat"] = {"roy_zoat_lord_army_defense_zoats", 1},
+    ["wh2_dlc16_wef_mon_zoats_ror_0-Zoat"] = {"roy_zoat_lord_army_defense_zoats", 2},
+
   --Norsca
     ["wh_dlc08_nor_mon_skinwolves_0-Wulfrik"] = {"wh_dlc08_skill_nor_wulfrik_battle_fervent_creatures", 0},
     ["wh_dlc08_nor_mon_skinwolves_1-Wulfrik"] = {"wh_dlc08_skill_nor_wulfrik_battle_fervent_creatures", 0},
     ["wh_pro04_nor_mon_skinwolves_ror_0-Wulfrik"] = {"wh_dlc08_skill_nor_wulfrik_battle_fervent_creatures", 0},
+    ["wh_dlc08_nor_mon_skinwolves_0-Throgg"] = {"wh_dlc08_skill_nor_throgg_unique_king_of_trolls", 0},
+    ["wh_dlc08_nor_mon_skinwolves_1-Throgg"] = {"wh_dlc08_skill_nor_throgg_unique_king_of_trolls", 0},
+    ["wh_pro04_nor_mon_skinwolves_ror_0-Throgg"] = {"wh_dlc08_skill_nor_throgg_unique_king_of_trolls", 0},
     ["wh_dlc08_nor_mon_fimir_0-Throgg"] = {"wh_dlc08_skill_nor_throgg_unique_king_of_trolls", 0},
     ["wh_dlc08_nor_mon_fimir_1-Throgg"] = {"wh_dlc08_skill_nor_throgg_unique_king_of_trolls", 0},
     ["wh_dlc08_nor_mon_frost_wyrm_0-Throgg"] = {"wh_dlc08_skill_nor_throgg_unique_king_of_trolls", 1},
