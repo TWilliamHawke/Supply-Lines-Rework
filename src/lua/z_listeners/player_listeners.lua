@@ -176,6 +176,25 @@ core:add_listener(
 );
 
 core:add_listener(
+  "SRW_Agent_created",
+  "CharacterCreated",
+  function(context)
+    local faction = context:character():faction();
+    return (factionChecker(faction))
+  end,
+  function(context)
+    local character = context:character();
+    if not cm:char_is_agent(character) then return end;
+
+    SRWLOG("======================");
+    SRWLOG("AGENT Recruted")
+    local faction = context:character():faction();
+    Supply_lines_rework.calculate_agents_supply(faction)
+  end,
+  true
+);
+
+core:add_listener(
   "SRW_UNIT_DISBANDED",
   "UnitDisbanded",
   function(context)

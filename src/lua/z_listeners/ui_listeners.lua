@@ -76,18 +76,20 @@ core:add_listener(
       set_unit_tooltip(component, "_recruitable")
     elseif string.find(component_id, "_mercenary") then
       set_unit_tooltip(component, "_mercenary")
+    elseif string.find(component_id, "Agent ") then
+      set_agent_tooltip(component)
     end;
   end,
   true
 )
 
 
---USED IN UNIT HINT
+--USED IN UNIT tooltip
 core:add_listener(
   "SRW_Character_Selected",
   "CharacterSelected",
   function(context)
-    return context:character():has_military_force()
+    return true;
   end,
   function(context)
     SRW_selected_character = context:character();

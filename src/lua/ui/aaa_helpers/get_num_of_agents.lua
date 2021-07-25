@@ -3,6 +3,11 @@ function helpers.get_num_of_agents(unit_list)
 
   for j = 1, unit_list:num_items() - 1 do
     local unit = unit_list:item_at(j);
+
+    if not unit then
+      return num_of_agents;
+    end;
+    
     local uclass = unit:unit_class();
 
     if uclass ~= "com" then break end;

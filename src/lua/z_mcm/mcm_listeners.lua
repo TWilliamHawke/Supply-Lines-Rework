@@ -4,6 +4,7 @@ core:add_listener(
     true,
     function(context)
       init_mcm(context)
+      subculture_text = nil;
     end,
     true
 )
@@ -17,6 +18,7 @@ core:add_listener(
     function(context)
       init_mcm(context)
       finalize_mcm()
+      subculture_text = nil;
     end,
     true
 )

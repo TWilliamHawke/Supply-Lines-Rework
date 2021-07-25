@@ -20,7 +20,7 @@ local function ui_tooltip_localizator(string, is_basic_value, is_present)
     consume_text_id = "SRW_unit_consume_present"
   end;
 
-  local supply_string = helpers.localizator(string).." "..lord_text
-  return string.gsub(supply_string, "SRW_consume", helpers.localizator(consume_text_id))  
+  local supply_string = helpers.localizator(string).." "..lord_text;
+  return string.gsub(supply_string, "SRW_consume", helpers.localizator(consume_text_id));
 
 end;

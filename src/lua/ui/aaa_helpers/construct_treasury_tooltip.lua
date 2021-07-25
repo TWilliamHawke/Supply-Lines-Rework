@@ -7,13 +7,9 @@ function helpers.construct_treasury_tooltip(faction)
   local dif_mod = helpers.srw_get_diff_mult();
   local force_list = faction:military_force_list();
   local lord_text = helpers.get_subculture_text(culture)
-  SRWLOGDEBUG("Suply will start now");
   local supply_balance = get_supply_balance(faction)
-  SRWLOGDEBUG("Suply pt1 is finished");
   local supply_penalty = get_supply_penalty(faction, supply_balance)
-  SRWLOGDEBUG("Suply was calculated correctly");
   
-  --return "Replaced text"
 
   -- calculate supply and upkeep
   for i = 0, force_list:num_items() - 1 do
@@ -31,6 +27,11 @@ function helpers.construct_treasury_tooltip(faction)
   end; --of army call
 
   if upkeep_percent < 0 then upkeep_percent = 0 end;
+
+  local agents_supply = get_agents_supply(faction)
+  global_supply = global_supply + agents_supply;
+  upkeep_percent = upkeep_percent + helpers.get_upkeep_from_supply(agents_supply, dif_mod);
+
 
   local supply_text = helpers.localizator("SRW_treasury_tooltip_supply")
   supply_text = string.gsub(supply_text, "SRW_supply", tostring(global_supply))

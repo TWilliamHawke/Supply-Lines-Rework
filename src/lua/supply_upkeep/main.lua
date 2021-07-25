@@ -17,4 +17,5 @@ local function srw_apply_upkeep_penalty(faction)
   end; -- of check local faction
   
   SRWLOGDEBUG("[]CALCULATION SUPPLY FOR THIS fACTION IS FINISHED");
+  Supply_lines_rework.calculate_agents_supply(faction)
 end; -- of function

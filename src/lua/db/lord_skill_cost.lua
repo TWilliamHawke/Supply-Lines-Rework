@@ -145,7 +145,6 @@ local SRW_Lord_Skills_Cost = {
     ["AK_hef_sea_rangers-Tyrion"] = {"wh2_main_skill_hef_dedication_mathlann", 0},
     ["AK_hef_sea_roc_riders-Tyrion"] = {"wh2_main_skill_hef_dedication_mathlann", 0},
     ["wh2_dlc10_hef_inf_the_storm_riders_ror_0-Tyrion"] = {"wh2_main_skill_hef_dedication_mathlann", 1},
-    ["wh2_dlc15_hef_inf_archers_ror_0-Tyrion"] = {"wh2_main_skill_hef_dedication_isha", 0},
     ["wh2_main_hef_inf_archers_0-Tyrion"] = {"wh2_main_skill_hef_dedication_isha", 0},
     ["wh2_main_hef_inf_archers_1-Tyrion"] = {"wh2_main_skill_hef_dedication_isha", 0},
     ["wh2_dlc15_hef_inf_archers_ror_0-Tyrion"] = {"wh2_main_skill_hef_dedication_isha", 0},

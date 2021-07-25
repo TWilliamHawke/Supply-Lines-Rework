@@ -14,6 +14,10 @@ local SRW_Subculture_Text = {
   -- ["wh_main_sc_teb_teb"] = "",
 }
 
+local SRW_Agents_Text = {
+  ["wh_main_sc_vmp_vampire_counts"] = "SRW_Agents_Text_vmp",
+}
+
 local modded_subculture_text = {
   ["mixu1-wh_main_sc_emp_empire"] = "SRW_Subculture_Text_mixu_emp",
   ["kisl-wh_main_sc_ksl_kislev"] = "SRW_Subculture_Text_kislev_reborn",

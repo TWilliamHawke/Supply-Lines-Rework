@@ -10,8 +10,14 @@ local function init_mcm(context)
   player_supply_custom_mult =  b_player_effect:get_finalized_setting()
   b_player_effect:set_uic_visibility(is_player_enable)
 
+  local c_agent_supply = supply_lines_rw:get_option_by_key("c_agent_supply")
+  basic_agent_supply = tonumber(c_agent_supply:get_finalized_setting())
+  c_agent_supply:set_uic_visibility(is_player_enable)
+
+
   if not is_player_enable then
     player_supply_custom_mult = 0
+    basic_agent_supply = 0;
   end;
 
   local d_ai_enable = supply_lines_rw:get_option_by_key("d_ai_enable")

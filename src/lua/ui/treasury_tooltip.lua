@@ -19,6 +19,7 @@ local function set_tooltip_text_treasury(faction, component_name)
     tooltip_text = helpers.construct_treasury_tooltip(faction)
   end;
 
+
   --apply text
   if is_uicomponent(component) then 
     component:SetTooltipText(tooltip_text, true)

@@ -43,8 +43,22 @@ local SRW_Free_Units = {
     ["wh2_dlc13_emp_cav_empire_knights_ror_0-dlc04_emp_volkmar"] = 0,
     ["wh2_dlc13_emp_cav_empire_knights_ror_1-dlc04_emp_volkmar"] = 0,
     ["wh2_dlc13_emp_cav_empire_knights_ror_2-dlc04_emp_volkmar"] = 0,
-
-  --sword of emp
+    ["wh2_dlc13_emp_cav_empire_knights_imperial_supply-dlc04_emp_volkmar"] = 0,
+    
+    --sword of emp
+    ["wh_main_mid_cav_empire_knights-dlc04_emp_volkmar"] = 0,
+    ["wh_main_avr_cav_empire_knights-dlc04_emp_volkmar"] = 0,
+    ["wh_main_rek_cav_empire_knights-dlc04_emp_volkmar"] = 0,
+    ["wh_main_hoc_cav_empire_knights-dlc04_emp_volkmar"] = 0,
+    ["wh_main_mbg_cav_empire_knights-dlc04_emp_volkmar"] = 0,
+    ["wh_main_nod_cav_empire_knights-dlc04_emp_volkmar"] = 0,
+    ["wh_main_osl_cav_empire_knights-dlc04_emp_volkmar"] = 0,
+    ["wh_main_osm_cav_empire_knights-dlc04_emp_volkmar"] = 0,
+    ["wh_main_str_cav_empire_knights-dlc04_emp_volkmar"] = 0,
+    ["wh_main_tab_cav_empire_knights-dlc04_emp_volkmar"] = 0,
+    ["wh_main_wis_cav_empire_knights-dlc04_emp_volkmar"] = 0,
+    ["wh_main_sol_cav_empire_knights-dlc04_emp_volkmar"] = 0,
+    ["wh_main_hun_cav_empire_knights-dlc04_emp_volkmar"] = 0,
     ["wh_main_mid_inf_greatswords-emp_karl_franz"] = 0,
     ["wh_main_avr_inf_greatswords-emp_karl_franz"] = 0,
     ["wh_main_rek_inf_greatswords-emp_karl_franz"] = 0,

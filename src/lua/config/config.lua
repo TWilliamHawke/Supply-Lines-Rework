@@ -7,6 +7,8 @@ local player_supply_custom_mult = "disabled"
 local bretonnia_supply = false
 local basic_unit_supply = 0
 local basic_lord_supply = 0
+local basic_agent_supply = -1;
+--balance
 local enable_supply_balance = false
 local max_balance_per_buildings = 3
 local max_balance_per_army = 30
@@ -16,3 +18,4 @@ local ui_faction_check = nil;
 local block_scripts = false;
 
 local helpers = {}
+Supply_lines_rework = {}

@@ -12,9 +12,11 @@ local function set_unit_in_army_tooltip(component)
   
   local index = tonumber(unit_number) + helpers.get_num_of_agents(unit_list)
   local unit = unit_list:item_at(index);
-  local unit_name = unit:unit_key();
+  if not unit then return end;
 
+  local unit_name = unit:unit_key();
   local unit_cost, is_basic_cost = helpers.get_supply_params(unit_name)
+  
   if not unit_cost then
     unit_cost = helpers.calculate_unit_supply(unit)
   end;

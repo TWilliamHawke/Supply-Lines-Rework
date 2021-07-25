@@ -4,10 +4,13 @@ local function player_callback(option)
   local val = option:get_selected_setting()
 
   local player_effect = option:get_mod():get_option_by_key("b_player_effect")
+  local agents_supply = option:get_mod():get_option_by_key("c_agent_supply")
   if val then
     player_effect:set_uic_visibility(true)
+    agents_supply:set_uic_visibility(true)
   else
     player_effect:set_uic_visibility(false)
+    agents_supply:set_uic_visibility(false)
   end;
 end;
 
@@ -62,11 +65,25 @@ player_effect:slider_set_min_max(0, 15)
 player_effect:set_default_value(5)
 player_effect:slider_set_step_size(1)
 
-local enable_bret= supply_lines_rw:add_new_option("c_bret_enable", "checkbox")
-enable_bret:set_default_value(false)
-enable_bret:set_text("mct_supply_lines_rw_c_bret_enable_text", true)
-enable_bret:set_tooltip_text("mct_supply_lines_rw_c_bret_enable_tt", true)
-enable_bret:set_uic_visibility(false)
+-- local enable_bret= supply_lines_rw:add_new_option("c_bret_enable", "checkbox")
+-- enable_bret:set_default_value(false)
+-- enable_bret:set_text("mct_supply_lines_rw_c_bret_enable_text", true)
+-- enable_bret:set_tooltip_text("mct_supply_lines_rw_c_bret_enable_tt", true)
+-- enable_bret:set_uic_visibility(false)
+
+local agents_supply = supply_lines_rw:add_new_option("c_agent_supply", "dropdown")
+agents_supply:set_text("mct_supply_lines_rw_agents_supply_text", true)
+agents_supply:set_tooltip_text("mct_supply_lines_rw_agents_supply_tt", true)
+agents_supply:add_dropdown_values({
+  {key = "0", text = "Disabled", tt = "By default heroes don't require supply.", is_default = true},
+  {key = "-1", text = "Dynamic", tt = "Supply cost for heroes will depend on their rank", is_default = false},
+  {key = "1", text = "1 point", tt = "Each hero will consume 1 Supply point", is_default = false},
+  {key = "2", text = "2 points", tt = "Each hero will consume 2 Supply points", is_default = false},
+  {key = "3", text = "3 points", tt = "Each hero will consume 3 Supply points", is_default = false},
+  {key = "4", text = "4 points", tt = "Each hero will consume 4 Supply points", is_default = false},
+})
+
+
 
 local enable_ai = supply_lines_rw:add_new_option("d_ai_enable", "checkbox")
 enable_ai:set_default_value(false)
