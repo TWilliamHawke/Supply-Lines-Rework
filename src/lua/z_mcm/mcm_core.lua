@@ -57,6 +57,10 @@ local function init_mcm(context)
   big_empire_penalty_start = tonumber(big_empire_penalty_cfg:get_finalized_setting())
   big_empire_penalty_cfg:set_uic_visibility(enable_supply_balance)
 
+  local big_city_penalty_cfg = supply_lines_rw:get_option_by_key("big_city_penalty")
+  big_city_penalty = tonumber(big_city_penalty_cfg:get_finalized_setting())
+  big_city_penalty_cfg:set_uic_visibility(enable_supply_balance)
+
   if enable_logging_debug then
     enable_logging = true
     enable_logging_ai = true

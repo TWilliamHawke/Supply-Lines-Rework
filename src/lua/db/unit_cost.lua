@@ -718,26 +718,26 @@ local SRW_Supply_Cost = {
     ["wh_main_vmp_mon_fell_bats"] = 0,
     ["wh2_dlc11_vmp_inf_crossbowmen"] = 0,
     ["wh2_dlc11_vmp_inf_handgunners"] = 0,
-    -- special
     ["wh_main_vmp_inf_crypt_ghouls"] = 0,
+    -- special
     ["wh_main_vmp_cav_black_knights_0"] = 1,
-    ["wh_main_vmp_cav_black_knights_3"] = 2,
     ["wh_main_vmp_mon_crypt_horrors"] = 1,
     -- rare
+    ["wh_main_vmp_cav_black_knights_3"] = 2,
     ["wh_main_vmp_inf_grave_guard_0"] = 2,
     ["wh_main_vmp_inf_grave_guard_1"] = 2,
     ["wh_main_vmp_inf_cairn_wraiths"] = 2,
     ["wh_main_vmp_mon_vargheists"] = 2,
     ["wh_main_vmp_veh_black_coach"] = 2,
-    ["wh_dlc04_vmp_veh_mortis_engine_0"] = 3,
     -- elite
+    ["wh_dlc04_vmp_veh_mortis_engine_0"] = 3,
     ["wh_main_vmp_cav_hexwraiths"] = 3,
     ["wh_main_vmp_mon_varghulf"] = 3,
     ["wh_main_vmp_mon_terrorgheist"] = 4,
     ["wh_dlc02_vmp_cav_blood_knights_0"] = 4,
     -- ROR
-    ["wh_dlc04_vmp_inf_konigstein_stalkers_0"] = 1,
-    ["wh_dlc04_vmp_inf_tithe_0"] = 1,
+    ["wh_dlc04_vmp_inf_konigstein_stalkers_0"] = 0,
+    ["wh_dlc04_vmp_inf_tithe_0"] = 0,
     ["wh_dlc04_vmp_mon_direpack_0"] = 1,
     ["wh_dlc04_vmp_inf_feasters_in_the_dusk_0"] = 1,
     ["wh_dlc04_vmp_cav_vereks_reavers_0"] = 3,
@@ -2139,13 +2139,13 @@ local SRW_Supply_Cost = {
       ["roy_amz_ror_parrot_riders"] = 2,
   --VC expanded
     ["dec_reapers"] = 0,
+    ["vmp_mousillon_unit_skeleton_bowmen"] = 0,
+    ["vmp_mousillon_unit_skeleton_bowmen_pox"] = 0,
     ["dec_spirit_host"] = 1,
     ["dec_lahmian"] = 2,
     ["dec_grave_halbs"] = 2,
     ["dec_hell_knights"] = 3,
     ["dec_kastellans"] = 4,
-    ["vmp_mousillon_unit_skeleton_bowmen"] = 0,
-    ["vmp_mousillon_unit_skeleton_bowmen_pox"] = 0,
     ["vmp_mousillon_unit_black_knights_hellsteed"] = 2,
     ["vmp_mousillon_unit_carcas_trebuchet"] = 3,
     ["vmp_kasabar_unit_zombie_dragon"] = 4,
@@ -2181,10 +2181,10 @@ local SRW_Supply_Cost = {
     ["Drillaz"] = 3, -- bl orcs
     ["grn_bonebreakers"] = 3, --bl orcs
     --vmp
-    ["ror_vamp_fire"] = 1, --skeletons
+    ["ror_vamp_fire"] = 0, --skeletons
+    ["ror_vamp_damned"] = 0, --skeletons
+    ["ror_vamp_knockers"] = 0, --zom
     ["ror_vamp_thugs"] = 1, --clanrat
-    ["ror_vamp_damned"] = 1, --skeletons
-    ["ror_vamp_knockers"] = 1, --zom
     ["ror_vamp_deathsheads"] = 2, --halb
     ["ror_vamp_deathsheads_ost"] = 2, --halb
     ["ror_vamp_doomr"] = 2, -- black kn

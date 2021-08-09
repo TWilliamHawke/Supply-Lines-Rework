@@ -386,6 +386,9 @@ local SRW_Free_Units = {
     ["wh_main_grn_inf_orc_big_uns-grn_grimgor_ironhide"] = 0,
     ["wh_main_grn_cav_orc_boar_boy_big_uns-grn_grimgor_ironhide"] = 0,
     ["wh_dlc06_grn_inf_krimson_killerz_0-grn_grimgor_ironhide"] = 1,
+    ["wh2_dlc15_grn_mon_wyvern_waaagh_0-grn_azhag_the_slaughterer"] = 1,
+    ["ovn_troll_mon_wyvern-grn_azhag_the_slaughterer"] = 0,
+
     -- ["wh_main_grn_inf_night_goblins-dlc06_grn_skarsnik"] = 0,
     ["wh_dlc06_grn_inf_da_warlords_boyz_0-dlc06_grn_skarsnik"] = 0,
     ["wh_main_grn_inf_night_goblin_archers-dlc06_grn_skarsnik"] = 0,
@@ -554,7 +557,6 @@ local SRW_Free_Units = {
     ["wh2_main_hef_inf_lothern_sea_guard_0-wh2_main_hef_tyrion"] = 0,
     ["wh2_main_hef_inf_lothern_sea_guard_1-wh2_main_hef_tyrion"] = 0,
     ["wh2_dlc10_hef_inf_the_storm_riders_ror_0-wh2_main_hef_tyrion"] = 1,
-    ["wh2_dlc15_hef_inf_archers_ror_0-wh2_main_hef_tyrion"] = 0,
     ["AK_hef_sea_silver-wh2_main_hef_tyrion"] = 0,
     ["AK_hef_sea_rangers-wh2_main_hef_tyrion"] = 0,
     ["AK_hef_sea_roc_riders-wh2_main_hef_tyrion"] = 0,
@@ -604,6 +606,12 @@ local SRW_Free_Units = {
     ["wh2_dlc15_hef_inf_mistwalkers_skyhawks_0-wh2_dlc15_hef_eltharion"] = 0,
     ["wh2_dlc15_hef_inf_mistwalkers_griffon_knights_0-wh2_dlc15_hef_eltharion"] = 2,
     ["hef_yvr_inf_archers_mistwalkers-wh2_dlc15_hef_eltharion"] = 0,
+    ["wh2_dlc10_hef_inf_the_scions_of_mathlann_ror_0-wh2_dlc15_hef_eltharion"] = 0,
+    ["wh2_dlc15_hef_inf_silverin_guard_0-wh2_dlc15_hef_eltharion"] = 0,
+    ["wh2_main_hef_inf_lothern_sea_guard_0-wh2_dlc15_hef_eltharion"] = 0,
+    ["wh2_main_hef_inf_lothern_sea_guard_1-wh2_dlc15_hef_eltharion"] = 0,
+    ["wh2_dlc10_hef_inf_the_storm_riders_ror_0-wh2_dlc15_hef_eltharion"] = 1,
+
     --dragonprinces
     ["wh2_low_hef_inf_legion_dragon_spearmen_0-wh2_dlc15_hef_imrik"] = 0,
     ["wh2_low_hef_inf_legion_dragon_swordsmen_0-wh2_dlc15_hef_imrik"] = 0,

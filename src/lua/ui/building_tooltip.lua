@@ -11,7 +11,7 @@ local function set_building_tooltip(component)
     for i = 1, #main_building_matches do
       local is_main_building = component_name:match(main_building_matches[i])
       if is_main_building then
-        local building_level = component_name:match("_(%d+)") - 3;
+        local building_level = (component_name:match("_(%d+)") - 3) * big_city_penalty;
         if building_level > 0 then
           supply_balance_change = -building_level
         end

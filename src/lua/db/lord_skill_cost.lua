@@ -612,7 +612,7 @@ local SRW_Lord_Skills_Cost = {
     ["Stabba_Stickpokers-Goblin"] = {"wh_dlc06_skill_grn_lord_battle_riderz", 0},
     ["Frik-Goblin"] = {"wh_dlc06_skill_grn_lord_battle_riderz", 1}, -- squig
     ["grn_bouncers-Goblin"] = {"wh_dlc06_skill_grn_lord_battle_riderz", 1}, --squig
-
+    ["wh2_dlc15_grn_cav_squig_hoppers_waaagh_0-Goblin"] = {"wh_dlc06_skill_grn_lord_battle_riderz", 1}, --squig
     --azhag
     ["grn_savage_big_great-Azhag"] = {"wh_dlc08_skill_grn_azhag_unique_0", 0},
     ["wh_main_grn_cav_orc_boar_boy_big_uns-Azhag"] = {"wh_dlc08_skill_grn_azhag_unique_0", 0},

@@ -8,9 +8,9 @@ local function get_main_building_cost(building, faction)
   end;
 
   if main_building_level == 5 then
-    return 3
+    return 2 * big_city_penalty + 1;
   elseif main_building_level == 4 then
-    return 2
+    return big_city_penalty + 1;
   else
     return 1
   end

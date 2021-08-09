@@ -13,6 +13,7 @@ local enable_supply_balance = false
 local max_balance_per_buildings = 3
 local max_balance_per_army = 30
 local big_empire_penalty_start = 999;
+local big_city_penalty = 1;
 --Cached values
 local ui_faction_check = nil;
 local block_scripts = false;

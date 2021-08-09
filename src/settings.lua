@@ -31,16 +31,12 @@ local function effectCallback(option)
   local max_building = option:get_mod():get_option_by_key("balance_per_building")
   local max_army = option:get_mod():get_option_by_key("balance_per_army")
   local emp_penalty = option:get_mod():get_option_by_key("big_empire_penalty")
+  local city_penalty = option:get_mod():get_option_by_key("big_city_penalty")
 
-  if val then
-    max_building:set_uic_visibility(true)
-    max_army:set_uic_visibility(true)
-    emp_penalty:set_uic_visibility(true)
-  else
-    max_building:set_uic_visibility(false)
-    max_army:set_uic_visibility(false)
-    emp_penalty:set_uic_visibility(false)
-  end;
+    max_building:set_uic_visibility(val)
+    max_army:set_uic_visibility(val)
+    emp_penalty:set_uic_visibility(val)
+    city_penalty:set_uic_visibility(val)
 
 end
 
@@ -126,6 +122,13 @@ max_balance_per_army:add_dropdown_values({
   {key = "5", text = "5", tt = "Each your army will not decrease Supply Reserves by more than 5", is_default = false},
   {key = "10", text = "10", tt = "Each your army will not decrease Supply Reserves by more than 10", is_default = false},
 })
+
+local big_city_penalty = supply_lines_rw:add_new_option("big_city_penalty", "slider")
+big_city_penalty:slider_set_min_max(0, 3)
+big_city_penalty:set_default_value(1)
+big_city_penalty:slider_set_step_size(1)
+big_city_penalty:set_text("mct_supply_lines_rw_big_city_penalty_text", true)
+big_city_penalty:set_tooltip_text("mct_supply_lines_rw_big_city_penalty_tt", true)
 
 -- max_balance_per_army:slider_set_min_max(0, 30)
 -- max_balance_per_army:set_default_value(30)
