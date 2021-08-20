@@ -9,6 +9,7 @@ local SRW_Lord_Group = {
     ["dlc04_vmp_helman_ghorst"] = "Ghorst",
     ["vmp_bloodline_fallen_knight"] = "Mixu_Knight",
     ["vmp_abh"] = "Imbalash",
+    ["dlc04_vmp_vlad_con_carstein"] = "Vlad",
   --elves
     ["wh2_main_hef_tyrion"] = "Tyrion",
     ["wh2_dlc15_hef_archmage_beasts"] = "Tyrion",

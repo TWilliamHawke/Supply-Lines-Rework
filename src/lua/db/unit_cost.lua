@@ -980,7 +980,7 @@ local SRW_Supply_Cost = {
   --Dark Elves
     ["wh2_main_def_cav_dark_riders_0"] = 0,
     ["wh2_main_def_cav_dark_riders_1"] = 0,
-    ["wh2_main_def_cav_dark_riders_2"] = 0,
+    ["wh2_main_def_cav_dark_riders_2"] = 1,
     ["wh2_main_def_inf_bleakswords_0"] = 0,
     ["wh2_main_def_inf_dreadspears_0"] = 0,
     ["wh2_main_def_inf_harpies"] = 0,
@@ -1020,7 +1020,7 @@ local SRW_Supply_Cost = {
     ["wh2_dlc14_def_cav_scourgerunner_chariot_ror_0"] = 3,
     ["wh2_dlc10_def_inf_the_hellebronai_ror_0"] = 1,
     ["wh2_dlc10_def_cav_slaanesh_harvesters_ror_0"] = 2,
-    ["wh2_dlc10_def_cav_raven_heralds_ror_0"] = 1,
+    ["wh2_dlc10_def_cav_raven_heralds_ror_0"] = 2,
     ["wh2_dlc10_def_cav_knights_of_the_ebon_claw_ror_0"] = 3,
     ["wh2_dlc10_def_mon_chill_of_sontar_ror_0"] = 4,
     ["wh2_dlc14_def_mon_bloodwrack_medusa_ror_0"] = 4,
@@ -2269,7 +2269,8 @@ local SRW_Supply_Cost = {
     ["cr_def_mon_sea_dragon"] = 4,
     ["cr_def_mon_helldrake_pack"] = 2,
     ["cr_bst_mon_preyton_0"] = 3,
-
+    ["cody_dwf_veh_thunderbarge_0"] = 4,
+    ["cody_dwf_veh_thunderbarge_ror"] = 5,
     --BowTreeman
       ["cr_wef_inf_malicious_bowdryads_0"] = 0,
       ["cr_hef_inf_bowdryads_0"] = 0,

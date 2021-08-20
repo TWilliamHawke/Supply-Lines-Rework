@@ -364,6 +364,8 @@ local SRW_Free_Units = {
     ["wh_main_dwf_veh_gyrobomber-wh_main_dwf_cha_greybeard"] = 0,
     ["wh_main_dwf_veh_gyrocopter_0-wh_main_dwf_cha_greybeard"] = 0,
     ["wh_main_dwf_veh_gyrocopter_1-wh_main_dwf_cha_greybeard"] = 0,
+    ["cody_dwf_veh_thunderbarge_0-wh_main_dwf_cha_greybeard"] = 2,
+    ["cody_dwf_veh_thunderbarge_ror-wh_main_dwf_cha_greybeard"] = 3,
 
   --Vampire Counts
     ["wh_dlc04_vmp_inf_sternsmen_0-vmp_mannfred_von_carstein"] = 1,
@@ -380,6 +382,7 @@ local SRW_Free_Units = {
     ["dec_grave_halbs-vmp_mannfred_von_carstein"] = 0,
     ["wh_dlc04_vmp_veh_mortis_engine_0-dlc04_vmp_helman_ghorst"] = 1,
     ["wh_dlc04_vmp_veh_claw_of_nagash_0-dlc04_vmp_helman_ghorst"] = 2,
+    ["dec_lahmian-wh2_dlc11_vmp_bloodline_lahmian"] = 0,
 
   --Greenskins
     ["wh_main_grn_inf_black_orcs-grn_grimgor_ironhide"] = 0,
