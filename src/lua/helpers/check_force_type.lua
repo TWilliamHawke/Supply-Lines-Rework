@@ -14,7 +14,7 @@ function helpers.check_army_type(force, is_upkeep_check)
   elseif force_general == "wh2_main_def_black_ark_blessed_dread" then
     return false;
     --gotrek doesn`t affect supply reserves but his army still increases upkeep
-  elseif force_general == "wh2_pro08_neu_gotrek" and not is_upkeep_check then
+  elseif no_balance_lords[force_general] == 1 and not is_upkeep_check then
     return false;
   elseif force:force_type():key() == "SUPPORT_ARMY" then
     return false;

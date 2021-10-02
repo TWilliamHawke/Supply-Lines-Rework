@@ -1013,7 +1013,24 @@ local SRW_Free_Units = {
     ["ovn_arb_mon_genie-arb_golden_magus"] = 1,
     ["ovn_ifreet-arb_golden_magus"] = 0,
     ["wh_main_arb_cav_magic_carpet_0-arb_golden_magus"] = 0,
-    
+  --ogres
+    ["wh2_twa05_ogr_cav_mournfang_cavalry_0-roy_ogr_tyrant"] = 3,
+    ["wh2_twa05_ogr_inf_maneaters_2-roy_ogr_tyrant"] = 2,
+    ["wh2_twa05_ogr_inf_maneaters_3-roy_ogr_tyrant"] = 2,
+    ["wh2_twa05_ogr_inf_ogres_0-roy_ogr_tyrant"] = 0,
+    ["wh2_twa05_ogr_inf_ogres_1-roy_ogr_tyrant"] = 0,
+    ["roy_ogr_inf_ironguts-roy_ogr_tyrant"] = 2,
+    ["roy_ogr_cav_sabretusk_pack-roy_ogr_tyrant"] = 0,
+    ["roy_snek_ogr_inf_leadbelchers_0-roy_ogr_tyrant"] = 2,
+    ["wh2_twa05_ogr_cav_mournfang_cavalry_0-roy_ogr_slaughtermaster"] = 3,
+    ["wh2_twa05_ogr_inf_maneaters_2-roy_ogr_slaughtermaster"] = 2,
+    ["wh2_twa05_ogr_inf_maneaters_3-roy_ogr_slaughtermaster"] = 2,
+    ["wh2_twa05_ogr_inf_ogres_0-roy_ogr_slaughtermaster"] = 0,
+    ["wh2_twa05_ogr_inf_ogres_1-roy_ogr_slaughtermaster"] = 0,
+    ["roy_ogr_inf_ironguts-roy_ogr_slaughtermaster"] = 2,
+    ["roy_ogr_cav_sabretusk_pack-roy_ogr_slaughtermaster"] = 0,
+    ["roy_snek_ogr_inf_leadbelchers_0-roy_ogr_slaughtermaster"] = 2,
+
     --Other LL
       -- dlc04_vmp_vlad_con_carstein
       --brt_louen_leoncouer

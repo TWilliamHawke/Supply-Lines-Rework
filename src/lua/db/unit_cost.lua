@@ -919,7 +919,7 @@ local SRW_Supply_Cost = {
     ["wh_pro04_brt_cav_questing_knights_ror_0"] = 2,
   --Hight Elves
     ["wh2_main_hef_cav_ellyrian_reavers_0"] = 0,
-    ["wh2_main_hef_cav_ellyrian_reavers_1"] = 0,
+    ["wh2_main_hef_cav_ellyrian_reavers_1"] = 1,
     ["wh2_main_hef_inf_spearmen_0"] = 0,
     ["wh2_dlc10_hef_inf_dryads_0"] = 0,
     ["wh2_dlc15_hef_inf_rangers_0"] = 0,
@@ -1250,6 +1250,9 @@ local SRW_Supply_Cost = {
     ["wh2_twa05_ogr_inf_maneaters_3"] = 3,
     ["wh2_twa05_ogr_inf_ogres_0"] = 1,
     ["wh2_twa05_ogr_inf_ogres_1"] = 1,
+    ["roy_ogr_inf_ironguts"] = 3,
+    ["roy_ogr_cav_sabretusk_pack"] = 1,
+    ["roy_snek_ogr_inf_leadbelchers_0"] = 3,
     
   --Southern Realms
     ["teb_duellists"] = 1,

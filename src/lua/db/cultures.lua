@@ -55,3 +55,10 @@ local supported_mods_prefix = {
   {"ui/units/icons/dec_lahmian.png", "deco-"}
   
 }
+
+local no_balance_lords = {
+  ["wh2_pro08_neu_gotrek"] = 1,
+  ["roy_ogr_tyrant"] = 1,
+  ["roy_ogr_slaughtermaster"] = 1,
+
+}
