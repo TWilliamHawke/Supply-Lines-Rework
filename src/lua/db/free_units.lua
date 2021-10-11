@@ -15,6 +15,7 @@ local SRW_Free_Units = {
     ["emp_inf_carroburg_greatswords_ror-emp_karl_franz"] = 1,
     ["Carroburg-emp_karl_franz"] = 1,
     ["CTT_emp_reiksfoot-emp_karl_franz"] = 0,
+    ["impfoot-emp_karl_franz"] = 0,
 
     ["wh2_dlc13_emp_inf_huntsmen_0-wh2_dlc13_emp_cha_markus_wulfhart_0"] = 0,
     ["wh2_dlc13_emp_inf_huntsmen_0_imperial_supply-wh2_dlc13_emp_cha_markus_wulfhart_0"] = 0,
@@ -321,6 +322,24 @@ local SRW_Free_Units = {
     ["Grundel-emp_edward_van_der_kraal"] = 0,
     ["Manann-emp_edward_van_der_kraal"] = 0,
     ["Teutogen-emp_edward_van_der_kraal"] = 1,
+    --Ulric
+    ["ulric_warriors-ulric_ar_ulric"] = 0,
+    ["ulric_warriors_gw-ulric_ar_ulric"] = 0,
+    ["ulric_elite_guard-ulric_ar_ulric"] = 0,
+    ["ulric_wolf_kin-ulric_ar_ulric"] = 0,
+    ["ulric_wolf_kin_gw-ulric_ar_ulric"] = 0,
+    ["ulric_wolf_kin_gw_ror-ulric_ar_ulric"] = 0,
+    ["ulric_warriors_ror-ulric_ar_ulric"] = 0,
+    ["ulric_hounds_ror-ulric_ar_ulric"] = 0,
+    ["wh_jmw_emp_inf_childrenullric_armoured-ulric_ar_ulric"] = 0,
+    ["wh_jmw_emp_inf_wolfkin-ulric_ar_ulric"] = 0,
+    ["wh_jmw_emp_inf_childrenullric-ulric_ar_ulric"] = 0,
+    ["Teutogen-ulric_ar_ulric"] = 1,
+    ["ulric_knight-ulric_ar_ulric"] = 0,
+    ["ulric_elite_knights-ulric_ar_ulric"] = 1,
+    ["ulric_knight-ulric_grandmaster"] = 0,
+    ["ulric_elite_knights-ulric_grandmaster"] = 1,
+
 
   
   --Dwarves

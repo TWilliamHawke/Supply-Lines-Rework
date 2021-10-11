@@ -11,6 +11,8 @@ local function set_unit_in_army_tooltip(component)
   if unit_number == "0" then return end;
   
   local index = tonumber(unit_number) + helpers.get_num_of_agents(unit_list)
+  if (index >= unit_list:num_items()) then return end;
+
   local unit = unit_list:item_at(index);
   if not unit then return end;
 

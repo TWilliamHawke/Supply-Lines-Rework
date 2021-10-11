@@ -11,6 +11,8 @@ local function set_agent_tooltip(component)
   if SRW_selected_character:has_military_force() then 
     local charlist = SRW_selected_character:military_force():character_list()
     local agent_number = component:Id():match("(%d+)")
+    if(tonumber(agent_number) >= charlist:num_items()) then return end;
+
     local character = charlist:item_at(tonumber(agent_number));
 
     if not character then return end;

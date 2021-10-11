@@ -2323,6 +2323,7 @@ local SRW_Supply_Cost = {
     ["mixu_skv_inf_skullsplinters"] = 4,
     ["mixu_skv_inf_mordrat_guard"] = 2,
     ["mixu_skv_mon_warp_runners"] = 2,
+    ["impfoot"] = 2,
     --plague
     ["cr_lzd_mon_coatl_0"] = 4,
     ["plb_skv_inf_scourge_sentinels"] = 2,
@@ -2345,6 +2346,18 @@ local SRW_Supply_Cost = {
     ["jvj_royal_war_hydra"] = 4,
     ["jvj_veteran_war_hydra"] = 4,
     ["jvj_spellthirster_hydra"] = 4,
+  --Cult of ulric
+    ["ulric_hounds"] = 0,
+    ["ulric_warriors"] = 1,
+    ["ulric_warriors_gw"] = 1,
+    ["ulric_elite_guard"] = 2,
+    ["ulric_wolf_kin"] = 1,
+    ["ulric_knight"] = 2,
+    ["ulric_wolf_kin_gw"] = 1,
+    ["ulric_wolf_kin_gw_ror"] = 2,
+    ["ulric_warriors_ror"] = 2,
+    ["ulric_hounds_ror"] = 1,
+    ["ulric_elite_knights"] = 3,
   --South Dwarfs
     --core
     ["engineer_land_mine"] = 0,

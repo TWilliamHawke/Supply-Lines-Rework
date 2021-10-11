@@ -102,6 +102,7 @@ local SRW_Lord_Group = {
   --Lost factions
     ["aky_chief_fimir_great_weapons"] = "Fimir",
     ["elo_chief_ugma"] = "Trololo",
+    ["ulric_grandmaster"] = "Ulric",
     
   
   }

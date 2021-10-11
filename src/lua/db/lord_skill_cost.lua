@@ -1,4 +1,17 @@
 local SRW_Lord_Skills_Cost = {
+  --EMPIRES
+    ["ulric_warriors-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
+    ["ulric_warriors_gw-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
+    ["ulric_elite_guard-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
+    ["ulric_wolf_kin-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
+    ["ulric_wolf_kin_gw-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
+    ["ulric_wolf_kin_gw_ror-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
+    ["ulric_warriors_ror-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
+    ["ulric_hounds_ror-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
+    ["wh_jmw_emp_inf_wolfkin-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
+    ["wh_jmw_emp_inf_childrenullric-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
+    ["Teutogen-Ulric"] = {"ulric_cult_of_ulric_stats", 1},
+
   --Vampire counts
     ["wh_main_vmp_mon_vargheists-Isabella"] = {"wh2_dlc11_skill_vmp_isabella_unique_5", 0},
     ["mixu_vmp_mon_vargheists-Isabella"] = {"wh2_dlc11_skill_vmp_isabella_unique_5", 0},
