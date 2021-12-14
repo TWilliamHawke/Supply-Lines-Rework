@@ -54,7 +54,7 @@ local SRW_Supply_Cost = {
     ["wh2_dlc13_huntmarshall_veh_obsinite_gyrocopter_0"] = 2,
     ["wh2_dlc13_emp_inf_spearmen_ror_0"] = 1,
     ["wh2_dlc13_emp_inf_swordsmen_ror_0"] = 1,
-    ["wh2_dlc13_emp_cav_outriders_ror_0"] = 1,
+    ["wh2_dlc13_emp_cav_outriders_ror_0"] = 2,
     ["wh2_dlc13_emp_cav_pistoliers_ror_0"] = 1,
     ["wh2_dlc13_emp_inf_crossbowmen_ror_0"] = 1,
     ["wh2_dlc13_emp_inf_halberdiers_ror_0"] = 1,
@@ -2346,7 +2346,12 @@ local SRW_Supply_Cost = {
     ["jvj_royal_war_hydra"] = 4,
     ["jvj_veteran_war_hydra"] = 4,
     ["jvj_spellthirster_hydra"] = 4,
-  --Cult of ulric
+    --melee shades
+    ["ahashra_cold_riders"] = 3,
+    ["snake_shade"] = 3,
+    ["hawk_shade"] = 2,
+    ["winter_shade"] = 3,
+    --Cult of ulric
     ["ulric_hounds"] = 0,
     ["ulric_warriors"] = 1,
     ["ulric_warriors_gw"] = 1,

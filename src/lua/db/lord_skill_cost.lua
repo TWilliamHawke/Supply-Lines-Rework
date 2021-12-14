@@ -1,16 +1,5 @@
 local SRW_Lord_Skills_Cost = {
   --EMPIRES
-    ["ulric_warriors-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
-    ["ulric_warriors_gw-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
-    ["ulric_elite_guard-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
-    ["ulric_wolf_kin-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
-    ["ulric_wolf_kin_gw-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
-    ["ulric_wolf_kin_gw_ror-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
-    ["ulric_warriors_ror-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
-    ["ulric_hounds_ror-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
-    ["wh_jmw_emp_inf_wolfkin-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
-    ["wh_jmw_emp_inf_childrenullric-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
-    ["Teutogen-Ulric"] = {"ulric_cult_of_ulric_stats", 1},
 
   --Vampire counts
     ["wh_main_vmp_mon_vargheists-Isabella"] = {"wh2_dlc11_skill_vmp_isabella_unique_5", 0},
@@ -247,6 +236,7 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_main_def_cav_cold_one_knights_0-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_cold_ones", 0},
     ["wh2_dlc14_def_cav_scourgerunner_chariot_ror_0-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_cold_ones", 2},
     ["wh2_dlc10_def_cav_knights_of_the_ebon_claw_ror_0-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_cold_ones", 2},
+    ["ahashra_cold_riders-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_cold_ones", 2},
     ["def_ebon-wh2_dlc14_def_malus_darkblade"] = {"wh2_dlc14_skill_def_beastmaster_cold_ones", 1},
     ["wh2_dlc14_def_mon_bloodwrack_medusa_0-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_medusas", 2},
     ["wh2_dlc14_def_veh_bloodwrack_shrine_0-BeastMaster"] = {"wh2_dlc14_skill_def_beastmaster_medusas", 2},
@@ -269,7 +259,11 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_main_def_cav_cold_one_knights_0-Rakarth"] = {"wh2_twa03_skill_def_rakarth_pack_hunters", 0},
     ["wh2_main_def_cav_cold_one_knights_1-Rakarth"] = {"wh2_twa03_skill_def_rakarth_pack_hunters", 1},
     ["wh2_dlc10_def_cav_knights_of_the_ebon_claw_ror_0-Rakarth"] = {"wh2_twa03_skill_def_rakarth_pack_hunters", 2},
-    
+    ["ahashra_cold_riders-Rakarth"] = {"wh2_twa03_skill_def_rakarth_pack_hunters", 2},
+    ["hawk_shade-Volilosh"] = {"volilosh_skill_rors", 1},
+    ["snake_shade-Volilosh"] = {"volilosh_skill_rors1", 2},
+    ["winter_shade-Volilosh"] = {"volilosh_skill_rors2", 2},
+
   --LizardMen
     ["wh2_main_lzd_inf_saurus_spearmen_0-Zaurus"] = {"wh2_main_skill_lzd_blessing_quetzl", 0},
     ["wh2_main_lzd_inf_saurus_warriors_0-Zaurus"] = {"wh2_main_skill_lzd_blessing_quetzl", 0},
@@ -489,6 +483,18 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_dlc11_cst_cav_deck_droppers_ror_0-Noctil"] = {"wh2_dlc11_skill_cst_noctilus_unique_4", 0},
     ["wh2_dlc11_cst_mon_terrorgheist-Noctil"] = {"wh2_dlc11_skill_cst_noctilus_unique_4", 1},
   --Empire
+    ["ulric_warriors-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
+    ["ulric_warriors_gw-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
+    ["ulric_elite_guard-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
+    ["ulric_wolf_kin-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
+    ["ulric_wolf_kin_gw-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
+    ["ulric_wolf_kin_gw_ror-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
+    ["ulric_warriors_ror-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
+    ["ulric_hounds_ror-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
+    ["wh_jmw_emp_inf_wolfkin-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
+    ["wh_jmw_emp_inf_childrenullric-Ulric"] = {"ulric_cult_of_ulric_stats", 0},
+    ["Teutogen-Ulric"] = {"ulric_cult_of_ulric_stats", 1},
+
     ["wh2_dlc13_emp_cav_outriders_ror_0-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 0},
     ["wh2_dlc13_emp_cav_pistoliers_ror_0-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 0},
     ["wh_main_emp_cav_outriders_0-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 0},
@@ -601,9 +607,8 @@ local SRW_Lord_Skills_Cost = {
     ["wh_main_wis_inf_halberdiers-Hunter"] = {"wh2_dlc13_skill_emp_hunts_marshal_unique_0", 0},
     ["wh_main_sol_inf_halberdiers-Hunter"] = {"wh2_dlc13_skill_emp_hunts_marshal_unique_0", 0},
     ["wh_main_hun_inf_halberdiers-Hunter"] = {"wh2_dlc13_skill_emp_hunts_marshal_unique_0", 0},
+
     --Kurt Helborg from swords of empire
-    --["emp_inf_reiksguard_halberdiers-Helborg"] = {"skill_emp_lord_unique_campaign_kurt_helborg_for_emperor", 0},
-    --["emp_inf_reiksguard_great-Helborg"] = {"skill_emp_lord_unique_campaign_kurt_helborg_for_emperor", 1},
     ["wh_main_emp_inf_greatswords-Helborg"] = {"skill_emp_lord_unique_campaign_kurt_helborg_for_emperor", 0},
     ["wh2_dlc13_emp_inf_greatswords_imperial_supply-Helborg"] = {"skill_emp_lord_unique_campaign_kurt_helborg_for_emperor", 0},
     ["wh2_dlc13_emp_inf_greatswords_ror_0-Helborg"] = {"skill_emp_lord_unique_campaign_kurt_helborg_for_emperor", 0},
@@ -664,6 +669,7 @@ local SRW_Lord_Skills_Cost = {
     ["wh2_mixu_emp_ror_knights_of_the_black_rose-Helborg"] = {"skill_emp_lord_unique_campaign_kurt_helborg_grand_order", 1},
     ["emp_inf_reiksguard_great-Helborg"] = {"skill_emp_lord_unique_campaign_kurt_helborg_grand_order", 1},
     ["emp_cav_reiksguard_inner_circle-Helborg"] = {"skill_emp_lord_unique_campaign_kurt_helborg_grand_order", 2},
+    ["impfoot-Helborg"] = {"skill_emp_lord_unique_campaign_kurt_helborg_grand_order", 0},
 
   --Greenskin
     -- ["wh_main_grn_inf_night_goblins-Goblin"] = {"wh_dlc06_skill_grn_lord_battle_ard_ladz", 0},

@@ -29,6 +29,7 @@ local SRW_Lord_Group = {
     ["wh2_twa03_def_rakarth"] = "Rakarth",
     ["wh2_dlc14_def_high_beastmaster"] = "BeastMaster",
     ["AK_aislinn"] = "Seaguard",
+    ["volilosh"] = "Volilosh",
   --lizards
     ["wh2_main_lzd_saurus_old_blood"] = "Zaurus",
     ["wh2_main_lzd_kroq_gar"] = "Zaurus",
@@ -40,7 +41,6 @@ local SRW_Lord_Group = {
     ["wh2_dlc13_lzd_kroxigor_ancient_horde"] = "Kroxi",
     ["wh2_dlc12_lzd_tehenhauin"] = "Tehen",
     ["wh2_dlc17_lzd_oxyotl"] = "Oxyotl",
-    
   --skv
     ["wh2_dlc09_skv_tretch_craventail"] = "Tretch",
     ["wh2_dlc12_skv_ikit_claw"] = "Ikit",

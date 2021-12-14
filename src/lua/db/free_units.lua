@@ -691,6 +691,7 @@ local SRW_Free_Units = {
     ["wh2_main_def_cav_cold_one_knights_1-wh2_dlc14_def_malus_darkblade"] = 0,
     ["wh2_dlc10_def_cav_knights_of_the_ebon_claw_ror_0-wh2_dlc14_def_malus_darkblade"] = 1,
     ["def_ebon-wh2_dlc14_def_malus_darkblade"] = 0, --co kni
+    ["ahashra_cold_riders-wh2_dlc14_def_malus_darkblade"] = 1,
     --mixu
     ["wh2_main_def_inf_witch_elves_0-def_tullaris_dreadbringer"] = 0,
     ["wh2_main_def_inf_har_ganeth_executioners_0-def_tullaris_dreadbringer"] = 1,
@@ -721,6 +722,17 @@ local SRW_Free_Units = {
     ["jvj_veteran_war_hydra-wh2_twa03_def_rakarth"] = 2,
     ["jvj_spellthirster_hydra-wh2_twa03_def_rakarth"] = 2,
     ["cr_bst_mon_preyton_0-wh2_twa03_def_rakarth"] = 1,
+    --voli
+    ["wh2_dlc10_def_inf_the_hellebronai_ror_0-wh2_main_def_malekith"] = 0,
+    ["wh2_main_def_inf_darkshards_0-wh2_main_def_malekith"] = 0,
+    ["wh2_main_def_inf_darkshards_1-wh2_main_def_malekith"] = 0,
+    ["wh2_dlc10_def_inf_the_bolt_fiends_ror_0-wh2_main_def_malekith"] = 0,
+    ["def_rime-wh2_main_def_malekith"] = 0, --shard
+    ["def_soul-wh2_main_def_malekith"] = 0, --sword
+    ["voiceless_ones-wh2_main_def_malekith"] = 0, --spear
+    ["wh2_main_def_inf_shades_0-volilosh"] = 0,
+    ["wh2_main_def_inf_shades_1-volilosh"] = 1,
+    ["wh2_main_def_inf_shades_2-volilosh"] = 1,
 
   --Lizardmen
     ["wh2_main_lzd_cav_cold_ones_1-wh2_main_lzd_kroq_gar"] = 0,

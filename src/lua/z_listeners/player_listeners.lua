@@ -12,10 +12,10 @@ core:add_listener(
   -- true,
   function(context) 
     local faction = context:faction();
-      SRWLOG("======================");
-      SRWLOG("APPLY UPKEEP (TURN START)");
-      srw_apply_upkeep_penalty(faction);
-      calculate_supply_balance(faction);
+    SRWLOG("======================");
+    SRWLOG("APPLY UPKEEP (TURN START)");
+    srw_apply_upkeep_penalty(faction);
+    calculate_supply_balance(faction);
   end,
   true
 );
@@ -30,9 +30,13 @@ core:add_listener(
   -- true,
   function(context) 
     local faction = context:faction();
-      SRWLOG("======================");
-      SRWLOG("APPLY UPKEEP (TURN END)");
-      srw_apply_upkeep_penalty(faction);
+    SRWLOG("======================");
+    SRWLOG("APPLY UPKEEP (TURN END)");
+    srw_apply_upkeep_penalty(faction);
+
+    if enable_logging_debug then
+      SRWNEWLOG()
+    end;
   end,
   true
 );
