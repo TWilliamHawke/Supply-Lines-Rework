@@ -1,6 +1,6 @@
 local SRW_Free_Units = {
   --Empire
-
+    ["emp_foot_knight-emp_karl_franz"] = 0,  --reiks
     ["wh_main_emp_cav_reiksguard-emp_karl_franz"] = 0,
     ["wh2_dlc13_emp_cav_reiksguard_imperial_supply-emp_karl_franz"] = 0,
     ["emp_inf_reiksguard-emp_karl_franz"] = 0,
@@ -22,6 +22,11 @@ local SRW_Free_Units = {
     ["wh2_dlc13_emp_inf_huntsmen_ror_0-wh2_dlc13_emp_cha_markus_wulfhart_0"] = 0,
     ["wh2_dlc13_emp_inf_archers_ror_0-wh2_dlc13_emp_cha_markus_wulfhart_0"] = 0,
 
+    ["wh2_dlc13_emp_inf_huntsmen_0-emp_alberich_haupt_anderssen"] = 0,
+    ["wh2_dlc13_emp_inf_huntsmen_0_imperial_supply-emp_alberich_haupt_anderssen"] = 0,
+    ["wh2_dlc13_emp_inf_huntsmen_ror_0-emp_alberich_haupt_anderssen"] = 0,
+    ["wh2_dlc13_emp_inf_archers_ror_0-emp_alberich_haupt_anderssen"] = 0,
+
     ["wh2_dlc13_emp_veh_war_wagon_ror_0-emp_balthasar_gelt"] = 3,
     ["wh2_dlc13_emp_art_great_cannon_imperial_supply-emp_balthasar_gelt"] = 2,
     ["wh2_dlc13_emp_art_helblaster_volley_gun_imperial_supply-emp_balthasar_gelt"] = 2,
@@ -37,6 +42,10 @@ local SRW_Free_Units = {
     ["wh2_dlc13_emp_veh_war_wagon_1-emp_balthasar_gelt"] = 2,
     ["wh_main_emp_art_galloper_gun-emp_balthasar_gelt"] = 2,
     ["wh_main_emp_veh_galloper_gun-emp_balthasar_gelt"] = 2,
+    ["snek_empire_artillery_guided_missile"] = 2,
+    ["snek_empire_artillery_siege_bombard"] = 2,
+    ["snek_empire_guns_bombardier_main"] = 2, -- art
+
 
     ["wh_main_emp_cav_empire_knights-dlc04_emp_volkmar"] = 0,
     ["wh_dlc04_emp_inf_stirlands_revenge_0-dlc04_emp_volkmar"] = 0,
@@ -153,6 +162,41 @@ local SRW_Free_Units = {
     ["wh_main_hun_art_helstorm_rocket_battery-emp_balthasar_gelt"] = 3,
 
   --mixu emp
+    ["wh_dlc04_emp_inf_stirlands_revenge_0-emp_theoderic_gausser"] = 0,
+    ["wh_main_emp_cav_reiksguard-emp_wolfram_hertwig"] = 0,
+    ["wh_main_emp_cav_empire_knights-emp_wolfram_hertwig"] = 0,
+    ["wh_main_mid_cav_empire_knights-emp_wolfram_hertwig"] = 0,
+    ["wh_main_avr_cav_empire_knights-emp_wolfram_hertwig"] = 0,
+    ["wh_main_rek_cav_empire_knights-emp_wolfram_hertwig"] = 0,
+    ["wh_main_hoc_cav_empire_knights-emp_wolfram_hertwig"] = 0,
+    ["wh_main_mbg_cav_empire_knights-emp_wolfram_hertwig"] = 0,
+    ["wh_main_nod_cav_empire_knights-emp_wolfram_hertwig"] = 0,
+    ["wh_main_osl_cav_empire_knights-emp_wolfram_hertwig"] = 0,
+    ["wh_main_osm_cav_empire_knights-emp_wolfram_hertwig"] = 0,
+    ["wh_main_str_cav_empire_knights-emp_wolfram_hertwig"] = 0,
+    ["wh_main_tab_cav_empire_knights-emp_wolfram_hertwig"] = 0,
+    ["wh_main_wis_cav_empire_knights-emp_wolfram_hertwig"] = 0,
+    ["wh_main_sol_cav_empire_knights-emp_wolfram_hertwig"] = 0,
+    ["wh_main_hun_cav_empire_knights-emp_wolfram_hertwig"] = 0,
+    ["wh_dlc04_emp_cav_zintlers_reiksguard_0-emp_wolfram_hertwig"] = 0,
+    ["wh_dlc04_emp_cav_knights_blazing_sun_0-emp_wolfram_hertwig"] = 0,
+    ["wh2_dlc13_emp_cav_empire_knights_ror_0-emp_wolfram_hertwig"] = 0,
+    ["wh2_dlc13_emp_cav_empire_knights_ror_1-emp_wolfram_hertwig"] = 0,
+    ["wh2_dlc13_emp_cav_empire_knights_ror_2-emp_wolfram_hertwig"] = 0,
+    ["emp_blazing-emp_wolfram_hertwig"] = 1,  --blazing
+    ["wh2_dlc13_emp_cav_reiksguard_imperial_supply-emp_wolfram_hertwig"] = 0,
+    ["wh2_dlc13_emp_cav_empire_knights_imperial_supply-emp_wolfram_hertwig"] = 0,
+    ["wh2_dlc13_emp_cav_knights_blazing_sun_0_imperial_supply-emp_wolfram_hertwig"] = 0,
+    ["wh_main_emp_cav_reiksguard-emp_wolfram_hertwig"] = 0,
+    ["wh2_dlc13_emp_cav_reiksguard_imperial_supply-emp_wolfram_hertwig"] = 0,
+    ["emp_inf_reiksguard-emp_wolfram_hertwig"] = 0,
+    ["emp_inf_reiksguard_halberdiers-emp_wolfram_hertwig"] = 0,
+    ["emp_foot_knight-emp_wolfram_hertwig"] = 0,  --reiks
+    ["wh_dlc04_emp_cav_zintlers_reiksguard_0-emp_wolfram_hertwig"] = 1,
+    ["wh2_mixu_emp_ror_knights_of_the_black_rose-emp_wolfram_hertwig"] = 1,
+    ["emp_inf_reiksguard_great-emp_wolfram_hertwig"] = 1,
+    ["emp_cav_reiksguard_inner_circle-emp_wolfram_hertwig"] = 2,
+
     ["wh_main_emp_cav_reiksguard-emp_marius_leitdorf"] = 0,
     ["wh_main_emp_cav_empire_knights-emp_marius_leitdorf"] = 0,
     ["wh_main_mid_cav_empire_knights-emp_marius_leitdorf"] = 0,
@@ -173,6 +217,7 @@ local SRW_Free_Units = {
     ["wh2_dlc13_emp_cav_empire_knights_ror_0-emp_marius_leitdorf"] = 0,
     ["wh2_dlc13_emp_cav_empire_knights_ror_1-emp_marius_leitdorf"] = 0,
     ["wh2_dlc13_emp_cav_empire_knights_ror_2-emp_marius_leitdorf"] = 0,
+    ["emp_blazing-emp_marius_leitdorf"] = 1,  --blazing
     ["wh2_dlc13_emp_cav_reiksguard_imperial_supply-emp_marius_leitdorf"] = 0,
     ["wh2_dlc13_emp_cav_empire_knights_imperial_supply-emp_marius_leitdorf"] = 0,
     ["wh2_dlc13_emp_cav_knights_blazing_sun_0_imperial_supply-emp_marius_leitdorf"] = 0,
@@ -194,6 +239,18 @@ local SRW_Free_Units = {
     ["wh_main_wis_inf_handgunners-emp_aldebrand_ludenhof"] = 0,
     ["wh_main_sol_inf_handgunners-emp_aldebrand_ludenhof"] = 0,
     ["wh_main_hun_inf_handgunners-emp_aldebrand_ludenhof"] = 0,
+    ["snek_empire_guns_ersatzsolder-emp_aldebrand_ludenhof"] = 0,
+    ["snek_empire_guns_forstjaeger_main-emp_aldebrand_ludenhof"] = 0,
+    ["snek_empire_guns_jaeger_main-emp_aldebrand_ludenhof"] = 0,
+    ["snek_empire_guns_bergjaeger_main-emp_aldebrand_ludenhof"] = 0,
+    ["snek_empire_guns_riflemen_main-emp_aldebrand_ludenhof"] = 0,
+    ["snek_empire_guns_shotgunners_main-emp_aldebrand_ludenhof"] = 0,
+    ["snek_empire_guns_landesturm_main-emp_aldebrand_ludenhof"] = 1,
+    ["snek_empire_guns_grenadier_main-emp_aldebrand_ludenhof"] = 1,
+    ["snek_empire_guns_jaegarkorps_main-emp_aldebrand_ludenhof"] = 1,
+    ["snek_empire_guns_riflemen_main_ror-emp_aldebrand_ludenhof"] = 1,
+    ["snek_empire_guns_shotgunner_main_ror-emp_aldebrand_ludenhof"] = 1,
+    --state troops
     ["wh_dlc04_emp_inf_silver_bullets_0-dlc03_emp_boris_todbringer"] = 0,
     ["wh_main_emp_inf_halberdiers-dlc03_emp_boris_todbringer"] = 0,
     ["wh2_dlc13_emp_inf_halberdiers_imperial_supply-dlc03_emp_boris_todbringer"] = 0,
@@ -233,43 +290,11 @@ local SRW_Free_Units = {
     ["wh2_dlc13_emp_inf_halberdiers_ror_0-emp_valmir_von_raukov"] = 0,
     ["wh2_dlc13_emp_inf_halberdiers_imperial_supply-emp_valmir_von_raukov"] = 0,
     ["CTT_emp_halberdiers_reg-emp_valmir_von_raukov"] = 0,
-    ["wh2_dlc13_emp_cav_demigryph_knights_0_imperial_supply-emp_helmut_feuerbach"] = 2,
-    ["wh2_dlc13_emp_cav_demigryph_knights_1_imperial_supply-emp_helmut_feuerbach"] = 2,
-    ["wh2_dlc13_emp_veh_steam_tank_imperial_supply-emp_helmut_feuerbach"] = 2,
-    ["wh_main_emp_cav_demigryph_knights_0-emp_helmut_feuerbach"] = 2,
-    ["wh_main_emp_cav_demigryph_knights_1-emp_helmut_feuerbach"] = 2,
-    ["wh_main_mid_cav_demigryph_knights_0-emp_helmut_feuerbach"] = 2,
-    ["wh_main_avr_cav_demigryph_knights_0-emp_helmut_feuerbach"] = 2,
-    ["wh_main_rek_cav_demigryph_knights_0-emp_helmut_feuerbach"] = 2,
-    ["wh_main_hoc_cav_demigryph_knights_0-emp_helmut_feuerbach"] = 2,
-    ["wh_main_mbg_cav_demigryph_knights_0-emp_helmut_feuerbach"] = 2,
-    ["wh_main_nod_cav_demigryph_knights_0-emp_helmut_feuerbach"] = 2,
-    ["wh_main_osl_cav_demigryph_knights_0-emp_helmut_feuerbach"] = 2,
-    ["wh_main_osm_cav_demigryph_knights_0-emp_helmut_feuerbach"] = 2,
-    ["wh_main_str_cav_demigryph_knights_0-emp_helmut_feuerbach"] = 2,
-    ["wh_main_tab_cav_demigryph_knights_0-emp_helmut_feuerbach"] = 2,
-    ["wh_main_wis_cav_demigryph_knights_0-emp_helmut_feuerbach"] = 2,
-    ["wh_main_sol_cav_demigryph_knights_0-emp_helmut_feuerbach"] = 2,
-    ["wh_main_hun_cav_demigryph_knights_0-emp_helmut_feuerbach"] = 2,
-    ["wh_main_mid_cav_demigryph_knights_1-emp_helmut_feuerbach"] = 2,
-    ["wh_main_avr_cav_demigryph_knights_1-emp_helmut_feuerbach"] = 2,
-    ["wh_main_rek_cav_demigryph_knights_1-emp_helmut_feuerbach"] = 2,
-    ["wh_main_hoc_cav_demigryph_knights_1-emp_helmut_feuerbach"] = 2,
-    ["wh_main_mbg_cav_demigryph_knights_1-emp_helmut_feuerbach"] = 2,
-    ["wh_main_nod_cav_demigryph_knights_1-emp_helmut_feuerbach"] = 2,
-    ["wh_main_osl_cav_demigryph_knights_1-emp_helmut_feuerbach"] = 2,
-    ["wh_main_osm_cav_demigryph_knights_1-emp_helmut_feuerbach"] = 2,
-    ["wh_main_str_cav_demigryph_knights_1-emp_helmut_feuerbach"] = 2,
-    ["wh_main_tab_cav_demigryph_knights_1-emp_helmut_feuerbach"] = 2,
-    ["wh_main_wis_cav_demigryph_knights_1-emp_helmut_feuerbach"] = 2,
-    ["wh_main_sol_cav_demigryph_knights_1-emp_helmut_feuerbach"] = 2,
-    ["wh_main_hun_cav_demigryph_knights_1-emp_helmut_feuerbach"] = 2,
-    ["wh_jmw_emp_cav_demigryph_kgriff-emp_helmut_feuerbach"] = 2,
-    ["wh_jmw_emp_cav_demigryph_kgriff_hell-emp_helmut_feuerbach"] = 2,
-    ["wh_jmw_emp_cav_demigryph_taalsf-emp_helmut_feuerbach"] = 2,
-    ["wh_jmw_emp_cav_demigryph_taalsf_hell-emp_helmut_feuerbach"] = 2,
+
     ["wh2_mixu_emp_ror_knights_of_taals_fury-emp_helmut_feuerbach"] = 3,
-    ["wh_dlc04_emp_cav_royal_altdorf_gryphites_0-emp_helmut_feuerbach"] = 3,
+    ["mixu_emp_inf_celebrants-emp_helmut_feuerbach"] = 0,
+    ["mixu_emp_inf_horned_hunters-emp_helmut_feuerbach"] = 0,
+    ["mixu_emp_cav_daughters_of_rhya-emp_helmut_feuerbach"] = 0,
     --art
     ["wh2_dlc13_emp_art_great_cannon_imperial_supply-mixu_elspeth_von_draken"] = 1,
     ["wh2_dlc13_emp_art_helblaster_volley_gun_imperial_supply-mixu_elspeth_von_draken"] = 1,
@@ -283,6 +308,9 @@ local SRW_Free_Units = {
     ["wh_dlc04_emp_art_sunmaker_0-mixu_elspeth_von_draken"] = 1,
     ["wh2_dlc13_emp_veh_war_wagon_1_imperial_supply-mixu_elspeth_von_draken"] = 1,
     ["wh2_dlc13_emp_veh_war_wagon_1-mixu_elspeth_von_draken"] = 1,
+    ["snek_empire_artillery_guided_missile-mixu_elspeth_von_draken"] = 1,
+    ["snek_empire_artillery_siege_bombard-mixu_elspeth_von_draken"] = 1,
+    ["snek_empire_guns_bombardier_main-mixu_elspeth_von_draken"] = 1, -- art
     --rors
     ["wh2_dlc13_emp_inf_huntsmen_ror_0-emp_edward_van_der_kraal"] = 0,
     ["wh2_dlc13_emp_inf_archers_ror_0-emp_edward_van_der_kraal"] = 0,
@@ -352,8 +380,12 @@ local SRW_Free_Units = {
     ["wh_main_dwf_inf_slayers_grey_supply-dwf_ungrim_ironfist"] = 0,
     ["elo_dwf_inf_giant_slayers-dwf_ungrim_ironfist"] = 0,
     ["wh2_dwf_inf_giant_slayers_grey_supply-dwf_ungrim_ironfist"] = 0,
+    ["hunt_dwf_slayer_pirates_0-dwf_ungrim_ironfist"] = 0,
+    ["dwf_drg_slayer--dwf_ungrim_ironfist"] = 1,
+    ["dwf_dragon_slayer--dwf_ungrim_ironfist"] = 1,
+
     --thorgrim
-    ["wh_main_dwf_inf_hammerers-dwf_thorgrim_grudgebearer"] = 0,
+    ["wh_main_dwf_inf_hammerers-dwf_thorgrim_grudgebearer"] = 1,
     ["wh_main_dwf_inf_longbeards-dwf_thorgrim_grudgebearer"] = 0,
     ["wh_main_dwf_inf_longbeards_1-dwf_thorgrim_grudgebearer"] = 0,
     ["wh_dlc06_dwf_inf_old_grumblers_0-dwf_thorgrim_grudgebearer"] = 1,
@@ -368,6 +400,7 @@ local SRW_Free_Units = {
     ["wh_dlc06_dwf_art_bolt_thrower_0-wh2_dlc17_dwf_thorek"] = 0,
     ["wh_main_dwf_art_grudge_thrower-wh2_dlc17_dwf_thorek"] = 1,
     ["wh_dlc06_dwf_art_gob_lobber_0-wh2_dlc17_dwf_thorek"] = 2,
+    ["dwf_xbox_fire-wh2_dlc17_dwf_thorek"] = 0, --qua
 
     --mods
     ["wh_main_dwf_inf_ironbreakers-dwf_kazador_dragonslayer"] = 2,
@@ -385,6 +418,33 @@ local SRW_Free_Units = {
     ["wh_main_dwf_veh_gyrocopter_1-wh_main_dwf_cha_greybeard"] = 0,
     ["cody_dwf_veh_thunderbarge_0-wh_main_dwf_cha_greybeard"] = 2,
     ["cody_dwf_veh_thunderbarge_ror-wh_main_dwf_cha_greybeard"] = 3,
+    --
+    ["wh_main_dwf_inf_dwarf_warrior_0-dwf_sven_hasselfriesian"] = 0,
+    ["wh_main_dwf_inf_dwarf_warrior_1-dwf_sven_hasselfriesian"] = 0,
+    ["wh_dlc06_dwf_inf_warriors_dragonfire_pass_0-dwf_sven_hasselfriesian"] = 0,
+    ["wh_dlc06_dwf_art_bolt_thrower_0-dwf_sven_hasselfriesian"] = 0,
+    ["wh_main_dwf_art_grudge_thrower-dwf_sven_hasselfriesian"] = 1,
+    ["wh_dlc06_dwf_art_gob_lobber_0-dwf_sven_hasselfriesian"] = 2,
+    ["wh_main_dwf_art_cannon-dwf_sven_hasselfriesian"] = 1,
+    ["wh_main_dwf_art_flame_cannon-dwf_sven_hasselfriesian"] = 1,
+    ["wh_main_dwf_art_organ_gun-dwf_sven_hasselfriesian"] = 1,
+    
+    ["wh_main_dwf_inf_longbeards-dwf_alrik_ranulfsson"] = 0,
+    ["wh_main_dwf_inf_longbeards_1-dwf_alrik_ranulfsson"] = 0,
+    ["wh_dlc06_dwf_inf_old_grumblers_0-dwf_alrik_ranulfsson"] = 1,
+    ["wh_main_dwf_inf_longbeards_1_grey_supply-dwf_alrik_ranulfsson"] = 0,
+    ["wh_main_dwf_inf_longbeards_grey_supply-dwf_alrik_ranulfsson"] = 0,
+    --
+    ["wh_main_dwf_art_flame_cannon-dwf_brokk_ironpick"] = 1,
+    ["wh_main_dwf_inf_irondrakes_0-dwf_brokk_ironpick"] = 1,
+    ["wh_main_dwf_inf_irondrakes_2-dwf_brokk_ironpick"] = 1,
+    ["wh_main_dwf_veh_gyrobomber-dwf_brokk_ironpick"] = 0,
+    ["wh_main_dwf_veh_gyrocopter_0-dwf_brokk_ironpick"] = 0,
+    ["wh_main_dwf_veh_gyrocopter_1-dwf_brokk_ironpick"] = 0,
+    ["wh_dlc06_dwf_veh_skyhammer_0-dwf_brokk_ironpick"] = 1,
+
+    ["wh_dlc06_dwf_inf_norgrimlings_ironbreakers_0-dwf_rorek_granitehand"] = 3,
+    ["wh_main_dwf_inf_ironbreakers-dwf_rorek_granitehand"] = 2,
 
   --Vampire Counts
     ["wh_dlc04_vmp_inf_sternsmen_0-vmp_mannfred_von_carstein"] = 1,
@@ -393,6 +453,9 @@ local SRW_Free_Units = {
     ["wh_main_vmp_cav_black_knights_0-vmp_mannfred_von_carstein"] = 0,
     ["wh_main_vmp_cav_black_knights_3-vmp_mannfred_von_carstein"] = 0,
     ["wh_dlc04_vmp_cav_vereks_reavers_0-vmp_mannfred_von_carstein"] = 1,
+    ["vmp_dismounted_sword-vmp_mannfred_von_carstein"] = 1, --grave
+    ["vmp_mounted_sword-vmp_mannfred_von_carstein"] = 1, --black
+    ["vmp_vampiress-pro02_vmp_isabella_von_carstein"] = 2, --bella
     ["dec_hell_knights-vmp_mannfred_von_carstein"] = 1,
     ["vmp_mousillon_unit_black_knights_hellsteed"] = 0,
     ["ror_vamp_doomr-vmp_mannfred_von_carstein"] = 0, -- black kn
@@ -408,9 +471,16 @@ local SRW_Free_Units = {
     ["wh_main_grn_inf_orc_big_uns-grn_grimgor_ironhide"] = 0,
     ["wh_main_grn_cav_orc_boar_boy_big_uns-grn_grimgor_ironhide"] = 0,
     ["wh_dlc06_grn_inf_krimson_killerz_0-grn_grimgor_ironhide"] = 1,
+    ["grn_black_orc_shields-grn_grimgor_ironhide"] = 0,
+    ["grn_inf_black_orc_shields-grn_grimgor_ironhide"] = 0,
+    ["grn_inf_black_orc_dual-grn_grimgor_ironhide"] = 0,
+    ["ws_grn_inf_da_immortulz-grn_grimgor_ironhide"] = 1,
+    ["Drillaz-grn_grimgor_ironhide"] = 1, -- bl orcs
+    ["grn_bonebreakers-grn_grimgor_ironhide"] = 1, --bl orcs
+    ["wh_dlc06_grn_cav_broken_tusks_mob_0-grn_grimgor_ironhide"] = 0,
+
     ["wh2_dlc15_grn_mon_wyvern_waaagh_0-grn_azhag_the_slaughterer"] = 1,
     ["ovn_troll_mon_wyvern-grn_azhag_the_slaughterer"] = 0,
-
     -- ["wh_main_grn_inf_night_goblins-dlc06_grn_skarsnik"] = 0,
     ["wh_dlc06_grn_inf_da_warlords_boyz_0-dlc06_grn_skarsnik"] = 0,
     ["wh_main_grn_inf_night_goblin_archers-dlc06_grn_skarsnik"] = 0,
@@ -420,7 +490,6 @@ local SRW_Free_Units = {
     ["wh_dlc06_grn_inf_da_eight_peaks_loonies_0-dlc06_grn_skarsnik"] = 0,
     ["wh_main_grn_inf_savage_orc_big_uns-dlc06_grn_wurrzag_da_great_prophet"] = 0,
     ["wh_main_grn_cav_savage_orc_boar_boy_big_uns-dlc06_grn_wurrzag_da_great_prophet"] = 0,
-    ["grn_black_orc_shields-grn_grimgor_ironhide"] = 0,
     ["wh2_dlc15_grn_veh_snotling_pump_wagon_flappas_0-wh2_dlc15_grn_grom_the_paunch"] = 0,
     ["wh2_dlc15_grn_veh_snotling_pump_wagon_roller_0-wh2_dlc15_grn_grom_the_paunch"] = 0,
     ["wh_main_grn_cav_orc_boar_chariot-wh2_dlc15_grn_grom_the_paunch"] = 0,
@@ -447,10 +516,7 @@ local SRW_Free_Units = {
 
     --extended
     ["goblin_boss-dlc06_grn_skarsnik"] = 0,
-    ["grn_inf_black_orc_shields-grn_grimgor_ironhide"] = 0,
-    ["grn_inf_black_orc_dual-grn_grimgor_ironhide"] = 0,
     ["grn_big_uns_shields-grn_azhag_the_slaughterer"] = 0,
-    ["ws_grn_inf_da_immortulz-grn_grimgor_ironhide"] = 1,
     ["wh2_dlc15_grn_mon_feral_hydra_waaagh_0-ws_grn_grak_beastbasha"] = 1,
     ["wh2_dlc15_grn_mon_river_trolls_0-ws_grn_grak_beastbasha"] = 0,
     ["wh2_dlc15_grn_mon_river_trolls_ror_0-ws_grn_grak_beastbasha"] = 0,
@@ -473,8 +539,10 @@ local SRW_Free_Units = {
     ["Stabba_Stickpokers-dlc06_grn_skarsnik"] = 0, --ni gobb
     ["Grokkamobs-grn_gorfang_rotgut"] = 0, --savage boars
     ["Grokkamobs-dlc06_grn_wurrzag_da_great_prophet"] = 0, --savage boars
-    ["Drillaz-grn_grimgor_ironhide"] = 1, -- bl orcs
-    ["grn_bonebreakers-grn_grimgor_ironhide"] = 1, --bl orcs
+    --gorbad
+    ["wh_main_grn_inf_orc_big_uns-grn_gorbad_ironclaw"] = 0,
+    ["wh_main_grn_cav_orc_boar_boy_big_uns-grn_gorbad_ironclaw"] = 0,
+    ["wh_dlc06_grn_cav_broken_tusks_mob_0-grn_gorbad_ironclaw"] = 0,
 
   --Wood Elves
     ["wh_dlc05_wef_cav_wild_riders_0-dlc05_wef_orion"] = 0,
@@ -497,9 +565,11 @@ local SRW_Free_Units = {
     ["cr_wef_mon_bowtreeman_0-dlc05_wef_durthu"] = 2,
     ["ror_we_willow-dlc05_wef_durthu"] = 0, --dryad
     ["du_war-dlc05_wef_durthu"] = 2, --treeman
+    ["wef_tree_warrior-dlc05_wef_durthu"] = 2, --tree
     -- ["wh_dlc05_wef_cav_hawk_riders_0-wef_naieth_the_prophetess"] = 0,
     -- ["wh_dlc05_wef_mon_great_eagle_0-wef_naieth_the_prophetess"] = 0,
     -- ["wh_dlc05_wef_cav_sisters_thorn_0-wef_naieth_the_prophetess"] = 0,
+    --
     ["wh_dlc05_wef_inf_glade_guard_0-wef_daith"] = 0,
     ["wh_dlc05_wef_inf_glade_guard_1-wef_daith"] = 0,
     ["wh_dlc05_wef_inf_glade_guard_1_qb-wef_daith"] = 0,
@@ -593,8 +663,12 @@ local SRW_Free_Units = {
     ["wh2_dlc10_hef_inf_the_grey_ror_0-wh2_dlc10_hef_alith_anar"] = 0,
     ["wh2_main_hef_inf_white_lions_of_chrace_0-wh2_main_hef_prince_alastar"] = 0,
     ["wh2_dlc10_hef_inf_the_silverpelts_ror_0-wh2_main_hef_prince_alastar"] = 0,
+    ["hef_lion_guards-wh2_main_hef_prince_alastar"] = 0,
     ["wh2_dlc10_hef_inf_sisters_of_avelorn_0-wh2_dlc10_hef_alarielle"] = 2,
     ["wh2_dlc10_hef_inf_everqueens_court_guards_ror_0-wh2_dlc10_hef_alarielle"] = 3,
+    ["hef_sisters-wh2_dlc10_hef_alarielle"] = 1,
+    ["hef_handmaidens-wh2_dlc10_hef_alarielle"] = 1,
+
     ["wh2_dlc15_hef_mon_war_lions_of_chrace_0-wh2_main_hef_prince_alastar"] = 0,
     ["wh2_dlc15_hef_veh_lion_chariot_of_chrace_0-wh2_main_hef_prince_alastar"] = 0,
     ["wh2_dlc15_hef_mon_war_lions_of_chrace_ror_0-wh2_main_hef_prince_alastar"] = 0,
@@ -675,6 +749,7 @@ local SRW_Free_Units = {
     ["def_rime-wh2_main_def_malekith"] = 0, --shard
     ["def_soul-wh2_main_def_malekith"] = 0, --sword
     ["voiceless_ones-wh2_main_def_malekith"] = 0, --spear
+    ["def_witch_knight-wh2_main_def_malekith"] = 1,
     --loh
     ["wh2_main_def_inf_black_ark_corsairs_0-wh2_dlc11_def_lokhir"] = 0,
     ["wh2_main_def_inf_black_ark_corsairs_1-wh2_dlc11_def_lokhir"] = 0,
@@ -692,6 +767,7 @@ local SRW_Free_Units = {
     ["wh2_dlc10_def_cav_knights_of_the_ebon_claw_ror_0-wh2_dlc14_def_malus_darkblade"] = 1,
     ["def_ebon-wh2_dlc14_def_malus_darkblade"] = 0, --co kni
     ["ahashra_cold_riders-wh2_dlc14_def_malus_darkblade"] = 1,
+    ["def_blade_knight-wh2_dlc14_def_malus_darkblade"] = 1,
     --mixu
     ["wh2_main_def_inf_witch_elves_0-def_tullaris_dreadbringer"] = 0,
     ["wh2_main_def_inf_har_ganeth_executioners_0-def_tullaris_dreadbringer"] = 1,
@@ -733,6 +809,9 @@ local SRW_Free_Units = {
     ["wh2_main_def_inf_shades_0-volilosh"] = 0,
     ["wh2_main_def_inf_shades_1-volilosh"] = 1,
     ["wh2_main_def_inf_shades_2-volilosh"] = 1,
+    --def_hag_queen_malida
+    ["wh2_main_def_inf_witch_elves_0-def_hag_queen_malida"] = 0,
+    ["wh2_dlc10_def_inf_sisters_of_the_singing_doom_ror_0-def_hag_queen_malida"] = 0,
 
   --Lizardmen
     ["wh2_main_lzd_cav_cold_ones_1-wh2_main_lzd_kroq_gar"] = 0,
@@ -825,7 +904,7 @@ local SRW_Free_Units = {
     ["CTT_skv_storm-wh2_main_skv_queek_headtaker"] = 0,
     ["CTT_skv_storm_hw-wh2_main_skv_queek_headtaker"] = 0,
     ["stig_skv_inf_stormvermin_deathvermin-wh2_main_skv_queek_headtaker"] = 0,
-
+    ["skv_champion-wh2_main_skv_queek_headtaker"] = 0,
     --scrolk
     ["wh2_main_skv_art_plagueclaw_catapult-wh2_main_skv_lord_skrolk"] = 1,
     ["wh2_main_skv_inf_plague_monks-wh2_main_skv_lord_skrolk"] = 0,
@@ -912,6 +991,7 @@ local SRW_Free_Units = {
     ["crxe_skv_mon_stormfiend_ror_tech_lab_1-wh2_dlc16_skv_throt_the_unclean"] = 3,
     ["crxe_skv_mon_stormfiend_3-wh2_dlc16_skv_throt_the_unclean"] = 2,
     ["crxe_skv_mon_stormfiend_4-wh2_dlc16_skv_throt_the_unclean"] = 2,
+    ["skv_ogre_warrior-wh2_dlc16_skv_throt_the_unclean"] = 1,
 
   --clans
     ["wh2_main_skv_inf_warpfire_thrower-Thom_vulkan_moltskin_searflesh"] = 0,
@@ -942,6 +1022,7 @@ local SRW_Free_Units = {
     ["CTT_skv_storm-skv_feskit"] = 0,
     ["CTT_skv_storm_hw-skv_feskit"] = 0,
     ["stig_skv_inf_stormvermin_deathvermin-skv_feskit"] = 0,
+    ["skv_champion-skv_feskit"] = 0,
 
     --liger_skv_skretch
     ["wh2_main_skv_inf_handguns-liger_skv_skretch"] = 0,

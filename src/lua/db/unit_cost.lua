@@ -2363,6 +2363,46 @@ local SRW_Supply_Cost = {
     ["ulric_warriors_ror"] = 2,
     ["ulric_hounds_ror"] = 1,
     ["ulric_elite_knights"] = 3,
+    --orcs mob and dwf pirates
+    ["hunt_goblin_mob"] = 0,
+    ["hunt_boyz_mob"] = 0,
+    ["hunt_savage_mob"] = 0,
+    ["hunt_dwf_riggers_0"] = 0,
+    ["hunt_dwf_slayer_pirates_0"] = 2,
+    --cultists
+    ["oeg_ulric_cultists"] = 0,
+    ["oeg_manann_cultists"] = 0,
+    ["oeg_morr_cultists"] = 0,
+    ["oeg_verena_cultists"] = 0,
+    ["oeg_myrmidia_cultists"] = 0,
+    ["oeg_shallya_cultists"] = 0,
+    ["oeg_ranald_cultists"] = 0,
+    ["oeg_ranald_cultists_summoned"] = 0,
+    ["oeg_ursun_cultists"] = 0,
+    ["wh_dlc04_emp_inf_flagellants_0"] = 0,
+    ["wh_dlc04_emp_inf_tattersouls_0"] = 0,
+    ["mixu_emp_inf_celebrants"] = 0,
+    --guns of emp
+    ["snek_empire_artillery_guided_missile"] = 3,
+    ["snek_empire_artillery_siege_bombard"] = 3,
+    ["snek_empire_guns_bombardier_main"] = 3, -- art
+    ["snek_empire_cav_waffenreiter"] = 2,  --vagon
+    ["snek_empire_wagon_munitionswagen"] = 2, --wagon
+    ["snek_empire_cav_kriegsritter"] = 1,
+    ["snek_empire_cav_kriegsritter_mounts"] = 1,
+    ["snek_empire_cav_kurassen"] = 3,
+    ["snek_empire_cav_roadwardens"] = 1,
+    ["snek_empire_guns_ersatzsolder"] = 1,
+    ["snek_empire_guns_forstjaeger_main"] = 1,
+    ["snek_empire_guns_jaeger_main"] = 2,
+    ["snek_empire_guns_bergjaeger_main"] = 2,
+    ["snek_empire_guns_riflemen_main"] = 2,
+    ["snek_empire_guns_shotgunners_main"] = 2,
+    ["snek_empire_guns_landesturm_main"] = 3,
+    ["snek_empire_guns_grenadier_main"] = 3,
+    ["snek_empire_guns_jaegarkorps_main"] = 3,
+    ["snek_empire_guns_riflemen_main_ror"] = 3,
+    ["snek_empire_guns_shotgunner_main_ror"] = 3,
   --South Dwarfs
     --core
     ["engineer_land_mine"] = 0,
@@ -2464,5 +2504,81 @@ local SRW_Supply_Cost = {
     ["CTT_emp_reiksfoot"] = 2,
     ["CTT_emp_whitewolf"] = 2,
     ["CTT_emp_teutogen"] = 2,
-
+  --glory mod redone
+    --emp
+    ["emp_legend"] = 4,
+    ["emp_blazing"] = 3,  --blazing
+    ["emp_foot_knight"] = 2,  --reiks
+    ["emp_dragoon_1"] = 2,
+    ["emp_ludwig"] = 2,
+    ["emp_drunks"] = 2,
+    ["emp_dragoon"] = 2,
+    ["emp_guerrilla"] = 2,
+    ["emp_white_wolf"] = 1,
+    ["emp_white_wolf_1"] = 1,
+    ["emp_fc_spear"] = 1,
+    ["emp_fc_bow"] = 0,
+    ["emp_dragoon_2"] = 0,
+    ["emp_militia"] = 0,
+    --vmp
+    ["vmp_skeleton_archer"] = 0,
+    ["vmp_grave_guard_spear"] = 2,
+    ["vmp_wight_bow"] = 2,
+    ["vmp_wight_halb"] = 2,
+    ["vmp_dismounted_sword"] = 3, --grave
+    ["vmp_necroseige"] = 3, --art
+    ["vmp_mounted_sword"] = 3, --black
+    ["vmp_chosen"] = 4,  --blood dragon
+    ["vmp_drg_knight"] = 4,  --blood dragon
+    ["vmp_hellsteed_lancer"] = 4,  --blood dragon
+    ["vmp_vampiress"] = 4, --bella
+    ["vmp_abomination"] = 4, --ghouls
+    --dwf
+    ["dwf_axe_thrower"] = 0,
+    ["dwf_xbox_fire"] = 1, --qua
+    ["dwf_blunderbuss"] = 1,
+    ["thunder_engineer"] = 1,
+    ["dwf_pirate"] = 1,
+    ["dwf_glory_sniper"] = 3,
+    ["dwf_royal"] = 4,
+    ["dwf_ironhalb"] = 4, --ironb
+    ["dwf_gyroflame"] = 2, --gyro
+    ["dwf_nuker"] = 3, --gyro
+    ["dwf_drg_slayer"] = 3, --slayer
+    ["dwf_dragon_slayer"] = 3, --slayer
+    --wef
+    ["wef_daughter"] = 0,
+    ["wef_eternal_guard_sword"] = 0,
+    ["wef_eternal_champ_sword"] = 1,
+    ["wef_asrai_spear_master"] = 2,
+    ["wef_wild_warrior"] = 2,
+    ["wef_sd_chosen"] = 2,
+    ["wef_asrai_rider"] = 2,
+    ["wef_tree_warrior"] = 4, --tree
+    ["wef_asari_champion"] = 4,
+    ["wef_grand_spirit"] = 4,
+    --hef
+    ["hef_armored_spears"] = 1,
+    ["hef_lion_guards"] = 1,
+    ["hef_foot_dragons"] = 3,
+    ["hef_sisters"] = 3, --alariel
+    ["hef_handmaidens"] = 3, --alariel
+    ["hef_horsemasters"] = 4,
+    ["hef_eagle_warriors"] = 4,
+    ["hef_phoenix_champions"] = 4,
+    --def
+    ["def_shadow_order_spear"] = 1,
+    ["def_shadow_order"] = 2,
+    ["def_shadow_order_mounted"] = 2,
+    ["def_dark_pegasus_knight"] = 2,
+    ["def_blade_knight"] = 3, --knights
+    ["def_drake"] = 3,
+    ["def_witch_knight"] = 3, --black guard
+    ["def_champ"] = 4,
+    ["def_krox_chariot"] = 3,
+    --skv
+    ["skv_ogre_warrior"] = 3, --mould
+    ["skv_champion"] = 2, --storm
+    ["skv_ratateer"] = 3, --art
+    ["skv_shadow_halberd"] = 1,
 };

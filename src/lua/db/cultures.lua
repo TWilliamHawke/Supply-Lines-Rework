@@ -38,7 +38,10 @@ local modded_subculture_text = {
   ["wez-wh_main_sc_grn_savage_orcs"] = "SRW_Subculture_Text_wez",
   ["ovn-wh_main_sc_emp_araby"] = "SRW_Subculture_Text_ara",
   ["deco-wh_main_sc_vmp_vampire_counts"] = "SRW_Subculture_Text_deco",
-  ["voli-wh2_main_sc_def_dark_elves"] = "SRW_Subculture_Text_voli"
+  ["voli-wh2_main_sc_def_dark_elves"] = "SRW_Subculture_Text_voli",
+  ["moon-wh2_main_sc_def_dark_elves"] = "SRW_Subculture_Text_moon_def",
+  ["moon-wh_main_sc_grn_greenskins"] = "SRW_Subculture_Text_moon_grn",
+  ["moon-wh_main_sc_dwf_dwarfs"] = "SRW_Subculture_Text_moon_dwf",
 
 }
 
@@ -54,8 +57,8 @@ local supported_mods_prefix = {
   {"script/campaign/mod/ws_big_waaagh.lua", "wez-"},
   {"script/campaign/mod/ovn_victory_conditions.lua", "ovn-"},
   {"ui/units/icons/dec_lahmian.png", "deco-"},
-  {"script/frontend/mod/volilosh_frontend.lua", "voli-"}
-  
+  {"script/frontend/mod/volilosh_frontend.lua", "voli-"},
+  {"script/frontend/mod/moon_frontend.lua", "moon-"},
 }
 
 local no_balance_lords = {

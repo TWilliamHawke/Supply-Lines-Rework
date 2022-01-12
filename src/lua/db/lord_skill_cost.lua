@@ -40,6 +40,12 @@ local SRW_Lord_Skills_Cost = {
     ["ror_vamp_templewights-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_grave_sentinels", 1},
     ["ror_vamp_helmut-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_grave_sentinels", 1},
     ["dec_grave_halbs-Blood_Dragon"] =  {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_grave_sentinels", 0},
+    ["vmp_dismounted_sword-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_grave_sentinels", 1},
+    ["vmp_mounted_sword-Blood_Dragon"] =  {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_doomrider", 1},
+    ["vmp_chosen-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_the_ordo_draconis", 2},
+    ["vmp_drg_knight-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_the_ordo_draconis", 2},
+    ["vmp_hellsteed_lancer-Blood_Dragon"] = {"wh2_dlc11_skill_vmp_bloodline_blood_dragon_unique_the_ordo_draconis", 2},
+
 
     --Strigoi
     -- ["wh_main_vmp_inf_crypt_ghouls-Strigoi"] = {"wh2_dlc11_skill_vmp_bloodline_strigoi_unique_grave_eaters", 0},
@@ -47,6 +53,8 @@ local SRW_Lord_Skills_Cost = {
     ["dec_lahmian-Strigoi"] = {"wh2_dlc11_skill_vmp_bloodline_strigoi_unique_grave_eaters", 0},
     ["wh_dlc04_vmp_inf_feasters_in_the_dusk_0-Strigoi"] = {"wh2_dlc11_skill_vmp_bloodline_strigoi_unique_grave_eaters", 0},
     ["wh_main_vmp_mon_crypt_horrors-Strigoi"] = {"wh2_dlc11_skill_vmp_bloodline_strigoi_unique_monstrosities_of_morr", 0},
+    ["vmp_abomination-Strigoi"] = {"wh2_dlc11_skill_vmp_bloodline_strigoi_unique_monstrosities_of_morr", 2},
+
     -- ["CTT_vmp_ghouls-Strigoi"] = {"wh2_dlc11_skill_vmp_bloodline_strigoi_unique_grave_eaters", 0},
     --ghorst
     ["wh_dlc04_vmp_veh_mortis_engine_0-Ghorst"] = {"wh_dlc04_skill_vmp_lord_unique_helman_ghorst_corpse_cart_boost", 1},
@@ -383,7 +391,7 @@ local SRW_Lord_Skills_Cost = {
     ["CTT_skv_storm-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
     ["CTT_skv_storm_hw-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
     ["stig_skv_inf_stormvermin_deathvermin-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
-
+    ["skv_champion-wh2_main_skv_queek_headtaker-Tretch"] = {"wh2_dlc09_skill_skv_lord_unique_tretch_craventail_tretchs_raiders", 0},
     --ikit
     ["wh2_dlc12_skv_veh_doom_flayer_0-Ikit"] = {"wh2_dlc12_skill_skv_ikit_unique_4", 0},
     ["wh2_dlc12_skv_veh_doom_flayer_ror_tech_lab_0-Ikit"] = {"wh2_dlc12_skill_skv_ikit_unique_4", 1},
@@ -452,6 +460,7 @@ local SRW_Lord_Skills_Cost = {
     ["CTT_skv_storm-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 0},
     ["CTT_skv_storm_hw-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 0},
     ["stig_skv_inf_stormvermin_deathvermin-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 1},
+    ["skv_champion-wh2_main_skv_queek_headtaker-Ferric"] = {"thom_ferrik_ironmask_unique_raiding_party", 1},
 
   --VCoast
     ["wh2_dlc11_cst_inf_zombie_deckhands_mob_ror_0-Harkon"] = {"wh2_dlc11_skill_cst_luthor_unique_1", 0},
@@ -549,7 +558,22 @@ local SRW_Lord_Skills_Cost = {
     ["wh_jmw_emp_inf_death_heads_gunners-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 0},
     ["wh_jmw_emp_inf_ironsides-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 0},
     ["wh_jmw_emp_inf_ironsides_launchers-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 0},
-  
+    ["snek_empire_cav_kriegsritter-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 0},
+    ["snek_empire_cav_kriegsritter_mounts-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 0},
+    ["snek_empire_cav_kurassen-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 1},
+    ["snek_empire_cav_roadwardens-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 0},
+    ["snek_empire_guns_ersatzsolder-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 0},
+    ["snek_empire_guns_forstjaeger_main-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 0},
+    ["snek_empire_guns_jaeger_main-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 0},
+    ["snek_empire_guns_bergjaeger_main-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 0},
+    ["snek_empire_guns_riflemen_main-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 0},
+    ["snek_empire_guns_shotgunners_main-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 0},
+    ["snek_empire_guns_landesturm_main-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 1},
+    ["snek_empire_guns_grenadier_main-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 1},
+    ["snek_empire_guns_jaegarkorps_main-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 1},
+    ["snek_empire_guns_riflemen_main_ror-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 1},
+    ["snek_empire_guns_shotgunner_main_ror-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_2", 1},
+
     ["wh_dlc04_emp_veh_templehof_luminark_0-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_3", 2},
     ["wh_main_emp_veh_luminark_of_hysh_0-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_3", 1},
     ["wh_main_emp_veh_hurricanum_0-Gelt"] = {"wh_dlc08_skill_emp_lord_unique_balthasar_unique_3", 1},
@@ -719,6 +743,8 @@ local SRW_Lord_Skills_Cost = {
     ["wh_main_dwf_veh_gyrobomber-Whitedwarf"] = {"wh2_dlc17_dwf_grombrindal_unique_rouse_the_engineers", 0},
     ["wh_main_dwf_veh_gyrocopter_0-Whitedwarf"] = {"wh2_dlc17_dwf_grombrindal_unique_rouse_the_engineers", 0},
     ["wh_main_dwf_veh_gyrocopter_1-Whitedwarf"] = {"wh2_dlc17_dwf_grombrindal_unique_rouse_the_engineers", 0},
+    ["dwf_gyroflame-Whitedwarf"] = {"wh2_dlc17_dwf_grombrindal_unique_rouse_the_engineers", 0},
+    ["dwf_nuker-Whitedwarf"] = {"wh2_dlc17_dwf_grombrindal_unique_rouse_the_engineers", 1},
     ["wh_dlc06_dwf_veh_skyhammer_0-Whitedwarf"] = {"wh2_dlc17_dwf_grombrindal_unique_rouse_the_engineers", 1},
     ["wh_main_dwf_art_grudge_thrower-Whitedwarf"] = {"wh2_dlc17_dwf_grombrindal_unique_rouse_the_engineers", 1},
     ["wh_main_dwf_art_cannon-Whitedwarf"] = {"wh2_dlc17_dwf_grombrindal_unique_rouse_the_engineers", 1},
@@ -739,9 +765,26 @@ local SRW_Lord_Skills_Cost = {
     ["wh_main_dwf_art_organ_gun-Thorgrim"] = {"wh_dlc08_skill_dwf_lord_thorgrim_unique_2", 2},
     ["wh_dlc06_dwf_art_gob_lobber_0-Thorgrim"] = {"wh_dlc08_skill_dwf_lord_thorgrim_unique_2", 3},
 
+    ["wh_dlc06_dwf_art_bolt_thrower_0-Byrnoth"] = {"parte_skill_dwf_byrrnoth_grundadrakk_unique_zul_barag", 1},
+    ["wh_main_dwf_art_grudge_thrower-Byrnoth"] = {"parte_skill_dwf_byrrnoth_grundadrakk_unique_zul_barag", 2},
+    ["wh_main_dwf_art_cannon-Byrnoth"] = {"parte_skill_dwf_byrrnoth_grundadrakk_unique_zul_barag", 2},
+    ["wh_main_dwf_art_flame_cannon-Byrnoth"] = {"parte_skill_dwf_byrrnoth_grundadrakk_unique_zul_barag", 2},
+    ["wh_main_dwf_art_organ_gun-Byrnoth"] = {"parte_skill_dwf_byrrnoth_grundadrakk_unique_zul_barag", 2},
+    ["wh_dlc06_dwf_art_gob_lobber_0-Byrnoth"] = {"parte_skill_dwf_byrrnoth_grundadrakk_unique_zul_barag", 3},
+    ["wh_main_dwf_inf_hammerers-Byrnoth"] = {"parte_skill_dwf_byrrnoth_grundadrakk_unique_glory_of_the_ancestors", 1},
+    ["wh_main_dwf_inf_longbeards-Byrnoth"] = {"parte_skill_dwf_byrrnoth_grundadrakk_unique_glory_of_the_ancestors", 1},
+    ["wh_main_dwf_inf_longbeards_1-Byrnoth"] = {"parte_skill_dwf_byrrnoth_grundadrakk_unique_glory_of_the_ancestors", 1},
+    ["wh_dlc06_dwf_inf_old_grumblers_0-Byrnoth"] = {"parte_skill_dwf_byrrnoth_grundadrakk_unique_glory_of_the_ancestors", 2},
+    ["wh_dlc06_dwf_inf_peak_gate_guard_0-Byrnoth"] = {"parte_skill_dwf_byrrnoth_grundadrakk_unique_glory_of_the_ancestors", 3},
+    ["wh_main_dwf_inf_longbeards_1_grey_supply-Byrnoth"] = {"parte_skill_dwf_byrrnoth_grundadrakk_unique_glory_of_the_ancestors", 1},
+    ["wh_main_dwf_inf_longbeards_grey_supply-Byrnoth"] = {"parte_skill_dwf_byrrnoth_grundadrakk_unique_glory_of_the_ancestors", 1},
+    ["wh_main_dwf_inf_hammerers_grey_supply-Byrnoth"] = {"parte_skill_dwf_byrrnoth_grundadrakk_unique_glory_of_the_ancestors", 2},
+    ["hammerers_muskets-Byrnoth"] = {"parte_skill_dwf_byrrnoth_grundadrakk_unique_glory_of_the_ancestors", 3},
+
   --Wood Elves
     ["wh_dlc05_wef_mon_treekin_0-Treeman"] = {"wh_dlc05_skill_wef_ancient_treeman_unique_damage_resistance_treekin", 1},
     ["wh_pro04_wef_mon_treekin_ror_0-Treeman"] = {"wh_dlc05_skill_wef_ancient_treeman_unique_damage_resistance_treekin", 2},
+    ["wef_tree_warrior-dlc05_wef_durthu-Treeman"] = {"wh_dlc05_skill_wef_ancient_treeman_unique_damage_resistance_treekin", 2},
     ["wh2_dlc16_wef_mon_malicious_treekin_0-Treeman"] = {"wh_dlc05_skill_wef_ancient_treeman_unique_damage_resistance_treekin", 1},
     ["wh2_dlc16_wef_mon_zoats-Zoat"] = {"roy_zoat_lord_army_defense_zoats", 1},
     ["wh2_dlc16_wef_mon_zoats_ror_0-Zoat"] = {"roy_zoat_lord_army_defense_zoats", 2},

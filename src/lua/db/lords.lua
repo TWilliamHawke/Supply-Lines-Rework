@@ -85,7 +85,7 @@ local SRW_Lord_Group = {
     ["dwf_thorgrim_grudgebearer"] = "Thorgrim",
     ["pro01_dwf_grombrindal"] = "Whitedwarf",
     ["wh2_dlc17_dwf_thorek"] = "Thorek",
-    
+    ["dwf_byrrnoth_grundadrakk"] = "Byrnoth",
   --Wood elves
     ["wh2_dlc16_wef_malicious_ancient_treeman_beasts"] = "Treeman",
     ["wh2_dlc16_wef_malicious_ancient_treeman_life"] = "Treeman",
